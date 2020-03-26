@@ -6,7 +6,7 @@ Tu as reçu une nouvelle demande de contact de la part de:
 
 ## **{{$apellidos}} {{$nombre}}**
 
--Né(e) le **{{$birthdate}}** .
+-Né(e) le **{{ \Carbon\Carbon::parse($birthdate)->translatedFormat('j F Y') }}** .
 
 -Taille: **{{$altura}}** cm.
 

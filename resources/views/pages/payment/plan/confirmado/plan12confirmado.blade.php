@@ -11,7 +11,8 @@
 <div class="flex justify-between px-8">
 	<div class="w-full max-w-xs lg:max-w-xl lg:w-1/2 m-auto p-auto p-8 border-2 rounded border-teal-600">   
 
-		
+		<h3 class="text-green-600">Muchas gracias! Hemos recibido tu pago.</h3>
+		<p>Vas a recibir en poco tiempo tu plan de entretamiento en casa</p>
 	</div>
 
 	

@@ -37404,7 +37404,7 @@ var render = function() {
     "header",
     {
       staticClass:
-        "sticky top-0 bg-gray-600 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2"
+        "bg-gray-600 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2"
     },
     [
       _c(
@@ -37475,7 +37475,7 @@ var render = function() {
                 "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500",
               attrs: { href: "/programmes" }
             },
-            [_vm._v("Programmes")]
+            [_vm._v("Programas")]
           ),
           _vm._v(" "),
           _c(
@@ -37485,37 +37485,7 @@ var render = function() {
                 "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
               attrs: { href: "/profil" }
             },
-            [_vm._v("Qui suis-je?")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
-              attrs: { href: "/register" }
-            },
-            [_vm._v("Séssions Personnalisées")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
-              attrs: { href: "https://osteopatiafrancesa.com/" }
-            },
-            [_vm._v("RDV Consultations")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
-              attrs: { href: "#" }
-            },
-            [_vm._v("Témoignages")]
+            [_vm._v("Sobre mi")]
           ),
           _vm._v(" "),
           _c(
@@ -37525,7 +37495,7 @@ var render = function() {
                 "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
               attrs: { href: "/contact" }
             },
-            [_vm._v("Contact")]
+            [_vm._v("Sesiones  personalizadas")]
           ),
           _vm._v(" "),
           _c(
@@ -37533,9 +37503,29 @@ var render = function() {
             {
               staticClass:
                 "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
-              attrs: { href: "/login" }
+              attrs: { href: "https://osteopatiafrancesa.com/" }
             },
-            [_vm._v("Se connecter")]
+            [_vm._v("Consultorio")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
+              attrs: { href: "#" }
+            },
+            [_vm._v("Testimonios")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
+              attrs: { href: "/contact" }
+            },
+            [_vm._v("Contacto")]
           )
         ]
       )

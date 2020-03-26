@@ -31,11 +31,21 @@ Route::get('/contact', 'ContactController@index')->name('contact.index');
 Route::post('/contact', 'ContactController@store')->name('contact.store');
 
 //pages paiement
+Route::get('/payment/plan6sesiones', 'PaymentController@plan6sesiones')->name('payment.6sesiones');
 
-Route::get('/payment/plan6sesiones', 'PaymentPlan6Controller@index')->name('paymentplan6.index');
-Route::post('/payment/plan6sesiones', 'PaymentPlan6Controller@store')->name('paymentplan6.store');
-Route::get('/payment/plan12sesiones', 'PaymentPlan12Controller@index')->name('paymentplan12.index');
-Route::post('/payment/plan12sesiones', 'PaymentPlan12Controller@store')->name('paymentplan12.store');
+Route::get('/payment/plan12sesiones', 'PaymentController@plan12sesiones')->name('payment.12sesiones');
+
+Route::get('/payment/plan6confirmado', 'PaymentController@plan6confirmado')->name('payment.plan6confirmado');
+
+Route::get('/payment/plan12confirmado', 'PaymentController@plan12confirmado')->name('payment.plan12confirmado');
+
+Route::get('/payment/rechazado', 'PaymentController@rechazado')->name('payment.rechazado');
+
+Route::get('/payment/plan12sesiones', 'PaymentController@plan12sesiones')->name('payment.12sesiones');
+
+Route::resource('payment', 'PaymentController');
+
+//admin
 
 Route::group(['prefix' => 'admin' , 'middleware' => 'admin'], function () {
 

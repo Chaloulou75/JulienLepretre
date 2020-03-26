@@ -201,7 +201,7 @@
 
         <div class="mb-4">
             <div class="block items-center justify-between">
-                <button class="w-full text-center bg-white hover:bg-blue-500 text-gray-900 font-semibold tracking-wide py-2 px-4 border-2 border-gray-900 rounded focus:outline-none focus:shadow-outline" type="submit">
+                <button type="submit" class="w-full bg-blue-700 hover:bg-blue-500 text-white font-semibold text-center tracking-widest border-2 rounded-full hover:border-blue-700 border-blue-300 flex-auto py-2 px-4 m-2">
                     {{ __('Enviar') }} &raquo;
                 </button>
             </div>

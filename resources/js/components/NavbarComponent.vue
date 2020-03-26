@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 bg-gray-600 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2">
+  <header class="bg-gray-600 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2">
     <div class="flex items-center justify-between px-4 py-3 sm:p-0">
       
       <div class="flex items-center">  
@@ -19,13 +19,13 @@
       </div>
     </div>
     <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-1 pb-2 sm:flex sm:p-0">
-      <a href="/programmes" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500">Programmes</a>
-      <a href="/profil" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Qui suis-je?</a>
-      <a href="/register" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Séssions Personnalisées</a>
-      <a href="https://osteopatiafrancesa.com/" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">RDV Consultations</a>
-      <a href="#" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Témoignages</a>
-      <a href="/contact" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Contact</a>
-      <a href="/login" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Se connecter</a>
+      <a href="/programmes" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500">Programas</a>
+      <a href="/profil" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Sobre mi</a>
+      <a href="/contact" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Sesiones  personalizadas</a>
+      <a href="https://osteopatiafrancesa.com/" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Consultorio</a>
+      <a href="#" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Testimonios</a>
+      <a href="/contact" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Contacto</a>
+      <!-- <a href="/login" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Conectarse</a> -->
     </nav>
   </header>
 </template>
