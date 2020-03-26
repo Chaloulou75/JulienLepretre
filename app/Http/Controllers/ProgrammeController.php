@@ -16,7 +16,7 @@ class ProgrammeController extends Controller
     {
         $programmes = Programme::all();
 
-        return view('/pages/programmes/index', compact('programmes'));
+        return view('/pages/programas/index', compact('programmes'));
     }
 
     /**
@@ -26,8 +26,8 @@ class ProgrammeController extends Controller
      */
     public function create()
     {
-        $admin = User::where('admin', true)->get();
-        //if(Auth::user()->isAdmin)
+        //$admin = User::where('admin', true)->get();
+        return view('/pages/programas/create');
     }
 
     /**

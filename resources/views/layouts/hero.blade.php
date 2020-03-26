@@ -16,7 +16,7 @@
 			¡Este programa es para vos!</p>
 			<p class="leading-normal uppercase text-xl text-teal-600 mb-4">
 			Mi programa te permitirá recuperar el control de tu espalda, sentirte más fuerte y mas móvil – en solamente 30 días.</p>
-			<button class="bg-teal-600 hover:bg-blue-600 text-white font-semibold tracking-widest uppercase border border-blue-500 hover:border-transparent rounded shadow hover:shadow-lg py-2 px-4 " type="button" href="/contact">Contactarme</button>
+			<a href="{{route('contact.index')}}"><button class="bg-teal-600 hover:bg-blue-600 text-white font-semibold tracking-widest uppercase border border-blue-500 hover:border-transparent rounded shadow hover:shadow-lg py-2 px-4 " type="button">Contactarme</button></a>
 		</div>
 		<!--Right Col-->
 		<div class="w-full lg:w-1/2 lg:py-2 text-center">

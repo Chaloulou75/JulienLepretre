@@ -21,14 +21,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('programmes', 'ProgrammeController');
+Route::resource('programas', 'ProgrammeController');
 
-Route::get('/profil', 'PagesController@index')->name('profil');
+Route::get('/perfil', 'PagesController@index')->name('profil');
 
 //contact
 
-Route::get('/contact', 'ContactController@index')->name('contact.index');
-Route::post('/contact', 'ContactController@store')->name('contact.store');
+Route::get('/contacto', 'ContactController@index')->name('contact.index');
+Route::post('/contacto', 'ContactController@store')->name('contact.store');
 
 //pages paiement
 Route::get('/payment/plan6sesiones', 'PaymentController@plan6sesiones')->name('payment.6sesiones');

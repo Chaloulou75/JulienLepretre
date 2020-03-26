@@ -4,7 +4,7 @@
       
       <div class="flex items-center">  
           <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 h-16 rounded-full" src="/img/ProfilInsta.jpg" alt="Julien Leprêtre">
-          <a href="/" class="block text-white text-base rounded font-medium transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 px-4 py-1 hover:bg-gray-500">
+          <a href="/" class="block text-white text-base rounded font-medium transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 px-4 py-1 hover:bg-gray-500">
             Julien Leprêtre
           </a> 
                      
@@ -19,12 +19,12 @@
       </div>
     </div>
     <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-1 pb-2 sm:flex sm:p-0">
-      <a href="/programmes" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500">Programas</a>
-      <a href="/profil" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Sobre mi</a>
-      <a href="/contact" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Sesiones  personalizadas</a>
+      <a href="/programas" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500">Programas</a>
+      <a href="/perfil" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Sobre mi</a>
+      <a href="/contacto" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Sesiones  personalizadas</a>
       <a href="https://osteopatiafrancesa.com/" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Consultorio</a>
       <a href="#" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Testimonios</a>
-      <a href="/contact" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Contacto</a>
+      <a href="/contacto" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Contacto</a>
       <!-- <a href="/login" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Conectarse</a> -->
     </nav>
   </header>

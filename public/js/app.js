@@ -37473,7 +37473,7 @@ var render = function() {
             {
               staticClass:
                 "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500",
-              attrs: { href: "/programmes" }
+              attrs: { href: "/programas" }
             },
             [_vm._v("Programas")]
           ),
@@ -37483,7 +37483,7 @@ var render = function() {
             {
               staticClass:
                 "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
-              attrs: { href: "/profil" }
+              attrs: { href: "/perfil" }
             },
             [_vm._v("Sobre mi")]
           ),
@@ -37493,7 +37493,7 @@ var render = function() {
             {
               staticClass:
                 "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
-              attrs: { href: "/contact" }
+              attrs: { href: "/contacto" }
             },
             [_vm._v("Sesiones  personalizadas")]
           ),
@@ -37523,7 +37523,7 @@ var render = function() {
             {
               staticClass:
                 "transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
-              attrs: { href: "/contact" }
+              attrs: { href: "/contacto" }
             },
             [_vm._v("Contacto")]
           )
@@ -37548,7 +37548,7 @@ var staticRenderFns = [
         "a",
         {
           staticClass:
-            "block text-white text-base rounded font-medium transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 px-4 py-1 hover:bg-gray-500",
+            "block text-white text-base rounded font-medium transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 px-4 py-1 hover:bg-gray-500",
           attrs: { href: "/" }
         },
         [_vm._v("\n          Julien Leprêtre\n        ")]
