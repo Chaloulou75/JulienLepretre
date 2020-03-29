@@ -10,7 +10,7 @@ class Description extends Model
         'phrase',
     ];
 
-    public function programme()
+    public function programmes()
     {
     	return $this->belongsTo(Programme::class);
     }

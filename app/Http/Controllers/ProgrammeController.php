@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Programme;
+use Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Response;
+use Image;
 
 class ProgrammeController extends Controller
 {
@@ -14,7 +18,7 @@ class ProgrammeController extends Controller
      */
     public function index()
     {
-        $programmes = Programme::all();
+        $programmes = Programme::latest()->get();
 
         return view('/pages/programas/index', compact('programmes'));
     }
@@ -28,6 +32,8 @@ class ProgrammeController extends Controller
     {
         //$admin = User::where('admin', true)->get();
         return view('/pages/programas/create');
+
+
     }
 
     /**
@@ -38,7 +44,42 @@ class ProgrammeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $request->validate([
+                'title' => 'required|min:3',
+                'descriptionGlobale' => 'required|min:10',
+                'prog_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',                
+                'prix6sesionesPesos' => 'numeric',
+                'prix12sesionesPesos' => 'numeric',
+                'prix6sesionesEuros' => 'numeric',
+                'prix12sesionesEuros' => 'numeric',
+            ]);
+
+        $originalImage= $request->file('prog_image');
+        $thumbnailImage = Image::make($originalImage);
+        $thumbnailPath = public_path().'/thumbnail/';
+        $originalPath = public_path().'/img/programas/';
+        $thumbnailImage->save($originalPath.time().$originalImage->getClientOriginalName());
+        $thumbnailImage->resize(150,150);
+        $thumbnailImage->save($thumbnailPath.time().$originalImage->getClientOriginalName()); 
+
+        $programme= new Programme();
+        $programme->prog_image=time().$originalImage->getClientOriginalName();
+        
+
+        $data = array(
+            'title'=> $request->title,
+            'descriptionGlobale' => $request->descriptionGlobale,
+            'prog_image' => $programme->prog_image,                
+            'prix6sesionesPesos' => $request->prix6sesionesPesos,
+            'prix12sesionesPesos' => $request->prix12sesionesPesos,
+            'prix6sesionesEuros' => $request->prix6sesionesEuros,
+            'prix12sesionesEuros' => $request->prix12sesionesEuros,
+        );
+        
+        Programme::create($data);
+
+        return redirect()->back()->with('message.level', 'success')->with('message.content', __('El programa esta en la database.'));
     }
 
     /**
@@ -47,9 +88,12 @@ class ProgrammeController extends Controller
      * @param  \App\Programme  $programme
      * @return \Illuminate\Http\Response
      */
-    public function show(Programme $programme)
-    {
-        //
+    public function show($slug)
+    {    
+        $programme = Programme::where('slug' , $slug)->firstOrFail();
+        //dd($programme);
+
+        return view('/pages/programas/show', $programme, compact('programme'));
     }
 
     /**

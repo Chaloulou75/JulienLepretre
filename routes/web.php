@@ -21,10 +21,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('programas', 'ProgrammeController');
+Route::get('/programas/{slug}', 'ProgrammeController@show')->name('programas.show');
+
+Route::resource('programas', 'ProgrammeController',['except' => [
+    'show'
+]]);
+
 
 Route::get('/perfil', 'PagesController@index')->name('profil');
-
 //contact
 
 Route::get('/contacto', 'ContactController@index')->name('contact.index');

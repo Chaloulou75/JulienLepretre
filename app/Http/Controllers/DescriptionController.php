@@ -35,7 +35,21 @@ class DescriptionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $request->validate([                
+            'phrase' => 'required|min:5',
+        ]);
+
+        $description = Description::create([
+            'programme_id' => $programme->id,
+            'phrase' => $request->phrase,         
+        ]);
+
+        $programme->descriptions()->attach($description);
+
+        return redirect()->back()->with('message.level', 'success')->with('message.content', __('desciption insérée pour le programme.'));
+
+
     }
 
     /**

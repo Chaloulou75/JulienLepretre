@@ -18,8 +18,12 @@ class CreateProgrammesTable extends Migration
             $table->string('title');
             $table->unsignedBigInteger('user_id')->nullable();
             $table->string('slug')->unique();
-            $table->string('image')->nullable();
-            $table->decimal('prix', 8, 2);
+            $table->text('descriptionGlobale');
+            $table->binary('prog_image');            
+            $table->decimal('prix6sesionesPesos', 8, 2);
+            $table->decimal('prix12sesionesPesos', 8, 2);
+            $table->decimal('prix6sesionesEuros', 8, 2);
+            $table->decimal('prix12sesionesEuros', 8, 2);
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

@@ -11,7 +11,7 @@ class Programme extends Model
 	use Sluggable;
 
     protected $fillable = [
-        'title', 'image', 'prix',
+        'title', 'descriptionGlobale', 'prog_image', 'prix6sesionesPesos', 'prix12sesionesPesos', 'prix6sesionesEuros', 'prix12sesionesEuros', 
     ];
 
     public function descriptions()
@@ -31,5 +31,15 @@ class Programme extends Model
                 'source' => 'title'
             ]
         ];
+    }
+    
+    /**
+     * Get the route key for the model.
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 }

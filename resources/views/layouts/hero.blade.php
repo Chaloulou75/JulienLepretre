@@ -1,5 +1,5 @@
 <!--Hero-->
-	<div class="w-full mx-auto flex flex-col md:flex-row items-center px-8 bg-contain  bg-right bg-no-repeat" style="background-image: url(/img/EtirementNOIRetBLANC.jpg)">
+	<div class="container w-full mx-auto flex flex-col md:flex-row items-center px-8 bg-contain  bg-right bg-no-repeat" style="background-image: url(/img/EtirementNOIRetBLANC.jpg)">
 		<!--Left Col-->
 		<div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-2 pl-2 pb-24">
 			
@@ -16,7 +16,7 @@
 			¡Este programa es para vos!</p>
 			<p class="leading-normal uppercase text-xl text-teal-600 mb-4">
 			Mi programa te permitirá recuperar el control de tu espalda, sentirte más fuerte y mas móvil – en solamente 30 días.</p>
-			<a href="{{route('contact.index')}}"><button class="bg-teal-600 hover:bg-blue-600 text-white font-semibold tracking-widest uppercase border border-blue-500 hover:border-transparent rounded shadow hover:shadow-lg py-2 px-4 " type="button">Contactarme</button></a>
+			<a href="{{route('contact.index')}}"><button class="bg-teal-600 hover:bg-blue-600 text-white font-semibold tracking-widest uppercase border-2 border-blue-500 hover:border-teal-600 rounded shadow hover:shadow-lg py-2 px-4 " type="button">Contactarme</button></a>
 		</div>
 		<!--Right Col-->
 		<div class="w-full lg:w-1/2 lg:py-2 text-center">
