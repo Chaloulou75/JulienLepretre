@@ -21,12 +21,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/programas/{slug}', 'ProgrammeController@show')->name('programas.show');
+
 
 Route::resource('programas', 'ProgrammeController',['except' => [
     'show'
 ]]);
-
+Route::get('/programas/{slug}', 'ProgrammeController@show')->name('programas.show');
 
 Route::get('/perfil', 'PagesController@index')->name('profil');
 //contact

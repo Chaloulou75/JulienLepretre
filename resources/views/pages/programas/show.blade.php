@@ -4,31 +4,28 @@
     
     <div class="px-4 container">
 
-        <div class="w-full mx-auto flex flex-col md:flex-row items-center px-8" >
+    	<h1 class="font-bold text-3xl text-teal-700 text-center uppercase my-4">
+                {{ $programme->title }}
+        </h1>
+
+
+        <div class="w-full m-auto flex flex-col md:flex-row items-center justify-around text-justify" >
         <!--Left Col style="background-image: url(/img/programas/)"-->
+
             <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-2 pl-2 pb-24 m-4">
-            
-                <h1 class="font-bold text-3xl text-teal-700 uppercase my-4">{{ $programme->title }}</h1>
 
-                <h2 class="uppercase font-semibold text-2xl text-gray-700 tracking-loose my-4">¿PARA QUIEN ES EL PROGRAMA?</h2>
+            	<h2 class="uppercase font-semibold text-2xl text-gray-700 tracking-loose mb-4 mx-auto">¿PARA QUIEN ES EL PROGRAMA?</h2>
 
-                <p class="leading-normal uppercase text-xl text-gray-600 mb-4">{{ $programme->descriptionGlobale }}</p>
+                <p class="leading-normal text-gray-600 mb-4 mx-auto">{{ $programme->descriptionGlobale }}</p>
 
-                {{-- @foreach($programme->descriptions as $description)
-                        
-                    <p class="leading-normal uppercase text-xl text-gray-600 mb-4">
-                        {{ $description }} </br>
-                    </p>
-                @endforeach --}}
-
-                <p class="leading-normal uppercase text-sm text-gray-600 mb-4">
+                <p class="leading-normal uppercase text-sm text-gray-600 mb-4 mx-auto">
                         6 sesiones: {{ $programme->prix6sesionesPesos }} $ / {{ $programme->prix6sesionesEuros }} Euros
                 </p>
-                <p class="leading-normal uppercase text-sm text-gray-600 mb-4">
+                <p class="leading-normal uppercase text-sm text-gray-600 mb-4 mx-auto">
                         12 sesiones: {{ $programme->prix12sesionesPesos }} $ / {{ $programme->prix12sesionesEuros }} Euros 
                 </p>
                 
-                <a href="{{route('contact.index')}}"><button class="bg-gray-600 hover:bg-blue-600 text-white font-semibold tracking-widest uppercase border-2 border-blue-500 hover:border-gray-600 rounded shadow hover:shadow-lg py-2 px-4 " type="button">Contactarme</button></a>
+                <a href="{{route('contact.index')}}"><button class="w-full bg-gray-600 hover:bg-teal-600 text-white font-semibold tracking-widest uppercase border-2 border-teal-500 hover:border-gray-600 rounded shadow hover:shadow-lg py-2 px-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Contactarme para recibir el programa</button></a>
             </div>
             <!--Right Col-->
             <div class="w-full lg:w-1/2 lg:py-2 text-center">
@@ -37,5 +34,45 @@
 
             </div>
         </div>
+		<div class="w-full lg:py-2 text-center text-justify mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+        	<h2 class="uppercase font-semibold text-2xl text-gray-700 tracking-loose my-4">¿QUÉ HAY ADENTRO DEL PROGRAMA?</h2>
+
+			<p class="leading-normal uppercase text-xl text-gray-600 mb-2 pb-2">Cada día tendrás una sesión diferente, de entre 10 a 15 minutos de duración con 4 ejercicios. Las sesiones estan pensadas de manera entrar en calor, gradualmente, con ejercicios de movilidad, para luego seguir fortaleciendo tu cuerpo con ejercicios de trabajo muscular de baja intensidad para mejorar tu estabilidad.</p>
+
+			<p class="leading-normal uppercase text-xl text-gray-600 pb-2">Al final de la sesión, se realizan movimientos menos intensos con el objetivo de relajar el cuerpo al mismo tiempo que trabajamos la movilidad.</p>
+
+    	</div>
+
+    	<div class="w-full mx-auto flex flex-col md:flex-row items-center px-8" >
+        <!--Left Col style="background-image: url(/img/programas/)"-->
+
+            <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-2 pl-2 pb-24 p-4">
+
+				<img src="/img/programas/{{ $programme->prog_image }}" class="fill-current text-gray-900 w-full mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" alt="prog_image">
+            	                
+            </div>
+            <!--Right Col-->
+            <div class="w-full lg:w-1/2 lg:py-2 justify-around text-justify transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+
+                <p class="leading-normal uppercase font-bold text-xl mx-auto text-gray-800 mb-4">
+                	<i class="fas fa-check-square fa-lg fa-fw text-green-600 pl-1"></i>
+                	 25 x vídeos de ejercicios y sus variaciones
+                </p>
+                <p class="leading-normal uppercase font-bold text-xl mx-auto text-gray-800 mb-4">
+                	<i class="fas fa-check-square fa-lg fa-fw text-green-600 pl-1"></i>
+                	 30 x rutinas diferentes para cada día
+                </p>
+                <p class="leading-normal uppercase font-bold text-xl mx-auto text-gray-800 mb-4">
+                	<i class="fas fa-check-square fa-lg fa-fw text-green-600 pl-1"></i> 
+                	Indicaciones para cada ejercicio : lo que vamos a trabajar, y como realizarlos sin lesionarte
+            	</p>
+                <p class="leading-normal uppercase font-bold text-xl mx-auto text-gray-800 mb-4">
+                	<i class="fas fa-check-square fa-lg fa-fw text-green-600 pl-1"></i>
+                	 1 x RUTINA DE MOVILIDAD EXCLUSIVA
+                </p>
+
+            </div>
+        </div>
+
     </div>
 @endsection

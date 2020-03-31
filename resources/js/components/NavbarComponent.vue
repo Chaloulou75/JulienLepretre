@@ -4,7 +4,7 @@
       
       <div class="flex items-center">  
           <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 h-16 rounded-full" src="/img/ProfilInsta.jpg" alt="Julien Leprêtre">
-          <a href="/" class="block text-white text-base rounded font-medium transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 px-4 py-1 hover:bg-gray-500">
+          <a href="/" class="block text-white text-base rounded font-medium transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mx-2 px-2 py-1 hover:bg-gray-500">
             Julien Leprêtre
           </a> 
                      

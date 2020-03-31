@@ -5,7 +5,12 @@
     <div class="px-4 container">
 
         @foreach($programmes as $programme)
-        <h1 class="font-bold text-3xl text-teal-700 text-center uppercase my-4">{{ $programme->title }}</h1>
+
+        <a href="{{ route('programas.show', ['slug' => $programme->slug]) }}" class="no-underline">
+            <h1 class="font-bold text-3xl text-teal-700 text-center uppercase my-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                {{ $programme->title }}
+            </h1>
+        </a>
 
         <div class="w-full mx-auto flex flex-col md:flex-row items-center px-8" >
 
