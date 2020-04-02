@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Description extends Model
 {
     protected $fillable = [
-        'phrase',
+        'programme_id','phrase',
     ];
 
     public function programmes()

@@ -24,13 +24,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('programas', 'ProgrammeController',['except' => [
-    'show'
+    'show', 'edit',
 ]]);
+
 Route::get('/programas/{slug}', 'ProgrammeController@show')->name('programas.show');
+Route::get('/programas/{slug}/edit', 'ProgrammeController@edit')->name('programas.edit');
+
+Route::resource('/programas/{slug}/description', 'DescriptionController',['only' => [
+    'store'
+]]);
 
 Route::get('/perfil', 'PagesController@index')->name('profil');
-//contact
 
+//contact
 Route::get('/contacto', 'ContactController@index')->name('contact.index');
 Route::post('/contacto', 'ContactController@store')->name('contact.store');
 

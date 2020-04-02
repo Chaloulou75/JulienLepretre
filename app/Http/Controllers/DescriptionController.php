@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Description;
+use App\Programme;
 use Illuminate\Http\Request;
 
 class DescriptionController extends Controller
@@ -33,9 +34,10 @@ class DescriptionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $slug)
     {
-        
+        $programme = Programme::where('slug' , $slug)->firstOrFail();
+
         $request->validate([                
             'phrase' => 'required|min:5',
         ]);
@@ -45,9 +47,7 @@ class DescriptionController extends Controller
             'phrase' => $request->phrase,         
         ]);
 
-        $programme->descriptions()->attach($description);
-
-        return redirect()->back()->with('message.level', 'success')->with('message.content', __('desciption insérée pour le programme.'));
+        return redirect()->back()->with('message.level', 'success')->with('message.content', __('description insérée pour le programme.'));
 
 
     }

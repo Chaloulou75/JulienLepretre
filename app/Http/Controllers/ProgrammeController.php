@@ -33,7 +33,6 @@ class ProgrammeController extends Controller
         //$admin = User::where('admin', true)->get();
         return view('/pages/programas/create');
 
-
     }
 
     /**
@@ -44,33 +43,36 @@ class ProgrammeController extends Controller
      */
     public function store(Request $request)
     {
+        $programme= new Programme();
 
         $request->validate([
                 'title' => 'required|min:3',
                 'descriptionGlobale' => 'required|min:10',
-                'prog_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',                
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'image2' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',                
                 'prix6sesionesPesos' => 'numeric',
                 'prix12sesionesPesos' => 'numeric',
                 'prix6sesionesEuros' => 'numeric',
                 'prix12sesionesEuros' => 'numeric',
             ]);
 
-        $originalImage= $request->file('prog_image');
-        $thumbnailImage = Image::make($originalImage);
-        $thumbnailPath = public_path().'/thumbnail/';
-        $originalPath = public_path().'/img/programas/';
-        $thumbnailImage->save($originalPath.time().$originalImage->getClientOriginalName());
-        $thumbnailImage->resize(150,150);
-        $thumbnailImage->save($thumbnailPath.time().$originalImage->getClientOriginalName()); 
+        $image = $request->file('image');
+        $filename  = time() . '.' . $image->getClientOriginalExtension();
+        $path = public_path('img/programas/'.$filename);
+        Image::make($image->getRealPath())->save($path); 
+        $programme->image = 'img/programas/'.$filename;
 
-        $programme= new Programme();
-        $programme->prog_image=time().$originalImage->getClientOriginalName();
-        
+        $image2 = $request->file('image2');
+        $filename2  = time() . '.' . $image2->getClientOriginalExtension();
+        $path2 = public_path('img/programas/'.$filename2);
+        Image::make($image2->getRealPath())->save($path2); 
+        $programme->image2 = 'img/programas/'.$filename2;
 
         $data = array(
             'title'=> $request->title,
             'descriptionGlobale' => $request->descriptionGlobale,
-            'prog_image' => $programme->prog_image,                
+            'image' => $programme->image, 
+            'image2' => $programme->image2,               
             'prix6sesionesPesos' => $request->prix6sesionesPesos,
             'prix12sesionesPesos' => $request->prix12sesionesPesos,
             'prix6sesionesEuros' => $request->prix6sesionesEuros,
@@ -89,9 +91,8 @@ class ProgrammeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($slug)
-    {    
-        $programme = Programme::where('slug' , $slug)->firstOrFail();
-        //dd($programme);
+    {   
+        $programme = Programme::with('descriptions')->where('slug' , $slug)->firstOrFail(); 
 
         return view('/pages/programas/show', $programme, compact('programme'));
     }
@@ -102,9 +103,11 @@ class ProgrammeController extends Controller
      * @param  \App\Programme  $programme
      * @return \Illuminate\Http\Response
      */
-    public function edit(Programme $programme)
+    public function edit($slug)
     {
-        //
+        $programme = Programme::with('descriptions')->where('slug' , $slug)->firstOrFail();
+
+        return view('/pages/programas/edit', $programme, compact('programme'));
     }
 
     /**
@@ -114,9 +117,52 @@ class ProgrammeController extends Controller
      * @param  \App\Programme  $programme
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Programme $programme)
+    public function update(Request $request, $slug)
     {
-        //
+
+        $programme = Programme::where('slug', $slug)->firstOrFail();
+
+        $request->validate([
+                'title' => 'required|min:3',
+                'descriptionGlobale' => 'min:10',
+                'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'image2' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',                
+                'prix6sesionesPesos' => 'numeric',
+                'prix12sesionesPesos' => 'numeric',
+                'prix6sesionesEuros' => 'numeric',
+                'prix12sesionesEuros' => 'numeric',
+            ]);
+
+
+        if($request->hasfile('image'))
+        {
+            $image = $request->file('image');
+            $filename  = time() . '.' . $image->getClientOriginalExtension();
+            $path = public_path('/img/programas/'.$filename);
+            Image::make($image->getRealPath())->save($path); //->resize(468, 249)
+            $programme->image = '/img/programas/'.$filename;
+        }
+        if($request->hasfile('image2'))
+        {
+            $image2 = $request->file('image2');
+            $filename2  = time() . '.' . $image2->getClientOriginalExtension();
+            $path2 = public_path('/img/programas/'.$filename2);
+            Image::make($image2->getRealPath())->save($path2); //->resize(468, 249)
+            $programme->image2 = '/img/programas/'.$filename2;
+        }         
+
+        $programme->title =  $request->title;
+        $programme->descriptionGlobale = $request->descriptionGlobale;
+        $programme->image = $programme->image;
+        $programme->image2 = $programme->image2;                 
+        $programme->prix6sesionesPesos = $request->prix6sesionesPesos;
+        $programme->prix12sesionesPesos = $request->prix12sesionesPesos;
+        $programme->prix6sesionesEuros = $request->prix6sesionesEuros;
+        $programme->prix12sesionesEuros = $request->prix12sesionesEuros;
+
+        $programme->save();
+
+        return redirect()->action('ProgrammeController@index')->with('message.level', 'success')->with('message.content', __('El programa esta actualizado.'));
     }
 
     /**
@@ -125,8 +171,13 @@ class ProgrammeController extends Controller
      * @param  \App\Programme  $programme
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Programme $programme)
+    public function destroy($slug)
     {
-        //
+
+        $programme = Programme::where('slug', $slug)->firstOrFail();
+
+        $programme->delete();
+
+        return redirect()->action('ProgrammeController@create')->with('message.level', 'success')->with('message.content', __('El programa esta suprimido.'));
     }
 }

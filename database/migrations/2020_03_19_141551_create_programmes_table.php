@@ -19,7 +19,8 @@ class CreateProgrammesTable extends Migration
             $table->unsignedBigInteger('user_id')->nullable();
             $table->string('slug')->unique();
             $table->text('descriptionGlobale');
-            $table->binary('prog_image');            
+            $table->mediumText('image')->nullable;
+            $table->mediumText('image2')->nullable;            
             $table->decimal('prix6sesionesPesos', 8, 2);
             $table->decimal('prix12sesionesPesos', 8, 2);
             $table->decimal('prix6sesionesEuros', 8, 2);
