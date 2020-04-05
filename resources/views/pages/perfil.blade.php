@@ -9,11 +9,11 @@
       
         </div>        
         <div class="flex flex-col md:flex-row items-center justify-around m-2">
-            <div class="w-full md:w-1/2 m-4">
+            <div class="w-full md:w-1/3 m-4">
             	<img src="/img/profil-mi.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 h-48 w-48 md:h-full md:w-full mx-auto md:mx-0 rounded-full hover:shadow-lg">
             </div>
             
-            <div class="w-full md:w-1/2 text-base text-justify text-gray-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:m-4">
+            <div class="w-full md:w-2/3 text-base text-justify text-gray-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:m-4">
                 <p>Me llamo Julien LEPRETRE y me dedico a mejorar la salud de mis pacientes.</p>
 
                 <p>Primero en Francia durante 8 años en mi propio consultorio y ahora en Buenos Aires, lo hago por medio de la osteopatía.</p>

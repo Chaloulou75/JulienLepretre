@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full lg:py-2 text-center text-justify mx-auto rounded overflow-hidden shadow-lg my-4"> 
+    <div class="w-full lg:py-2 text-center text-justify mx-auto rounded overflow-hidden shadow-lg my-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"> 
       <button @click="isOpen = !isOpen" class="w-full font-semibold text-lg text-gray-700 my-2">
 
           <i v-if="!isOpen" class="fas fa-plus-square fa-lg fa-fw text-blue-600 pl-1"></i>  

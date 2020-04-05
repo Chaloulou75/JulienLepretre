@@ -39,7 +39,7 @@
         <div class="mb-4">
             <label for="descriptionGlobale" class="block text-gray-900 text-sm font-bold tracking-wide mb-2">{{ __('Description Globale') }}</label>
 
-            <textarea id="descriptionGlobale" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('descriptionGlobale') bg-red-dark @enderror" name="descriptionGlobale" value="{{ $programme->descriptionGlobale }}" required autocomplete="descriptionGlobale" autofocus></textarea>
+            <textarea id="descriptionGlobale" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('descriptionGlobale') bg-red-dark @enderror" name="descriptionGlobale" value="{{ $programme->descriptionGlobale }}" placeholder="{{ $programme->descriptionGlobale }}" required autocomplete="descriptionGlobale" autofocus></textarea>
 
             @error('descriptionGlobale')
                 <span class=" mt-1 text-sm text-red-500" role="relative px-3 py-3 mb-4 border rounded">

@@ -19,10 +19,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home'
+);
 
-
-
+//Programme
 Route::resource('programas', 'ProgrammeController',['except' => [
     'show', 'edit',
 ]]);
@@ -31,7 +31,7 @@ Route::get('/programas/{slug}', 'ProgrammeController@show')->name('programas.sho
 Route::get('/programas/{slug}/edit', 'ProgrammeController@edit')->name('programas.edit');
 
 Route::resource('/programas/{slug}/description', 'DescriptionController',['only' => [
-    'store'
+    'store', 'update', 'destroy',
 ]]);
 
 Route::get('/perfil', 'PagesController@index')->name('profil');

@@ -37746,7 +37746,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "w-full lg:py-2 text-center text-justify mx-auto rounded overflow-hidden shadow-lg my-4"
+        "w-full lg:py-2 text-center text-justify mx-auto rounded overflow-hidden shadow-lg my-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
     },
     [
       _c(
@@ -37851,7 +37851,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "w-full lg:py-2 text-center text-justify mx-auto rounded overflow-hidden shadow-lg my-4"
+        "w-full lg:py-2 text-center text-justify mx-auto rounded overflow-hidden shadow-lg my-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
     },
     [
       _c(
@@ -37956,7 +37956,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "w-full lg:py-2 text-center text-justify mx-auto rounded overflow-hidden shadow-lg my-4"
+        "w-full lg:py-2 text-center text-justify mx-auto rounded overflow-hidden shadow-lg my-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
     },
     [
       _c(
@@ -38042,7 +38042,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "w-full lg:py-2 text-center text-justify mx-auto rounded overflow-hidden shadow-lg my-4"
+        "w-full lg:py-2 text-center text-justify mx-auto rounded overflow-hidden shadow-lg my-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
     },
     [
       _c(

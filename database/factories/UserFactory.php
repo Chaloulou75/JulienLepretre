@@ -3,6 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\User;
+use App\Programme;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
@@ -26,3 +27,16 @@ $factory->define(User::class, function (Faker $faker) {
         'remember_token' => Str::random(10),
     ];
 });
+
+// $factory->define(Programme::class, function (Faker $faker) {
+//     return [
+//         'title'=> $faker->title,
+//         'descriptionGlobale' => $faker->paragraph,
+//         'image' => $faker->image('public/img',400,300, null, false), 
+//         'image2' => $faker->image('public/img',400,300, null, false),               
+//         'prix6sesionesPesos' => $faker->randomDigit,
+//         'prix12sesionesPesos' => $faker->randomDigit,
+//         'prix6sesionesEuros' => $faker->randomDigit,
+//         'prix12sesionesEuros' => $faker->randomDigit,
+// 	];
+// });

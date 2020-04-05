@@ -65,57 +65,13 @@
             </div>
         </div>
 
-        <img class="w-full" src="/img/muevemas1.jpg" alt="muevemas"> 
+        <img class="w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mb-2" src="/img/muevemas1.jpg" alt="muevemas"> 
         <protusion-component></protusion-component>
         <noproblema-component></noproblema-component>
         <tiempo-component></tiempo-component>
         <terminado-component></terminado-component>
-		
 
-        <div class="w-full lg:py-2 text-center text-justify mx-auto rounded overflow-hidden shadow-lg my-4">
-            <div>
-               <form class="w-full bg-gray-100 border-2 border-white shadow-md rounded px-2 pt-6 pb-8 mb-4" method="POST" enctype="multipart/form-data" action="{{ route('description.store', $slug) }}">
-                @csrf
-                <div class="mb-4">
-                    <label for="phrase" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Anadir una frase') }}</label>
-
-                    <textarea id="phrase" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('phrase') bg-red-dark @enderror" name="phrase" value="{{ old('phrase') }}" required autocomplete="phrase"></textarea>
-
-                    @error('phrase')
-                        <span class=" mt-1 text-sm text-red-500" role="relative px-3 py-3 mb-4 border rounded">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    
-                </div>
-                <div class="mb-4">
-                    <div class="block items-center justify-between">
-                        <button type="submit" class="w-full bg-blue-700 hover:bg-blue-500 text-white font-semibold text-center tracking-widest border-2 rounded-full hover:border-blue-700 border-blue-300 flex-auto py-2 px-4 m-2">
-                            {{ __('Anadir una descripcion') }} &raquo;
-                        </button>
-                    </div>
-                    
-                </div>
-                </form> 
-            </div>
-        	
-            <div>
-                <a href="{{ route('programas.edit', ['slug' => $programme->slug ] ) }}">
-                <button type="submit" class="w-full bg-blue-700 hover:bg-blue-500 text-white font-semibold text-center tracking-widest border-2 rounded-full hover:border-blue-700 border-blue-300 flex-auto py-2 px-4 m-2">
-                            {{ __('Actualizar el programa') }} &raquo;
-                </button>
-                </a>
-
-                <form method="POST" href="{{ route('programas.destroy', $programme->slug ) }}">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="w-full bg-red-700 hover:bg-red-500 text-white font-semibold text-center tracking-widest border-2 rounded-full hover:border-red-700 border-red-300 flex-auto py-2 px-4 m-2">
-                                {{ __('Suprimir el programa') }} &raquo;
-                    </button>
-                </form>
-            </div>
-            
-        </div>
+        @include('layouts/progShowAdmin');
 
     </div>
 @endsection

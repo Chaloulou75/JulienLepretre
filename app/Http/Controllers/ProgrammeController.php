@@ -173,8 +173,7 @@ class ProgrammeController extends Controller
      */
     public function destroy($slug)
     {
-
-        $programme = Programme::where('slug', $slug)->firstOrFail();
+        $programme = Programme::with('descriptions')->where('slug' , $slug)->firstOrFail();
 
         $programme->delete();
 

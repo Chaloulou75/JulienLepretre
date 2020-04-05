@@ -81,9 +81,21 @@ class DescriptionController extends Controller
      * @param  \App\Description  $description
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Description $description)
+    public function update(Request $request, $slug, Description $description)
     {
-        //
+
+        $programme = Programme::with('descriptions')->where('slug' , $slug)->firstOrFail();
+
+        $request->validate([                
+            'phrase' => 'required|min:5',
+        ]);
+
+        $description = Description::find($description->id);
+        $description->programme_id = $programme->id;
+        $description->phrase = $request->phrase;
+        $description->save();
+
+        return redirect()->back()->with('message.level', 'success')->with('message.content', __('description actualisée pour le programme.'));
     }
 
     /**
@@ -92,8 +104,11 @@ class DescriptionController extends Controller
      * @param  \App\Description  $description
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Description $description)
+    public function destroy($slug, Description $description)
     {
-        //
+        $description = Description::find($description->id);
+        $description->delete();
+
+        return redirect()->back()->with('message.level', 'success')->with('message.content', __('La phrase de description a bien été supprimée pour ce programme.'));
     }
 }
