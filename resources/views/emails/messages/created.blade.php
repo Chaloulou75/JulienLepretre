@@ -18,7 +18,7 @@ Tu as reçu une nouvelle demande de contact de la part de:
 -**{{ $objetivos[$i] }}**  
 @endfor
 
--Niveau de forme: **{{$forma}}**
+-Niveau de forme: **{{$forma}}**/10
 
 -Travaille en tant que: **{{$trabajo}}**
 
