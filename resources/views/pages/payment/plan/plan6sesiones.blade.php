@@ -8,7 +8,7 @@
         <h2 class="pb-2">Plan de 6 sesiones</h2>
 </div>
 
-<div class="flex justify-between px-8">
+<div class="sm:flex justify-between px-8">
 	<div class="w-full max-w-xs lg:max-w-xl lg:w-1/2 m-auto p-auto p-8 border-2 rounded border-teal-600">   
 
 		<h3 class="text-center text-base uppercase">Argentino? </br> Pagar con Mercado Pago:</h3>

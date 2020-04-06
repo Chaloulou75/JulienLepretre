@@ -10,7 +10,7 @@
         </div>        
         <div class="flex flex-col md:flex-row items-center justify-around m-2">
             <div class="w-full md:w-1/3 m-4">
-            	<img src="/img/profil-mi.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 h-48 w-48 md:h-full md:w-full mx-auto md:mx-0 rounded-full hover:shadow-lg">
+            	<img src="/img/profilmi.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 h-48 w-48 md:h-full md:w-full mx-auto md:mx-0 rounded-full hover:shadow-lg">
             </div>
             
             <div class="w-full md:w-2/3 text-base text-justify text-gray-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:m-4">
