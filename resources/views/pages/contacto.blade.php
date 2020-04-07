@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="bg-gray-100 text-gray-900 text-center font-semibold uppercase tracking-wide text-base px-8">
+<div class="bg-gray-100 text-gray-700 text-center font-semibold uppercase tracking-wide text-base px-8">
 
         <h1>PIDE TU PLAN DE ENTRENAMIENTO EN CASA</h1>
 </div>
