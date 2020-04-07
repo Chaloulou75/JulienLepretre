@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="bg-gray-100 text-gray-900 text-center font-semibold uppercase tracking-wide text-base px-8">
+<div class="bg-gray-100 text-gray-700 text-center font-semibold uppercase tracking-wide text-base px-8">
     <h1>Actualizar el programa</h1>
 </div>
 
@@ -23,7 +23,7 @@
         @method('PUT')
 
         <div class="mb-4">
-            <label for="title" class="block text-gray-900 text-sm font-bold tracking-wide mb-2">{{ __('Titre du programme') }}</label>
+            <label for="title" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Titre du programme') }}</label>
 
             <input id="title" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline
              @error('title') bg-red-dark @enderror" name="title" value="{{ $programme->title }}" required autocomplete="title" autofocus>
@@ -37,7 +37,7 @@
         </div>
 
         <div class="mb-4">
-            <label for="descriptionGlobale" class="block text-gray-900 text-sm font-bold tracking-wide mb-2">{{ __('Description Globale') }}</label>
+            <label for="descriptionGlobale" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Description Globale') }}</label>
 
             <textarea id="descriptionGlobale" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('descriptionGlobale') bg-red-dark @enderror" name="descriptionGlobale" value="{{ $programme->descriptionGlobale }}" placeholder="{{ $programme->descriptionGlobale }}" required autocomplete="descriptionGlobale" autofocus></textarea>
 
@@ -50,7 +50,7 @@
         </div>
 
         <div class="mb-4">
-            <label for="image" class="block text-gray-900 text-sm font-bold tracking-wide mb-2">{{ __('Image du programme') }}</label>
+            <label for="image" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Image du programme') }}</label>
 
             <input id="image" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('image') bg-red-dark @enderror" name="image" value="{{ $programme->image}}" required autocomplete="image" autofocus>
 
@@ -63,7 +63,7 @@
         </div>
 
         <div class="mb-4">
-            <label for="image2" class="block text-gray-900 text-sm font-bold tracking-wide mb-2">{{ __('Deuxième Image du programme') }}</label>
+            <label for="image2" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Deuxième Image du programme') }}</label>
 
             <input id="image2" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('image2') bg-red-dark @enderror" name="image2" value="{{ $programme->image2}}" required autocomplete="image2" autofocus>
 
@@ -76,7 +76,7 @@
         </div>         
 
         <div class="mb-4">
-            <label for="prix6sesionesPesos" class="block text-gray-900 text-sm font-bold tracking-wide mb-2">{{ __('Precio para 6 sesiones (en Pesos Ar $)') }}</label>
+            <label for="prix6sesionesPesos" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Precio para 6 sesiones (en Pesos Ar $)') }}</label>
            
                 <input id="prix6sesionesPesos" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('prix6sesionesPesos') bg-red-dark @enderror" name="prix6sesionesPesos" value="{{ $programme->prix6sesionesPesos }}" required autocomplete="prix6sesionesPesos" autofocus>
 
@@ -88,7 +88,7 @@
         </div>
 
         <div class="mb-4">
-            <label for="prix12sesionesPesos" class="block text-gray-900 text-sm font-bold tracking-wide mb-2">{{ __('Precio para 12 sesiones (en Pesos Ar $)') }}</label>
+            <label for="prix12sesionesPesos" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Precio para 12 sesiones (en Pesos Ar $)') }}</label>
            
                 <input id="prix12sesionesPesos" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('prix12sesionesPesos') bg-red-dark @enderror" name="prix12sesionesPesos" value="{{ $programme->prix12sesionesPesos }}" required autocomplete="prix12sesionesPesos" autofocus>
 
@@ -100,7 +100,7 @@
         </div>
 
         <div class="mb-4">
-            <label for="prix6sesionesEuros" class="block text-gray-900 text-sm font-bold tracking-wide mb-2">{{ __('Precio para 6 sesiones (en Euros)') }}</label>
+            <label for="prix6sesionesEuros" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Precio para 6 sesiones (en Euros)') }}</label>
            
                 <input id="prix6sesionesEuros" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('prix6sesionesEuros') bg-red-dark @enderror" name="prix6sesionesEuros" value="{{ $programme->prix6sesionesEuros }}" required autocomplete="prix6sesionesEuros" autofocus>
 
@@ -112,7 +112,7 @@
         </div>
 
         <div class="mb-4">
-            <label for="prix12sesionesEuros" class="block text-gray-900 text-sm font-bold tracking-wide mb-2">{{ __('Precio para 12 sesiones (en Euros)') }}</label>
+            <label for="prix12sesionesEuros" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Precio para 12 sesiones (en Euros)') }}</label>
            
                 <input id="prix12sesionesEuros" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('prix12sesionesEuros') bg-red-dark @enderror" name="prix12sesionesEuros" value="{{ $programme->prix12sesionesEuros }}" required autocomplete="prix12sesionesEuros" autofocus>
 
