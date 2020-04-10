@@ -25,6 +25,7 @@ Vue.component('protusion-component', require('./components/ProtusionComponent.vu
 Vue.component('noproblema-component', require('./components/NoproblemaComponent.vue').default);
 Vue.component('tiempo-component', require('./components/TiempoComponent.vue').default);
 Vue.component('terminado-component', require('./components/TerminadoComponent.vue').default);
+Vue.component('modal-component', require('./components/ModalComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

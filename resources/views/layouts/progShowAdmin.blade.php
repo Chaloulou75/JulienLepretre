@@ -3,7 +3,7 @@
        <form class="bg-gray-100 px-2 py-2" method="POST" enctype="multipart/form-data" action="{{ route('description.store', $slug) }}">
         @csrf
         <div class="mb-1">
-            <label for="phrase" class="block text-gray-700 text-sm font-bold tracking-wide mb-1">{{ __('Anadir una frase') }}</label>
+            <label for="phrase" class="block text-gray-700 text-sm font-semibold text-left tracking-wide mb-1">{{ __('Anadir una frase') }}</label>
 
             <textarea id="phrase" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-loose focus:outline-none focus:shadow-outline @error('phrase') bg-red-dark @enderror" name="phrase" value="{{ old('phrase') }}" required autocomplete="phrase"></textarea>
 
@@ -25,13 +25,13 @@
        </form> 
     </div>
 
-    <div>
+    <div class="border-t-2 border-gray-400 my-2">
         @foreach($programme->descriptions as $description)
         <form class="w-full bg-gray-100 px-2 py-2" method="POST" enctype="multipart/form-data" action="{{ route('description.update', ['slug' => $programme->slug, 'description' => $description->id])}} "> 
         @csrf
         @method('PUT')
         <div class="mb-1">
-            <label for="phrase" class="block text-gray-700 text-sm font-bold tracking-wide mb-1">{{ __('Cambiar la frase de descripcion:  '. $description->phrase .' ')  }}</label>
+            <label for="phrase" class="block text-gray-700 text-sm font-semibold text-left tracking-wide mb-1">{{ __('Cambiar la frase de descripcion:  '. $description->phrase .' ')  }}</label>
 
             <textarea id="phrase" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-loose focus:outline-none focus:shadow-outline @error('phrase') bg-red-dark @enderror" name="phrase" value="" placeholder="{{ $description->phrase }}" required autocomplete="phrase"></textarea>
 
@@ -65,7 +65,7 @@
         @endforeach
     </div>
 	
-    <div class="sm:flex justify-around mb-1">
+    <div class="border-t-2 border-gray-400 sm:flex justify-around mb-1">
         <a href="{{ route('programas.edit', ['slug' => $programme->slug ] ) }}">
         <button type="submit" class="bg-blue-700 hover:bg-blue-500 text-white font-semibold text-center tracking-widest border-2 rounded-full hover:border-blue-700 border-blue-300 flex-auto py-2 px-4 m-2">
                     {{ __('Actualizar el programa') }} &raquo;

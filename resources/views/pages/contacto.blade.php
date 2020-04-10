@@ -209,4 +209,6 @@
     </form>
 </div>
 
+{{-- @include('layouts.map') --}}
+
 @endsection

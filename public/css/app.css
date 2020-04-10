@@ -30559,6 +30559,23 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+/* Enter and leave animations can use different */
+
+/* durations and timing functions.              */
+
+.slide-fade-enter-active {
+  transition: all 0.4s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
 @media (min-width: 640px){
   .sm\:sr-only{
     position: absolute;

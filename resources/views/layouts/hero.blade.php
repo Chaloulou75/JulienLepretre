@@ -4,7 +4,7 @@
 		<div class="flex flex-col w-full lg:w-1/2 justify-center items-center pt-2 pl-2 pb-24">
 			
 			<h1 class="font-bold text-3xl text-teal-700 uppercase my-4">30 dias para una espalda sana!</h1>
-			<h2 class="uppercase font-semibold text-2xl text-teal-700 tracking-loose my-4">¿PARA QUIEN ES EL PROGRAMA?</h2>
+			<h2 class="uppercase font-semibold text-2xl text-teal-700 tracking-loose my-4">Recupera el control de tu cuerpo.</br> Cura tus dolores, recalibra tu cuerpo y mejora tu rendimiento deportivo.</h2>
 
 			<div class="items-start">
 				<p class="leading-normal uppercase text-xl text-teal-600 mb-4">Te gustaría hacer deporte pero los programas de fitness son demasiado intensos para vos?</p>
