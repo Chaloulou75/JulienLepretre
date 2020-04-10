@@ -7,9 +7,9 @@
           ¿DURANTE CUANTO TIEMPO PUEDO DISFRUTAR DE ESTE PROGRAMA DESPUÉS DEL PAGO?
       </button>  
       
-      <transition name="slide-fade">
+      <transition name="custom-classes-transition" enter-active-class="animated bounceInLeft" leave-active-class="animated bounceOutRight">
         <div v-if="isOpen">
-          <div class="px-6 py-4">   <!-- :class="isOpen ? 'block' : 'hidden'" -->
+          <div class="px-6 py-2">   <!-- :class="isOpen ? 'block' : 'hidden'" -->
             <p class="text-gray-700 text-base">
               ¡Toda tu vida! Pagas una vez y tenes acceso al programa de por vida!
             </p>

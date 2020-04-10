@@ -7,9 +7,9 @@
           TENGO UNA PROTRUSIÓN O UNA HERNIA DISCAL... ¿LO PUEDO HACER?
       </button>  
       
-      <transition name="slide-fade">
+      <transition name="custom-classes-transition" enter-active-class="animated bounceInLeft" leave-active-class="animated bounceOutRight">
         <div v-if="isOpen">
-          <div class="px-6 py-4"><!-- <div :class="isOpen ? 'block' : 'hidden'"></div> -->
+          <div class="px-6 py-2"><!-- <div :class="isOpen ? 'block' : 'hidden'"></div> -->
             <p class="text-gray-700 text-base">
               Si podés moverte, es exactamente lo que necesitas. Esos ejercicios de baja intensidad te permitirán aprender a mover tu espalda de nuevo, y tener más control durante los movimientos para proteger la columna.</br>
               Podrás adaptar los ejercicios en función de tus sensaciones. Varios de esos ejercicios te ayudarán a aliviar tus dolores.

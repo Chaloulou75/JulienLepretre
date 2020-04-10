@@ -10,6 +10,8 @@
 
 @tailwind utilities;
 
+@import "~animate.css/animate.css";
+
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
@@ -23,7 +25,7 @@
 /* durations and timing functions.              */
 
 .slide-fade-enter-active {
-  transition: all .4s ease;
+  transition: all .6s ease;
 }
 
 .slide-fade-leave-active {

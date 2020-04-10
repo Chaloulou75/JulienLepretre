@@ -7,9 +7,9 @@
           ¿Y UNA VEZ TERMINADO EL PROGRAMA, QUÉ HAGO?
       </button>  
       
-      <transition name="slide-fade">
+      <transition name="custom-classes-transition" enter-active-class="animated bounceInLeft" leave-active-class="animated bounceOutRight">
         <div v-if="isOpen">
-          <div class="px-6 py-4">   <!-- :class="isOpen ? 'block' : 'hidden'" -->
+          <div class="px-6 py-2">   <!-- :class="isOpen ? 'block' : 'hidden'" -->
             <p class="text-gray-700 text-base">
               Una vez el programa terminado, tendrás toda la información y todos los recursos para cuidar bien tu espalda. Podrás seguir practicando las rutinas cada día o cada dos días, variando los ejercicios. Y cuando te sientes suficientemente fuerte y estable, ¡podrás aumentar la intensidad!
             </p>

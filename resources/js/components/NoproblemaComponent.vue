@@ -6,10 +6,10 @@
           <i v-if="isOpen" class="fas fa-minus-square fa-lg fa-fw text-blue-600 pl-1"></i>
           ¿NO TENGO PROBLEMA DE ESPALDA, PARA QUÉ ME SIRVE?
       </button>  
-      
-      <transition name="slide-fade">
+
+      <transition name="custom-classes-transition" enter-active-class="animated bounceInLeft" leave-active-class="animated bounceOutRight">
         <div v-if="isOpen">
-          <div class="px-6 py-4">   <!-- :class="isOpen ? 'block' : 'hidden'" -->
+          <div class="px-6 py-2">   <!-- :class="isOpen ? 'block' : 'hidden'" -->
             <p class="text-gray-700 text-base">
               Este programa te permite trabajar las zonas de tu espalda y de tu pelvis que no tienen suficiente movilidad o que no son suficientemente fuertes para mejorar tu postura y tu equilibrio. </br> Eso te permitirá mejorar tu rendimiento deportivo y sobre todo prevenir las futuras lesiones.
             </p>
