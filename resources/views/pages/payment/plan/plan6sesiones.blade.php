@@ -4,7 +4,7 @@
 
 <div class="bg-gray-100 text-gray-900 text-center font-semibold uppercase tracking-wide text-base px-8 mb-4">
 
-        <h1 class="pb-2">TU PLAN DE ENTRENAMIENTO EN CASA</h1>
+        <h1 class="pb-4">TU PLAN DE ENTRENAMIENTO EN CASA</h1>
         <h2 class="pb-2">Plan de 6 sesiones</h2>
 </div>
 

@@ -4,8 +4,8 @@
 
 <div class="bg-gray-100 text-gray-700 text-center font-semibold uppercase tracking-wide text-base px-8">
 
-        <h1>TU PLAN DE ENTRENAMIENTO EN CASA</h1>
-        <h2>Plan de 12 sesiones</h2>
+        <h1 class="pb-4">TU PLAN DE ENTRENAMIENTO EN CASA</h1>
+        <h2 class="pb-2">Plan de 12 sesiones</h2>
 </div>
 
 <div class="sm:flex justify-between px-8">
