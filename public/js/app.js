@@ -37964,7 +37964,7 @@ var render = function() {
     "header",
     {
       staticClass:
-        "bg-gray-600 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2"
+        "bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2 "
     },
     [
       _c(
@@ -37978,7 +37978,7 @@ var render = function() {
               "button",
               {
                 staticClass:
-                  "block text-gray-500 hover:text-white focus:text-white focus:outline-none",
+                  "block text-julien-gris hover:text-julien-red focus:outline-none",
                 attrs: { type: "button" },
                 on: {
                   click: function($event) {
@@ -38024,7 +38024,8 @@ var render = function() {
       _c(
         "nav",
         {
-          staticClass: "px-2 pt-1 pb-2 sm:flex sm:p-0",
+          staticClass:
+            "px-2 pt-1 pb-2 sm:flex sm:p-0 uppercase not-italic font-bold",
           class: _vm.isOpen ? "block" : "hidden"
         },
         [
@@ -38032,47 +38033,17 @@ var render = function() {
             "a",
             {
               staticClass:
-                "animated fadeInLeftBig delay-1s slower transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500",
+                "no-underline text-julien-gris animated fadeInLeftBig delay-1s slower hover:text-julien-red mt-1 block px-2 py-1",
               attrs: { href: "/programas" }
             },
-            [_vm._v("Programas")]
+            [_vm._v(" Los Programas")]
           ),
           _vm._v(" "),
           _c(
             "a",
             {
               staticClass:
-                "animated fadeInLeftBig faster transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
-              attrs: { href: "/perfil" }
-            },
-            [_vm._v("Sobre mi")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "animated fadeInLeftBig transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
-              attrs: { href: "/contacto" }
-            },
-            [_vm._v("Sesiones  personalizadas")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "animated fadeInLeftBig slow transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
-              attrs: { href: "https://osteopatiafrancesa.com/" }
-            },
-            [_vm._v("Consultorio")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "animated fadeInLeftBig slower transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
+                "no-underline text-julien-gris animated fadeInLeftBig slower hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
               attrs: { href: "#" }
             },
             [_vm._v("Testimonios")]
@@ -38082,7 +38053,27 @@ var render = function() {
             "a",
             {
               staticClass:
-                "animated fadeInLeftBig fast transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2",
+                "no-underline text-julien-gris animated fadeInLeftBig slow hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+              attrs: { href: "https://osteopatiafrancesa.com/" }
+            },
+            [_vm._v("Consultorio")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "no-underline text-julien-gris animated fadeInLeftBig faster hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+              attrs: { href: "/perfil" }
+            },
+            [_vm._v("Sobre mi")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "no-underline text-julien-gris animated fadeInLeftBig fast hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
               attrs: { href: "/contacto" }
             },
             [_vm._v("Contacto")]
@@ -38099,16 +38090,15 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex items-center" }, [
       _c("img", {
-        staticClass:
-          "animated zoomInLeft delay-2s slow transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 h-16 rounded-full",
-        attrs: { src: "/img/ProfilInsta.jpg", alt: "Julien Leprêtre" }
+        staticClass: "h-16 rounded-full",
+        attrs: { src: "/img/ProfilInsta.jpg", alt: "Julien" }
       }),
       _vm._v(" "),
       _c(
         "a",
         {
           staticClass:
-            "block animated zoomInLeft delay-2s slower text-white text-base rounded font-medium transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mx-2 px-2 py-1 hover:bg-gray-500",
+            "block animated zoomInLeft delay-2s slower text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1",
           attrs: { href: "/" }
         },
         [_vm._v("\n          Julien Leprêtre\n        ")]

@@ -4214,6 +4214,14 @@ video {
   background-color: #702459;
 }
 
+.bg-julien-red{
+  background-color: #dd4a37;
+}
+
+.bg-julien-gris{
+  background-color: #45545f;
+}
+
 .hover\:bg-transparent:hover{
   background-color: transparent;
 }
@@ -4586,6 +4594,14 @@ video {
   background-color: #702459;
 }
 
+.hover\:bg-julien-red:hover{
+  background-color: #dd4a37;
+}
+
+.hover\:bg-julien-gris:hover{
+  background-color: #45545f;
+}
+
 .focus\:bg-transparent:focus{
   background-color: transparent;
 }
@@ -4956,6 +4972,14 @@ video {
 
 .focus\:bg-pink-900:focus{
   background-color: #702459;
+}
+
+.focus\:bg-julien-red:focus{
+  background-color: #dd4a37;
+}
+
+.focus\:bg-julien-gris:focus{
+  background-color: #45545f;
 }
 
 .bg-bottom{
@@ -5410,6 +5434,14 @@ video {
   border-color: #702459;
 }
 
+.border-julien-red{
+  border-color: #dd4a37;
+}
+
+.border-julien-gris{
+  border-color: #45545f;
+}
+
 .hover\:border-transparent:hover{
   border-color: transparent;
 }
@@ -5782,6 +5814,14 @@ video {
   border-color: #702459;
 }
 
+.hover\:border-julien-red:hover{
+  border-color: #dd4a37;
+}
+
+.hover\:border-julien-gris:hover{
+  border-color: #45545f;
+}
+
 .focus\:border-transparent:focus{
   border-color: transparent;
 }
@@ -6152,6 +6192,14 @@ video {
 
 .focus\:border-pink-900:focus{
   border-color: #702459;
+}
+
+.focus\:border-julien-red:focus{
+  border-color: #dd4a37;
+}
+
+.focus\:border-julien-gris:focus{
+  border-color: #45545f;
 }
 
 .rounded-none{
@@ -10988,6 +11036,46 @@ video {
   color: #702459;
 }
 
+.placeholder-julien-red::-webkit-input-placeholder{
+  color: #dd4a37;
+}
+
+.placeholder-julien-red::-moz-placeholder{
+  color: #dd4a37;
+}
+
+.placeholder-julien-red:-ms-input-placeholder{
+  color: #dd4a37;
+}
+
+.placeholder-julien-red::-ms-input-placeholder{
+  color: #dd4a37;
+}
+
+.placeholder-julien-red::placeholder{
+  color: #dd4a37;
+}
+
+.placeholder-julien-gris::-webkit-input-placeholder{
+  color: #45545f;
+}
+
+.placeholder-julien-gris::-moz-placeholder{
+  color: #45545f;
+}
+
+.placeholder-julien-gris:-ms-input-placeholder{
+  color: #45545f;
+}
+
+.placeholder-julien-gris::-ms-input-placeholder{
+  color: #45545f;
+}
+
+.placeholder-julien-gris::placeholder{
+  color: #45545f;
+}
+
 .focus\:placeholder-transparent:focus::-webkit-input-placeholder{
   color: transparent;
 }
@@ -12848,6 +12936,46 @@ video {
   color: #702459;
 }
 
+.focus\:placeholder-julien-red:focus::-webkit-input-placeholder{
+  color: #dd4a37;
+}
+
+.focus\:placeholder-julien-red:focus::-moz-placeholder{
+  color: #dd4a37;
+}
+
+.focus\:placeholder-julien-red:focus:-ms-input-placeholder{
+  color: #dd4a37;
+}
+
+.focus\:placeholder-julien-red:focus::-ms-input-placeholder{
+  color: #dd4a37;
+}
+
+.focus\:placeholder-julien-red:focus::placeholder{
+  color: #dd4a37;
+}
+
+.focus\:placeholder-julien-gris:focus::-webkit-input-placeholder{
+  color: #45545f;
+}
+
+.focus\:placeholder-julien-gris:focus::-moz-placeholder{
+  color: #45545f;
+}
+
+.focus\:placeholder-julien-gris:focus:-ms-input-placeholder{
+  color: #45545f;
+}
+
+.focus\:placeholder-julien-gris:focus::-ms-input-placeholder{
+  color: #45545f;
+}
+
+.focus\:placeholder-julien-gris:focus::placeholder{
+  color: #45545f;
+}
+
 .pointer-events-none{
   pointer-events: none;
 }
@@ -13495,6 +13623,14 @@ video {
   color: #702459;
 }
 
+.text-julien-red{
+  color: #dd4a37;
+}
+
+.text-julien-gris{
+  color: #45545f;
+}
+
 .hover\:text-transparent:hover{
   color: transparent;
 }
@@ -13867,6 +14003,14 @@ video {
   color: #702459;
 }
 
+.hover\:text-julien-red:hover{
+  color: #dd4a37;
+}
+
+.hover\:text-julien-gris:hover{
+  color: #45545f;
+}
+
 .focus\:text-transparent:focus{
   color: transparent;
 }
@@ -14237,6 +14381,14 @@ video {
 
 .focus\:text-pink-900:focus{
   color: #702459;
+}
+
+.focus\:text-julien-red:focus{
+  color: #dd4a37;
+}
+
+.focus\:text-julien-gris:focus{
+  color: #45545f;
 }
 
 .text-xs{
@@ -34166,6 +34318,14 @@ readers do not read off random characters that represent icons */
     background-color: #702459;
   }
 
+  .sm\:bg-julien-red{
+    background-color: #dd4a37;
+  }
+
+  .sm\:bg-julien-gris{
+    background-color: #45545f;
+  }
+
   .sm\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -34538,6 +34698,14 @@ readers do not read off random characters that represent icons */
     background-color: #702459;
   }
 
+  .sm\:hover\:bg-julien-red:hover{
+    background-color: #dd4a37;
+  }
+
+  .sm\:hover\:bg-julien-gris:hover{
+    background-color: #45545f;
+  }
+
   .sm\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -34908,6 +35076,14 @@ readers do not read off random characters that represent icons */
 
   .sm\:focus\:bg-pink-900:focus{
     background-color: #702459;
+  }
+
+  .sm\:focus\:bg-julien-red:focus{
+    background-color: #dd4a37;
+  }
+
+  .sm\:focus\:bg-julien-gris:focus{
+    background-color: #45545f;
   }
 
   .sm\:bg-bottom{
@@ -35362,6 +35538,14 @@ readers do not read off random characters that represent icons */
     border-color: #702459;
   }
 
+  .sm\:border-julien-red{
+    border-color: #dd4a37;
+  }
+
+  .sm\:border-julien-gris{
+    border-color: #45545f;
+  }
+
   .sm\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -35734,6 +35918,14 @@ readers do not read off random characters that represent icons */
     border-color: #702459;
   }
 
+  .sm\:hover\:border-julien-red:hover{
+    border-color: #dd4a37;
+  }
+
+  .sm\:hover\:border-julien-gris:hover{
+    border-color: #45545f;
+  }
+
   .sm\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -36104,6 +36296,14 @@ readers do not read off random characters that represent icons */
 
   .sm\:focus\:border-pink-900:focus{
     border-color: #702459;
+  }
+
+  .sm\:focus\:border-julien-red:focus{
+    border-color: #dd4a37;
+  }
+
+  .sm\:focus\:border-julien-gris:focus{
+    border-color: #45545f;
   }
 
   .sm\:rounded-none{
@@ -40940,6 +41140,46 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .sm\:placeholder-julien-red::-webkit-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .sm\:placeholder-julien-red::-moz-placeholder{
+    color: #dd4a37;
+  }
+
+  .sm\:placeholder-julien-red:-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .sm\:placeholder-julien-red::-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .sm\:placeholder-julien-red::placeholder{
+    color: #dd4a37;
+  }
+
+  .sm\:placeholder-julien-gris::-webkit-input-placeholder{
+    color: #45545f;
+  }
+
+  .sm\:placeholder-julien-gris::-moz-placeholder{
+    color: #45545f;
+  }
+
+  .sm\:placeholder-julien-gris:-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .sm\:placeholder-julien-gris::-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .sm\:placeholder-julien-gris::placeholder{
+    color: #45545f;
+  }
+
   .sm\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -42800,6 +43040,46 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .sm\:focus\:placeholder-julien-red:focus::-webkit-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .sm\:focus\:placeholder-julien-red:focus::-moz-placeholder{
+    color: #dd4a37;
+  }
+
+  .sm\:focus\:placeholder-julien-red:focus:-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .sm\:focus\:placeholder-julien-red:focus::-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .sm\:focus\:placeholder-julien-red:focus::placeholder{
+    color: #dd4a37;
+  }
+
+  .sm\:focus\:placeholder-julien-gris:focus::-webkit-input-placeholder{
+    color: #45545f;
+  }
+
+  .sm\:focus\:placeholder-julien-gris:focus::-moz-placeholder{
+    color: #45545f;
+  }
+
+  .sm\:focus\:placeholder-julien-gris:focus:-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .sm\:focus\:placeholder-julien-gris:focus::-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .sm\:focus\:placeholder-julien-gris:focus::placeholder{
+    color: #45545f;
+  }
+
   .sm\:pointer-events-none{
     pointer-events: none;
   }
@@ -43447,6 +43727,14 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .sm\:text-julien-red{
+    color: #dd4a37;
+  }
+
+  .sm\:text-julien-gris{
+    color: #45545f;
+  }
+
   .sm\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -43819,6 +44107,14 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .sm\:hover\:text-julien-red:hover{
+    color: #dd4a37;
+  }
+
+  .sm\:hover\:text-julien-gris:hover{
+    color: #45545f;
+  }
+
   .sm\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -44189,6 +44485,14 @@ readers do not read off random characters that represent icons */
 
   .sm\:focus\:text-pink-900:focus{
     color: #702459;
+  }
+
+  .sm\:focus\:text-julien-red:focus{
+    color: #dd4a37;
+  }
+
+  .sm\:focus\:text-julien-gris:focus{
+    color: #45545f;
   }
 
   .sm\:text-xs{
@@ -47491,6 +47795,14 @@ readers do not read off random characters that represent icons */
     background-color: #702459;
   }
 
+  .md\:bg-julien-red{
+    background-color: #dd4a37;
+  }
+
+  .md\:bg-julien-gris{
+    background-color: #45545f;
+  }
+
   .md\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -47863,6 +48175,14 @@ readers do not read off random characters that represent icons */
     background-color: #702459;
   }
 
+  .md\:hover\:bg-julien-red:hover{
+    background-color: #dd4a37;
+  }
+
+  .md\:hover\:bg-julien-gris:hover{
+    background-color: #45545f;
+  }
+
   .md\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -48233,6 +48553,14 @@ readers do not read off random characters that represent icons */
 
   .md\:focus\:bg-pink-900:focus{
     background-color: #702459;
+  }
+
+  .md\:focus\:bg-julien-red:focus{
+    background-color: #dd4a37;
+  }
+
+  .md\:focus\:bg-julien-gris:focus{
+    background-color: #45545f;
   }
 
   .md\:bg-bottom{
@@ -48687,6 +49015,14 @@ readers do not read off random characters that represent icons */
     border-color: #702459;
   }
 
+  .md\:border-julien-red{
+    border-color: #dd4a37;
+  }
+
+  .md\:border-julien-gris{
+    border-color: #45545f;
+  }
+
   .md\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -49059,6 +49395,14 @@ readers do not read off random characters that represent icons */
     border-color: #702459;
   }
 
+  .md\:hover\:border-julien-red:hover{
+    border-color: #dd4a37;
+  }
+
+  .md\:hover\:border-julien-gris:hover{
+    border-color: #45545f;
+  }
+
   .md\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -49429,6 +49773,14 @@ readers do not read off random characters that represent icons */
 
   .md\:focus\:border-pink-900:focus{
     border-color: #702459;
+  }
+
+  .md\:focus\:border-julien-red:focus{
+    border-color: #dd4a37;
+  }
+
+  .md\:focus\:border-julien-gris:focus{
+    border-color: #45545f;
   }
 
   .md\:rounded-none{
@@ -54265,6 +54617,46 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .md\:placeholder-julien-red::-webkit-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .md\:placeholder-julien-red::-moz-placeholder{
+    color: #dd4a37;
+  }
+
+  .md\:placeholder-julien-red:-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .md\:placeholder-julien-red::-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .md\:placeholder-julien-red::placeholder{
+    color: #dd4a37;
+  }
+
+  .md\:placeholder-julien-gris::-webkit-input-placeholder{
+    color: #45545f;
+  }
+
+  .md\:placeholder-julien-gris::-moz-placeholder{
+    color: #45545f;
+  }
+
+  .md\:placeholder-julien-gris:-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .md\:placeholder-julien-gris::-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .md\:placeholder-julien-gris::placeholder{
+    color: #45545f;
+  }
+
   .md\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -56125,6 +56517,46 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .md\:focus\:placeholder-julien-red:focus::-webkit-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .md\:focus\:placeholder-julien-red:focus::-moz-placeholder{
+    color: #dd4a37;
+  }
+
+  .md\:focus\:placeholder-julien-red:focus:-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .md\:focus\:placeholder-julien-red:focus::-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .md\:focus\:placeholder-julien-red:focus::placeholder{
+    color: #dd4a37;
+  }
+
+  .md\:focus\:placeholder-julien-gris:focus::-webkit-input-placeholder{
+    color: #45545f;
+  }
+
+  .md\:focus\:placeholder-julien-gris:focus::-moz-placeholder{
+    color: #45545f;
+  }
+
+  .md\:focus\:placeholder-julien-gris:focus:-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .md\:focus\:placeholder-julien-gris:focus::-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .md\:focus\:placeholder-julien-gris:focus::placeholder{
+    color: #45545f;
+  }
+
   .md\:pointer-events-none{
     pointer-events: none;
   }
@@ -56772,6 +57204,14 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .md\:text-julien-red{
+    color: #dd4a37;
+  }
+
+  .md\:text-julien-gris{
+    color: #45545f;
+  }
+
   .md\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -57144,6 +57584,14 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .md\:hover\:text-julien-red:hover{
+    color: #dd4a37;
+  }
+
+  .md\:hover\:text-julien-gris:hover{
+    color: #45545f;
+  }
+
   .md\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -57514,6 +57962,14 @@ readers do not read off random characters that represent icons */
 
   .md\:focus\:text-pink-900:focus{
     color: #702459;
+  }
+
+  .md\:focus\:text-julien-red:focus{
+    color: #dd4a37;
+  }
+
+  .md\:focus\:text-julien-gris:focus{
+    color: #45545f;
   }
 
   .md\:text-xs{
@@ -60816,6 +61272,14 @@ readers do not read off random characters that represent icons */
     background-color: #702459;
   }
 
+  .lg\:bg-julien-red{
+    background-color: #dd4a37;
+  }
+
+  .lg\:bg-julien-gris{
+    background-color: #45545f;
+  }
+
   .lg\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -61188,6 +61652,14 @@ readers do not read off random characters that represent icons */
     background-color: #702459;
   }
 
+  .lg\:hover\:bg-julien-red:hover{
+    background-color: #dd4a37;
+  }
+
+  .lg\:hover\:bg-julien-gris:hover{
+    background-color: #45545f;
+  }
+
   .lg\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -61558,6 +62030,14 @@ readers do not read off random characters that represent icons */
 
   .lg\:focus\:bg-pink-900:focus{
     background-color: #702459;
+  }
+
+  .lg\:focus\:bg-julien-red:focus{
+    background-color: #dd4a37;
+  }
+
+  .lg\:focus\:bg-julien-gris:focus{
+    background-color: #45545f;
   }
 
   .lg\:bg-bottom{
@@ -62012,6 +62492,14 @@ readers do not read off random characters that represent icons */
     border-color: #702459;
   }
 
+  .lg\:border-julien-red{
+    border-color: #dd4a37;
+  }
+
+  .lg\:border-julien-gris{
+    border-color: #45545f;
+  }
+
   .lg\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -62384,6 +62872,14 @@ readers do not read off random characters that represent icons */
     border-color: #702459;
   }
 
+  .lg\:hover\:border-julien-red:hover{
+    border-color: #dd4a37;
+  }
+
+  .lg\:hover\:border-julien-gris:hover{
+    border-color: #45545f;
+  }
+
   .lg\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -62754,6 +63250,14 @@ readers do not read off random characters that represent icons */
 
   .lg\:focus\:border-pink-900:focus{
     border-color: #702459;
+  }
+
+  .lg\:focus\:border-julien-red:focus{
+    border-color: #dd4a37;
+  }
+
+  .lg\:focus\:border-julien-gris:focus{
+    border-color: #45545f;
   }
 
   .lg\:rounded-none{
@@ -67590,6 +68094,46 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .lg\:placeholder-julien-red::-webkit-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .lg\:placeholder-julien-red::-moz-placeholder{
+    color: #dd4a37;
+  }
+
+  .lg\:placeholder-julien-red:-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .lg\:placeholder-julien-red::-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .lg\:placeholder-julien-red::placeholder{
+    color: #dd4a37;
+  }
+
+  .lg\:placeholder-julien-gris::-webkit-input-placeholder{
+    color: #45545f;
+  }
+
+  .lg\:placeholder-julien-gris::-moz-placeholder{
+    color: #45545f;
+  }
+
+  .lg\:placeholder-julien-gris:-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .lg\:placeholder-julien-gris::-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .lg\:placeholder-julien-gris::placeholder{
+    color: #45545f;
+  }
+
   .lg\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -69450,6 +69994,46 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .lg\:focus\:placeholder-julien-red:focus::-webkit-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .lg\:focus\:placeholder-julien-red:focus::-moz-placeholder{
+    color: #dd4a37;
+  }
+
+  .lg\:focus\:placeholder-julien-red:focus:-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .lg\:focus\:placeholder-julien-red:focus::-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .lg\:focus\:placeholder-julien-red:focus::placeholder{
+    color: #dd4a37;
+  }
+
+  .lg\:focus\:placeholder-julien-gris:focus::-webkit-input-placeholder{
+    color: #45545f;
+  }
+
+  .lg\:focus\:placeholder-julien-gris:focus::-moz-placeholder{
+    color: #45545f;
+  }
+
+  .lg\:focus\:placeholder-julien-gris:focus:-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .lg\:focus\:placeholder-julien-gris:focus::-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .lg\:focus\:placeholder-julien-gris:focus::placeholder{
+    color: #45545f;
+  }
+
   .lg\:pointer-events-none{
     pointer-events: none;
   }
@@ -70097,6 +70681,14 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .lg\:text-julien-red{
+    color: #dd4a37;
+  }
+
+  .lg\:text-julien-gris{
+    color: #45545f;
+  }
+
   .lg\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -70469,6 +71061,14 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .lg\:hover\:text-julien-red:hover{
+    color: #dd4a37;
+  }
+
+  .lg\:hover\:text-julien-gris:hover{
+    color: #45545f;
+  }
+
   .lg\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -70839,6 +71439,14 @@ readers do not read off random characters that represent icons */
 
   .lg\:focus\:text-pink-900:focus{
     color: #702459;
+  }
+
+  .lg\:focus\:text-julien-red:focus{
+    color: #dd4a37;
+  }
+
+  .lg\:focus\:text-julien-gris:focus{
+    color: #45545f;
   }
 
   .lg\:text-xs{
@@ -74141,6 +74749,14 @@ readers do not read off random characters that represent icons */
     background-color: #702459;
   }
 
+  .xl\:bg-julien-red{
+    background-color: #dd4a37;
+  }
+
+  .xl\:bg-julien-gris{
+    background-color: #45545f;
+  }
+
   .xl\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -74513,6 +75129,14 @@ readers do not read off random characters that represent icons */
     background-color: #702459;
   }
 
+  .xl\:hover\:bg-julien-red:hover{
+    background-color: #dd4a37;
+  }
+
+  .xl\:hover\:bg-julien-gris:hover{
+    background-color: #45545f;
+  }
+
   .xl\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -74883,6 +75507,14 @@ readers do not read off random characters that represent icons */
 
   .xl\:focus\:bg-pink-900:focus{
     background-color: #702459;
+  }
+
+  .xl\:focus\:bg-julien-red:focus{
+    background-color: #dd4a37;
+  }
+
+  .xl\:focus\:bg-julien-gris:focus{
+    background-color: #45545f;
   }
 
   .xl\:bg-bottom{
@@ -75337,6 +75969,14 @@ readers do not read off random characters that represent icons */
     border-color: #702459;
   }
 
+  .xl\:border-julien-red{
+    border-color: #dd4a37;
+  }
+
+  .xl\:border-julien-gris{
+    border-color: #45545f;
+  }
+
   .xl\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -75709,6 +76349,14 @@ readers do not read off random characters that represent icons */
     border-color: #702459;
   }
 
+  .xl\:hover\:border-julien-red:hover{
+    border-color: #dd4a37;
+  }
+
+  .xl\:hover\:border-julien-gris:hover{
+    border-color: #45545f;
+  }
+
   .xl\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -76079,6 +76727,14 @@ readers do not read off random characters that represent icons */
 
   .xl\:focus\:border-pink-900:focus{
     border-color: #702459;
+  }
+
+  .xl\:focus\:border-julien-red:focus{
+    border-color: #dd4a37;
+  }
+
+  .xl\:focus\:border-julien-gris:focus{
+    border-color: #45545f;
   }
 
   .xl\:rounded-none{
@@ -80915,6 +81571,46 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .xl\:placeholder-julien-red::-webkit-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .xl\:placeholder-julien-red::-moz-placeholder{
+    color: #dd4a37;
+  }
+
+  .xl\:placeholder-julien-red:-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .xl\:placeholder-julien-red::-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .xl\:placeholder-julien-red::placeholder{
+    color: #dd4a37;
+  }
+
+  .xl\:placeholder-julien-gris::-webkit-input-placeholder{
+    color: #45545f;
+  }
+
+  .xl\:placeholder-julien-gris::-moz-placeholder{
+    color: #45545f;
+  }
+
+  .xl\:placeholder-julien-gris:-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .xl\:placeholder-julien-gris::-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .xl\:placeholder-julien-gris::placeholder{
+    color: #45545f;
+  }
+
   .xl\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -82775,6 +83471,46 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .xl\:focus\:placeholder-julien-red:focus::-webkit-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .xl\:focus\:placeholder-julien-red:focus::-moz-placeholder{
+    color: #dd4a37;
+  }
+
+  .xl\:focus\:placeholder-julien-red:focus:-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .xl\:focus\:placeholder-julien-red:focus::-ms-input-placeholder{
+    color: #dd4a37;
+  }
+
+  .xl\:focus\:placeholder-julien-red:focus::placeholder{
+    color: #dd4a37;
+  }
+
+  .xl\:focus\:placeholder-julien-gris:focus::-webkit-input-placeholder{
+    color: #45545f;
+  }
+
+  .xl\:focus\:placeholder-julien-gris:focus::-moz-placeholder{
+    color: #45545f;
+  }
+
+  .xl\:focus\:placeholder-julien-gris:focus:-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .xl\:focus\:placeholder-julien-gris:focus::-ms-input-placeholder{
+    color: #45545f;
+  }
+
+  .xl\:focus\:placeholder-julien-gris:focus::placeholder{
+    color: #45545f;
+  }
+
   .xl\:pointer-events-none{
     pointer-events: none;
   }
@@ -83422,6 +84158,14 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .xl\:text-julien-red{
+    color: #dd4a37;
+  }
+
+  .xl\:text-julien-gris{
+    color: #45545f;
+  }
+
   .xl\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -83794,6 +84538,14 @@ readers do not read off random characters that represent icons */
     color: #702459;
   }
 
+  .xl\:hover\:text-julien-red:hover{
+    color: #dd4a37;
+  }
+
+  .xl\:hover\:text-julien-gris:hover{
+    color: #45545f;
+  }
+
   .xl\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -84164,6 +84916,14 @@ readers do not read off random characters that represent icons */
 
   .xl\:focus\:text-pink-900:focus{
     color: #702459;
+  }
+
+  .xl\:focus\:text-julien-red:focus{
+    color: #dd4a37;
+  }
+
+  .xl\:focus\:text-julien-gris:focus{
+    color: #45545f;
   }
 
   .xl\:text-xs{
