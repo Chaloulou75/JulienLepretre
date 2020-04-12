@@ -38033,7 +38033,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated fadeInLeftBig delay-1s slower hover:text-julien-red mt-1 block px-2 py-1",
+                "no-underline text-julien-gris animated fadeInLeftBig fast hover:text-julien-red mt-1 block px-2 py-1",
               attrs: { href: "/programas" }
             },
             [_vm._v(" Los Programas")]
@@ -38043,7 +38043,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated fadeInLeftBig slower hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+                "no-underline text-julien-gris animated fadeInLeftBig slow hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
               attrs: { href: "#" }
             },
             [_vm._v("Testimonios")]
@@ -38053,7 +38053,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated fadeInLeftBig slow hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+                "no-underline text-julien-gris animated fadeInLeftBig slower hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
               attrs: { href: "https://osteopatiafrancesa.com/" }
             },
             [_vm._v("Consultorio")]
@@ -38088,7 +38088,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex items-center" }, [
+    return _c("div", { staticClass: "flex items-center " }, [
       _c("img", {
         staticClass: "h-16 rounded-full",
         attrs: { src: "/img/ProfilInsta.jpg", alt: "Julien" }
@@ -38098,7 +38098,7 @@ var staticRenderFns = [
         "a",
         {
           staticClass:
-            "block animated zoomInLeft delay-2s slower text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1",
+            "block animated zoomInLeft delay-1s slower text-lg text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1",
           attrs: { href: "/" }
         },
         [_vm._v("\n          Julien Leprêtre\n        ")]

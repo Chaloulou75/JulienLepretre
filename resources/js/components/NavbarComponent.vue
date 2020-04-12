@@ -2,9 +2,9 @@
   <header class="bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2 ">
     <div class="flex items-center justify-between px-4 py-3 sm:p-0"> <!--  -->
       
-      <div class="flex items-center">  
+      <div class="flex items-center "> <!--  -->
           <img class="h-16 rounded-full" src="/img/ProfilInsta.jpg" alt="Julien">
-          <a href="/" class="block animated zoomInLeft delay-2s slower text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1" >
+          <a href="/" class="block animated zoomInLeft delay-1s slower text-lg text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1" >
             Julien Leprêtre
           </a> 
                      
@@ -19,9 +19,9 @@
       </div>
     </div>
     <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-1 pb-2 sm:flex sm:p-0 uppercase not-italic font-bold">
-      <a href="/programas" class="no-underline text-julien-gris animated fadeInLeftBig delay-1s slower hover:text-julien-red mt-1 block px-2 py-1"> Los Programas</a>
-      <a href="#" class="no-underline text-julien-gris animated fadeInLeftBig slower hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Testimonios</a>
-      <a href="https://osteopatiafrancesa.com/" class="no-underline text-julien-gris animated fadeInLeftBig slow hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Consultorio</a>
+      <a href="/programas" class="no-underline text-julien-gris animated fadeInLeftBig fast hover:text-julien-red mt-1 block px-2 py-1"> Los Programas</a>
+      <a href="#" class="no-underline text-julien-gris animated fadeInLeftBig slow hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Testimonios</a>
+      <a href="https://osteopatiafrancesa.com/" class="no-underline text-julien-gris animated fadeInLeftBig slower hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Consultorio</a>
       <a href="/perfil" class="no-underline text-julien-gris animated fadeInLeftBig faster hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Sobre mi</a>
       <a href="/contacto" class="no-underline text-julien-gris animated fadeInLeftBig fast hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Contacto</a>
       

@@ -2,7 +2,9 @@
 
 @section('content')
 
-<div class="bg-gray-100 text-gray-700 text-center font-semibold uppercase tracking-wide text-base px-8">
+<div class="w-full bg-julien-gris pb-24">
+
+<div class="text-white text-center font-semibold uppercase tracking-wide text-base px-8 py-4">
 
         <h1>PIDE TU PLAN DE ENTRENAMIENTO EN CASA</h1>
 </div>
@@ -207,6 +209,8 @@
             </div>
         </div>
     </form>
+</div>
+
 </div>
 
 {{-- @include('layouts.map') --}}
