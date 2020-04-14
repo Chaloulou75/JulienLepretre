@@ -30,7 +30,7 @@
             <!--Right Col-->
             <div class="w-full lg:w-1/2 lg:py-2 p-2 text-center">
                 <!--Add your product image here-->
-                <img src="{{ asset($programme->image)}}" class="fill-current object-cover text-gray-900 w-full mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" alt="image">
+                <img src="{{ asset($programme->image)}}" class="fill-current object-cover w-full mx-auto" alt="image">
 
             </div>
         </div>
@@ -48,15 +48,15 @@
 
             <div class="flex flex-col w-full lg:w-1/2 justify-center border border-white rounded-lg overflow-hidden items-start pt-2 pl-2 pb-4 mb-4">
 
-				<img src="{{ asset($programme->image2) }}" class="fill-current object-cover text-gray-900 w-full mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" alt="image">
+				<img src="{{ asset($programme->image2) }}" class="fill-current object-cover w-full mx-auto" alt="image">
             	                
             </div>
             <!--Right Col-->
-            <div class="w-full lg:w-1/2 lg:py-2 lg:px-4 justify-between items-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+            <div class="w-full lg:w-1/2 lg:py-2 lg:px-4 justify-between items-center">
 
                 @foreach($programme->descriptions as $description)
 
-                <p class="leading-normal uppercase font-bold text-lg mx-auto text-gray-800 mb-4">
+                <p class="leading-normal uppercase font-bold text-lg mx-auto text-gray-800 mb-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                 	<i class="fas fa-check-square fa-lg fa-fw text-green-600 pl-1"></i>
                 	 {{ $description->phrase }}
                 </p>

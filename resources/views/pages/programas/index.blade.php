@@ -37,7 +37,7 @@
             <!--Right Col-->
             <div class="w-full lg:w-1/2 lg:py-2 text-center">
                 <!--Add your product image here-->
-                <img src="{{ asset($programme->image) }}" class="fill-current object-cover text-gray-900 w-full mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" alt="image"> {{-- /img/programas/ --}}
+                <img src="{{ asset($programme->image) }}" class="fill-current object-cover w-full mx-auto" alt="image"> {{-- /img/programas/ --}}
 
                 <div class="m-4">
                     <a href="{{ route('programas.show', ['slug' => $programme->slug]) }}"><button class="w-full bg-gray-600 hover:bg-teal-600 text-white font-semibold tracking-widest uppercase border-2 border-teal-500 hover:border-gray-600 rounded shadow hover:shadow-lg py-2 px-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver mas</button></a>
