@@ -6,11 +6,11 @@
 
         @foreach($programmes as $programme)
 
-        <h1 class="no-underline font-semibold text-3xl text-julien-gris text-center uppercase my-4">
+        <h1 class="no-underline not-italic font-semibold text-3xl text-julien-gris text-center uppercase my-4">
                 Programa </br>
         </h1>
         <a href="{{ route('programas.show', ['slug' => $programme->slug]) }}" class="no-underline">
-        <h2 class="uppercase font-semibold text-2xl text-center text-julien-gris tracking-loose my-4">
+        <h2 class="uppercase not-italic font-semibold text-2xl text-center text-julien-gris tracking-loose my-4">
                 {{ $programme->title }}
 
         </h2>  
