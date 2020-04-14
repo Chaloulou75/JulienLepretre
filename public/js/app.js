@@ -38033,7 +38033,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated fadeInLeftBig fast hover:text-julien-red mt-1 block px-2 py-1",
+                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1",
               attrs: { href: "/programas" }
             },
             [_vm._v(" Los Programas")]
@@ -38043,7 +38043,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated fadeInLeftBig slow hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
               attrs: { href: "#" }
             },
             [_vm._v("Testimonios")]
@@ -38053,7 +38053,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated fadeInLeftBig slower hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
               attrs: { href: "https://osteopatiafrancesa.com/" }
             },
             [_vm._v("Consultorio")]
@@ -38063,7 +38063,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated fadeInLeftBig faster hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
               attrs: { href: "/perfil" }
             },
             [_vm._v("Sobre mi")]
@@ -38073,7 +38073,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated fadeInLeftBig fast hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
               attrs: { href: "/contacto" }
             },
             [_vm._v("Contacto")]
@@ -38098,7 +38098,7 @@ var staticRenderFns = [
         "a",
         {
           staticClass:
-            "block animated zoomInLeft delay-1s slower text-lg text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1",
+            "block animated zoomInLeft slower text-lg text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1",
           attrs: { href: "/" }
         },
         [_vm._v("\n          Julien Leprêtre\n        ")]

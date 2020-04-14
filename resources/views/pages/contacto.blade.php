@@ -4,12 +4,12 @@
 
 <div class="w-full bg-julien-gris pb-24">
 
-<div class="text-white text-center font-semibold uppercase tracking-wide text-base px-8 py-4">
+    <div class="text-white text-center font-semibold uppercase tracking-wide text-base px-8 py-4">
 
-        <h1>PIDE TU PLAN DE ENTRENAMIENTO EN CASA</h1>
-</div>
+            <h1>PIDE TU PLAN DE ENTRENAMIENTO EN CASA</h1>
+    </div>
 
-<div class="w-full max-w-xs lg:max-w-xl lg:w-4/5 m-auto p-auto pt-8">   
+    <div class="w-full max-w-xs lg:max-w-xl lg:w-4/5 m-auto p-auto pt-8">   
 
     <form class="bg-gray-100 border-2 border-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST" action="{{ route('contact.store') }}">
         @csrf
@@ -209,7 +209,7 @@
             </div>
         </div>
     </form>
-</div>
+    </div>
 
 </div>
 
