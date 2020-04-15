@@ -1,24 +1,79 @@
-<!--Hero-->
-	<div class="w-full mx-auto h-screen flex flex-col md:flex-row items-center px-8 ">
-	 {{-- bg-contain  bg-right bg-no-repeat style="background-image: url(/img/EtirementNOIRetBLANC.jpg)" --}}
+<!--Hero divided-->
+	<div class="w-full mx-auto h-auto flex flex-col md:flex-row items-center">
 
-		<!--Left Col-->
-		<div class="flex flex-col w-full mx-auto lg:w-1/2 justify-center items-center pt-2 md:px-24 bg-julien-gris">
-			
-			<h1 class="font-bold text-5xl text-white text-center not-italic uppercase my-4 pb-6">¿Listo para recuperar el control de tu cuerpo?</h1>
-			<h2 class="uppercase font-semibold text-2xl text-white text-center tracking-loose my-6 pb-6">Tus programas online</h2>
-
-			<div class="items-start text-white text-center pb-6">
-				<p class="leading-normal uppercase text-2xl my-8">Para alivar tus dolores, tu postura y tu rendimiento</p>
-				<p class="leading-normal uppercase text-xl mb-4">	
-				Sufrís de la espalda baja o volvés de una lesión y no sabés como recuperar tu movilidad?</p>
-			</div>
-			<a href="{{route('programas.index')}}"><button class="w-full bg-julien-gris hover:bg-julien-red text-white font-semibold tracking-widest uppercase border-2 border-white hover:border-julien-red rounded shadow hover:shadow-lg py-2 px-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver los programas</button></a>
-		</div>
-		<!--Right Col-->
-		<div class="w-full lg:w-1/2 lg:py-2 text-center bg-julien-red">
+	 	<!--Left Col-->
+		<div class="w-full lg:w-1/2">
 			<!--Add your product image here-->
-			{{-- <img src="/img/EtirementNOIRetBLANC.jpg" class="fill-current text-gray-900 w-3/5 mx-auto" alt="30dias"> --}}
+			 <img src="/img/30diasespaldasana.png" class="fill-current mx-auto" alt="30 dias espalda sana">
 		</div>
 		
+		<!--Right Col-->
+		<div class="w-full lg:w-1/2 text-julien-gris text-center">
+			
+			<div class="mt-4 md:mt-2 mb-6">
+				<h1 class="font-semibold text-2xl uppercase">
+				Programa
+				</h1>
+			</div>
+			
+			<div>
+				<h2 class="uppercase not-italic text-3xl tracking-loose my-6">
+					30 dias para una espalda sana!
+				</h2>
+			</div>
+			
+
+			<div class="items-center text-base leading-normal not-italic mb-10">
+				<p class="py-4 mx-16">En este programa te propongo una rutina de 10 a 15 minutos de ejercicios de movilidad cada dia para recuperar el control de tu espalda de manera progresiva</p>
+				<p>
+					Cura tus dolores </br>
+					Recupera toda tu movilidad </br>
+					Reduce el riesgo de lesión	
+				</p>
+				
+			</div>
+			<div class="mb-4 md:mb-2">
+				<a href="{{route('programas.index')}}"><button class="bg-julien-red text-white font-semibold tracking-widest uppercase border-2 border-white rounded shadow hover:shadow-lg py-2 px-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver mas</button></a>
+			</div>
+			
+		</div>		
+	</div>
+
+	<div class="w-full mx-auto h-auto flex flex-col-reverse md:flex-row items-center">
+				
+		<!--Right Col-->
+		<div class="w-full lg:w-1/2 text-julien-gris text-center">
+			
+			<div class="mt-4 md:mt-2 mb-6">
+				<h1 class="font-semibold text-2xl uppercase">
+				Programa
+				</h1>
+			</div>
+			
+			<div>
+				<h2 class="uppercase not-italic text-3xl tracking-loose my-6">
+					Cuerpo fuerte
+				</h2>
+			</div>
+			
+
+			<div class="items-center text-base leading-normal not-italic mb-10">
+				<p class="py-4 mx-16">Un programa para ayudarte a optimizar tu cuerpo. Vas a aprender como movilizar tu cuerpo, como fortalecerlo y como mantener este equilibrio.</p>
+				<p>
+					Fuerza </br>
+					Movilidad </br>
+					Estabilidad	
+				</p>
+				
+			</div>
+			<div class="mb-4 md:mb-2">
+				<a href="{{route('programas.index')}}"><button class="bg-julien-red text-white font-semibold tracking-widest uppercase border-2 border-white rounded shadow hover:shadow-lg py-2 px-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver mas</button></a>
+			</div>
+			
+		</div>
+
+		<div class="w-full lg:w-1/2">
+			<!--Add your product image here-->
+			 <img src="/img/cuerpofuerte.png" class="fill-current mx-auto" alt="30 dias espalda sana">
+		</div>		
 	</div>
