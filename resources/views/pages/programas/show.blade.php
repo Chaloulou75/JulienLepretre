@@ -2,11 +2,11 @@
 
 @section('content')
     
-    <div class="px-4 container">
+    <div class="px-4 py-4">
 
-    	<h1 class="font-bold text-3xl text-teal-700 text-center uppercase my-4">
+    	{{-- <h1 class="font-bold text-3xl text-teal-700 text-center uppercase my-4">
                 {{ $programme->title }}
-        </h1>
+        </h1> --}}
 
 
         <div class="w-full m-auto flex flex-col md:flex-row items-center justify-around text-justify" >
@@ -14,7 +14,7 @@
 
             <div class="flex flex-col w-full lg:w-1/2 justify-center items-center pt-2 pl-2 pb-4 m-2 mb-4">
 
-            	<h2 class="uppercase font-semibold text-2xl text-gray-700 tracking-loose mb-4 mx-auto">¿PARA QUIEN ES EL PROGRAMA?</h2>
+            	<h2 class="uppercase font-semibold text-2xl text-gray-700 tracking-loose mb-4 mx-auto">{{ $programme->title }}</h2>
 
                 <p class="leading-normal text-gray-600 mb-4 mx-auto">{{ $programme->descriptionGlobale }}</p>
 
@@ -30,7 +30,7 @@
             <!--Right Col-->
             <div class="w-full lg:w-1/2 lg:py-2 p-2 text-center">
                 <!--Add your product image here-->
-                <img src="{{ asset($programme->image)}}" class="fill-current object-cover w-full mx-auto" alt="image">
+                <img src="{{ asset('storage/img/programas/'.$programme->image)}}" class="fill-current object-cover w-full mx-auto" alt="image">
 
             </div>
         </div>
@@ -48,7 +48,7 @@
 
             <div class="flex flex-col w-full lg:w-1/2 justify-center border border-white rounded-lg overflow-hidden items-start pt-2 pl-2 pb-4 mb-4">
 
-				<img src="{{ asset($programme->image2) }}" class="fill-current object-cover w-full mx-auto" alt="image">
+				<img src="{{ asset('storage/img/programas/'.$programme->image2) }}" class="fill-current object-cover w-full mx-auto" alt="image">
             	                
             </div>
             <!--Right Col-->

@@ -6,8 +6,7 @@ use App\Programme;
 use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Response;
-use Image;
+use Illuminate\Http\UploadedFile;
 
 class ProgrammeController extends Controller
 {
@@ -48,31 +47,31 @@ class ProgrammeController extends Controller
         $request->validate([
                 'title' => 'required|min:3',
                 'descriptionGlobale' => 'required|min:10',
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-                'image2' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',                
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
+                'image2' => 'required|image|mimes:jpeg,png,jpg,gif,svg',                
                 'prix6sesionesPesos' => 'numeric',
                 'prix12sesionesPesos' => 'numeric',
                 'prix6sesionesEuros' => 'numeric',
                 'prix12sesionesEuros' => 'numeric',
             ]);
 
-        $image = $request->file('image');
-        $filename  = time() . '.' . $image->getClientOriginalExtension();
-        $path = public_path('img/programas/'.$filename);
-        Image::make($image->getRealPath())->save($path); 
-        $programme->image = 'img/programas/'.$filename;
+        if($request->hasfile('image'))
+        {
+            $filename1 = $request->image->getClientOriginalName();
+            $request->image->storeAs('img/programas/', $filename1, 'public');
+        }
 
-        $image2 = $request->file('image2');
-        $filename2  = time() . '.' . $image2->getClientOriginalExtension();
-        $path2 = public_path('img/programas/'.$filename2);
-        Image::make($image2->getRealPath())->save($path2); 
-        $programme->image2 = 'img/programas/'.$filename2;
+        if($request->hasfile('image2'))
+        {
+            $filename2 = $request->image2->getClientOriginalName();
+            $request->image2->storeAs('img/programas/', $filename2, 'public');
+        }
 
         $data = array(
             'title'=> $request->title,
             'descriptionGlobale' => $request->descriptionGlobale,
-            'image' => $programme->image, 
-            'image2' => $programme->image2,               
+            'image' => $filename1, 
+            'image2' => $filename2,               
             'prix6sesionesPesos' => $request->prix6sesionesPesos,
             'prix12sesionesPesos' => $request->prix12sesionesPesos,
             'prix6sesionesEuros' => $request->prix6sesionesEuros,
@@ -125,8 +124,8 @@ class ProgrammeController extends Controller
         $request->validate([
                 'title' => 'required|min:3',
                 'descriptionGlobale' => 'min:10',
-                'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-                'image2' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',                
+                'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
+                'image2' => 'image|mimes:jpeg,png,jpg,gif,svg',                
                 'prix6sesionesPesos' => 'numeric',
                 'prix12sesionesPesos' => 'numeric',
                 'prix6sesionesEuros' => 'numeric',
@@ -136,31 +135,32 @@ class ProgrammeController extends Controller
 
         if($request->hasfile('image'))
         {
-            $image = $request->file('image');
-            $filename  = time() . '.' . $image->getClientOriginalExtension();
-            $path = public_path('/img/programas/'.$filename);
-            Image::make($image->getRealPath())->save($path); //->resize(468, 249)
-            $programme->image = '/img/programas/'.$filename;
+            $filename1 = $request->image->getClientOriginalName();
+            if($programme->image){
+                Storage::delete('/public/img/programas'.$programme->image);
+            }
+            $request->image->storeAs('img/programas/', $filename1, 'public');
         }
+
         if($request->hasfile('image2'))
         {
-            $image2 = $request->file('image2');
-            $filename2  = time() . '.' . $image2->getClientOriginalExtension();
-            $path2 = public_path('/img/programas/'.$filename2);
-            Image::make($image2->getRealPath())->save($path2); //->resize(468, 249)
-            $programme->image2 = '/img/programas/'.$filename2;
-        }         
+            $filename2 = $request->image2->getClientOriginalName();
+            if($programme->image2){
+                Storage::delete('/public/img/programas'.$programme->image2);
+            }
+            $request->image2->storeAs('img/programas/', $filename2, 'public');
+        }        
 
-        $programme->title =  $request->title;
-        $programme->descriptionGlobale = $request->descriptionGlobale;
-        $programme->image = $programme->image;
-        $programme->image2 = $programme->image2;                 
-        $programme->prix6sesionesPesos = $request->prix6sesionesPesos;
-        $programme->prix12sesionesPesos = $request->prix12sesionesPesos;
-        $programme->prix6sesionesEuros = $request->prix6sesionesEuros;
-        $programme->prix12sesionesEuros = $request->prix12sesionesEuros;
-
-        $programme->save();
+        $programme->update([
+            'title' =>  $request->title,
+            'descriptionGlobale' => $request->descriptionGlobale,
+            'image' => $filename1,
+            'image2' => $filename2,
+            'prix6sesionesPesos' => $request->prix6sesionesPesos,
+            'prix12sesionesPesos' => $request->prix12sesionesPesos,
+            'prix6sesionesEuros' => $request->prix6sesionesEuros,
+            'prix12sesionesEuros' => $request->prix12sesionesEuros
+        ]);
 
         return redirect()->action('ProgrammeController@index')->with('message.level', 'success')->with('message.content', __('El programa esta actualizado.'));
     }

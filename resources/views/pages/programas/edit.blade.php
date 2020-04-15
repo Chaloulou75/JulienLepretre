@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="bg-gray-100 text-gray-700 text-center font-semibold uppercase tracking-wide text-base px-8">
+<div class="bg-gray-100 text-gray-700 text-center font-semibold uppercase tracking-wide text-base px-8 py-4">
     <h1>Actualizar el programa</h1>
 </div>
 
