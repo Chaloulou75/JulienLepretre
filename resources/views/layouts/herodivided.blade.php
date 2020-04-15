@@ -74,6 +74,6 @@
 
 		<div class="w-full lg:w-1/2">
 			<!--Add your product image here-->
-			 <img src="/img/cuerpofuerte.png" class="fill-current mx-auto" alt="30 dias espalda sana">
+			 <img src="/img/CuerpoFuerte.png" class="fill-current mx-auto" alt="cuerpo fuerte">
 		</div>		
 	</div>
