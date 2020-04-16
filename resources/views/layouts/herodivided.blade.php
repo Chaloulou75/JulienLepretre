@@ -10,7 +10,7 @@
 		<!--Right Col-->
 		<div class="w-full lg:w-1/2 text-julien-gris text-center">
 			
-			<div class="mt-4 md:mt-2 mb-6">
+			<div class="my-6">
 				<h1 class="font-semibold text-2xl uppercase">
 				Programa
 				</h1>
@@ -44,7 +44,7 @@
 		<!--Right Col-->
 		<div class="w-full lg:w-1/2 text-julien-gris text-center">
 			
-			<div class="mt-4 md:mt-2 mb-6">
+			<div class="my-6">
 				<h1 class="font-semibold text-2xl uppercase">
 				Programa
 				</h1>
