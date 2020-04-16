@@ -1,19 +1,17 @@
 <!--Hero-->
-	<div class="w-full mx-auto h-full flex flex-col {{-- md:flex-row --}} items-center px-8 bg-cover bg-center mb-4 pb-24" style="background-image: url(/img/backgroundaccueil.png)">
+	<div class="w-full mx-auto h-full bg-cover bg-center mb-4 py-48" style="background-image: url(/img/backgroundaccueil.png)">
 
-		<div class="flex flex-col w-full mx-auto justify-center items-center pt-2 animated bounceInUp">
-			<div class="mx-auto my-20 md:px-40 md:pt-32 md:pb-12">
-				<h1 class="font-bold text-5xl text-white text-center not-italic uppercase">
+		<div class="flex flex-col w-full mx-auto h-auto justify-center items-center animated bounceInUp">
+			<div class="mx-auto mb-6 sm:px-4 md:px-40">
+				<h1 class="font-bold text-2xl md:text-4xl text-white text-center not-italic uppercase">
 				¿Listo para recuperar el control de tu cuerpo?
 				</h1>
 			</div>
 
-			<div class="items-start text-white text-center text-2xl uppercase pb-24">
-				<h2 class="font-semibold tracking-loose pb-2">
-				Tus programas online
-				</h2>
+			<div class="items-start text-white text-center text-base md:text-xl uppercase pb-8">
 				<p class="leading-normal">
-					Para alivar tus dolores, tu postura y tu rendimiento
+				Tus programas online</br>
+				Para alivar tus dolores, tu postura y tu rendimiento
 				</p>
 			</div>
 

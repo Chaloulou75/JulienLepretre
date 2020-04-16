@@ -4,7 +4,7 @@
       
       <div class="flex items-center "> <!--  -->
           <img class="h-16 rounded-full" src="/img/ProfilInsta.jpg" alt="Julien">
-          <a href="/" class="block animated zoomInLeft slower text-lg text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1" >
+          <a href="/" class="block animated zoomInLeft slower text-base md:text-lg text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1" >
             Julien Leprêtre
           </a> 
                      

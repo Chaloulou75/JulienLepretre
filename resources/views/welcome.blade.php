@@ -8,7 +8,7 @@
 
     <div class="text-julien-gris text-center uppercase text-xs mt-5 mb-2">
 		<p>
-			@2020 julien lepretre all right reserved, site designed and developped by <span class="text-julien-red"> carlito</span>.
+			@2020 julien lepretre all right reserved, </br> site designed and developped by <span class="text-julien-red"> carlito</span>.
 		</p>
 
 	</div>
