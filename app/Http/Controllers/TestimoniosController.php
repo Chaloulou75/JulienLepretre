@@ -16,7 +16,7 @@ class TestimoniosController extends Controller
      */
     public function index()
     {
-        $testimonios = Testimonios::paginate(6);
+        $testimonios = Testimonios::latest()->simplePaginate(6);
         return view('/pages/testimonios/index', compact('testimonios'));//
     }
 
