@@ -38044,7 +38044,7 @@ var render = function() {
             {
               staticClass:
                 "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
-              attrs: { href: "#" }
+              attrs: { href: "/testimonios" }
             },
             [_vm._v("Testimonios")]
           ),
@@ -38098,7 +38098,7 @@ var staticRenderFns = [
         "a",
         {
           staticClass:
-            "block animated zoomInLeft slower text-lg text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1",
+            "block animated zoomInLeft slower text-base md:text-lg text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1",
           attrs: { href: "/" }
         },
         [_vm._v("\n          Julien Leprêtre\n        ")]

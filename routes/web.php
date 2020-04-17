@@ -34,6 +34,9 @@ Route::resource('/programas/{slug}/description', 'DescriptionController',['only'
     'store', 'update', 'destroy',
 ]]);
 
+
+Route::resource('testimonios', 'TestimoniosController');
+
 Route::get('/perfil', 'PagesController@index')->name('profil');
 
 //contact
