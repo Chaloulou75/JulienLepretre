@@ -17,6 +17,7 @@ class TestimoniosController extends Controller
     public function index()
     {
         $testimonios = Testimonios::latest()->simplePaginate(6);
+
         return view('/pages/testimonios/index', compact('testimonios'));//
     }
 
@@ -49,17 +50,25 @@ class TestimoniosController extends Controller
 
         if($request->hasfile('avatar'))
         {
-            $filename = $request->avatar->getClientOriginalName();
-            $request->avatar->storeAs('img/avatars/', $filename, 'public');
+            //$filename = $request->avatar->getClientOriginalName();
+            $path = $request->file('avatar')->store('img/avatars', 's3');
+
+            Storage::disk('s3')->setVisibility($path, 'public');
+
+            $url = Storage::disk('s3')->url($path);
+
         }
 
         $data = array(
             'name'=> $request->name,
             'testimonio' => $request->testimonio,
-            'avatar' => $filename,             
+            'avatar' => basename($path),
+            'avatarurl' => $url,             
         );
         
-        Testimonios::create($data);
+        $testimonio = Testimonios::create($data);
+
+        //return $testimonio;
 
         return redirect()->back()->with('message.level', 'success')->with('message.content', __('Gracias por tu testimonio.'));
     }

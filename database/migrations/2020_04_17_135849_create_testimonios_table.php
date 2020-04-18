@@ -17,6 +17,7 @@ class CreateTestimoniosTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('avatar')->nullable;
+            $table->string('avatarurl')->nullable;
             $table->text('testimonio');
             $table->timestamps();
         });

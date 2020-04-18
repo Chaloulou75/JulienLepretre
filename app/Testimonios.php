@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Testimonios extends Model
 {
     protected $fillable = [
-        'name', 'avatar', 'testimonio',
+        'name', 'avatar', 'avatarurl', 'testimonio',
     ];
 }
