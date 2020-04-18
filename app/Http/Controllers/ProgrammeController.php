@@ -57,25 +57,35 @@ class ProgrammeController extends Controller
 
         if($request->hasfile('image'))
         {
-            $filename1 = $request->image->getClientOriginalName();
-            $request->image->storeAs('img/programas/', $filename1, 'public');
+            //$filename1 = $request->image->getClientOriginalName();
+            $path = $request->file('image')->store('img/programas', 's3');
+
+            Storage::disk('s3')->setVisibility($path, 'public');
+
+            $url = Storage::disk('s3')->url($path);
         }
 
         if($request->hasfile('image2'))
         {
-            $filename2 = $request->image2->getClientOriginalName();
-            $request->image2->storeAs('img/programas/', $filename2, 'public');
+            //$filename2 = $request->image2->getClientOriginalName();
+            $path2 = $request->file('image2')->store('img/programas', 's3');
+
+            Storage::disk('s3')->setVisibility($path2, 'public');
+
+            $url2 = Storage::disk('s3')->url($path2);
         }
 
         $data = array(
             'title'=> $request->title,
             'descriptionGlobale' => $request->descriptionGlobale,
-            'image' => $filename1, 
-            'image2' => $filename2,               
+            'image' => basename($path), 
+            'image2' => basename($path2),               
             'prix6sesionesPesos' => $request->prix6sesionesPesos,
             'prix12sesionesPesos' => $request->prix12sesionesPesos,
             'prix6sesionesEuros' => $request->prix6sesionesEuros,
             'prix12sesionesEuros' => $request->prix12sesionesEuros,
+            'imageurl' => $url, 
+            'image2url' => $url2, 
         );
         
         Programme::create($data);

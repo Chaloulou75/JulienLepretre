@@ -10,7 +10,7 @@
             <!--Left Col-->
             <div class="w-full lg:w-1/2">
                 <!--Add your product image here-->
-                 <img src="{{ asset('storage/img/programas/'.$programme->image)}}" class="fill-current mx-auto" alt="30 dias espalda sana">
+                 <img src="{{ url($programme->imageurl) }}" class="fill-current mx-auto" alt="image">
             </div>
         
             <!--Right Col-->

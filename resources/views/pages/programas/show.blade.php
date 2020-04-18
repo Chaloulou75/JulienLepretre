@@ -30,7 +30,7 @@
             <!--Right Col-->
             <div class="w-full lg:w-1/2 lg:py-2 p-2 text-center">
                 <!--Add your product image here-->
-                <img src="{{ asset('storage/img/programas/'.$programme->image)}}" class="fill-current object-cover w-full mx-auto" alt="image">
+                <img src="{{ url($programme->imageurl)}}" class="fill-current object-cover w-full mx-auto" alt="image">
 
             </div>
         </div>
@@ -48,7 +48,7 @@
 
             <div class="flex flex-col w-full lg:w-1/2 justify-center border border-white rounded-lg overflow-hidden items-start pt-2 pl-2 pb-4 mb-4">
 
-				<img src="{{ asset('storage/img/programas/'.$programme->image2) }}" class="fill-current object-cover w-full mx-auto" alt="image">
+				<img src="{{ url($programme->image2url) }}" class="fill-current object-cover w-full mx-auto" alt="image">
             	                
             </div>
             <!--Right Col-->

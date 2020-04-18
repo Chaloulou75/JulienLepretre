@@ -39,7 +39,6 @@ class TestimoniosController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request);
         $testimonio= new Testimonios();
 
         $request->validate([
@@ -66,9 +65,7 @@ class TestimoniosController extends Controller
             'avatarurl' => $url,             
         );
         
-        $testimonio = Testimonios::create($data);
-
-        //return $testimonio;
+        Testimonios::create($data);
 
         return redirect()->back()->with('message.level', 'success')->with('message.content', __('Gracias por tu testimonio.'));
     }

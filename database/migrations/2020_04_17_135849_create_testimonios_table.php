@@ -16,8 +16,8 @@ class CreateTestimoniosTable extends Migration
         Schema::create('testimonios', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('avatar')->nullable;
-            $table->string('avatarurl')->nullable;
+            $table->string('avatar')->nullable();
+            $table->string('avatarurl')->nullable();
             $table->text('testimonio');
             $table->timestamps();
         });

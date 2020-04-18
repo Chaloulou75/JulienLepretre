@@ -14,7 +14,7 @@
 
 	<div class="w-full max-w-sm md:w-1/3 mx-auto my-4 rounded overflow-hidden shadow-lg">
 	  {{-- <img class="w-full" src="/img/titreprog.jpg" alt="programme"> --}}
-	  <img src="{{ url($testimonio->avatarurl)}}" class="fill-current object-cover w-48 h-48 rounded-full mx-auto p-2" alt="avatar">
+	  <img src="{{ url($testimonio->avatarurl) }}" class="fill-current object-cover w-48 h-48 rounded-full mx-auto p-2" alt="avatar">
 	  <div class="text-julien-gris px-6 py-4">
 	    <div class="font-bold text-xl text-center mb-2">{{$testimonio->name}}</div>
 	    <div class="text-base">
