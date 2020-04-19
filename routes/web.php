@@ -22,6 +22,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home'
 );
 
+//testimonios
+Route::resource('testimonios', 'TestimoniosController');
+
 //Programme
 Route::resource('programas', 'ProgrammeController',['except' => [
     'show', 'edit',
@@ -33,9 +36,6 @@ Route::get('/programas/{slug}/edit', 'ProgrammeController@edit')->name('programa
 Route::resource('/programas/{slug}/description', 'DescriptionController',['only' => [
     'store', 'update', 'destroy',
 ]]);
-
-
-Route::resource('testimonios', 'TestimoniosController');
 
 Route::get('/perfil', 'PagesController@index')->name('profil');
 

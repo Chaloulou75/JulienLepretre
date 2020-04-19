@@ -28,7 +28,9 @@ class TestimoniosController extends Controller
      */
     public function create()
     {
-        //
+        //$admin = User::where('admin', true)->get();
+        //$testimonios = Testimonios::latest()->get();
+        return view('/pages/testimonios/create');
     }
 
     /**
@@ -43,7 +45,7 @@ class TestimoniosController extends Controller
 
         $request->validate([
                 'name' => 'required|min:3',
-                'testimonio' => 'required|min:5',
+                'msg' => 'required|min:5',
                 'avatar' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             ]);
 
@@ -60,7 +62,7 @@ class TestimoniosController extends Controller
 
         $data = array(
             'name'=> $request->name,
-            'testimonio' => $request->testimonio,
+            'msg' => $request->msg,
             'avatar' => basename($path),
             'avatarurl' => $url,             
         );
@@ -73,10 +75,10 @@ class TestimoniosController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\testimonios  $testimonios
+     * @param  \App\Testimonios  $testimonio
      * @return \Illuminate\Http\Response
      */
-    public function show(testimonios $testimonios)
+    public function show(Testimonios $testimonio)
     {
         //
     }
@@ -84,34 +86,37 @@ class TestimoniosController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\testimonios  $testimonios
+     * @param  \App\Testimonios  $testimonio
      * @return \Illuminate\Http\Response
      */
-    public function edit(testimonios $testimonios)
+    public function edit(Testimonios $testimonio)
     {
-        //
+
+        return view('/pages/testimonios/edit', $testimonio, compact('testimonio'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\testimonios  $testimonios
+     * @param  \App\Testimonios  $testimonio
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, testimonios $testimonios)
+    public function update(Request $request, Testimonios $testimonio)
     {
-        //
+        dump($testimonio);
+        return 'we will update';
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\testimonios  $testimonios
+     * @param  \App\Testimonios  $testimonio
      * @return \Illuminate\Http\Response
      */
-    public function destroy(testimonios $testimonios)
+    public function destroy(Testimonios $testimonio)
     {
-        //
+       dump($testimonio); 
+       return 'go go destroyyyyeddd';
     }
 }

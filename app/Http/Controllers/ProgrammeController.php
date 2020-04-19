@@ -145,31 +145,42 @@ class ProgrammeController extends Controller
 
         if($request->hasfile('image'))
         {
-            $filename1 = $request->image->getClientOriginalName();
+            //$filename1 = $request->image->getClientOriginalName();
             if($programme->image){
-                Storage::delete('/public/img/programas'.$programme->image);
+
+                Storage::disk('s3')->delete('/img/programas'.$programme->image);
             }
-            $request->image->storeAs('img/programas/', $filename1, 'public');
+            $path = $request->file('image')->store('img/programas', 's3');
+
+            Storage::disk('s3')->setVisibility($path, 'public');
+
+            $url = Storage::disk('s3')->url($path);
         }
 
         if($request->hasfile('image2'))
         {
-            $filename2 = $request->image2->getClientOriginalName();
+            //$filename2 = $request->image2->getClientOriginalName();
             if($programme->image2){
-                Storage::delete('/public/img/programas'.$programme->image2);
+                
+                Storage::disk('s3')->delete('/img/programas'.$programme->image2);
             }
-            $request->image2->storeAs('img/programas/', $filename2, 'public');
+            $path2 = $request->file('image2')->store('img/programas', 's3');
+            Storage::disk('s3')->setVisibility($path2, 'public');
+
+            $url2 = Storage::disk('s3')->url($path2);
         }        
 
         $programme->update([
             'title' =>  $request->title,
             'descriptionGlobale' => $request->descriptionGlobale,
-            'image' => $filename1,
-            'image2' => $filename2,
+            'image' => basename($path),
+            'image2' => basename($path2),
             'prix6sesionesPesos' => $request->prix6sesionesPesos,
             'prix12sesionesPesos' => $request->prix12sesionesPesos,
             'prix6sesionesEuros' => $request->prix6sesionesEuros,
-            'prix12sesionesEuros' => $request->prix12sesionesEuros
+            'prix12sesionesEuros' => $request->prix12sesionesEuros,
+            'imageurl' => $url, 
+            'image2url' => $url2,
         ]);
 
         return redirect()->action('ProgrammeController@index')->with('message.level', 'success')->with('message.content', __('El programa esta actualizado.'));
@@ -184,6 +195,8 @@ class ProgrammeController extends Controller
     public function destroy($slug)
     {
         $programme = Programme::with('descriptions')->where('slug' , $slug)->firstOrFail();
+        Storage::disk('s3')->delete('img/programas'.$programme->image);
+        Storage::disk('s3')->delete('img/programas'.$programme->image2);
 
         $programme->delete();
 

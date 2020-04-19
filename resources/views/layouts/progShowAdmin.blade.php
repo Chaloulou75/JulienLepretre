@@ -56,7 +56,7 @@
                 @csrf
                 @method('DELETE')
 
-                        <button type="submit" class="bg-red-700 hover:bg-red-500 text-white font-semibold text-center tracking-widest border-2 rounded-full hover:border-red-700 border-red-300 flex-auto py-2 px-4 m-2">
+                        <button type="submit" class="bg-red-700 hover:bg-red-500 text-white font-semibold text-center tracking-widest border-2 rounded hover:border-red-700 border-red-300 flex-auto py-2 px-4 m-2">
                                     {{ __('Suprimir la descripcion') }} &raquo;
                         </button>
                 </form> 
@@ -67,7 +67,7 @@
 	
     <div class="border-t-2 border-gray-400 sm:flex justify-around mb-1">
         <a href="{{ route('programas.edit', ['slug' => $programme->slug ] ) }}">
-        <button type="submit" class="bg-blue-700 hover:bg-blue-500 text-white font-semibold text-center tracking-widest border-2 rounded-full hover:border-blue-700 border-blue-300 flex-auto py-2 px-4 m-2">
+        <button type="submit" class="bg-blue-700 hover:bg-blue-500 text-white font-semibold text-center tracking-widest border-2 rounded hover:border-blue-700 border-blue-300 flex-auto py-2 px-4 m-2">
                     {{ __('Actualizar el programa') }} &raquo;
         </button>
         </a>
@@ -75,7 +75,7 @@
         <form method="POST" href="{{ route('programas.destroy', $programme->slug ) }}">
             @csrf
             @method('DELETE')
-            <button type="submit" class="bg-red-800 hover:bg-red-600 text-white font-semibold text-center tracking-widest border-2 rounded-full hover:border-red-800 border-red-500 flex-auto py-2 px-4 m-2">
+            <button type="submit" class="bg-julien-red text-white font-semibold text-center tracking-widest border-2 rounded hover:border-red-800 border-red-500 flex-auto py-2 px-4 m-2">
                         {{ __('Suprimir el programa') }} &raquo;
             </button>
         </form>
