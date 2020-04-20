@@ -2,7 +2,7 @@
 
 @section('content')
     
-    <div class="px-4">        
+    <div>        
         @foreach($programmes as $programme)
 
         <div class="w-full mx-auto h-auto flex flex-col md:flex-row items-center">
@@ -16,7 +16,7 @@
             <!--Right Col-->
             <div class="w-full lg:w-1/2 text-julien-gris text-center">
                 
-                <div class="mt-4 md:mt-2 mb-6">
+                <div class="pt-4 md:mt-2 mb-6">
                     <h1 class="font-semibold text-2xl uppercase">
                     Programa
                     </h1>
@@ -30,7 +30,7 @@
                 
 
                 <div class="items-center text-base leading-normal not-italic mb-10">
-                    <p class="py-4 mx-16">{{ $programme->descriptionGlobale }}</p>
+                    <p class="py-4 mx-8 text-justify">{{ $programme->descriptionGlobale }}</p>
 
                     @foreach($programme->descriptions as $description)
                     <p>
