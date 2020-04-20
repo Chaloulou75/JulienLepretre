@@ -104,8 +104,36 @@ class TestimoniosController extends Controller
      */
     public function update(Request $request, Testimonios $testimonio)
     {
-        dump($testimonio);
-        return 'we will update';
+        $request->validate([
+                'name' => 'min:3',
+                'msg' => 'min:5',
+                'avatar' => 'image|mimes:jpeg,png,jpg,gif,svg',
+            ]);
+        if($request->hasfile('avatar'))
+        {
+            if($testimonio->avatar)
+            {
+                Storage::disk('s3')->delete('/img/programas'.$testimonio->avatar);
+            }
+
+            $path = $request->file('avatar')->store('img/testimonios', 's3');
+            Storage::disk('s3')->setVisibility($path, 'public');
+            $url = Storage::disk('s3')->url($path);
+
+            $testimonio->update([
+            'name' =>  $request->name,
+            'msg' => $request->msg,
+            'avatar' => basename($path),
+            'avatarurl' => $url, 
+        ]);
+        }
+
+        $testimonio->update([
+            'name' =>  $request->name,
+            'msg' => $request->msg,
+        ]);
+
+        return redirect()->back()->with('message.level', 'success')->with('message.content', __('Gracias por tu nuevo testimonio.'));
     }
 
     /**
@@ -116,7 +144,9 @@ class TestimoniosController extends Controller
      */
     public function destroy(Testimonios $testimonio)
     {
-       dump($testimonio); 
-       return 'go go destroyyyyeddd';
+        Storage::disk('s3')->delete('img/testimonios'.$testimonio->avatar);
+        $testimonio->delete();
+
+        return redirect()->back()->with('message.level', 'success')->with('message.content', __('El testimonio esta suprimido.'));
     }
 }
