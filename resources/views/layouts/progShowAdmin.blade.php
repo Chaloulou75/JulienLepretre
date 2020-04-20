@@ -1,4 +1,4 @@
-<div class="w-full lg:py-2 text-center text-justify text-julien-gris mx-auto rounded overflow-hidden shadow-lg my-2">
+<div class="w-full max-w-lg lg:py-2 text-center text-justify text-julien-gris mx-auto rounded overflow-hidden shadow-lg my-2">
     <div>
        <form class="bg-gray-100 px-2 py-2" method="POST" enctype="multipart/form-data" action="{{ route('description.store', $slug) }}">
         @csrf
