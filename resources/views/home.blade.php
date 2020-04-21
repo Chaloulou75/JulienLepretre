@@ -41,13 +41,13 @@
                 </div>                
             </div>
 
-            @if(Auth::user()->admin == 1)
+            @admin
             <a href="{{ route('admin.index') }}">
             <div class="my-16 w-full mx-auto bg-julien-gris hover:bg-julien-red border-2 border-white rounded text-white text-center not-italic px-4 py-2">
                 {{ __('Go to Admin Page') }} 
             </div>
             </a> 
-            @endif
+            @endadmin
 
         </div>
     </div>

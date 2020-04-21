@@ -78,11 +78,11 @@
         <tiempo-component></tiempo-component>
         <terminado-component></terminado-component>
 
-        @auth
+        @admin
 
             @include('layouts/progShowAdmin');
 
-        @endauth
+        @endadmin
 
     </div>
 @endsection
