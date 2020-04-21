@@ -52,11 +52,11 @@
             	                
             </div>
             <!--Right Col-->
-            <div class="w-full lg:w-1/2 md:py-2 md:px-24 {{-- justify-between items-center --}}">
+            <div class="w-full lg:w-1/2 px-4 md:py-2 md:px-24 {{-- justify-between items-center --}}">
 
                 @foreach($programme->descriptions as $description)
 
-                <p class="leading-normal uppercase font-bold text-lg mx-auto mb-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                <p class="mx-auto mb-8 items-center leading-normal uppercase font-bold text-lg  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                 	<i class="fas fa-check-square fa-lg fa-fw text-green-600 pl-1"></i>
                 	 {{ $description->phrase }}
                 </p>

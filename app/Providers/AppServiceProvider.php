@@ -25,13 +25,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // custome direction
+        //@admin as blade directive name
         Blade::if('admin', function () {
-            return auth()->check() && auth()->user()->admin == 1;
-          
-        // admin is just a directive name that i want to create
-        // return korbe authentication check korbe login ache kina
-        // && auth () jodi login means user hoy ebong er role ID 1 kina 
+            return auth()->check() && auth()->user()->admin == 1;  
           
         });
     }
