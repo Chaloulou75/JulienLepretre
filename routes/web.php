@@ -23,19 +23,25 @@ Route::get('/home', 'HomeController@index')->name('home'
 );
 
 //testimonios
-Route::resource('testimonios', 'TestimoniosController');
+Route::resource('testimonios', 'TestimoniosController',['except' => [
+    'index',
+]])->middleware('admin');
+
+Route::get('/testimonios', 'TestimoniosController@index')->name('testimonios.index');
 
 //Programme
-Route::resource('programas', 'ProgrammeController',['except' => [
-    'show', 'edit',
-]]);
 
+Route::resource('programas', 'ProgrammeController',['except' => [
+    'index', 'show', 'edit',
+]])->middleware('admin');
+
+Route::get('/programas', 'ProgrammeController@index')->name('programas.index');
 Route::get('/programas/{slug}', 'ProgrammeController@show')->name('programas.show');
-Route::get('/programas/{slug}/edit', 'ProgrammeController@edit')->name('programas.edit');
+Route::get('/programas/{slug}/edit', 'ProgrammeController@edit')->name('programas.edit')->middleware('admin');
 
 Route::resource('/programas/{slug}/description', 'DescriptionController',['only' => [
     'store', 'update', 'destroy',
-]]);
+]])->middleware('admin');
 
 Route::get('/perfil', 'PagesController@index')->name('profil');
 

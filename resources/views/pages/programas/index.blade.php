@@ -5,7 +5,7 @@
     <div>        
         @foreach($programmes as $programme)
 
-        <div class="w-full mx-auto h-auto flex flex-col md:flex-row items-center">
+        <div class="w-full mx-auto h-auto flex flex-col md:flex-row items-center mb-2">
 
             <!--Left Col-->
             <div class="w-full lg:w-1/2">

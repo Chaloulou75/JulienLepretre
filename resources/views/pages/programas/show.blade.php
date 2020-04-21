@@ -19,10 +19,10 @@
                 <p class="leading-normal uppercase font-base mb-12 mx-auto px-8">{{ $programme->descriptionGlobale }}</p>
 
                 <p class="leading-normal font-sm uppercase text-sm mb-4 mx-auto">
-                        6 sesiones : {{ $programme->prix6sesionesPesos }} $ / {{ $programme->prix6sesionesEuros }} Euros
+                        6 sesiones : {{ $programme->prix6sesionesPesos }} $ / {{ $programme->prix6sesionesEuros }} €
                 </p>
                 <p class="leading-normal font-sm uppercase text-sm mb-12 mx-auto">
-                        12 sesiones : {{ $programme->prix12sesionesPesos }} $ / {{ $programme->prix12sesionesEuros }} Euros 
+                        12 sesiones : {{ $programme->prix12sesionesPesos }} $ / {{ $programme->prix12sesionesEuros }} € 
                 </p>
                 
                 <a href="{{route('contact.index')}}" class="mx-auto"><button class=" bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Contactarme para recibir el programa</button></a>
@@ -65,7 +65,14 @@
             </div>
         </div>
 
-        <img class="w-full mb-2" src="/img/muevemas1.jpg" alt="muevemas"> 
+        <div class="flex flex-wrap mb-2">
+           @include('layouts/card6');
+            @include('layouts/card12'); 
+        </div>
+
+        
+
+        {{-- <img class="w-full mb-2" src="/img/muevemas1.jpg" alt="muevemas">  --}}
         <protusion-component></protusion-component>
         <noproblema-component></noproblema-component>
         <tiempo-component></tiempo-component>
