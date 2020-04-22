@@ -33,7 +33,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="bg-julien-gris hover:bg-julien-red border-2 border-white rounded text-white uppercase px-4 py-2">
+                                <button type="submit" class="bg-julien-gris hover:bg-julien-red border-2 border-white rounded text-white text-sm px-4 py-2">
                                     {{ __('Send Password Reset Link') }}
                                 </button>
                             </div>
