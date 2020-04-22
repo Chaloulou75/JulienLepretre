@@ -2,8 +2,17 @@
 
 @section('content')
     
-    <div>        
+    <div class="my-4">
+
+        <h1 class="font-bold text-3xl text-julien-gris text-center uppercase mb-4">
+                Los Programas
+        </h1>  
+
         @foreach($programmes as $programme)
+
+        <h1 class="font-bold text-2xl text-julien-red text-center uppercase not-italic my-4">
+                {{ $programme->title }}
+        </h1> 
 
         <div class="w-full mx-auto h-auto flex flex-col md:flex-row items-center mb-2">
 

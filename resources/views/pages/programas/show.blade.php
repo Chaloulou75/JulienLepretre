@@ -63,20 +63,18 @@
 
                 @endforeach
             </div>
-        </div>
-
-        <div class="flex flex-wrap mb-2">
-           @include('layouts/card6');
-            @include('layouts/card12'); 
-        </div>
-
-        
+        </div>        
 
         {{-- <img class="w-full mb-2" src="/img/muevemas1.jpg" alt="muevemas">  --}}
         <protusion-component></protusion-component>
         <noproblema-component></noproblema-component>
         <tiempo-component></tiempo-component>
         <terminado-component></terminado-component>
+
+        <div class="flex flex-wrap mb-2">
+            @include('layouts/card6');
+            @include('layouts/card12'); 
+        </div>
 
         @admin
 
