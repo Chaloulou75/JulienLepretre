@@ -4,7 +4,7 @@
 <div class="container my-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card text-julien-gris uppercase">
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
@@ -63,7 +63,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="bg-julien-gris hover:bg-julien-red border-2 border-white rounded text-white uppercase px-4 py-2">
                                     {{ __('Register') }}
                                 </button>
                             </div>

@@ -2,9 +2,9 @@
 
 @section('content')
     
-    <div class="w-full bg-julien-gris text-white px-4 pb-24">
+    <div class="w-full text-julien-gris my-4">
 
-        <h1 class="text-center text-3xl tracking-wider uppercase font-semibold py-4">Sobre mi</h1>
+        <h1 class="font-bold text-3xl text-center uppercase mb-4">Sobre mi</h1>
              
         <div class="flex flex-col md:flex-row items-center justify-around m-2">
             <div class="w-full md:w-1/3 m-4">
@@ -23,10 +23,10 @@
         </div>
         <div class="flex flex-col md:flex-row mt-2 mb-4">
             <div class="w-full md:w-1/4 p-2 mb-4 md:ml-4 md:mr-2 border rounded bg-gray-200 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-                <h3 class="text-lg text-gray-600 font-semibold my-2 pb-2">Osteopata</h3>
-                <h3 class="text-lg text-gray-600 font-semibold my-2 pb-2">Instructor en prevención</h3>   
-                <h3 class="text-lg text-gray-600 font-semibold my-2 pb-2">Coach deportivo</h3>
-                <h3 class="text-lg text-gray-600 font-semibold my-2">Conferencista</h3>     
+                <h3 class="text-lg text-julien-gris font-semibold my-2 pb-2">Osteopata</h3>
+                <h3 class="text-lg text-julien-gris font-semibold my-2 pb-2">Instructor en prevención</h3>   
+                <h3 class="text-lg text-julien-gris font-semibold my-2 pb-2">Coach deportivo</h3>
+                <h3 class="text-lg text-julien-gris font-semibold my-2">Conferencista</h3>     
             </div> 
             <div class="md:flex w-full md:w-3/4">
                 <div class="flex-1 px-2 py-2 text-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">

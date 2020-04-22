@@ -4,7 +4,7 @@
 <div class="container my-4 text-julien-gris uppercase not-italic">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card text-julien-gris">
                 <div class="card-header">
                     Dashboard
                 </div>
@@ -24,9 +24,7 @@
                         {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
 
-                    
-
-                     <div class=" dropdown-menu w-1/2 text-white hover:bg-julien-red hover:text-white" aria-labelledby="navbarDropdown">
+                    <div class=" dropdown-menu w-1/2 text-white hover:bg-julien-red hover:text-white" aria-labelledby="navbarDropdown">
                         <a class="w-full hover:bg-julien-red text-julien-gris hover:text-white px-4 py-2" href="{{ route('logout') }}" 
                            onclick="event.preventDefault();
                                          document.getElementById('logout-form').submit();">
