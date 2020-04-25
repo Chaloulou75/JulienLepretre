@@ -38,7 +38,7 @@
                 </p>
                 
                 
-                <a href="{{url('$programme->lienTiendup') }}" class="mx-auto"><button class=" bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Comprar</button></a>
+                <a href="{{ url($programme->lienTiendup) }}" class="mx-auto"><button class="bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Comprar</button></a>
                 <p class="pt-1 text-xs">Pagarlo con MercadoPago o Paypal</p>
 
             </div>
@@ -51,7 +51,7 @@
         <div class="w-full md:w-5/6 mx-auto flex flex-col md:flex-row items-center justify-around text-justify mb-2">
             <div class="flex flex-col w-full h-full lg:w-1/2 px-2 my-4 mb-4">
                 <p class="leading-normal uppercase text-base text-justifyitems-center mx-auto px-4">{{$programme->descriptionComplete}}</p>
-                <a href="{{url('$programme->lienTiendup') }}" class="mx-auto"><button class=" bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Pedir Ahora</button></a>
+                <a href="{{url($programme->lienTiendup) }}" class="mx-auto"><button class=" bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Pedir Ahora</button></a>
             </div>
 
             <div class="w-full lg:w-1/2 md:py-2 text-center">
@@ -59,6 +59,7 @@
                 <img src="{{ url($programme->imageurl)}}" class="fill-current object-cover w-full mx-auto" alt="image">
             </div>
         </div>
+
         <div class="w-full text-center">
             <h2 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8">Adentro del programa</h2>
         </div>    
@@ -87,7 +88,7 @@
 
                 </div>                
 
-                <a href="{{url('$programme->lienTiendup') }}" class="mx-auto"><button class="bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Pedir Ahora</button></a>
+                <a href="{{url($programme->lienTiendup) }}" class="mx-auto"><button class="bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Pedir Ahora</button></a>
             </div>
         </div>        
 
@@ -98,6 +99,41 @@
         @endadmin
 
     </div>
+    <div class="w-full text-center">
+        <h2 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8">Testimonios</h2>
+    </div>
+    <div class="w-full mx-auto flex flex-col md:flex-row flex-wrap items-stretch justify-around text-justify">
+
+    @foreach($testimonios as $testimonio)
+
+    <div class="w-full max-w-sm md:w-1/3 mx-auto my-4 rounded overflow-hidden shadow-lg animated bounceInUp">
+      {{-- <img class="w-full" src="/img/titreprog.jpg" alt="programme"> --}}
+      <img src="{{ url($testimonio->avatarurl) }}" class="fill-current object-cover w-40 h-40 rounded-full mx-auto p-2" alt="avatar">
+      <div class="text-julien-gris px-6 py-4">
+        <div class="font-bold text-xl text-center mb-2">{{$testimonio->name}}</div>
+        <div class="text-base">
+          <p>{{$testimonio->msg}}</p>
+        </div>
+      </div>
+
+      @admin
+
+      <div class="flex justify-between px-6 py-4">
+        <a class="inline-block text-xs text-julien-red not-italic" href="{{ action('TestimoniosController@edit', $testimonio) }}">Editar</a>
+        <form method="POST" action="{{ action('TestimoniosController@destroy', $testimonio) }}"> 
+            @csrf 
+            @method('DELETE')
+        <button class="inline-block text-xs text-julien-red" >Suprimir</button>
+        </form>     
+      </div>
+      
+      @endadmin
+      
+    </div>
+
+    @endforeach
+
+
 @endsection
 
 

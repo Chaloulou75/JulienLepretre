@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Programme;
+use App\Testimonios;
 use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -123,9 +124,11 @@ class ProgrammeController extends Controller
      */
     public function show($slug)
     {   
-        $programme = Programme::with('descriptions')->where('slug' , $slug)->firstOrFail(); 
+        $programme = Programme::with('descriptions')->where('slug' , $slug)->firstOrFail();
 
-        return view('/pages/programas/show', $programme, compact('programme'));
+        $testimonios = Testimonios::latest()->take(3)->get(); 
+
+        return view('/pages/programas/show', $programme, compact('programme', 'testimonios'));
     }
 
     /**

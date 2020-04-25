@@ -23,7 +23,6 @@
 	  </div>
 
 	  @admin
-
 	  <div class="flex justify-between px-6 py-4">
 	  	<a class="inline-block text-xs text-julien-red not-italic" href="{{ action('TestimoniosController@edit', $testimonio) }}">Editar</a>
 	  	<form method="POST" action="{{ action('TestimoniosController@destroy', $testimonio) }}"> 
@@ -31,8 +30,7 @@
 	  		@method('DELETE')
 	  	<button class="inline-block text-xs text-julien-red" >Suprimir</button>
 	  	</form>	  	
-	  </div>
-	  
+	  </div>	  
 	  @endadmin
 	  
 	</div>
