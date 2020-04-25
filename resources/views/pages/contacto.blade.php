@@ -8,7 +8,7 @@
             <h1>PIDE TU PLAN DE ENTRENAMIENTO EN CASA</h1>
     </div>
 
-    <div class="w-full max-w-xs lg:max-w-xl lg:w-4/5 m-auto p-auto pt-8">   
+    <div class="w-full max-w-xs lg:max-w-xl lg:w-4/5 m-auto p-auto pt-8 animated bounceInUp">   
 
     <form class="bg-gray-100 border-2 border-white shadow-md rounded text-julien-gris uppercase px-8 pt-6 pb-8 mb-4" method="POST" action="{{ route('contact.store') }}">
         @csrf

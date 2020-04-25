@@ -20,15 +20,15 @@
             <div class="w-full lg:w-1/2 md:py-2 text-center items-center">
                 
                 <div class="pt-4 md:mt-2 m-2">
-                    <h1 class="font-bold text-2xl uppercase">
-                        Programa
-                    </h1>
-                    <h2 class="uppercase not-italic text-3xl font-semibold tracking-loose mb-4">
-                            {{ $programme->title }}
+                    <h2 class="font-black uppercase">
+                    Programa
+                    </h2>
+                    <h2 class="uppercase not-italic font-bold tracking-loose mb-4">
+                        {{ $programme->title }}
                     </h2>
                 </div>
 
-                <p class="leading-normal uppercase font-base mb-8 mx-auto px-8">
+                <p class="leading-normal uppercase font-medium mb-8 mx-auto px-8">
                     {{ $programme->descriptionCourte }}
                 </p>
 

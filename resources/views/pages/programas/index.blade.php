@@ -10,7 +10,7 @@
 
         @foreach($programmes as $programme)
 
-        <div class="w-5/6 md:w-2/3 mx-auto h-auto flex flex-col md:flex-row items-center border-2 border-julien-gris p-8 m-16">
+        <div class="w-5/6 md:w-2/3 mx-auto flex flex-col md:flex-row items-center border-2 border-julien-gris p-8 my-8 animated bounceInUp">
 
             <!--Left Col-->
             <div class="w-full md:w-1/3">
@@ -22,15 +22,15 @@
             <div class="w-full md:w-2/3 text-julien-gris text-center">
                 
                 <div class="pt-4 md:mt-2 m-2">
-                    <h1 class="font-bold text-2xl uppercase">
+                    <h2 class="font-black uppercase">
                     Programa
-                    </h1>
-                    <h2 class="uppercase not-italic text-3xl font-semibold tracking-loose mb-4">
+                    </h2>
+                    <h2 class="uppercase not-italic font-bold tracking-loose mb-4">
                         {{ $programme->title }}
                     </h2>
                 </div>                
 
-                <div class="items-center text-base leading-medium not-italic mb-10">
+                <div class="items-center text-base font-medium not-italic mb-10">
                     <p class="py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
 
                     <p class="py-2 mx-auto text-center">
