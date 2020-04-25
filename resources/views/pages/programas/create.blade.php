@@ -37,11 +37,37 @@
         </div>
 
         <div class="mb-4">
-            <label for="descriptionGlobale" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Description Globale') }}</label>
+            <label for="descriptionCourte" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Description Courte') }}</label>
 
-            <textarea id="descriptionGlobale" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('descriptionGlobale') bg-red-dark @enderror" name="descriptionGlobale" value="{{ old('descriptionGlobale') }}" required autocomplete="descriptionGlobale"></textarea>
+            <textarea id="descriptionCourte" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('descriptionCourte') bg-red-dark @enderror" name="descriptionCourte" value="{{ old('descriptionCourte') }}" required autocomplete="descriptionCourte"></textarea>
 
-            @error('descriptionGlobale')
+            @error('descriptionCourte')
+                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            
+        </div>
+
+        <div class="mb-4">
+            <label for="descriptionComplete" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Description Complète') }}</label>
+
+            <textarea id="descriptionComplete" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('descriptionComplete') bg-red-dark @enderror" name="descriptionComplete" value="{{ old('descriptionGlobale') }}" required autocomplete="descriptionComplete"></textarea>
+
+            @error('descriptionComplete')
+                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            
+        </div>
+
+        <div class="mb-4">
+            <label for="photoProgramme" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Photo du programme') }}</label>
+
+            <input id="photoProgramme" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('photoProgramme') bg-red-dark @enderror" name="photoProgramme" value="" required autocomplete="photoProgramme">
+
+            @error('photoProgramme')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
@@ -76,11 +102,11 @@
         </div>         
 
         <div class="mb-4">
-            <label for="prix6sesionesPesos" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Precio para 6 sesiones (en Pesos Ar $)') }}</label>
+            <label for="prixPesos" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Precio en Pesos Ar $') }}</label>
            
-                <input id="prix6sesionesPesos" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('prix6sesionesPesos') bg-red-dark @enderror" name="prix6sesionesPesos" value="{{ old('prix6sesionesPesos') }}" required autocomplete="prix6sesionesPesos">
+                <input id="prixPesos" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('prixPesos') bg-red-dark @enderror" name="prixPesos" value="{{ old('prixPesos') }}" required autocomplete="prixPesos">
 
-                @error('prix6sesionesPesos')
+                @error('prixPesos')
                     <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                         <strong>{{ $message }}</strong>
                     </span>
@@ -88,11 +114,11 @@
         </div>
 
         <div class="mb-4">
-            <label for="prix12sesionesPesos" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Precio para 12 sesiones (en Pesos Ar $)') }}</label>
+            <label for="prixDollar" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Precio en US Dollar $') }}</label>
            
-                <input id="prix12sesionesPesos" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('prix12sesionesPesos') bg-red-dark @enderror" name="prix12sesionesPesos" value="{{ old('prix12sesionesPesos') }}" required autocomplete="prix12sesionesPesos">
+                <input id="prixDollar" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('prixDollar') bg-red-dark @enderror" name="prixDollar" value="{{ old('prixDollar') }}" required autocomplete="prixDollar">
 
-                @error('prix12sesionesPesos')
+                @error('prixDollar')
                     <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                         <strong>{{ $message }}</strong>
                     </span>
@@ -100,27 +126,31 @@
         </div>
 
         <div class="mb-4">
-            <label for="prix6sesionesEuros" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Precio para 6 sesiones (en Euros)') }}</label>
-           
-                <input id="prix6sesionesEuros" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('prix6sesionesEuros') bg-red-dark @enderror" name="prix6sesionesEuros" value="{{ old('prix6sesionesEuros') }}" required autocomplete="prix6sesionesEuros">
+            <label for="lienYoutube" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Youtube du programme') }}</label>
 
-                @error('prix6sesionesEuros')
-                    <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror           
+            <input id="lienYoutube" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
+             @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="{{ old('lienYoutube') }}" required autocomplete="lienYoutube">
+
+            @error('lienYoutube')
+                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            
         </div>
 
         <div class="mb-4">
-            <label for="prix12sesionesEuros" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Precio para 12 sesiones (en Euros)') }}</label>
-           
-                <input id="prix12sesionesEuros" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('prix12sesionesEuros') bg-red-dark @enderror" name="prix12sesionesEuros" value="{{ old('prix12sesionesEuros') }}" required autocomplete="prix12sesionesEuros">
+            <label for="lienTiendup" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Tiendup du programme') }}</label>
 
-                @error('prix12sesionesEuros')
-                    <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror           
+            <input id="lienTiendup" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
+             @error('lienTiendup') bg-red-dark @enderror" name="lienTiendup" value="{{ old('lienTiendup') }}" required autocomplete="lienTiendup">
+
+            @error('lienTiendup')
+                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            
         </div>
 
         <div class="mb-4">

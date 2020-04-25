@@ -10,7 +10,7 @@ class Programme extends Model
 
 	use Sluggable;
 
-    protected $fillable = ['title', 'descriptionGlobale', 'image', 'image2', 'prix6sesionesPesos', 'prix12sesionesPesos', 'prix6sesionesEuros', 'prix12sesionesEuros', 'imageurl', 'image2url',
+    protected $fillable = ['title', 'descriptionCourte', 'descriptionComplete', 'photoProgramme', 'photoProgUrl', 'image', 'image2', 'imageurl', 'image2url', 'prixPesos', 'prixDollar', 'lienYoutube', 'lienTiendup',
     ];
 
     public function descriptions()

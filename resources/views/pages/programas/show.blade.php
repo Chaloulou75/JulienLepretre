@@ -4,77 +4,92 @@
     
     <div class="my-4 text-julien-gris">
 
-    	{{-- <h1 class="font-bold text-3xl text-teal-700 text-center uppercase my-4">
-                {{ $programme->title }}
-        </h1> --}}
+        <div class="w-full md:w-3/4 mx-auto flex flex-col-reverse md:flex-row items-center justify-around text-justify mb-2" >
 
+            <!--Left Col -->
+            <div class="flex flex-col w-full h-full lg:w-1/2 mx-auto items-center">
+                <iframe width="420" height="345" src="http://www.youtube.com/embed/{{$programme->lienYoutube}}" allowfullscreen>
+                </iframe>            	
+            </div>
 
-        <div class="w-full m-auto flex flex-col-reverse md:flex-row items-center justify-around text-justify" >
-        <!--Left Col style="background-image: url(/img/programas/)"-->
+            <!--Right Col-->
+            <div class="w-full lg:w-1/2 md:py-2 text-center items-center">
+                
+                <div class="pt-4 md:mt-2 m-2">
+                    <h1 class="font-bold text-2xl uppercase">
+                        Programa
+                    </h1>
+                    <h2 class="uppercase not-italic text-3xl font-semibold tracking-loose mb-4">
+                            {{ $programme->title }}
+                    </h2>
+                </div>
 
-            <div class="flex flex-col w-full h-full lg:w-1/2 px-2 my-4 mb-4">
-
-            	<h2 class="uppercase font-base not-italic text-julien-red text-3xl tracking-loose mx-auto mb-16">{{ $programme->title }}</h2>
-
-                <p class="leading-normal uppercase font-base mb-12 mx-auto px-8">{{ $programme->descriptionGlobale }}</p>
+                <p class="leading-normal uppercase font-base mb-8 mx-auto px-8">
+                    {{ $programme->descriptionCourte }}
+                </p>
 
                 <p class="leading-normal font-sm uppercase text-sm mb-4 mx-auto">
-                        6 sesiones : {{ $programme->prix6sesionesPesos }} $ / {{ $programme->prix6sesionesEuros }} €
+                         {{ $programme->prixPesos }} AR$ / {{ $programme->prixDollar }} US$
                 </p>
-                <p class="leading-normal font-sm uppercase text-sm mb-12 mx-auto">
-                        12 sesiones : {{ $programme->prix12sesionesPesos }} $ / {{ $programme->prix12sesionesEuros }} € 
+
+                <p class="mb-12 mx-auto">
+                  <i class="fas fa-film fa-fw fa-2x pl-1"></i>
+                  <i class="fas fa-infinity fa-fw fa-2x pl-1"></i> 
                 </p>
                 
-                <a href="{{route('contact.index')}}" class="mx-auto"><button class=" bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Contactarme para recibir el programa</button></a>
-            </div>
-            <!--Right Col-->
-            <div class="w-full lg:w-1/2 md:py-2 text-center">
-                <!--Add your product image here-->
-                <img src="{{ url($programme->imageurl)}}" class="fill-current object-cover w-full mx-auto" alt="image">
+                
+                <a href="{{url('$programme->lienTiendup') }}" class="mx-auto"><button class=" bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Comprar</button></a>
+                <p class="pt-1 text-xs">Pagarlo con MercadoPago o Paypal</p>
 
             </div>
         </div>
-		<div class="w-full md:py-2 px-4 md:px-2 text-center mx-auto">
-        	<h2 class="uppercase font-semibold not-italic text-xl tracking-loose my-4">¿QUÉ HAY ADENTRO DEL PROGRAMA?</h2>
+        
+		<div class="w-full text-center mb-2">
+        	<h2 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8">El programa</h2>
+        </div>
 
-			<p class="leading-normal uppercase text-base text-justify mb-2 pb-2">Cada día tendrás una sesión diferente, de entre 10 a 15 minutos de duración con 4 ejercicios. Las sesiones estan pensadas de manera entrar en calor, gradualmente, con ejercicios de movilidad, para luego seguir fortaleciendo tu cuerpo con ejercicios de trabajo muscular de baja intensidad para mejorar tu estabilidad.</p>
+        <div class="w-full md:w-5/6 mx-auto flex flex-col md:flex-row items-center justify-around text-justify mb-2">
+            <div class="flex flex-col w-full h-full lg:w-1/2 px-2 my-4 mb-4">
+                <p class="leading-normal uppercase text-base text-justifyitems-center mx-auto px-4">{{$programme->descriptionComplete}}</p>
+                <a href="{{url('$programme->lienTiendup') }}" class="mx-auto"><button class=" bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Pedir Ahora</button></a>
+            </div>
 
-			<p class="leading-normal uppercase text-base text-justify pb-2">Al final de la sesión, se realizan movimientos menos intensos con el objetivo de relajar el cuerpo al mismo tiempo que trabajamos la movilidad.</p>
+            <div class="w-full lg:w-1/2 md:py-2 text-center">
 
-    	</div>
+                <img src="{{ url($programme->imageurl)}}" class="fill-current object-cover w-full mx-auto" alt="image">
+            </div>
+        </div>
+        <div class="w-full text-center">
+            <h2 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8">Adentro del programa</h2>
+        </div>    
 
-    	<div class="w-full mx-auto flex flex-col md:flex-row items-center md:px-4" >
-        <!--Left Col style="background-image: url(/img/programas/)"-->
+    	<div class="w-full md:w-5/6 mx-auto flex flex-col-reverse md:flex-row items-center mb-2">
 
+            <!--Left Col -->
             <div class="flex flex-col w-full lg:w-1/2 justify-center border border-white rounded-lg overflow-hidden items-start mb-4">
 
 				<img src="{{ url($programme->image2url) }}" class="fill-current object-cover w-full mx-auto" alt="image">
             	                
             </div>
+
             <!--Right Col-->
-            <div class="w-full lg:w-1/2 px-4 md:py-2 md:px-24 {{-- justify-between items-center --}}">
+            <div class="w-full lg:w-1/2 mx-auto text-center items-center">
 
-                @foreach($programme->descriptions as $description)
+                <div class="my-24">
+                    @foreach($programme->descriptions as $description)
 
-                <p class="mx-auto mb-8 items-center leading-normal uppercase font-bold text-lg  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-                	<i class="fas fa-check-square fa-lg fa-fw text-green-600 pl-1"></i>
-                	 {{ $description->phrase }}
-                </p>
+                    <p class="mx-auto mb-8 items-center leading-normal uppercase font-bold text-lg  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                        <i class="fas fa-check-square fa-lg fa-fw text-green-600 pl-1"></i>
+                         {{ $description->phrase }}
+                    </p>
 
-                @endforeach
+                    @endforeach 
+
+                </div>                
+
+                <a href="{{url('$programme->lienTiendup') }}" class="mx-auto"><button class="bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Pedir Ahora</button></a>
             </div>
         </div>        
-
-        {{-- <img class="w-full mb-2" src="/img/muevemas1.jpg" alt="muevemas">  --}}
-        <protusion-component></protusion-component>
-        <noproblema-component></noproblema-component>
-        <tiempo-component></tiempo-component>
-        <terminado-component></terminado-component>
-
-        <div class="flex flex-wrap mb-2">
-            @include('layouts/card6');
-            @include('layouts/card12'); 
-        </div>
 
         @admin
 
@@ -84,3 +99,15 @@
 
     </div>
 @endsection
+
+
+{{-- <img class="w-full mb-2" src="/img/muevemas1.jpg" alt="muevemas">  --}}
+        {{-- <protusion-component></protusion-component>
+        <noproblema-component></noproblema-component>
+        <tiempo-component></tiempo-component>
+        <terminado-component></terminado-component> --}}
+
+        {{-- <div class="flex flex-wrap mb-2">
+            @include('layouts/card6');
+            @include('layouts/card12'); 
+        </div> --}}

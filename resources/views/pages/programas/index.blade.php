@@ -2,59 +2,58 @@
 
 @section('content')
     
-    <div class="my-4">
+    <div>
 
-        <h1 class="font-bold text-3xl text-julien-gris text-center uppercase mb-4">
+        <h1 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8 ">
                 Los Programas
         </h1>  
 
         @foreach($programmes as $programme)
 
-        <h1 class="font-bold text-2xl text-julien-red text-center uppercase not-italic my-4">
-                {{ $programme->title }}
-        </h1> 
-
-        <div class="w-full mx-auto h-auto flex flex-col md:flex-row items-center mb-2">
+        <div class="w-5/6 md:w-2/3 mx-auto h-auto flex flex-col md:flex-row items-center border-2 border-julien-gris p-8 m-16">
 
             <!--Left Col-->
-            <div class="w-full lg:w-1/2">
+            <div class="w-full md:w-1/3">
                 <!--Add your product image here-->
-                 <img src="{{ url($programme->imageurl) }}" class="fill-current mx-auto" alt="image">
+                 <img src="{{ url($programme->photoProgUrl) }}" class="fill-current mx-auto" alt="image">
             </div>
         
             <!--Right Col-->
-            <div class="w-full lg:w-1/2 text-julien-gris text-center">
+            <div class="w-full md:w-2/3 text-julien-gris text-center">
                 
-                <div class="pt-4 md:mt-2 mb-6">
-                    <h1 class="font-semibold text-2xl uppercase">
+                <div class="pt-4 md:mt-2 m-2">
+                    <h1 class="font-bold text-2xl uppercase">
                     Programa
                     </h1>
-                </div>
-                
-                <div>
-                    <h2 class="uppercase not-italic text-3xl tracking-loose my-6">
+                    <h2 class="uppercase not-italic text-3xl font-semibold tracking-loose mb-4">
                         {{ $programme->title }}
                     </h2>
-                </div>
-                
+                </div>                
 
-                <div class="items-center text-base leading-normal not-italic mb-10">
-                    <p class="py-4 mx-8 text-justify">{{ $programme->descriptionGlobale }}</p>
+                <div class="items-center text-base leading-medium not-italic mb-10">
+                    <p class="py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
 
-                    @foreach($programme->descriptions as $description)
-                    <p>
-                        <i class="fas fa-check-square fa-lg fa-fw text-green-600 pl-1"></i>
-                         {{ $description->phrase }}
+                    <p class="py-2 mx-auto text-center">
+                        <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>
+                        <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>
+                        <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>
+                        <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>
+                        <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>
                     </p>
-                    @endforeach
+
+                    <p class="leading-normal font-sm uppercase text-sm mx-auto">
+                         {{ $programme->prixPesos }} AR$ / {{ $programme->prixDollar }} US$
+                    </p>
                     
                 </div>
                 <div class="mb-4 md:mb-2">
-                    <a href="{{ route('programas.show', ['slug' => $programme->slug]) }}"><button class="bg-julien-gris hover:bg-julien-red text-white font-semibold tracking-widest uppercase border-2 border-white hover:border-julien-red rounded shadow hover:shadow-lg py-2 px-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver mas</button></a>
+                    <a href="{{ route('programas.show', ['slug' => $programme->slug]) }}" {{-- {{ url($programme->lien) }} target="_blank"--}}><button class="bg-julien-gris hover:bg-julien-red text-white font-semibold tracking-widest uppercase border-2 border-white hover:border-julien-red rounded shadow hover:shadow-lg py-2 px-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver mas</button></a>
                 </div>
                 
             </div>      
         </div>
+
+        
         @endforeach 
     </div>
 @endsection
