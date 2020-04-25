@@ -13,13 +13,13 @@
         <div class="w-5/6 md:w-2/3 mx-auto flex flex-col md:flex-row items-center border-2 border-julien-gris p-8 my-8 animated bounceInUp">
 
             <!--Left Col-->
-            <div class="w-full md:w-1/3">
+            <div class="w-full md:w-1/3 items-center mx-auto ">
                 <!--Add your product image here-->
                  <img src="{{ url($programme->photoProgUrl) }}" class="fill-current mx-auto" alt="image">
             </div>
         
             <!--Right Col-->
-            <div class="w-full md:w-2/3 text-julien-gris text-center">
+            <div class="w-full md:w-2/3 text-julien-gris text-center items-center mx-auto px-4">
                 
                 <div class="pt-4 md:mt-2 m-2">
                     <h2 class="font-black uppercase">
@@ -31,7 +31,7 @@
                 </div>                
 
                 <div class="items-center text-base font-medium not-italic mb-10">
-                    <p class="py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
+                    <p class="whitespace-pre-line py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
 
                     <p class="py-2 mx-auto text-center">
                         <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>

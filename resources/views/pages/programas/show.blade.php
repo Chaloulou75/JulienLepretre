@@ -28,7 +28,7 @@
                     </h2>
                 </div>
 
-                <p class="leading-normal uppercase font-medium mb-8 mx-auto px-8">
+                <p class="whitespace-pre-line leading-normal uppercase font-medium mb-8 mx-auto px-8">
                     {{ $programme->descriptionCourte }}
                 </p>
 
@@ -54,7 +54,7 @@
 
         <div class="w-full md:w-5/6 mx-auto flex flex-col md:flex-row items-center justify-around text-justify mb-2">
             <div class="flex flex-col w-full h-full lg:w-1/2 px-2 my-4 mb-4">
-                <p class="leading-normal uppercase text-base text-justifyitems-center mx-auto px-4">{{$programme->descriptionComplete}}</p>
+                <p class="whitespace-pre-line leading-normal uppercase text-base text-justify items-center mx-auto px-4">{{$programme->descriptionComplete}}</p>
                 <a href="{{url($programme->lienTiendup) }}" class="mx-auto"><button class=" bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Pedir Ahora</button></a>
             </div>
 
@@ -64,11 +64,11 @@
             </div>
         </div>
 
-        <div class="w-full text-center">
+        <div class="w-full text-center mb-2">
             <h2 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8">Adentro del programa</h2>
         </div>    
 
-    	<div class="w-full md:w-5/6 mx-auto flex flex-col-reverse md:flex-row items-center mb-2">
+    	<div class="w-full md:w-5/6 mx-auto flex flex-col-reverse md:flex-row items-center mb-4">
 
             <!--Left Col -->
             <div class="flex flex-col w-full lg:w-1/2 justify-center border border-white rounded-lg overflow-hidden items-start mb-4">
@@ -78,12 +78,12 @@
             </div>
 
             <!--Right Col-->
-            <div class="w-full lg:w-1/2 mx-auto text-center items-center">
+            <div class="w-full lg:w-1/2 mx-auto text-center items-center mb-4">
 
-                <div class="my-24">
+                <div class="mx-auto my-4">
                     @foreach($programme->descriptions as $description)
 
-                    <p class="mx-auto mb-8 items-center leading-normal uppercase font-bold text-lg  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                    <p class="mx-auto mb-8 leading-normal uppercase font-bold text-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                         <i class="fas fa-check-square fa-lg fa-fw text-green-600 pl-1"></i>
                          {{ $description->phrase }}
                     </p>
