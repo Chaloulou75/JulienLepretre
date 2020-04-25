@@ -2,9 +2,10 @@
 
 @section('content')
     
-    <div class="w-full text-julien-gris my-4">
+    <div class="mb-4">
 
-        <h1 class="font-bold text-3xl text-center uppercase mb-4">Sobre mi</h1>
+        <h1 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8 ">Sobre mi
+        </h1>
              
         <div class="flex flex-col md:flex-row items-center justify-around m-2">
             <div class="w-full md:w-1/3 m-4">

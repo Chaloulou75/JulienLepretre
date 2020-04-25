@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="my-4">
+<div class="mb-4">
 
-    <h1 class="font-bold text-3xl text-julien-gris text-center uppercase my-4">
+    <h1 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8 ">
                 Testimonios
     </h1>
 

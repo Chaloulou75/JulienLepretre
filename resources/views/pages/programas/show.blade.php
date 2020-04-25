@@ -2,7 +2,11 @@
 
 @section('content')
     
-    <div class="my-4 text-julien-gris">
+    <div class="mb-4 text-julien-gris">
+
+        <h1 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8 ">
+                {{ $programme->title }}
+        </h1> 
 
         <div class="w-full md:w-3/4 mx-auto flex flex-col-reverse md:flex-row items-center justify-around text-justify mb-2" >
 
