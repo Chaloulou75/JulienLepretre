@@ -38078,16 +38078,6 @@ var render = function() {
               attrs: { href: "/contacto" }
             },
             [_vm._v("Contacto")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
-              attrs: { href: "/login" }
-            },
-            [_vm._v("Login")]
           )
         ]
       )
