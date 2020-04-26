@@ -22,27 +22,27 @@
             <div class="w-full md:w-2/3 text-julien-gris text-center items-center mx-auto px-4">
                 
                 <div class="pt-4 md:mt-2 m-2">
-                    <h2 class="font-black uppercase">
+                    <h3 class="font-bold uppercase">
                     Programa
-                    </h2>
-                    <h2 class="uppercase not-italic font-bold tracking-loose mb-4">
+                    </h3>
+                    <h3 class="uppercase not-italic font-semibold tracking-loose">
                         {{ $programme->title }}
-                    </h2>
-                </div>                
+                    </h3>
 
-                <div class="items-center text-base font-medium not-italic mb-10">
-                    <p class="whitespace-pre-wrap py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
-
-                    <p class="py-2 mx-auto text-center">
+                    <p class="py-2 mx-auto text-center mb-2">
                         <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>
                         <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>
                         <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>
                         <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>
                         <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>
                     </p>
+                </div>                
+
+                <div class="items-center text-base font-medium not-italic mb-8">
+                    <p class="whitespace-pre-wrap py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
 
                     <p class="leading-normal font-sm uppercase text-sm mx-auto">
-                         {{ $programme->prixPesos }} AR$ / {{ $programme->prixDollar }} US$
+                         {{ floatval($programme->prixPesos) }} AR$ / {{ floatval($programme->prixDollar) }} US$
                     </p>
                     
                 </div>
