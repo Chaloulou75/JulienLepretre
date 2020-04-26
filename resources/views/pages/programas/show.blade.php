@@ -68,7 +68,7 @@
         </div>
 
         <div class="w-full md:w-5/6 mx-auto flex flex-col md:flex-row items-center justify-around text-justify mb-2">
-            <div class="flex flex-col w-full h-full lg:w-1/2 px-2 my-4 mb-4">
+            <div class="flex flex-col w-full h-full lg:w-1/2 px-2 my-4">
                 <p class="whitespace-pre-wrap leading-normal text-base text-justify items-center mx-auto px-4">{{$programme->descriptionComplete}}</p>
 
                 <a href="{{url($programme->lienTiendup) }}" class="mx-auto"><button class=" bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Pedir Ahora</button></a>
@@ -99,7 +99,7 @@
                 <div class="my-4 mx-10 md:mx-16 text-left">
                     @foreach($programme->descriptions as $description)
 
-                    <p class="mb-8 lowercase leading-normal font-bold text-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                    <p class="mb-8 leading-normal font-bold text-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                         <i class="fas fa-check-square fa-lg fa-fw text-green-600 pl-1"></i>
                          {{ $description->phrase }}
                     </p>
