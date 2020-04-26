@@ -2,7 +2,7 @@
 
 @section('content')
     
-    <div class="mb-4">
+    <div class="mb-4 text-julien-gris">
 
         <h1 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8 ">Sobre mi
         </h1>

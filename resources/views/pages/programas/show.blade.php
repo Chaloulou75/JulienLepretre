@@ -119,9 +119,11 @@
         @endadmin
 
     </div>
+
     <div class="w-full text-center">
         <h2 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8">Testimonios</h2>
     </div>
+    
     <div class="w-full mx-auto flex flex-col md:flex-row flex-wrap items-stretch justify-around text-justify">
 
     @foreach($testimonios as $testimonio)
@@ -129,7 +131,7 @@
     <div class="w-full max-w-sm md:w-1/3 mx-auto my-4 rounded overflow-hidden shadow-lg animated bounceInUp">
       {{-- <img class="w-full" src="/img/titreprog.jpg" alt="programme"> --}}
       <img src="{{ url($testimonio->avatarurl) }}" class="fill-current object-cover w-40 h-40 rounded-full mx-auto p-2" alt="avatar">
-      <div class="text-julien-gris lowercase px-6 py-4">
+      <div class="text-julien-gris px-6 py-4">
         <div class="font-bold text-xl text-center mb-2">{{$testimonio->name}}</div>
         <div class="text-base">
           <p class="whitespace-pre-wrap">{{$testimonio->msg}}</p>
