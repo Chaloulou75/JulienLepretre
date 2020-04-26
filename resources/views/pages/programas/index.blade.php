@@ -31,7 +31,7 @@
                 </div>                
 
                 <div class="items-center text-base font-medium not-italic mb-10">
-                    <p class="whitespace-pre-line py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
+                    <p class="whitespace-pre-wrap py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
 
                     <p class="py-2 mx-auto text-center">
                         <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>

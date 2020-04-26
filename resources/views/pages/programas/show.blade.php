@@ -28,20 +28,25 @@
                     </h2>
                 </div>
 
-                <p class="whitespace-pre-line leading-normal uppercase font-medium mb-8 mx-auto px-8">
+                <p class="whitespace leading-normal uppercase font-medium mb-8 mx-auto px-8">
                     {{ $programme->descriptionCourte }}
                 </p>
 
-                <p class="leading-normal font-sm uppercase text-sm mb-4 mx-auto">
+                <p class="leading-normal font-sm uppercase text-lg not-italic mb-8 mx-auto">
                          {{ $programme->prixPesos }} AR$ / {{ $programme->prixDollar }} US$
                 </p>
 
-                <p class="mb-12 mx-auto">
-                  <i class="fas fa-film fa-fw fa-2x pl-1"></i>
-                  <i class="fas fa-infinity fa-fw fa-2x pl-1"></i> 
-                </p>
-                
-                
+                <div class="grid grid-cols-2 mb-12"> 
+                    <div class=" inset-x-0 right-0">
+                        <i class="fas fa-film fa-lg fa-2x"></i>
+                        <p class="text-xs"> Videos</p>
+                    </div>
+                    <div class=" inset-x-0 left-0">
+                        <i class="fas fa-infinity fa-lg fa-2x"></i>
+                        <p class="text-xs" >Lifetime access</p>
+                    </div>
+                </div>
+ 
                 <a href="{{ url($programme->lienTiendup) }}" class="mx-auto"><button class="bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Comprar</button></a>
                 <p class="pt-1 text-xs">Pagarlo con MercadoPago o Paypal</p>
 
@@ -54,7 +59,7 @@
 
         <div class="w-full md:w-5/6 mx-auto flex flex-col md:flex-row items-center justify-around text-justify mb-2">
             <div class="flex flex-col w-full h-full lg:w-1/2 px-2 my-4 mb-4">
-                <p class="whitespace-pre-line leading-normal uppercase text-base text-justify items-center mx-auto px-4">{{$programme->descriptionComplete}}</p>
+                <p class="whitespace-pre-wrap leading-normal uppercase text-base text-justify items-center mx-auto px-4">{{$programme->descriptionComplete}}</p>
                 <a href="{{url($programme->lienTiendup) }}" class="mx-auto"><button class=" bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Pedir Ahora</button></a>
             </div>
 

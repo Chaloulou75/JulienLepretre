@@ -49,7 +49,7 @@
 	        </div>
 
 	        <div class="mb-4">
-	            <label for="avatar" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Tu avatar o foto') }}</label>
+	            <label for="avatar" class="block text-gray-700 text-sm font-bold tracking-wide mb-2 ">{{ __('Tu avatar o foto') }}</label>
 
 	            <input id="avatar" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('avatar') bg-red-dark @enderror" name="avatar" value="" required autocomplete="avatar">
 
@@ -69,4 +69,4 @@
 	        </div>
     	</form>		
 </div>
-@endsection
+@endsection 
