@@ -32,7 +32,7 @@
 </div>
 
 <div class="text-julien-gris mb-8 text-center items-center my-6">
-	<h3 class="uppercase mx-auto py-2 px-4">COMPLETA EL FORMULARIO</h3>
+	<h3 class="uppercase not-italic font-semibold mx-auto py-2 px-4">COMPLETA EL FORMULARIO</h3>
 	<a href="{{route('contact.index')}}"><button class="py-2 px-6 bg-julien-red text-white font-semibold tracking-widest uppercase border-2 border-white rounded shadow hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Hace clic aca</button></a>
 </div>			
 
