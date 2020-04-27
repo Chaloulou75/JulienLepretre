@@ -6,23 +6,23 @@
 	    	</h1>
 		</div>
 		 
-		<div class="w-full flex flex-col md:flex-row mx-auto justify-center items-center border-b-1 bg-bandeau-gris py-4 px-2">
+		<div class="w-full flex flex-col md:flex-row mx-auto border-b-1 bg-bandeau-gris py-2 px-2">
 			<div class="w-full md:w-1/3 text-center">
-				<p class="font-semibold text-basemedium not-italic"> 1. Completa el formulario.</p>	
+				<p class="font-semibold text-lg not-italic"> 1. Completa el formulario.</p>	
 			</div>
 
 			<div class="w-full md:w-1/3 text-center">
-				<p class="font-semibold text-basemedium not-italic"> 2. Vidéo llamada por WhatsApp.</p>		
+				<p class="font-semibold text-lg not-italic"> 2. Vidéo llamada por WhatsApp.</p>		
 			</div>
 
 			<div class="w-full md:w-1/3 text-center">
-				<p class="font-semibold text-basemedium not-italic"> 3. Recibe tu rutina en PDF con videos.</p>
+				<p class="font-semibold text-lg not-italic"> 3. Recibe tu rutina en PDF con videos.</p>
 			</div>
 		</div>
 		
 	</div>
 
-	<div class="w-full bg-fondo-gris pt-6">
+	<div class="w-full bg-fondo-gris pt-4 md:pt-0">
 
 		<div class="w-full md:w-2/3 flex flex-col md:flex-row mx-auto">
 
@@ -34,42 +34,42 @@
 
 				<div class="w-full md:w-2/3 md:mt-8 text-center text-gray-900 tracking-wide not-italic mx-auto px-8 py-6">
 					<div class="mx-auto">
-						<p class="font-semibold text-left text-sm">
+						<p class="font-semibold text-left text-base">
 							<span class="fa-stack fa-lg">
 							  <i class="far fa-circle fa-stack-1x text-juliencircle"></i>
 							  <i class="fas fa-check fa-stack-1x text-juliencheck"></i>
 							</span> 
 							  Definir tus objetivos							
 						</p>
-						<p class="font-semibold text-left text-sm">
+						<p class="font-semibold text-left text-base">
 							<span class="fa-stack fa-lg">
 							  <i class="far fa-circle fa-stack-1x text-juliencircle"></i>
 							  <i class="fas fa-check fa-stack-1x text-juliencheck"></i>
 							</span>
 							Definir tus capacidades y tus limitades
 						</p>
-						<p class="font-semibold text-left text-sm">
+						<p class="font-semibold text-left text-base">
 							<span class="fa-stack fa-lg ">
 							  <i class="far fa-circle fa-stack-1x text-juliencircle"></i>
 							  <i class="fas fa-check fa-stack-1x text-juliencheck"></i>
 							</span>
 							Detectar la presencia de contraindicaciones posibles
 						</p>
-						<p class="font-semibold text-left text-sm">
+						<p class="font-semibold text-left text-base">
 							<span class="fa-stack fa-lg">
 							  <i class="far fa-circle fa-stack-1x text-juliencircle"></i>
 							  <i class="fas fa-check fa-stack-1x text-juliencheck"></i>
 							</span>
 							Encontrar la causa de tus problemas
 						</p>
-						<p class="font-semibold text-left text-sm ">
+						<p class="font-semibold text-left text-base ">
 							<span class="fa-stack fa-lg">
 							  <i class="far fa-circle fa-stack-1x text-juliencircle"></i>
 							  <i class="fas fa-check fa-stack-1x text-juliencheck"></i>
 							</span>
 							Recibe tu rutina personalizada
 						</p>
-						<p class="font-semibold text-center text-sm mx-auto">
+						<p class="font-semibold text-center text-base mx-auto">
 							RESPECTO A TUS PROBLEMAS, TE VOY A PROPONER LA MEJOR RUTINA ¡PARA VOS!
 						</p>	
 					</div>
