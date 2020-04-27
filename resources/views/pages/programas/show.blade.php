@@ -53,9 +53,9 @@
                     <div></div>
                 </div>
 
-                <p class="leading-normal font-sm uppercase text-lg not-italic mb-4 mx-auto">
+                <h3 class="leading-normal font-bold uppercase text-lg not-italic mb-4 mx-auto">
                          {{ floatval($programme->prixPesos) }} <span class="text-sm font-sm text-gray-600">AR$</span> / {{ floatval($programme->prixDollar) }} <span class="text-sm font-sm text-gray-600">US$</span>
-                </p>
+                </h3>
  
                 <a href="{{ url($programme->lienTiendup) }}" class="mx-auto"><button class="bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Comprar</button></a>
                 <p class="pt-1 text-xs">Pagarlo con MercadoPago o Paypal</p>

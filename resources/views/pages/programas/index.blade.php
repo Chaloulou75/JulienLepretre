@@ -41,9 +41,9 @@
                 <div class="items-center text-base font-medium not-italic mb-8">
                     <p class="whitespace-pre-wrap py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
 
-                    <p class="leading-normal font-sm uppercase text-sm mx-auto">
+                    <h3 class="leading-normal font-bold uppercase text-lg mx-auto">
                          {{ floatval($programme->prixPesos) }} <span class="text-sm font-sm text-gray-600">AR$</span> / {{ floatval($programme->prixDollar) }} <span class="text-sm font-sm text-gray-600">US$</span>
-                    </p>
+                    </h3>
                     
                 </div>
                 <div class="mb-4 md:mb-2">
