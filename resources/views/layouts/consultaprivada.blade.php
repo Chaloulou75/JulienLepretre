@@ -22,17 +22,17 @@
 		
 	</div>
 
-	<div class="w-full bg-fondo-gris pt-4 md:pt-0">
+	<div class="w-full bg-fondo-gris sm:pt-4 md:pt-0">
 
 		<div class="w-full md:w-2/3 flex flex-col md:flex-row mx-auto">
 
-				<div class="w-full md:w-1/3 md:pt-16">
+				<div class="w-full md:w-1/3 items-center py-6">
 
 					<img src="/img/fotosourire.png" class="w-full h-64 rounded overflow-hidden object-contain object-center" alt="sourire">	
 
 				</div>
 
-				<div class="w-full md:w-2/3 md:mt-8 text-center text-gray-900 tracking-wide not-italic mx-auto px-8 py-6">
+				<div class="w-full md:w-2/3 md:mt-8 text-center text-gray-900 tracking-wide not-italic mx-auto px-8 items-center">
 					<div class="mx-auto">
 						<p class="font-semibold text-left text-base">
 							<span class="fa-stack fa-lg">
@@ -40,45 +40,47 @@
 							  <i class="fas fa-check fa-stack-1x text-juliencheck"></i>
 							</span> 
 							  Definir tus objetivos							
-						</p>
-						<p class="font-semibold text-left text-base">
+						</br>
+						
 							<span class="fa-stack fa-lg">
 							  <i class="far fa-circle fa-stack-1x text-juliencircle"></i>
 							  <i class="fas fa-check fa-stack-1x text-juliencheck"></i>
 							</span>
 							Definir tus capacidades y tus limitades
-						</p>
-						<p class="font-semibold text-left text-base">
+						</br>
+						
 							<span class="fa-stack fa-lg ">
 							  <i class="far fa-circle fa-stack-1x text-juliencircle"></i>
 							  <i class="fas fa-check fa-stack-1x text-juliencheck"></i>
 							</span>
 							Detectar la presencia de contraindicaciones posibles
-						</p>
-						<p class="font-semibold text-left text-base">
+						</br>
+						
 							<span class="fa-stack fa-lg">
 							  <i class="far fa-circle fa-stack-1x text-juliencircle"></i>
 							  <i class="fas fa-check fa-stack-1x text-juliencheck"></i>
 							</span>
 							Encontrar la causa de tus problemas
-						</p>
-						<p class="font-semibold text-left text-base ">
+						</br>
+						
 							<span class="fa-stack fa-lg">
 							  <i class="far fa-circle fa-stack-1x text-juliencircle"></i>
 							  <i class="fas fa-check fa-stack-1x text-juliencheck"></i>
 							</span>
 							Recibe tu rutina personalizada
-						</p>
-						<p class="font-semibold text-center text-base mx-auto">
-							RESPECTO A TUS PROBLEMAS, TE VOY A PROPONER LA MEJOR RUTINA ¡PARA VOS!
-						</p>	
-					</div>
-					<div>
-						<h3 class="leading-normal font-bold uppercase text-xl my-4 mx-auto">
-		                1500 <span class="text-sm font-sm text-gray-600">AR$</span> / 22 <span class="text-sm font-sm text-gray-600">US$</span>
-		            	</h3>
+						</br></p>
+							
 					</div>							
 				</div>
+				
+		</div>
+		<div class="w-full md:w-2/3 tracking-wide not-italic mx-auto py-6">
+			<p class="font-semibold text-center text-base px-2">
+				RESPECTO A TUS PROBLEMAS, TE VOY A PROPONER LA MEJOR RUTINA ¡PARA VOS!
+			</p>
+			<h3 class="leading-normal text-center font-bold uppercase text-xl">
+            1500 <span class="text-sm font-sm text-gray-600">AR$</span> / 22 <span class="text-sm font-sm text-gray-600">US$</span>
+        	</h3>
 		</div>
 	</div>
 
