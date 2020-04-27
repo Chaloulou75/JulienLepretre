@@ -2,13 +2,14 @@
 
 @section('content')
 
-<div class="w-full bg-julien-gris pb-24">
+<div class="w-full bg-julien-gris mb-4">
 
-    <div class="text-white text-center font-semibold uppercase tracking-wide text-base px-8 py-4">
-            <h1>PIDE TU PLAN DE ENTRENAMIENTO EN CASA</h1>
-    </div>
+    <h1 class="w-full font-black text-2xl md:text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-4 ">
+        PIDE TU PLAN DE ENTRENAMIENTO EN CASA
+    </h1>
 
-    <div class="w-full max-w-xs lg:max-w-xl lg:w-4/5 m-auto p-auto pt-8 animated bounceInUp">   
+
+    <div class="w-full max-w-xs lg:max-w-xl lg:w-4/5 m-auto animated bounceInUp">   
 
     <form class="bg-gray-100 border-2 border-white shadow-md rounded text-julien-gris uppercase px-8 pt-6 pb-8 mb-4" method="POST" action="{{ route('contact.store') }}">
         @csrf

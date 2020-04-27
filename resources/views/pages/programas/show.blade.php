@@ -54,7 +54,7 @@
                 </div>
 
                 <p class="leading-normal font-sm uppercase text-lg not-italic mb-4 mx-auto">
-                         {{ floatval($programme->prixPesos) }} AR$ / {{ floatval($programme->prixDollar) }} US$
+                         {{ floatval($programme->prixPesos) }} <span class="text-sm font-sm text-gray-600">AR$</span> / {{ floatval($programme->prixDollar) }} <span class="text-sm font-sm text-gray-600">US$</span>
                 </p>
  
                 <a href="{{ url($programme->lienTiendup) }}" class="mx-auto"><button class="bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Comprar</button></a>

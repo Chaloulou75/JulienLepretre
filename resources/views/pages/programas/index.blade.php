@@ -42,7 +42,7 @@
                     <p class="whitespace-pre-wrap py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
 
                     <p class="leading-normal font-sm uppercase text-sm mx-auto">
-                         {{ floatval($programme->prixPesos) }} AR$ / {{ floatval($programme->prixDollar) }} US$
+                         {{ floatval($programme->prixPesos) }} <span class="text-sm font-sm text-gray-600">AR$</span> / {{ floatval($programme->prixDollar) }} <span class="text-sm font-sm text-gray-600">US$</span>
                     </p>
                     
                 </div>
