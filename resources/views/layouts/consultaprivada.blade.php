@@ -1,34 +1,32 @@
 <div class="bg-white pb-4 mt-12">
-	<div class="text-white">
-		<div class="w-full bg-julien-gris border-b-1 py-4 px-2">
-			<h1 class="font-black text-3xl text-center uppercase">
-	                Consulta Privada
-	    	</h1>
+	
+	<div class="w-full bg-julien-gris border-b-1 py-4 px-2">
+		<h1 class="font-black text-3xl text-white text-center uppercase">
+                Consulta Privada
+    	</h1>
+	</div>
+	 
+	<div class="w-full flex flex-col md:flex-row mx-auto border-b-1 bg-bandeau-gris text-white py-2 px-2">
+		<div class="w-full md:w-1/3 text-center font-medium text-lg not-italic">
+			 1. Completa el formulario.	
 		</div>
-		 
-		<div class="w-full flex flex-col md:flex-row mx-auto border-b-1 bg-bandeau-gris py-2 px-2">
-			<div class="w-full md:w-1/3 text-center">
-				<p class="font-semibold text-lg not-italic"> 1. Completa el formulario.</p>	
-			</div>
 
-			<div class="w-full md:w-1/3 text-center">
-				<p class="font-semibold text-lg not-italic"> 2. Vidéo llamada por WhatsApp.</p>		
-			</div>
-
-			<div class="w-full md:w-1/3 text-center">
-				<p class="font-semibold text-lg not-italic"> 3. Recibe tu rutina en PDF con videos.</p>
-			</div>
+		<div class="w-full md:w-1/3 text-center font-medium text-lg not-italic">
+			2. Vidéo llamada por WhatsApp.		
 		</div>
-		
+
+		<div class="w-full md:w-1/3 text-center font-medium text-lg not-italic">
+			3. Recibe tu rutina en PDF con videos.
+		</div>
 	</div>
 
 	<div class="w-full bg-fondo-gris sm:pt-4 md:pt-0">
 
 		<div class="w-full md:w-2/3 flex flex-col md:flex-row mx-auto">
 
-				<div class="w-full md:w-1/3 items-center py-6">
+				<div class="w-full md:w-1/3 items-center py-8">
 
-					<img src="/img/fotosourire.png" class="w-full h-64 rounded overflow-hidden object-contain object-center" alt="sourire">	
+					<img src="/img/fotosourire.png" class="w-full h-56 rounded overflow-hidden object-contain object-center" alt="sourire">	
 
 				</div>
 
