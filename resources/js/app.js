@@ -26,6 +26,7 @@ Vue.component('noproblema-component', require('./components/NoproblemaComponent.
 Vue.component('tiempo-component', require('./components/TiempoComponent.vue').default);
 Vue.component('terminado-component', require('./components/TerminadoComponent.vue').default);
 Vue.component('modal-component', require('./components/ModalComponent.vue').default);
+Vue.component('carousel-component', require('./components/CarouselComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

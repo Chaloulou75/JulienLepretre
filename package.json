@@ -26,6 +26,8 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.13.0",
         "animate.css": "^3.7.2",
+        "flickity": "^2.2.1",
+        "flickity-fade": "^1.0.0",
         "mix-tailwindcss": "^1.2.0",
         "tailwindcss": "^1.3.5",
         "vue-js-modal": "^1.3.35"
