@@ -44,7 +44,7 @@
 							  <i class="far fa-circle fa-stack-1x text-juliencircle"></i>
 							  <i class="fas fa-check fa-stack-1x text-juliencheck"></i>
 							</span>
-							Definir tus capacidades y tus limitades
+							Definir tus capacidades y tus limitaciones
 						</br>
 						
 							<span class="fa-stack fa-lg ">
