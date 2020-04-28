@@ -1941,10 +1941,12 @@ __webpack_require__.r(__webpack_exports__);
       wrapAround: this.wrapAround,
       autoPlay: this.autoPlay,
       fade: this.fade,
+      draggable: true,
       contain: true,
-      prevNextButtons: false,
-      pageDots: true,
-      groupCells: true
+      prevNextButtons: true,
+      pageDots: false,
+      groupCells: true,
+      freeScroll: true
     });
   }
 });

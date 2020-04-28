@@ -58,7 +58,8 @@
 			
 
 			<div class="items-center text-base leading-normal not-italic mb-10">
-				<p class="py-4 mx-16">Un programa para ayudarte a optimizar tu cuerpo. Vas a aprender como movilizar tu cuerpo, como fortalecerlo y como mantener este equilibrio.</p>
+				<p class="py-4 mx-16">Un programa para ayudarte a optimizar tu cuerpo. </br>
+				Vas a aprender cómo movilizarlo, fortalecerlo y mantenerlo en equilibrio.</p>
 				<p>
 					Fuerza </br>
 					Movilidad </br>
