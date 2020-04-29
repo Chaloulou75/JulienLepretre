@@ -1,23 +1,23 @@
 <div class="pb-4 mt-20 bg-repeat-x" style="background-image: url(/img/degrade.jpg)">
 			
 	<div class="w-full py-4 px-2">{{-- bg-julien-gris border-b-1 --}} 
-		<h1 class="font-black text-3xl md:text-5xl text-white text-center uppercase">
+		<h2 class="font-black text-3xl md:text-4xl text-white text-center uppercase">
                 Consulta Privada
-    	</h1>
+    	</h2>
 	</div>
 	 
 	<div class="w-full flex flex-col md:flex-row mx-auto  text-white py-2 px-2">{{-- border-b-1 bg-bandeau-gris --}}
-		<div class="w-full md:w-1/3 text-center font-medium text-xl not-italic">
-			 1. Completa el formulario	
-		</div>
+		<h3 class="w-full md:w-1/3 text-center font-medium text-xl not-italic">
+			1. Completa el formulario
+		</h3>
 
-		<div class="w-full md:w-1/3 text-center font-medium text-xl not-italic">
-			2. Vidéo llamada por WhatsApp		
-		</div>
+		<h3 class="w-full md:w-1/3 text-center font-medium text-xl not-italic">
+			2. Vidéo llamada por WhatsApp	
+		</h3>
 
-		<div class="w-full md:w-1/3 text-center font-medium text-xl not-italic">
+		<h3 class="w-full md:w-1/3 text-center font-medium text-xl not-italic">
 			3. Recibe tu rutina en PDF con videos
-		</div>
+		</h3>
 	</div>
 	
 	<div class="w-full {{-- bg-fondo-gris --}} sm:pt-4 md:pt-0">

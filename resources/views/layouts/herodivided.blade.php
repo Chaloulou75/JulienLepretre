@@ -11,13 +11,13 @@
 		<div class="w-full lg:w-1/2 text-julien-gris text-center">
 			
 			<div class="my-6">
-				<h1 class="font-semibold text-2xl uppercase">
+				<h2 class="font-semibold text-2xl uppercase">
 				Programa
-				</h1>
+				</h2>
 			</div>
 			
 			<div>
-				<h2 class="uppercase not-italic text-3xl tracking-loose my-6">
+				<h2 class="uppercase not-italic font-black text-3xl md:text-4xl tracking-loose my-6">
 					30 dias para una espalda sana!
 				</h2>
 			</div>
@@ -25,11 +25,11 @@
 
 			<div class="items-center text-base leading-normal not-italic mb-10">
 				<p class="py-4 mx-16">En este programa te propongo una rutina de 10 a 15 minutos de ejercicios de movilidad cada dia para recuperar el control de tu espalda de manera progresiva</p>
-				<p>
+				<h3 class="uppercase mx-auto">
 					Cura tus dolores </br>
 					Recupera toda tu movilidad </br>
 					Reduce el riesgo de lesión	
-				</p>
+				</h3>
 				
 			</div>
 			<div class="mb-4 md:mb-2">
@@ -45,13 +45,13 @@
 		<div class="w-full lg:w-1/2 text-julien-gris text-center">
 			
 			<div class="my-6">
-				<h1 class="font-semibold text-2xl uppercase">
+				<h2 class="font-semibold text-2xl uppercase">
 				Programa
-				</h1>
+				</h2>
 			</div>
 			
 			<div>
-				<h2 class="uppercase not-italic text-3xl tracking-loose my-6">
+				<h2 class="uppercase not-italic font-black text-3xl md:text-4xl tracking-loose my-6">
 					Cuerpo fuerte
 				</h2>
 			</div>
@@ -60,11 +60,11 @@
 			<div class="items-center text-base leading-normal not-italic mb-10">
 				<p class="py-4 mx-16">Un programa para ayudarte a optimizar tu cuerpo. </br>
 				Vas a aprender cómo movilizarlo, fortalecerlo y mantenerlo en equilibrio.</p>
-				<p>
+				<h3 class="uppercase mx-auto">
 					Fuerza </br>
 					Movilidad </br>
 					Estabilidad	
-				</p>
+				</h3>
 				
 			</div>
 			<div class="mb-4 md:mb-2">

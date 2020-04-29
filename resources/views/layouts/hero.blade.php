@@ -8,12 +8,11 @@
 				</h1>
 			</div>
 
-			<div class="items-start text-white text-center text-base sm:text-xl md:text-2xl uppercase py-4 sm:px-4 md:px-24">
-				<p class="leading-normal">
+			<h2 class="items-start text-white text-center text-base leading-normal sm:text-xl md:text-2xl uppercase py-4 sm:px-4 md:px-24"> 
 				Tus programas online</br>
 				Para alivar tus dolores, tu postura y tu rendimiento
-				</p>
-			</div>
+				</>
+			</h2>
 
 			<div class="mb-8">
 				<a href="{{route('programas.index')}}"><button class="w-full py-2 px-4 bg-julien-gris hover:bg-julien-red text-white font-semibold tracking-widest uppercase border-2 border-white hover:border-julien-red rounded shadow hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver los programas</button></a>
