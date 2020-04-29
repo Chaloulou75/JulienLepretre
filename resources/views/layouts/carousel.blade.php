@@ -2,7 +2,7 @@
     Los comentarios Insta
 </h1>
 
-<div class="bg-white my-4 pb-4"> 
+<div class="bg-white py-8"> 
 
     <carousel-component>
 

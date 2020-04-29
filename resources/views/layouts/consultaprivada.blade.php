@@ -1,12 +1,12 @@
-<div class="bg-white pb-4 mt-12">
+<div class="bg-blawhite pb-4 mt-12">
 	
-	<div class="w-full bg-julien-gris border-b-1 py-4 px-2">
+	<div class="w-full {{-- bg-julien-gris border-b-1 --}} py-4 px-2">
 		<h1 class="font-black text-3xl text-white text-center uppercase">
                 Consulta Privada
     	</h1>
 	</div>
 	 
-	<div class="w-full flex flex-col md:flex-row mx-auto border-b-1 bg-bandeau-gris text-white py-2 px-2">
+	<div class="w-full flex flex-col md:flex-row mx-auto {{-- border-b-1 --}} {{-- bg-bandeau-gris --}} text-white py-2 px-2">
 		<div class="w-full md:w-1/3 text-center font-medium text-lg not-italic">
 			 1. Completa el formulario	
 		</div>
@@ -20,7 +20,7 @@
 		</div>
 	</div>
 
-	<div class="w-full bg-fondo-gris sm:pt-4 md:pt-0">
+	<div class="w-full {{-- bg-fondo-gris --}} sm:pt-4 md:pt-0">
 
 		<div class="w-full md:w-2/3 flex flex-col md:flex-row mx-auto">
 
