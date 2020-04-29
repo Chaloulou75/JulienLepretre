@@ -35226,7 +35226,7 @@ readers do not read off random characters that represent icons */
 }
 
 .bg-blawhite {
-  background-image: linear-gradient(#2d3748, #f7fafc);
+  background-image: linear-gradient(#45545f, #fff);
 }
 
 @media (min-width: 640px){

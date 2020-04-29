@@ -1,6 +1,6 @@
-<h1 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8 px-2">
+{{-- <h1 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8 px-2">
     Los comentarios Insta
-</h1>
+</h1> --}}
 
 <div class="bg-white py-8"> 
 

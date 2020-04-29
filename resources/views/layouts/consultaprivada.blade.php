@@ -1,4 +1,5 @@
-<div class="bg-blawhite pb-4 mt-12">
+<div class="pb-4 mt-12" style="background-image: url(/img/degrade.jpg)">
+		
 	
 	<div class="w-full {{-- bg-julien-gris border-b-1 --}} py-4 px-2">
 		<h1 class="font-black text-3xl text-white text-center uppercase">
@@ -19,7 +20,7 @@
 			3. Recibe tu rutina en PDF con videos
 		</div>
 	</div>
-
+	
 	<div class="w-full {{-- bg-fondo-gris --}} sm:pt-4 md:pt-0">
 
 		<div class="w-full md:w-2/3 flex flex-col md:flex-row mx-auto">
@@ -72,6 +73,7 @@
 				</div>
 				
 		</div>
+
 		<div class="w-full md:w-2/3 tracking-wide not-italic mx-auto py-6">
 			<p class="font-semibold text-center text-base px-2">
 				RESPECTO A TUS PROBLEMAS, TE VOY A PROPONER LA MEJOR RUTINA ¡PARA VOS!
