@@ -63,81 +63,70 @@
         </div>
 
         <div class="mb-4">
-            <label for="trabajo" class="block text-sm font-bold tracking-wide mb-2">{{ __('Trabajo') }}</label>
-
-            <input id="trabajo" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('trabajo') bg-red-dark @enderror" name="trabajo" value="{{ old('trabajo') }}" required autocomplete="trabajo">
-
-            @error('trabajo')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-            
-        </div>
-
-        <div class="mb-4">
-            <label for="deportes" class="block text-sm font-bold tracking-wide mb-2">{{ __('Deportes') }}</label>
-
-            <input id="deportes" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('deportes') bg-red-dark @enderror" name="deportes" value="{{ old('deportes') }}" required autocomplete="deportes">
-
-            @error('deportes')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-            
-        </div>
-
-        <div class="mb-4">
-
-            <fieldset>
-            <legend class="block text-sm font-bold tracking-wide mb-2">Objetivos (Elegí 2)</legend>
-                <div>
-                  <input type="checkbox" id="grasa" name="objetivos[]" value="Quemar grasa">
-                  <label for="grasa">Quemar grasa</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="resistencia" name="objetivos[]" value="Mejorar mi resistencia">
-                  <label for="resistencia">Mejorar mi resistencia</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="recuperar" name="objetivos[]" value="Recuperar de una lésion">
-                  <label for="recuperar">Recuperar de una lésion</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="musculatura" name="objetivos[]" value="Ganar musculatura">
-                  <label for="musculatura">Ganar musculatura</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="movilidad" name="objetivos[]" value="Mejorar mi movilidad">
-                  <label for="movilidad">Mejorar mi movilidad</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="other" name="objetivos[]" value="otro">
-                  <label for="other">Otro</label>
-                </div>
-            </fieldset>
-
-            @error('objetivos')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-
-        </div>
-
-        <div class="mb-4">
             <label for="msg" class="block text-sm font-bold tracking-wide mb-2">{{ __('Molestias en tu cuerpo:') }}</label>
            
-                <textarea id="msg" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('msg') bg-red-dark @enderror" name="msg" value="{{ old('msg') }}" required autocomplete="msg"></textarea>
+                <textarea id="msg" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('msg') bg-red-dark @enderror" name="msg" value="{{ old('msg') }}" autocomplete="msg"></textarea>
 
                 @error('msg')
                     <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror           
-        </div>  
+        </div> 
 
+        <div class="mb-4">
+            <label for="problema" class="block text-sm font-bold tracking-wide mb-2">{{ __('Cual es tu problema?') }}</label>
+
+            <textarea id="problema" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('problema') bg-red-dark @enderror" name="problema" value="{{ old('problema') }}" autocomplete="problema"></textarea>
+
+            @error('problema')
+                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            
+        </div>
+
+        <div class="mb-4">
+            <label for="alivia" class="block text-sm font-bold tracking-wide mb-2">{{ __('Movimiento que alivia:') }}</label>
+
+            <textarea id="alivia" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('alivia') bg-red-dark @enderror" name="alivia" value="{{ old('alivia') }}" autocomplete="alivia"></textarea>
+
+            @error('alivia')
+                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            
+        </div>
+
+        
+        <div class="mb-4">
+            <label for="antecedentes" class="block text-sm font-bold tracking-wide mb-2">{{ __('Antecedentes: (operaciones/ traumatismos/ patología)') }}</label>
+
+            <textarea id="antecedentes" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('antecedentes') bg-red-dark @enderror" name="antecedentes" value="{{ old('antecedentes') }}" autocomplete="antecedentes"></textarea>
+
+            @error('antecedentes')
+                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            
+        </div>
+
+        <div class="mb-4">
+            <label for="objetivos" class="block text-sm font-bold tracking-wide mb-2">{{ __('Tu objetivo') }}</label>
+
+            <textarea id="objetivos" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('objetivos') bg-red-dark @enderror" name="objetivos" value="{{ old('objetivos') }}" autocomplete="objetivos"></textarea>
+
+            @error('objetivos')
+                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            
+        </div>
+ 
         <div class="mb-4">
             <label for="altura" class="block text-sm font-bold tracking-wide mb-2">{{ __('Tu altura (en cm)') }}</label>
 
@@ -186,7 +175,7 @@
         </div>  
 
         <div class="mb-4">
-            <label for="phone" class="block text-sm font-bold tracking-wide mb-2">{{ __('TU NUMERO DE TELEFONO') }}</label>
+            <label for="phone" class="block text-sm font-bold tracking-wide mb-2">{{ __('TU NUMERO DE TELEFONO*') }}</label>
 
             <input id="phone" type="tel" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
              @error('phone') bg-red-dark @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone">
@@ -194,6 +183,32 @@
             <p class="font-semibold mt-1">* para contactarnos en Whatsapp.</p> 
 
             @error('phone')
+                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            
+        </div>
+
+        <div class="mb-4">
+            <label for="trabajo" class="block text-sm font-bold tracking-wide mb-2">{{ __('Trabajo') }}</label>
+
+            <input id="trabajo" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('trabajo') bg-red-dark @enderror" name="trabajo" value="{{ old('trabajo') }}" autocomplete="trabajo">
+
+            @error('trabajo')
+                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            
+        </div>
+
+        <div class="mb-4">
+            <label for="deportes" class="block text-sm font-bold tracking-wide mb-2">{{ __('Deportes') }}</label>
+
+            <input id="deportes" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('deportes') bg-red-dark @enderror" name="deportes" value="{{ old('deportes') }}" autocomplete="deportes">
+
+            @error('deportes')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
@@ -213,6 +228,44 @@
 
 </div>
 
+@endsection
+
 {{-- @include('layouts.map') --}}
 
-@endsection
+{{-- <div class="mb-4">
+
+            <fieldset>
+            <legend class="block text-sm font-bold tracking-wide mb-2">Objetivos (Elegí 2)</legend>
+                <div>
+                  <input type="checkbox" id="grasa" name="objetivos[]" value="Quemar grasa">
+                  <label for="grasa">Quemar grasa</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="resistencia" name="objetivos[]" value="Mejorar mi resistencia">
+                  <label for="resistencia">Mejorar mi resistencia</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="recuperar" name="objetivos[]" value="Recuperar de una lésion">
+                  <label for="recuperar">Recuperar de una lésion</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="musculatura" name="objetivos[]" value="Ganar musculatura">
+                  <label for="musculatura">Ganar musculatura</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="movilidad" name="objetivos[]" value="Mejorar mi movilidad">
+                  <label for="movilidad">Mejorar mi movilidad</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="other" name="objetivos[]" value="otro">
+                  <label for="other">Otro</label>
+                </div>
+            </fieldset>
+
+            @error('objetivos')
+                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+
+        </div> --}}

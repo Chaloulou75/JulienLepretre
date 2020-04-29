@@ -15,35 +15,41 @@ class ContactMessagesCreated extends Mailable
     public $apellidos;
     public $nombre;
     public $email;
-    public $birthdate;       
-    public $trabajo;
-    public $deportes;
-    public $objetivos;
-    public $msg; 
+    public $birthdate;           
+    public $msg;
+    public $problema; 
+    public $alivia;
+    public $antecedentes;
+    public $objetivos; 
     public $altura;
     public $peso;
     public $forma;
     public $phone;
+    public $trabajo;
+    public $deportes;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($apellidos, $nombre, $email, $birthdate, $trabajo, $deportes, $objetivos, $msg, $altura, $peso, $forma, $phone)
+    public function __construct($apellidos, $nombre, $email, $birthdate, $msg, $problema, $alivia, $antecedentes, $objetivos, $altura, $peso, $forma, $phone, $trabajo, $deportes)
     {
         $this->apellidos= $apellidos;
         $this->nombre= $nombre;
         $this->email= $email;
         $this->birthdate= $birthdate;                
-        $this->trabajo= $trabajo;
-        $this->deportes= $deportes;
-        $this->objetivos= $objetivos;
         $this->msg= $msg;
+        $this->problema= $problema;
+        $this->alivia= $alivia;
+        $this->antecedentes= $antecedentes;
+        $this->objetivos= $objetivos;        
         $this->altura= $altura;
         $this->peso= $peso;
         $this->forma= $forma;
         $this->phone= $phone;
+        $this->trabajo= $trabajo;
+        $this->deportes= $deportes;
     }
 
     /**

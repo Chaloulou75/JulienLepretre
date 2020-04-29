@@ -8,7 +8,7 @@
 		</h2>
 
 		<div class="w-full md:w-1/3 text-center font-semibold text-sm py-2">
-			<span class="font-bold text-base"><i class="fas fa-users text-julien-red pl-1"></i> 79,912 </span> </br>
+			<span class="font-bold text-base"><i class="fas fa-users text-julien-red pl-1"></i> 80,312 </span> </br>
 			Seguidores en Instagram		
 		</div>
 

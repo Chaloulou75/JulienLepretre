@@ -37,15 +37,13 @@ class ContactController extends Controller
             'apellidos'=> 'required|min:3',
             'nombre'=> 'required|min:3',
             'email' =>'required|email',
-            'birthdate'=> 'required|date',
-            'trabajo' =>'required|min:3',
-            'deportes'=>'required|min:3',
-            'objetivos'=> 'required|array',
-            'msg'=>'required|min:5',            
+            'birthdate'=> 'required|date',           
             'altura' => 'required|numeric',
             'peso'=>'required|numeric',
             'forma'=> 'required|numeric',
-            'phone' =>'required'
+            'phone' =>'required',
+            'trabajo' =>'required|min:3',
+            'deportes'=>'required|min:3',
         ]);
 
         $mailable = new ContactMessagesCreated(
@@ -53,14 +51,17 @@ class ContactController extends Controller
             $request->nombre,   
             $request->email,
             $request->birthdate, 
-            $request->trabajo, 
-            $request->deportes, 
-            $request->objetivos, 
-            $request->msg,
+            $request->msg, 
+            $request->problema,
+            $request->alivia,
+            $request->antecedentes,
+            $request->objetivos,             
             $request->altura, 
             $request->peso, 
             $request->forma, 
-            $request->phone
+            $request->phone,
+            $request->trabajo, 
+            $request->deportes,
         );  
 
         Mail::to('julienlepretreosteo@gmail.com')->send($mailable);

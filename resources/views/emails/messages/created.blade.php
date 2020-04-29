@@ -12,12 +12,6 @@ Tu as reçu une nouvelle demande de contact de la part de:
 
 -Poids: **{{$peso}}** kg.
 
--Les objectifs de **{{$apellidos}} {{$nombre}}** sont: 
-
-@for( $i=0; $i<count($objetivos); $i++)
--**{{ $objetivos[$i] }}**  
-@endfor
-
 -Niveau de forme: **{{$forma}}**/10
 
 -Travaille en tant que: **{{$trabajo}}**
@@ -33,6 +27,26 @@ Ses informations de contact:
 -Ce qui la/le fait souffrir:
 @component('mail::panel')
 **{{ $msg}}**
+@endcomponent
+
+-Su problema:
+@component('mail::panel')
+**{{ $problema}}**
+@endcomponent
+
+-Movimiento que alivia:
+@component('mail::panel')
+**{{ $alivia}}**
+@endcomponent
+
+-Antecedentes:
+@component('mail::panel')
+**{{ $antecedentes}}**
+@endcomponent
+
+-L'objectif de **{{$apellidos}} {{$nombre}}**:
+@component('mail::panel')
+**{{ $objetivos}}**
 @endcomponent
 
 Thanks,<br>
