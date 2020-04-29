@@ -1,4 +1,4 @@
-<div class="w-full bg-white border-t-1 border-julien-gris py-4">
+<div class="w-full bg-white py-4">
 	
 	<div class="w-full md:w-2/3 flex flex-col md:flex-row mx-auto text-julien-gris py-2">
 		<h2 class="w-full md:w-1/3 text-center md:text-left uppercase font-bold text-sm not-italic mx-auto px-4">

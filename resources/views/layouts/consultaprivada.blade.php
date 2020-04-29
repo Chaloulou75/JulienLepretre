@@ -89,5 +89,7 @@
 		<a href="{{route('contact.index')}}"><button class="py-2 px-8 text-lg bg-julien-red text-white font-semibold tracking-widest uppercase border-2 border-white rounded italic shadow hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Hace clic aca</button></a>
 	</div>
 
-</div>			
+</div>	
+
+<div class="border-solid border-t border-julien-gris w-full"></div>		
 
