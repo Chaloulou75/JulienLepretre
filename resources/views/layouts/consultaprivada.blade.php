@@ -6,7 +6,7 @@
     	</h2>
 	</div>
 	 
-	<div class="w-full flex flex-col md:flex-row mx-auto  text-white py-2 px-2">{{-- border-b-1 bg-bandeau-gris --}}
+	<div class="w-full flex flex-col md:flex-row mx-auto text-white py-6 px-2">{{-- border-b-1 bg-bandeau-gris --}}
 		<h3 class="w-full md:w-1/3 text-center font-medium text-xl not-italic">
 			1. Completa el formulario
 		</h3>
@@ -20,7 +20,7 @@
 		</h3>
 	</div>
 	
-	<div class="w-full {{-- bg-fondo-gris --}} sm:pt-4 md:pt-0">
+	<div class="w-full sm:pt-4 md:pt-0">
 
 		<div class="w-full md:w-2/3 flex flex-col md:flex-row mx-auto">
 

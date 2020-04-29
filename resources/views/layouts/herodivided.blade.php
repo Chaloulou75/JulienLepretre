@@ -17,7 +17,7 @@
 			</div>
 			
 			<div>
-				<h2 class="uppercase not-italic font-black text-3xl md:text-4xl tracking-loose my-6">
+				<h2 class="uppercase not-italic font-black text-2xl md:text-3xl tracking-loose my-6">
 					30 dias para una espalda sana!
 				</h2>
 			</div>
@@ -25,7 +25,7 @@
 
 			<div class="items-center text-base leading-normal not-italic mb-10">
 				<p class="py-4 mx-16">En este programa te propongo una rutina de 10 a 15 minutos de ejercicios de movilidad cada dia para recuperar el control de tu espalda de manera progresiva</p>
-				<h3 class="uppercase mx-auto">
+				<h3 class="uppercase mx-auto text-base leading-normal">
 					Cura tus dolores </br>
 					Recupera toda tu movilidad </br>
 					Reduce el riesgo de lesión	
@@ -51,7 +51,7 @@
 			</div>
 			
 			<div>
-				<h2 class="uppercase not-italic font-black text-3xl md:text-4xl tracking-loose my-6">
+				<h2 class="uppercase not-italic font-black text-2xl md:text-3xl tracking-loose my-6">
 					Cuerpo fuerte
 				</h2>
 			</div>
@@ -60,7 +60,7 @@
 			<div class="items-center text-base leading-normal not-italic mb-10">
 				<p class="py-4 mx-16">Un programa para ayudarte a optimizar tu cuerpo. </br>
 				Vas a aprender cómo movilizarlo, fortalecerlo y mantenerlo en equilibrio.</p>
-				<h3 class="uppercase mx-auto">
+				<h3 class="uppercase mx-auto text-base leading-normal">
 					Fuerza </br>
 					Movilidad </br>
 					Estabilidad	
