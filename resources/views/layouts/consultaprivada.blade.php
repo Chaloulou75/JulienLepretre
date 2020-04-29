@@ -1,22 +1,21 @@
-<div class="pb-4 mt-12" style="background-image: url(/img/degrade.jpg)">
-		
-	
-	<div class="w-full {{-- bg-julien-gris border-b-1 --}} py-4 px-2">
-		<h1 class="font-black text-3xl text-white text-center uppercase">
+<div class="pb-4 mt-20 bg-repeat-x" style="background-image: url(/img/degrade.jpg)">
+			
+	<div class="w-full py-4 px-2">{{-- bg-julien-gris border-b-1 --}} 
+		<h1 class="font-black text-3xl md:text-5xl text-white text-center uppercase">
                 Consulta Privada
     	</h1>
 	</div>
 	 
-	<div class="w-full flex flex-col md:flex-row mx-auto {{-- border-b-1 --}} {{-- bg-bandeau-gris --}} text-white py-2 px-2">
-		<div class="w-full md:w-1/3 text-center font-medium text-lg not-italic">
+	<div class="w-full flex flex-col md:flex-row mx-auto  text-white py-2 px-2">{{-- border-b-1 bg-bandeau-gris --}}
+		<div class="w-full md:w-1/3 text-center font-medium text-xl not-italic">
 			 1. Completa el formulario	
 		</div>
 
-		<div class="w-full md:w-1/3 text-center font-medium text-lg not-italic">
+		<div class="w-full md:w-1/3 text-center font-medium text-xl not-italic">
 			2. Vidéo llamada por WhatsApp		
 		</div>
 
-		<div class="w-full md:w-1/3 text-center font-medium text-lg not-italic">
+		<div class="w-full md:w-1/3 text-center font-medium text-xl not-italic">
 			3. Recibe tu rutina en PDF con videos
 		</div>
 	</div>
