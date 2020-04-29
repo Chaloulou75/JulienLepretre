@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="w-full bg-julien-gris mb-4">
+<div class="w-full bg-julien-gris mb-4 py-4">
 
     <h1 class="w-full font-black text-2xl md:text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-4 ">
         PIDE TU PLAN DE ENTRENAMIENTO EN CASA
