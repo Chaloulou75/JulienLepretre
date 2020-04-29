@@ -1941,7 +1941,7 @@ __webpack_require__.r(__webpack_exports__);
       wrapAround: this.wrapAround,
       autoPlay: this.autoPlay,
       fade: this.fade,
-      draggable: true,
+      draggable: false,
       contain: true,
       prevNextButtons: true,
       pageDots: false,
@@ -42890,16 +42890,6 @@ var render = function() {
               attrs: { href: "/perfil" }
             },
             [_vm._v("Sobre mi")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
-              attrs: { href: "/contacto" }
-            },
-            [_vm._v("Contacto")]
           )
         ]
       )

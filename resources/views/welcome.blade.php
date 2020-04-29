@@ -8,9 +8,9 @@
 
     @include('layouts.consultaprivada')
 
-    @include('layouts.carousel')
-
     @include('layouts.redes')
+
+    @include('layouts.carousel')
 
     <div class="text-julien-gris text-center uppercase text-xs my-2 md:mt-4">
 		<p>

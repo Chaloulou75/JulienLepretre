@@ -91,5 +91,5 @@
 
 </div>	
 
-<div class="border-solid border-t border-julien-gris w-full"></div>		
+<div class="border-solid border-t border-gray-400 w-full my-12"></div>		
 

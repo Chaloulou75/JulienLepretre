@@ -28,7 +28,7 @@ import 'flickity/dist/flickity.min.css';
             wrapAround: this.wrapAround,
             autoPlay: this.autoPlay,
             fade: this.fade,
-            draggable: true,
+            draggable: false,
             contain: true,
             prevNextButtons: true,
             pageDots: false,
