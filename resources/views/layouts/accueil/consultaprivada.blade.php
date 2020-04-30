@@ -1,23 +1,24 @@
 <div class="bg-bandeau-gris py-12">
 	 	
-		<div class="w-full md:w-2/3 mx-auto bg-white mb-6">
-			<div class="max-w-sm w-full md:max-w-full md:flex border border-gray-400 rounded-lg overflow-hidden">
+		<div class="w-full md:w-2/3 mx-auto bg-white">
+			<div class="w-full {{-- max-w-sm  md:max-w-full --}} md:flex border border-gray-400 rounded-lg overflow-hidden">
 				<div class="w-full md:w-1/2 ">
-					<img class="overflow-hidden object-cover h-auto w-full md:mx-0" alt="ordi" src="/img/ordi.jpg">
+					<img class="overflow-hidden object-contain h-auto w-full md:mx-0" alt="ordi" src="/img/ordi.jpg">
 				</div>
 			  			  
-			  <div class="w-full md:w-1/2 px-4 pt-2 flex flex-col text-center justify-around leading-normal">
+			  <div class="w-full md:w-1/2 flex flex-col text-center justify-around leading-normal">
 			    <div class="md:text-left">
-			      <h2 class="text-gray-900 font-bold text-3xl tracking-widest uppercase py-4">Consulta Privada</h2>
-			      	<p class="text-julien-gris text-sm font-semibold not-italic">Definir tus objetivos </br>
-				       	Definir tus capacidades y tus limitaciones</br>
-				   		Detectar la presencia de contraindicaciones posibles</br>
-						Encontrar la causa de tus problemas </br>
-						Recibe tu rutina personalizada
+			      <h2 class="text-gray-900 font-bold text-3xl tracking-widest uppercase py-4 px-4">Consulta Privada</h2>
+			      	<p class="px-4 text-julien-gris text-sm leading-relaxed font-semibold not-italic">
+			      		- Definir tus objetivos </br>
+				       	- Definir tus capacidades y tus limitaciones</br>
+				   		- Detectar la presencia de contraindicaciones posibles</br>
+						- Encontrar la causa de tus problemas </br>
+						- Recibe tu rutina personalizada
 					</p>
 			    </div>
 
-			    <div class="text-sm md:text-left pt-2 pb-4 md:pb-0">
+			    <div class="text-sm md:text-left pt-2  px-4 pb-4 md:pb-0">
 			        <a href="{{route('contact.index')}}"><button class="py-2 px-4 text-sm bg-julien-gris hover:bg-julien-red text-white font-medium tracking-wide uppercase border-2 border-white rounded-lg italic shadow hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Hace clic aca</button></a>
 			    </div>
 			  </div>
