@@ -1,4 +1,4 @@
-<div class="pb-4 mt-20 bg-repeat-x" style="background-image: url(/img/degrade.jpg)">
+<div class="pb-4 mt-20 bg-bandeau-gris">
 			
 	<div class="w-full py-4 px-2">{{-- bg-julien-gris border-b-1 --}} 
 		<h2 class="font-black text-3xl md:text-4xl text-white text-center uppercase">
@@ -84,9 +84,8 @@
 	</div>
 
 	<div class="text-julien-gris mb-8 text-center items-center my-4">
-		<h3 class="uppercase font-semibold mx-auto py-2 px-4">COMPLETA EL FORMULARIO</h3>
-
-		<a href="{{route('contact.index')}}"><button class="py-2 px-8 text-lg bg-julien-red text-white font-semibold tracking-widest uppercase border-2 border-white rounded italic shadow hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Hace clic aca</button></a>
+		<a href="{{route('contact.index')}}"><button class="py-2 px-4 text-sm bg-julien-gris text-white font-semibold tracking-widest uppercase border-2 border-white rounded italic shadow hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Hace clic aca</button></a>
+		
 	</div>
 
 </div>	

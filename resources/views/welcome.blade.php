@@ -2,15 +2,15 @@
 
 @section('content')
 
-	@include('layouts.hero')
+	@include('layouts.accueil.hero')
 
-	@include('layouts.herodivided')
+	@include('layouts.accueil.herodivided')
 
-    @include('layouts.consultaprivada')
+    @include('layouts.accueil.consultaprivada')
 
-    @include('layouts.redes')
+    @include('layouts.accueil.redes')
 
-    @include('layouts.carousel')
+    @include('layouts.accueil.carousel')
 
     <div class="text-julien-gris text-center uppercase text-xs my-2 md:mt-4">
 		<p>
