@@ -46,7 +46,7 @@
 		</div>
 
 		<div class="w-full md:w-2/3 tracking-wide not-italic mx-auto py-6">
-			<p class="text-white font-bold text-center text-xl px-6">
+			<p class="text-julien-gris font-bold text-center text-xl px-6">
 				RESPECTO A TUS PROBLEMAS, TE VOY A PROPONER LA MEJOR RUTINA ¡PARA VOS!
 			</p>
 		</div>
