@@ -2,7 +2,7 @@
 
 @section('content')
     
-    <div class="mb-4 text-julien-gris">
+    <div class="mb-4">
 
         <h1 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8 ">
                 {{ $programme->title }}
@@ -36,7 +36,7 @@
                         <i class="fas fa-star fa-fw text-yellow-400 pl-1"></i>
                     </p>
 
-                <p class="whitespace-pre-wrap leading-normal text-center font-medium mb-2 mx-auto px-8">
+                <p class="whitespace-pre-line leading-normal text-center font-medium mb-2 mx-auto px-8">
                     {{ $programme->descriptionCourte }}
                 </p>
 
@@ -131,7 +131,7 @@
     <div class="w-full max-w-sm md:w-1/3 mx-auto my-4 rounded overflow-hidden shadow-lg animated bounceInUp">
       {{-- <img class="w-full" src="/img/titreprog.jpg" alt="programme"> --}}
       <img src="{{ url($testimonio->avatarurl) }}" class="fill-current object-cover w-40 h-40 rounded-full mx-auto p-2" alt="avatar">
-      <div class="text-julien-gris px-6 py-4">
+      <div class="{{-- text-julien-gris --}} px-6 py-4">
         <div class="font-bold text-xl text-center mb-2">{{$testimonio->name}}</div>
         <div class="text-base">
           <p class="whitespace-pre-wrap">{{$testimonio->msg}}</p>

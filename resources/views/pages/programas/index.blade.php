@@ -19,7 +19,7 @@
             </div>
         
             <!--Right Col-->
-            <div class="w-full md:w-2/3 text-julien-gris text-center items-center mx-auto px-4">
+            <div class="w-full md:w-2/3 {{-- text-julien-gris --}} text-center items-center mx-auto px-4">
                 
                 <div class="pt-4 md:mt-2 m-2">
                     <h3 class="font-bold uppercase">
@@ -39,7 +39,7 @@
                 </div>                
 
                 <div class="items-center text-base font-medium not-italic mb-8">
-                    <p class="whitespace-pre-wrap py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
+                    <p class="whitespace-pre-line py-2 mx-auto text-center">{{ $programme->descriptionCourte }}</p>
 
                     <h3 class="leading-normal font-bold uppercase text-lg mx-auto">
                          {{ floatval($programme->prixPesos) }} <span class="text-sm font-sm text-gray-600">AR$</span> / {{ floatval($programme->prixDollar) }} <span class="text-sm font-sm text-gray-600">US$</span>
