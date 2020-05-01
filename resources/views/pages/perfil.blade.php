@@ -2,26 +2,25 @@
 
 @section('content')
     
-    <div class="mb-4 text-julien-gris">
-
-        <h1 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8 ">Sobre mi
-        </h1>
+    <div class=" bg-bandeau-gris py-4">
              
-        <div class="w-full md:w-2/3 mx-auto bg-white my-6 py-6">
+        <div class="w-full md:w-2/3 mx-auto bg-white mt-8 mb-12">
             <div class="w-full md:flex border border-gray-400 rounded-lg overflow-hidden">
                 <div class="w-full md:w-1/2">
                     <img class="overflow-hidden object-contain h-auto w-full md:mx-0" alt="julien" src="/img/julien.jpg">
                 </div>
                 <div class="w-full md:w-1/2 flex flex-col text-center justify-around leading-normal">
                     <div class="md:text-left">
-                      <h2 class="text-gray-900 font-bold text-4xl tracking-widest py-12 px-24">Julien <span class="uppercase"> Leprêtre </span></h2>
-                        <p class="px-24 text-julien-gris text-lg tracking-wider leading-loose font-semibold not-italic">
+                      <h2 class="font-bold text-5xl tracking-widest pt-12 pb-2 px-16">Julien <span class="uppercase"> Leprêtre </span></h2>
+                        <h3 class="px-6 md:px-16 text-titulos text-base leading-relaxed font-semibold not-italic uppercase ">
                             Osteopata </br>
                             Instructor en prevención</br>
                             Personal Trainer</br>
                             Conferencista</br>
                             Docente
-                        </p>
+                        </h3>
+
+                        <p class="font-semibold text-base not-italic py-8 mt-4 px-6 md:pl-16 md:pr-4 ">"Mi meta numero 1 es ayudar a toda la gente a recuperar el control de su cuerpo."</p>
                     </div>
                 </div>
             </div>
@@ -31,71 +30,54 @@
                 <div class="flex-1 px-4 py-2 text-center">
                     <i class="fas fa-clinic-medical fa-4x text-center py-2 items-center"></i>
                     <h2 class="text-lg font-semibold py-2 my-2">Primer Consultorio</h2>
-                    <p class=" text-justify">He creado mi primer consultorio en 2010 en Francia. Lo vendí en 2018 para establecerme en Buenos Aires.</p>
+                    <p class="md:text-left not-italic text-justify">He creado mi primer consultorio en 2010 en Francia. Lo vendí en 2018 para establecerme en Buenos Aires.</p>
                 </div>
                 <div class="flex-1 px-4 py-2 text-center">
                     <i class="fas fa-people-carry fa-4x text-center py-2 items-center"></i>
                     <h2 class="text-lg font-semibold py-2 my-2">Instructor en prevención</h2>
-                    <p class="text-justify">Estuve a cargo de un programa de capacitación sobre la prevención de los riesgos relativos a las actividades físicas en empresas.</p>
+                    <p class="md:text-left not-italic text-justify">Estuve a cargo de un programa de capacitación sobre la prevención de los riesgos relativos a las actividades físicas en empresas.</p>
                 </div>
                 <div class="flex-1 px-4 py-2 text-center">
                     <i class="fab fa-instagram fa-4x text-center py-2 items-center"></i>
                     <h2 class="text-lg font-semibold py-2 my-2">Consejos de salud</h2>
-                    <p class="text-justify">Desde mis cuentas Instagram y Facebook « Go Treat Yourself » propongo consejos y ejercicios para mejorar tu movilidad.</p>
+                    <p class="md:text-left not-italic text-justify">Desde mis cuentas Instagram y Facebook propongo consejos y ejercicios para mejorar tu movilidad.</p>
                 </div>
                 <div class="flex-1 px-4 py-2 text-center">
                     <i class="fas fa-clinic-medical fa-4x text-center py-2 items-center"></i>
                     <h2 class="text-lg font-semibold py-2 my-2">Segundo Consultorio</h2>
-                    <p class="text-justify">Desde 2019 trabajo en mi nuevo consultorio en Buenos Aires.</p>
+                    <p class="md:text-left not-italic text-justify">Desde 2019 trabajo en mi nuevo consultorio en Buenos Aires.</p>
                 </div>
                 <div class="flex-1 px-4 py-2 text-center">
                     <i class="fas fa-chalkboard-teacher fa-4x text-center py-2 items-center"></i>
                     <h2 class="text-lg font-semibold py-2 my-2">Docente</h2>
-                    <p class="text-justify">Enseno clases sobre el movimiento para una Escuela de osteopatia francesa y para formaciones de yoga.</p2>
+                    <p class="md:text-left not-italic text-justify">Enseno clases sobre el movimiento para una Escuela de osteopatia francesa y para formaciones de yoga.</p2>
                 </div>                   
         </div>
 
-        <div class="flex flex-col md:flex-row items-center justify-around my-2">
-            <div class="w-full md:w-1/3 m-4">
-            	<img src="/img/profilmi.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 h-48 w-48 md:h-full md:w-full mx-auto md:mx-0 rounded-full hover:shadow-lg">
-            </div>
+        <div class="flex flex-col-reverse md:flex-row items-center justify-around my-10">
             
-            <div class="w-full md:w-2/3 text-base text-justify px-2">
-                <p>Me llamo Julien LEPRETRE y me dedico a mejorar la salud de mis pacientes.</p>
+            
+            <div class="w-full md:w-1/2 text-base text-justify not-italic px-4">
+                <p>Me llamo Julian Lepretre y soy un osteópata viviendo en Buenos Aires. Desde que era muy joven, siempre estuve muy interesado en la practica deportiva.</p>
 
-                <p>Primero en Francia durante 8 años en mi propio consultorio y ahora en Buenos Aires, lo hago por medio de la osteopatía.</p>
+                <p>Comencé a practicar judo con 6 años. Luego de muchos años de participar en competiciones de alto nivel, comencé a interesarme por otros deportes como el rugby, que practiqué por mas de 15 años. Alpinismo, yoga, natación, crossfit… claramente el movimiento, el alto rendimiento y la prevención de lesiones son cosas que me fascinaron siempre.</p>
 
-                <p>Llevo muchos años tratando de ayudar a la gente, en mi consultorio, mediante cursos de formación, y ahora a través de las redes sociales con Go Treat Yourself on Instagram y Facebook.</p>
+                <p>Durante los 8 años que estuve trabajando en Francia en mi propio consultorio de osteopatía, me especialicé en prevención de lesiones y el estudio del movimiento. Realicé conferencias y cursos de formación sobre la prevención en varias empresas francesas.</p>
 
-                <p>Tu ambiente, los gestos de la vida cotidiana, los traumatismos del pasado tambien son razones que hacen una postura mas o menos equilibrada. Mi labor es entender como fuciona el cuerpo y proponer un tratamiento adaptado a sus necesidades.</p>
+                <p>Siempre me esfuerzo aprender más sobre el cuerpo humano, sus capacidades fisicas y mentales, para ayudar a mis pacientes a lograr sus objetivos</p>
+
+                <p>En 2018, tomé la decisión de renunciar a todo lo que había construido en Francia para venir a descubrir la Argentina y dedicarme a nuevos proyectos. <span class="italic"> Informar. Educar. Formar.</span> </p>
+            </div>
+
+            <div class="w-full md:w-1/2 m-4">
+                <img src="/img/osteo.jpg" alt="osteo" class="overflow-hidden object-contain h-auto w-full mx-auto md:mx-0 rounded hover:shadow-lg">
             </div>
         </div>
 
-        
-
-       {{--  <div class="w-full md:flex md:w-5/6">
-                <div class="flex-1 px-2 py-2 text-center">
-                    <i class="fas fa-hospital-alt fa-6x text-center pb-2 items-center"></i>
-                    <h2 class="text-lg md:text-left font-semibold py-2">Primer Consultorio</h2>
-                    <p class=" text-left text-justify">He creado mi primer consultorio en 2010 en Francia. Lo vendí en 2018 para establecerme en Buenos Aires.</p>
-                </div>
-                <div class="flex-1 px-2 py-2 text-center">
-                    <i class="fas fa-people-carry fa-6x text-center pb-2 items-center"></i>
-                    <h2 class="text-lg md:text-left font-semibold py-2">Instructor en prevención</h2>
-                    <p class="text-left text-justify">Estuve a cargo de un programa de capacitación sobre la prevención de los riesgos relativos a las actividades físicas en empresas.</p>
-                </div>
-                <div class="flex-1 px-2 py-2 text-center">
-                    <i class="fab fa-instagram fa-6x text-center pb-2 items-center"></i>
-                    <h2 class="text-lg md:text-left font-semibold py-2">Consejos de salud</h2>
-                    <p class="text-left text-justify">Desde mis cuentas Instagram y Facebook « Go Treat Yourself » propongo consejos y ejercicios para mejorar tu movilidad.</p>
-                </div>
-                <div class="flex-1 px-2 py-2 text-center">
-                    <i class="fas fa-hospital-alt fa-6x text-center pb-2 items-center"></i>
-                    <h2 class="text-lg md:text-left font-semibold py-2">Segundo Consultorio</h2>
-                    <p class="text-left text-justify">Desde 2019 trabajo en mi nuevo consultorio en Buenos Aires.</p>
-                </div>
-                   
-        </div>  --}}       
+        <div class="w-full text-white text-center bg-julien-gris py-8 px-2 md:px-16 text-xl md:text-3xl font-semibold uppercase">
+            tenemos el poder de resolver la mayoria de nuestros problemas nosotros mismos, prevenir lesiones y mejorar nuestro rendimiento 
+            
+        </div>      
     </div>
 
 @endsection

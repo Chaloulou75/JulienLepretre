@@ -8,7 +8,7 @@
 		</div>
 		
 		<!--Right Col-->
-		<div class="w-full lg:w-1/2 text-julien-gris text-center mx-auto px-2">
+		<div class="w-full lg:w-1/2 {{-- text-julien-gris --}} text-center mx-auto px-2">
 			
 			<div class="my-6 md:ml-16 md:text-left">
 				<h2 class="font-black text-xl md:text-3xl uppercase leading-relaxed">
@@ -36,7 +36,7 @@
 
 	<div class="w-full mx-auto h-auto flex flex-col-reverse md:flex-row items-center md:mb-8">
 				
-		<div class="w-full lg:w-1/2 text-julien-gris text-center mx-auto px-2">
+		<div class="w-full lg:w-1/2 {{-- text-julien-gris --}} text-center mx-auto px-2">
 			
 			<div class="my-6 md:ml-16 md:text-left">
 				<h2 class="font-black text-xl md:text-3xl uppercase leading-relaxed">

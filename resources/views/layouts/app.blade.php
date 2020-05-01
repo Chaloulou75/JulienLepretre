@@ -16,7 +16,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app" class="bg-white italic">
+    <div id="app" class="bg-white italic text-gray-900">
 
         <navbar-component></navbar-component>
 

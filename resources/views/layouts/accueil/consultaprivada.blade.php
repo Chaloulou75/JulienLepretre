@@ -9,7 +9,7 @@
 			  <div class="w-full md:w-1/2 flex flex-col text-center justify-around leading-normal">
 			    <div class="md:text-left">
 			      <h2 class="text-gray-900 font-bold text-3xl tracking-widest uppercase py-4 px-4">Consulta Privada</h2>
-			      	<p class="px-4 text-julien-gris text-sm leading-relaxed font-semibold not-italic">
+			      	<p class="px-4 {{-- text-julien-gris --}} text-sm leading-relaxed font-semibold not-italic">
 			      		- Definir tus objetivos </br>
 				       	- Definir tus capacidades y tus limitaciones</br>
 				   		- Detectar la presencia de contraindicaciones posibles</br>
@@ -47,7 +47,7 @@
 		</div>
 
 		<div class="w-full md:w-2/3 tracking-wide not-italic mx-auto py-6">
-			<p class="text-julien-gris font-bold text-center text-xl px-6">
+			<p class="{{-- text-julien-gris --}} font-bold text-center text-xl px-6">
 				RESPECTO A TUS PROBLEMAS, TE VOY A PROPONER LA MEJOR RUTINA ¡PARA VOS!
 			</p>
 		</div>

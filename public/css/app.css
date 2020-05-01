@@ -4894,6 +4894,12 @@ video {
   border-color: rgba(101, 124, 155, var(--divide-opacity));
 }
 
+.divide-titulos > :not(template) ~ :not(template){
+  --divide-opacity: 1;
+  border-color: #b4b4b4;
+  border-color: rgba(180, 180, 180, var(--divide-opacity));
+}
+
 .divide-opacity-0 > :not(template) ~ :not(template){
   --divide-opacity: 0;
 }
@@ -5574,6 +5580,12 @@ video {
   background-color: rgba(101, 124, 155, var(--bg-opacity));
 }
 
+.bg-titulos{
+  --bg-opacity: 1;
+  background-color: #b4b4b4;
+  background-color: rgba(180, 180, 180, var(--bg-opacity));
+}
+
 .hover\:bg-transparent:hover{
   background-color: transparent;
 }
@@ -6170,6 +6182,12 @@ video {
   background-color: rgba(101, 124, 155, var(--bg-opacity));
 }
 
+.hover\:bg-titulos:hover{
+  --bg-opacity: 1;
+  background-color: #b4b4b4;
+  background-color: rgba(180, 180, 180, var(--bg-opacity));
+}
+
 .focus\:bg-transparent:focus{
   background-color: transparent;
 }
@@ -6764,6 +6782,12 @@ video {
   --bg-opacity: 1;
   background-color: #657c9b;
   background-color: rgba(101, 124, 155, var(--bg-opacity));
+}
+
+.focus\:bg-titulos:focus{
+  --bg-opacity: 1;
+  background-color: #b4b4b4;
+  background-color: rgba(180, 180, 180, var(--bg-opacity));
 }
 
 .bg-opacity-0{
@@ -7502,6 +7526,12 @@ video {
   border-color: rgba(101, 124, 155, var(--border-opacity));
 }
 
+.border-titulos{
+  --border-opacity: 1;
+  border-color: #b4b4b4;
+  border-color: rgba(180, 180, 180, var(--border-opacity));
+}
+
 .hover\:border-transparent:hover{
   border-color: transparent;
 }
@@ -8098,6 +8128,12 @@ video {
   border-color: rgba(101, 124, 155, var(--border-opacity));
 }
 
+.hover\:border-titulos:hover{
+  --border-opacity: 1;
+  border-color: #b4b4b4;
+  border-color: rgba(180, 180, 180, var(--border-opacity));
+}
+
 .focus\:border-transparent:focus{
   border-color: transparent;
 }
@@ -8692,6 +8728,12 @@ video {
   --border-opacity: 1;
   border-color: #657c9b;
   border-color: rgba(101, 124, 155, var(--border-opacity));
+}
+
+.focus\:border-titulos:focus{
+  --border-opacity: 1;
+  border-color: #b4b4b4;
+  border-color: rgba(180, 180, 180, var(--border-opacity));
 }
 
 .border-opacity-0{
@@ -14760,6 +14802,36 @@ video {
   color: rgba(101, 124, 155, var(--placeholder-opacity));
 }
 
+.placeholder-titulos::-webkit-input-placeholder{
+  --placeholder-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--placeholder-opacity));
+}
+
+.placeholder-titulos::-moz-placeholder{
+  --placeholder-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--placeholder-opacity));
+}
+
+.placeholder-titulos:-ms-input-placeholder{
+  --placeholder-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--placeholder-opacity));
+}
+
+.placeholder-titulos::-ms-input-placeholder{
+  --placeholder-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--placeholder-opacity));
+}
+
+.placeholder-titulos::placeholder{
+  --placeholder-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--placeholder-opacity));
+}
+
 .focus\:placeholder-transparent:focus::-webkit-input-placeholder{
   color: transparent;
 }
@@ -17740,6 +17812,36 @@ video {
   color: rgba(101, 124, 155, var(--placeholder-opacity));
 }
 
+.focus\:placeholder-titulos:focus::-webkit-input-placeholder{
+  --placeholder-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-titulos:focus::-moz-placeholder{
+  --placeholder-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-titulos:focus:-ms-input-placeholder{
+  --placeholder-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-titulos:focus::-ms-input-placeholder{
+  --placeholder-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-titulos:focus::placeholder{
+  --placeholder-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--placeholder-opacity));
+}
+
 .placeholder-opacity-0::-webkit-input-placeholder{
   --placeholder-opacity: 0;
 }
@@ -18811,6 +18913,12 @@ video {
   color: rgba(101, 124, 155, var(--text-opacity));
 }
 
+.text-titulos{
+  --text-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--text-opacity));
+}
+
 .hover\:text-transparent:hover{
   color: transparent;
 }
@@ -19407,6 +19515,12 @@ video {
   color: rgba(101, 124, 155, var(--text-opacity));
 }
 
+.hover\:text-titulos:hover{
+  --text-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--text-opacity));
+}
+
 .focus\:text-transparent:focus{
   color: transparent;
 }
@@ -20001,6 +20115,12 @@ video {
   --text-opacity: 1;
   color: #657c9b;
   color: rgba(101, 124, 155, var(--text-opacity));
+}
+
+.focus\:text-titulos:focus{
+  --text-opacity: 1;
+  color: #b4b4b4;
+  color: rgba(180, 180, 180, var(--text-opacity));
 }
 
 .text-opacity-0{
@@ -40666,6 +40786,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--divide-opacity));
   }
 
+  .sm\:divide-titulos > :not(template) ~ :not(template){
+    --divide-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--divide-opacity));
+  }
+
   .sm\:divide-opacity-0 > :not(template) ~ :not(template){
     --divide-opacity: 0;
   }
@@ -41346,6 +41472,12 @@ readers do not read off random characters that represent icons */
     background-color: rgba(101, 124, 155, var(--bg-opacity));
   }
 
+  .sm\:bg-titulos{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
+  }
+
   .sm\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -41942,6 +42074,12 @@ readers do not read off random characters that represent icons */
     background-color: rgba(101, 124, 155, var(--bg-opacity));
   }
 
+  .sm\:hover\:bg-titulos:hover{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
+  }
+
   .sm\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -42536,6 +42674,12 @@ readers do not read off random characters that represent icons */
     --bg-opacity: 1;
     background-color: #657c9b;
     background-color: rgba(101, 124, 155, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-titulos:focus{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
   }
 
   .sm\:bg-opacity-0{
@@ -43274,6 +43418,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--border-opacity));
   }
 
+  .sm\:border-titulos{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
+  }
+
   .sm\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -43870,6 +44020,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--border-opacity));
   }
 
+  .sm\:hover\:border-titulos:hover{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
+  }
+
   .sm\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -44464,6 +44620,12 @@ readers do not read off random characters that represent icons */
     --border-opacity: 1;
     border-color: #657c9b;
     border-color: rgba(101, 124, 155, var(--border-opacity));
+  }
+
+  .sm\:focus\:border-titulos:focus{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
   }
 
   .sm\:border-opacity-0{
@@ -50532,6 +50694,36 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--placeholder-opacity));
   }
 
+  .sm\:placeholder-titulos::-webkit-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .sm\:placeholder-titulos::-moz-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .sm\:placeholder-titulos:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .sm\:placeholder-titulos::-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .sm\:placeholder-titulos::placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
   .sm\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -53512,6 +53704,36 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--placeholder-opacity));
   }
 
+  .sm\:focus\:placeholder-titulos:focus::-webkit-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-titulos:focus::-moz-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-titulos:focus:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-titulos:focus::-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-titulos:focus::placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
   .sm\:placeholder-opacity-0::-webkit-input-placeholder{
     --placeholder-opacity: 0;
   }
@@ -54583,6 +54805,12 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--text-opacity));
   }
 
+  .sm\:text-titulos{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
+  }
+
   .sm\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -55179,6 +55407,12 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--text-opacity));
   }
 
+  .sm\:hover\:text-titulos:hover{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
+  }
+
   .sm\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -55773,6 +56007,12 @@ readers do not read off random characters that represent icons */
     --text-opacity: 1;
     color: #657c9b;
     color: rgba(101, 124, 155, var(--text-opacity));
+  }
+
+  .sm\:focus\:text-titulos:focus{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
   }
 
   .sm\:text-opacity-0{
@@ -59807,6 +60047,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--divide-opacity));
   }
 
+  .md\:divide-titulos > :not(template) ~ :not(template){
+    --divide-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--divide-opacity));
+  }
+
   .md\:divide-opacity-0 > :not(template) ~ :not(template){
     --divide-opacity: 0;
   }
@@ -60487,6 +60733,12 @@ readers do not read off random characters that represent icons */
     background-color: rgba(101, 124, 155, var(--bg-opacity));
   }
 
+  .md\:bg-titulos{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
+  }
+
   .md\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -61083,6 +61335,12 @@ readers do not read off random characters that represent icons */
     background-color: rgba(101, 124, 155, var(--bg-opacity));
   }
 
+  .md\:hover\:bg-titulos:hover{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
+  }
+
   .md\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -61677,6 +61935,12 @@ readers do not read off random characters that represent icons */
     --bg-opacity: 1;
     background-color: #657c9b;
     background-color: rgba(101, 124, 155, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-titulos:focus{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
   }
 
   .md\:bg-opacity-0{
@@ -62415,6 +62679,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--border-opacity));
   }
 
+  .md\:border-titulos{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
+  }
+
   .md\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -63011,6 +63281,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--border-opacity));
   }
 
+  .md\:hover\:border-titulos:hover{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
+  }
+
   .md\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -63605,6 +63881,12 @@ readers do not read off random characters that represent icons */
     --border-opacity: 1;
     border-color: #657c9b;
     border-color: rgba(101, 124, 155, var(--border-opacity));
+  }
+
+  .md\:focus\:border-titulos:focus{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
   }
 
   .md\:border-opacity-0{
@@ -69673,6 +69955,36 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--placeholder-opacity));
   }
 
+  .md\:placeholder-titulos::-webkit-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .md\:placeholder-titulos::-moz-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .md\:placeholder-titulos:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .md\:placeholder-titulos::-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .md\:placeholder-titulos::placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
   .md\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -72653,6 +72965,36 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--placeholder-opacity));
   }
 
+  .md\:focus\:placeholder-titulos:focus::-webkit-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-titulos:focus::-moz-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-titulos:focus:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-titulos:focus::-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-titulos:focus::placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
   .md\:placeholder-opacity-0::-webkit-input-placeholder{
     --placeholder-opacity: 0;
   }
@@ -73724,6 +74066,12 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--text-opacity));
   }
 
+  .md\:text-titulos{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
+  }
+
   .md\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -74320,6 +74668,12 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--text-opacity));
   }
 
+  .md\:hover\:text-titulos:hover{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
+  }
+
   .md\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -74914,6 +75268,12 @@ readers do not read off random characters that represent icons */
     --text-opacity: 1;
     color: #657c9b;
     color: rgba(101, 124, 155, var(--text-opacity));
+  }
+
+  .md\:focus\:text-titulos:focus{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
   }
 
   .md\:text-opacity-0{
@@ -78948,6 +79308,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--divide-opacity));
   }
 
+  .lg\:divide-titulos > :not(template) ~ :not(template){
+    --divide-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--divide-opacity));
+  }
+
   .lg\:divide-opacity-0 > :not(template) ~ :not(template){
     --divide-opacity: 0;
   }
@@ -79628,6 +79994,12 @@ readers do not read off random characters that represent icons */
     background-color: rgba(101, 124, 155, var(--bg-opacity));
   }
 
+  .lg\:bg-titulos{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
+  }
+
   .lg\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -80224,6 +80596,12 @@ readers do not read off random characters that represent icons */
     background-color: rgba(101, 124, 155, var(--bg-opacity));
   }
 
+  .lg\:hover\:bg-titulos:hover{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
+  }
+
   .lg\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -80818,6 +81196,12 @@ readers do not read off random characters that represent icons */
     --bg-opacity: 1;
     background-color: #657c9b;
     background-color: rgba(101, 124, 155, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-titulos:focus{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
   }
 
   .lg\:bg-opacity-0{
@@ -81556,6 +81940,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--border-opacity));
   }
 
+  .lg\:border-titulos{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
+  }
+
   .lg\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -82152,6 +82542,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--border-opacity));
   }
 
+  .lg\:hover\:border-titulos:hover{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
+  }
+
   .lg\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -82746,6 +83142,12 @@ readers do not read off random characters that represent icons */
     --border-opacity: 1;
     border-color: #657c9b;
     border-color: rgba(101, 124, 155, var(--border-opacity));
+  }
+
+  .lg\:focus\:border-titulos:focus{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
   }
 
   .lg\:border-opacity-0{
@@ -88814,6 +89216,36 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--placeholder-opacity));
   }
 
+  .lg\:placeholder-titulos::-webkit-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .lg\:placeholder-titulos::-moz-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .lg\:placeholder-titulos:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .lg\:placeholder-titulos::-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .lg\:placeholder-titulos::placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
   .lg\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -91794,6 +92226,36 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--placeholder-opacity));
   }
 
+  .lg\:focus\:placeholder-titulos:focus::-webkit-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-titulos:focus::-moz-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-titulos:focus:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-titulos:focus::-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-titulos:focus::placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
   .lg\:placeholder-opacity-0::-webkit-input-placeholder{
     --placeholder-opacity: 0;
   }
@@ -92865,6 +93327,12 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--text-opacity));
   }
 
+  .lg\:text-titulos{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
+  }
+
   .lg\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -93461,6 +93929,12 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--text-opacity));
   }
 
+  .lg\:hover\:text-titulos:hover{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
+  }
+
   .lg\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -94055,6 +94529,12 @@ readers do not read off random characters that represent icons */
     --text-opacity: 1;
     color: #657c9b;
     color: rgba(101, 124, 155, var(--text-opacity));
+  }
+
+  .lg\:focus\:text-titulos:focus{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
   }
 
   .lg\:text-opacity-0{
@@ -98089,6 +98569,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--divide-opacity));
   }
 
+  .xl\:divide-titulos > :not(template) ~ :not(template){
+    --divide-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--divide-opacity));
+  }
+
   .xl\:divide-opacity-0 > :not(template) ~ :not(template){
     --divide-opacity: 0;
   }
@@ -98769,6 +99255,12 @@ readers do not read off random characters that represent icons */
     background-color: rgba(101, 124, 155, var(--bg-opacity));
   }
 
+  .xl\:bg-titulos{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
+  }
+
   .xl\:hover\:bg-transparent:hover{
     background-color: transparent;
   }
@@ -99365,6 +99857,12 @@ readers do not read off random characters that represent icons */
     background-color: rgba(101, 124, 155, var(--bg-opacity));
   }
 
+  .xl\:hover\:bg-titulos:hover{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
+  }
+
   .xl\:focus\:bg-transparent:focus{
     background-color: transparent;
   }
@@ -99959,6 +100457,12 @@ readers do not read off random characters that represent icons */
     --bg-opacity: 1;
     background-color: #657c9b;
     background-color: rgba(101, 124, 155, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-titulos:focus{
+    --bg-opacity: 1;
+    background-color: #b4b4b4;
+    background-color: rgba(180, 180, 180, var(--bg-opacity));
   }
 
   .xl\:bg-opacity-0{
@@ -100697,6 +101201,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--border-opacity));
   }
 
+  .xl\:border-titulos{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
+  }
+
   .xl\:hover\:border-transparent:hover{
     border-color: transparent;
   }
@@ -101293,6 +101803,12 @@ readers do not read off random characters that represent icons */
     border-color: rgba(101, 124, 155, var(--border-opacity));
   }
 
+  .xl\:hover\:border-titulos:hover{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
+  }
+
   .xl\:focus\:border-transparent:focus{
     border-color: transparent;
   }
@@ -101887,6 +102403,12 @@ readers do not read off random characters that represent icons */
     --border-opacity: 1;
     border-color: #657c9b;
     border-color: rgba(101, 124, 155, var(--border-opacity));
+  }
+
+  .xl\:focus\:border-titulos:focus{
+    --border-opacity: 1;
+    border-color: #b4b4b4;
+    border-color: rgba(180, 180, 180, var(--border-opacity));
   }
 
   .xl\:border-opacity-0{
@@ -107955,6 +108477,36 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--placeholder-opacity));
   }
 
+  .xl\:placeholder-titulos::-webkit-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .xl\:placeholder-titulos::-moz-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .xl\:placeholder-titulos:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .xl\:placeholder-titulos::-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .xl\:placeholder-titulos::placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
   .xl\:focus\:placeholder-transparent:focus::-webkit-input-placeholder{
     color: transparent;
   }
@@ -110935,6 +111487,36 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--placeholder-opacity));
   }
 
+  .xl\:focus\:placeholder-titulos:focus::-webkit-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-titulos:focus::-moz-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-titulos:focus:-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-titulos:focus::-ms-input-placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-titulos:focus::placeholder{
+    --placeholder-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--placeholder-opacity));
+  }
+
   .xl\:placeholder-opacity-0::-webkit-input-placeholder{
     --placeholder-opacity: 0;
   }
@@ -112006,6 +112588,12 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--text-opacity));
   }
 
+  .xl\:text-titulos{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
+  }
+
   .xl\:hover\:text-transparent:hover{
     color: transparent;
   }
@@ -112602,6 +113190,12 @@ readers do not read off random characters that represent icons */
     color: rgba(101, 124, 155, var(--text-opacity));
   }
 
+  .xl\:hover\:text-titulos:hover{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
+  }
+
   .xl\:focus\:text-transparent:focus{
     color: transparent;
   }
@@ -113196,6 +113790,12 @@ readers do not read off random characters that represent icons */
     --text-opacity: 1;
     color: #657c9b;
     color: rgba(101, 124, 155, var(--text-opacity));
+  }
+
+  .xl\:focus\:text-titulos:focus{
+    --text-opacity: 1;
+    color: #b4b4b4;
+    color: rgba(180, 180, 180, var(--text-opacity));
   }
 
   .xl\:text-opacity-0{

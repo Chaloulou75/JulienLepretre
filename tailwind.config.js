@@ -8,6 +8,7 @@ module.exports = {
         'fondo-gris': '#ededed',
         'juliencircle' : '#516174',
         'juliencheck': '#657c9b',
+        'titulos' : '#b4b4b4',
       	},
   	},
   },
