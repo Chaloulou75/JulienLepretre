@@ -5,7 +5,7 @@
     <div class=" bg-bandeau-gris py-4">
              
         <div class="w-full md:w-2/3 mx-auto bg-white mt-8 mb-12">
-            <div class="w-full md:flex border border-gray-400 rounded-lg overflow-hidden">
+            <div class="w-full md:flex rounded-lg overflow-hidden">
                 <div class="w-full md:w-1/2">
                     <img class="overflow-hidden object-contain h-auto w-full md:mx-0" alt="julien" src="/img/julien.jpg">
                 </div>
@@ -20,44 +20,44 @@
                             Docente
                         </h3>
 
-                        <p class="font-semibold text-base not-italic py-8 mt-4 px-6 md:pl-16 md:pr-4 ">"Mi meta numero 1 es ayudar a toda la gente a recuperar el control de su cuerpo."</p>
+                        <p class="font-semibold text-base not-italic py-8 mt-12 px-6 md:pl-16 md:pr-4 ">"Mi meta numero 1 es ayudar a toda la gente a recuperar el control de su cuerpo."</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="w-full md:flex bg-julien-gris text-white my-4 py-4">
+        <div class="w-full md:flex bg-julien-gris text-white my-24 py-4">
                 <div class="flex-1 px-4 py-2 text-center">
                     <i class="fas fa-clinic-medical fa-4x text-center py-2 items-center"></i>
                     <h2 class="text-lg font-semibold py-2 my-2">Primer Consultorio</h2>
-                    <p class="md:text-left not-italic text-justify">He creado mi primer consultorio en 2010 en Francia. Lo vendí en 2018 para establecerme en Buenos Aires.</p>
+                    <p class="md:text-left not-italic ">He creado mi primer consultorio en 2010 en Francia. Lo vendí en 2018 para establecerme en Buenos Aires.</p>
                 </div>
                 <div class="flex-1 px-4 py-2 text-center">
                     <i class="fas fa-people-carry fa-4x text-center py-2 items-center"></i>
                     <h2 class="text-lg font-semibold py-2 my-2">Instructor en prevención</h2>
-                    <p class="md:text-left not-italic text-justify">Estuve a cargo de un programa de capacitación sobre la prevención de los riesgos relativos a las actividades físicas en empresas.</p>
+                    <p class="md:text-left not-italic ">Estuve a cargo de un programa de capacitación sobre la prevención de los riesgos relativos a las actividades físicas en empresas.</p>
                 </div>
                 <div class="flex-1 px-4 py-2 text-center">
                     <i class="fab fa-instagram fa-4x text-center py-2 items-center"></i>
                     <h2 class="text-lg font-semibold py-2 my-2">Consejos de salud</h2>
-                    <p class="md:text-left not-italic text-justify">Desde mis cuentas Instagram y Facebook propongo consejos y ejercicios para mejorar tu movilidad.</p>
+                    <p class="md:text-left not-italic ">Desde mis cuentas Instagram y Facebook propongo consejos y ejercicios para mejorar tu movilidad.</p>
                 </div>
                 <div class="flex-1 px-4 py-2 text-center">
                     <i class="fas fa-clinic-medical fa-4x text-center py-2 items-center"></i>
                     <h2 class="text-lg font-semibold py-2 my-2">Segundo Consultorio</h2>
-                    <p class="md:text-left not-italic text-justify">Desde 2019 trabajo en mi nuevo consultorio en Buenos Aires.</p>
+                    <p class="md:text-left not-italic ">Desde 2019 trabajo en mi nuevo consultorio en Buenos Aires.</p>
                 </div>
                 <div class="flex-1 px-4 py-2 text-center">
                     <i class="fas fa-chalkboard-teacher fa-4x text-center py-2 items-center"></i>
                     <h2 class="text-lg font-semibold py-2 my-2">Docente</h2>
-                    <p class="md:text-left not-italic text-justify">Enseno clases sobre el movimiento para una Escuela de osteopatia francesa y para formaciones de yoga.</p2>
+                    <p class="md:text-left not-italic ">Enseño clases sobre el movimiento para una Escuela de osteopatia francesa y para formaciones de yoga.</p2>
                 </div>                   
         </div>
 
-        <div class="flex flex-col-reverse md:flex-row items-center justify-around my-10">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-around my-24">
             
             
-            <div class="w-full md:w-1/2 text-base text-justify not-italic px-4">
+            <div class="w-full md:w-1/2 text-base text-justify not-italic px-4 py-4">
                 <p>Me llamo Julian Lepretre y soy un osteópata viviendo en Buenos Aires. Desde que era muy joven, siempre estuve muy interesado en la practica deportiva.</p>
 
                 <p>Comencé a practicar judo con 6 años. Luego de muchos años de participar en competiciones de alto nivel, comencé a interesarme por otros deportes como el rugby, que practiqué por mas de 15 años. Alpinismo, yoga, natación, crossfit… claramente el movimiento, el alto rendimiento y la prevención de lesiones son cosas que me fascinaron siempre.</p>
@@ -75,7 +75,7 @@
         </div>
 
         <div class="w-full text-white text-center bg-julien-gris py-8 px-2 md:px-16 text-xl md:text-3xl font-semibold uppercase">
-            tenemos el poder de resolver la mayoria de nuestros problemas nosotros mismos, prevenir lesiones y mejorar nuestro rendimiento 
+            "tenemos el poder de resolver la mayoria de nuestros problemas nosotros mismos, prevenir lesiones y mejorar nuestro rendimiento" 
             
         </div>      
     </div>
