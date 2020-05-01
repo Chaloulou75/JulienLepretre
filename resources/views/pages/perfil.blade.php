@@ -52,8 +52,7 @@
                     <i class="fas fa-chalkboard-teacher fa-4x text-center py-2 items-center"></i>
                     <h2 class="text-lg font-semibold py-2 my-2">Docente</h2>
                     <p class="text-justify">Enseno clases sobre el movimiento para una Escuela de osteopatia francesa y para formaciones de yoga.</p2>
-                </div>
-                   
+                </div>                   
         </div>
 
         <div class="flex flex-col md:flex-row items-center justify-around my-2">
@@ -61,7 +60,7 @@
             	<img src="/img/profilmi.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 h-48 w-48 md:h-full md:w-full mx-auto md:mx-0 rounded-full hover:shadow-lg">
             </div>
             
-            <div class="w-full md:w-2/3 text-base text-justify">
+            <div class="w-full md:w-2/3 text-base text-justify px-2">
                 <p>Me llamo Julien LEPRETRE y me dedico a mejorar la salud de mis pacientes.</p>
 
                 <p>Primero en Francia durante 8 años en mi propio consultorio y ahora en Buenos Aires, lo hago por medio de la osteopatía.</p>
@@ -74,7 +73,7 @@
 
         
 
-        <div class="w-full md:flex md:w-5/6">
+       {{--  <div class="w-full md:flex md:w-5/6">
                 <div class="flex-1 px-2 py-2 text-center">
                     <i class="fas fa-hospital-alt fa-6x text-center pb-2 items-center"></i>
                     <h2 class="text-lg md:text-left font-semibold py-2">Primer Consultorio</h2>
@@ -96,7 +95,7 @@
                     <p class="text-left text-justify">Desde 2019 trabajo en mi nuevo consultorio en Buenos Aires.</p>
                 </div>
                    
-        </div>        
+        </div>  --}}       
     </div>
 
 @endsection
