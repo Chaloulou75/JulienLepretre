@@ -4,7 +4,7 @@
 
 <div class="mb-4">
 
-    <h1 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8 ">
+    <h1 class="w-full font-black text-3xl text-center uppercase py-8 ">
                 Testimonios
     </h1>
 
@@ -40,6 +40,12 @@
 	{{ $testimonios->links() }}
 
 	</div>
+
+	<h1 class="w-full font-black text-xl text-center uppercase py-8 my-4">
+                sus comentarios en instagram
+    </h1>
+
+    @include('layouts.accueil.carousel')
 
 		
 </div>
