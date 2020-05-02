@@ -2,14 +2,16 @@
 
 @section('content')
 
-<div class="bg-gray-100 text-julien-gris text-center font-semibold uppercase tracking-wide text-base px-8 py-4">
+<h1 class="w-full font-black text-3xl text-center uppercase py-8 ">
+                TU PLAN DE ENTRENAMIENTO EN CASA
+</h1> 
 
-        <h1 class="pb-4">TU PLAN DE ENTRENAMIENTO EN CASA</h1>
-        <h2 class="pb-2">Plan de 6 sesiones</h2>
-</div>
+<h2 class="w-full font-black text-3xl text-center uppercase py-2 ">
+                Plan de 6 sesiones
+</h2> 
 
 <div class="sm:flex justify-between px-8">
-	<div class="w-full max-w-xs lg:max-w-xl lg:w-1/2 mx-auto my-2 p-auto p-8 border-2 rounded border-teal-600">   
+	<div class="w-full max-w-xs lg:max-w-xl lg:w-1/2 mx-auto my-2 p-auto p-8 border-2 rounded border-gray-700">   
 
 		<h3 class="text-center text-base uppercase">Argentino? </br> Pagar con Mercado Pago:</h3>
 		<p class="text-center text-sm pt-1">(con Pesos Argentinos)</p>
@@ -18,7 +20,7 @@
 		</div>
 	</div>
 
-	<div class="w-full max-w-xs lg:max-w-xl lg:w-1/2 mx-auto my-2 p-auto p-8 border-2 rounded border-teal-600">   
+	<div class="w-full max-w-xs lg:max-w-xl lg:w-1/2 mx-auto my-2 p-auto p-8 border-2 rounded border-gray-700">   
 
 		<h3 class="text-center text-base uppercase">Extranjero? </br> Pagar con Paypal:</h3>
 		<p class="text-center text-sm pt-1">(con Dolares o Euros)</p>

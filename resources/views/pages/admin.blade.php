@@ -16,6 +16,9 @@
 		<li class="py-2 px-4 m-2">- Lien vers testimonios/create: 
 			<a class="text-sm text-julien-red not-italic" href="{{ action('TestimoniosController@create') }}">Crear un testimonio</a></li>
 
+		<li class="py-2 px-4 m-2"> - Lien vers Paiement: 
+			<a class="text-sm text-julien-red not-italic" href="{{ action('PaymentController@index') }}"> Paiements</a></li>
+
 		<li class="py-2 px-4 m-2"> - Lien vers Paiement - 6 sesiones: 
 			<a class="text-sm text-julien-red not-italic" href="{{ action('PaymentController@plan6sesiones') }}"> Paiement - 6 sesiones:</a></li>
 
