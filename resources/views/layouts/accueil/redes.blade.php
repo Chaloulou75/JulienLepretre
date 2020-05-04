@@ -14,12 +14,12 @@
 	<div class="w-full md:w-1/3 text-center font-semibold text-sm">
 
 		<div class="flex-1 pb-4 text-sm">
-			<span class="font-bold text-2xl"><i class="fas fa-users fa-2x text-julien-red mr-2"></i> 80,312 </span> </br>
+			<span class="font-bold text-2xl"><i class="fas fa-users fa-2x text-julien-red mr-2"></i> 81,714 </span> </br>
 			Seguidores en Instagram	
 		</div>
 			
 		<div class="flex-1 py-2 text-sm">
-			<span class="font-bold text-2xl"><i class="fas fa-photo-video fa-2x text-julien-red mr-2"></i> +330 </span> </br>
+			<span class="font-bold text-2xl"><i class="fas fa-photo-video fa-2x text-julien-red mr-2"></i> +340 </span> </br>
 			Videos en las redes sociales
 		</div>
 			

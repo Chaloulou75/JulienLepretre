@@ -7,12 +7,15 @@
         {{-- titre --}}
 
         <h1 class="w-full font-black text-3xl text-center not-italic tracking-loose uppercase py-4 ">
-                {{ $programme->title }} </br>               
-                <i class="fas fa-star fa-sm text-yellow-400 pl-1"></i>
-                <i class="fas fa-star fa-sm text-yellow-400 pl-1"></i>
-                <i class="fas fa-star fa-sm text-yellow-400 pl-1"></i>
-                <i class="fas fa-star fa-sm text-yellow-400 pl-1"></i>
-                <i class="fas fa-star fa-sm text-yellow-400 "></i>
+                {{ $programme->title }} </br>
+                <span class="text-lg">
+                    <i class="fas fa-star fa-sm text-yellow-400 pl-1"></i>
+                    <i class="fas fa-star fa-sm text-yellow-400 pl-1"></i>
+                    <i class="fas fa-star fa-sm text-yellow-400 pl-1"></i>
+                    <i class="fas fa-star fa-sm text-yellow-400 pl-1"></i>
+                    <i class="fas fa-star fa-sm text-yellow-400 "></i>
+                </span>               
+                
         </h1> 
 
         {{-- premier block --}}
@@ -26,7 +29,7 @@
             </div>
 
             <!--Right Col-->
-            <div class="w-full md:w-1/2 md:py-2 text-center {{-- items-center --}} mx-auto">
+            <div class="w-full md:w-1/2 md:py-2 text-center not-italic {{-- items-center --}} mx-auto">
                 
                 <p class="whitespace-pre-line leading-normal md:mx-16 md:text-left font-medium mb-2 px-8">
                     {{ $programme->descriptionCourte }}
@@ -60,13 +63,13 @@
 
         {{-- Deuxieme block --}}
 
-        <div class="w-full mx-auto flex flex-col md:flex-row items-center text-center mb-4">
+        <div class="w-full mx-auto flex flex-col md:flex-row items-center text-center mb-8">
 
             <div class="flex flex-col w-full lg:w-1/2 mx-auto my-4">
 
                 <h2 class="w-full font-black text-3xl uppercase tracking-widest my-2 md:mx-16 md:text-left">El programa</h2>
 
-                <p class="whitespace-pre-wrap leading-normal text-base my-4 md:mx-16 md:text-left items-center">{{$programme->descriptionComplete}}</p>
+                <p class="whitespace-pre-wrap leading-normal text-base not-italic my-4 md:mx-16 md:text-left items-center">{{$programme->descriptionComplete}}</p>
                 
                 <div class="md:mx-16 md:text-left my-4">
                     <a href="{{url($programme->lienTiendup) }}"><button class=" bg-julien-gris hover:bg-julien-red text-white font-semibold tracking-widest uppercase border border-white rounded shadow hover:shadow-lg py-2 px-8 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Pedir Ahora</button></a>
@@ -99,7 +102,7 @@
 
                     @foreach($programme->descriptions as $description)
 
-                    <p class="my-8 leading-normal font-bold text-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+                    <p class="my-8 leading-normal font-bold text-lg not-italic transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                         <i class="fas fa-check fa-lg text-blue-800 pl-1"></i>
                          {{ $description->phrase }}
                     </p>

@@ -23,10 +23,9 @@
       <a href="/testimonios" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Testimonios</a>
       <a href="https://osteopatiafrancesa.com/" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Consultorio</a>
       <a href="/perfil" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Sobre mi</a>
-      <!-- <a href="/contacto" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Contacto</a> -->
+      <!-- <a href="/blog" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Blog</a> -->
       <!-- <a href="/login" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Login</a> -->
       
-      <!-- <a href="/login" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mt-1 block px-2 py-1 text-white rounded hover:bg-gray-500 sm:mt-0 sm:ml-2">Conectarse</a> -->
     </nav>
   </header>
 </template>
