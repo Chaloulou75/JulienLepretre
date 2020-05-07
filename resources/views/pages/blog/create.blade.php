@@ -68,7 +68,7 @@
 
             <label for="description" class="block text-sm font-semibold tracking-wide mb-2"> {{ __('Description') }}</label>
 
-            <textarea id="description" type="text" class="shadow appearance-none border rounded w-full h-300 py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('description') bg-red-dark @enderror" name="description" value="{{ old('description') }}" required autocomplete="description">{!! old('description') !!}</textarea>
+            <textarea id="description" type="text"  class="{{--shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:shadow-outline --}} @error('description') bg-red-dark @enderror" name="description" value="{{ old('description') }}" autocomplete="description">{!! old('description') !!}</textarea>
 
             @error('description')
                 <span class="mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -81,8 +81,7 @@
         <div class="mb-4">
             <label for="soustitre2" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Sous titre 2 du post') }}</label>
 
-            <input id="soustitre2" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('soustitre2') bg-red-dark @enderror" name="soustitre2" value="{{ old('soustitre2') }}" required autocomplete="soustitre2">
+            <input id="soustitre2" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('soustitre2') bg-red-dark @enderror" name="soustitre2" value="{{ old('soustitre2') }}" required autocomplete="soustitre2">
 
             @error('soustitre2')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -95,7 +94,7 @@
         <div class="mb-4">
             <label for="content" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Contenu') }}</label>
 
-            <textarea id="content" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('content') bg-red-dark @enderror" name="content" value="{{ old('content') }}" required autocomplete="content">{!! old('content') !!}</textarea>
+            <textarea id="content" type="text" class="@error('content') bg-red-dark @enderror" name="content" value="{{ old('content') }}" autocomplete="content">{!! old('content') !!}</textarea>
 
             @error('content')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -193,7 +192,8 @@
 <script>
       tinymce.init({
         selector: 'textarea',
-        plugins : 'advlist link lists',
+        plugins : 'advlist autolink link lists',
+        default_link_target: "_blank",
         height: 400
       });
 </script>

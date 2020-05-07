@@ -6,6 +6,7 @@ use App\Post;
 use App\Tag;
 use Auth;
 use Illuminate\Http\Request;
+use Validator;
 use Purifier;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\UploadedFile;
@@ -43,9 +44,9 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {        
-        $post= new Post();
+        
 
-        $request->validate([
+        $validator = Validator::make($request->all(),[
                 'title' => 'required|min:3|max:255',
                 'auteur' =>'required|min:3|max:255',
                 'soustitre1'=> 'required|min:3|max:255',                
@@ -58,6 +59,12 @@ class PostController extends Controller
                 'lienFacebook' => 'url',
                 'tags'=>'min:3|max:255',
             ]);
+
+        if ($validator->fails()) {
+            return redirect('/blog/create')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
 
         if($request->lienYoutube)
         {
@@ -87,7 +94,8 @@ class PostController extends Controller
             'lienInstagram' => $request->lienInstagram, 
             'lienFacebook' => $request->lienFacebook,
         );
-        
+
+        $post = new Post();
         $post = Post::create($data);
 
         if($request->tags)
@@ -145,7 +153,7 @@ class PostController extends Controller
         
         $post = Post::with('tags')->where('slug', $slug)->firstOrFail();
         
-        $request->validate([
+        $validator = Validator::make($request->all(),[
                 'title' => 'required|min:3|max:255',
                 'auteur' =>'required|min:3|max:255',
                 'soustitre1'=> 'required|min:3|max:255',                
@@ -158,6 +166,12 @@ class PostController extends Controller
                 'lienFacebook' => 'url',
                 'tags'=>'min:3|max:255',
             ]);
+
+        if ($validator->fails()) {
+            return redirect('/blog/create')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
 
         if($request->lienYoutube)
         {

@@ -27,7 +27,7 @@
             <label for="title" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Titre du post') }}</label>
 
             <input id="title" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('title') bg-red-dark @enderror" name="title" value="{{ $title }}" required autocomplete="title">
+             @error('title') bg-red-dark @enderror" name="title" value="{{ $title }}" autocomplete="title">
 
             @error('title')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -41,7 +41,7 @@
             <label for="auteur" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Auteur du post') }}</label>
 
             <input id="auteur" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('auteur') bg-red-dark @enderror" name="auteur" value="{{ $auteur }}" required autocomplete="auteur">
+             @error('auteur') bg-red-dark @enderror" name="auteur" value="{{ $auteur }}" autocomplete="auteur">
 
             @error('auteur')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -55,7 +55,7 @@
             <label for="soustitre1" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Sous titre 1 du post') }}</label>
 
             <input id="soustitre1" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('soustitre1') bg-red-dark @enderror" name="soustitre1" value="{{ $soustitre1 }}" required autocomplete="soustitre1">
+             @error('soustitre1') bg-red-dark @enderror" name="soustitre1" value="{{ $soustitre1 }}" autocomplete="soustitre1">
 
             @error('soustitre1')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -69,7 +69,7 @@
 
             <label for="description" class="block text-sm font-semibold tracking-wide mb-2"> {{ __('Description') }}</label>
 
-            <textarea id="description" type="text" class="shadow appearance-none border rounded w-full h-300 py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('description') bg-red-dark @enderror" name="description" value="{{ $description }}" required autocomplete="description">
+            <textarea id="description" type="text" class="{{-- shadow appearance-none border rounded w-full h-300 py-2 px-3 leading-loose focus:outline-none focus:shadow-outline --}} @error('description') bg-red-dark @enderror" name="description" value="{{ $description }}" autocomplete="description">
                 @if( old('description')) 
                     {!! old('description') !!}
                 @else 
@@ -89,7 +89,7 @@
             <label for="soustitre2" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Sous titre 2 du post') }}</label>
 
             <input id="soustitre2" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('soustitre2') bg-red-dark @enderror" name="soustitre2" value="{{ $soustitre2 }}" required autocomplete="sous_titre2">
+             @error('soustitre2') bg-red-dark @enderror" name="soustitre2" value="{{ $soustitre2 }}" autocomplete="sous_titre2">
 
             @error('soustitre2')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -102,7 +102,7 @@
         <div class="mb-4">
             <label for="content" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Contenu') }}</label>
 
-            <textarea id="content" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('content') bg-red-dark @enderror" name="content" value="{{$content}}" required autocomplete="content">
+            <textarea id="content" type="text" class="{{-- shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline --}} @error('content') bg-red-dark @enderror" name="content" value="{{$content}}" autocomplete="content">
             @if( old('content')) 
                 {!! old('content') !!}
             @else 
@@ -121,7 +121,7 @@
         <div class="mb-4">
             <label for="photoPost" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Photo du post') }}</label>
 
-            <input id="photoPost" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('photoPost') bg-red-dark @enderror" name="photoPost" value="" required autocomplete="photoPost">
+            <input id="photoPost" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('photoPost') bg-red-dark @enderror" name="photoPost" value="" autocomplete="photoPost">
 
             @error('photoPost')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -136,7 +136,7 @@
             <label for="lienYoutube" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Youtube du post (remettre le lien entier)') }}</label>
 
             <input id="lienYoutube" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="{{ $lienYoutube }}" required autocomplete="lienYoutube">
+             @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="{{ $lienYoutube }}" autocomplete="lienYoutube">
 
             @error('lienYoutube')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -150,7 +150,7 @@
             <label for="lienInstagram" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Instagram du post') }}</label>
 
             <input id="lienInstagram" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('lienInstagram') bg-red-dark @enderror" name="lienInstagram" value="{{ $lienInstagram }}" required autocomplete="lienInstagram">
+             @error('lienInstagram') bg-red-dark @enderror" name="lienInstagram" value="{{ $lienInstagram }}" autocomplete="lienInstagram">
 
             @error('lienInstagram')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -164,7 +164,7 @@
             <label for="lienFacebook" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Facebook du post') }}</label>
 
             <input id="lienFacebook" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('lienFacebook') bg-red-dark @enderror" name="lienFacebook" value="{{ $lienFacebook }}" required autocomplete="lienFacebook">
+             @error('lienFacebook') bg-red-dark @enderror" name="lienFacebook" value="{{ $lienFacebook }}" autocomplete="lienFacebook">
 
             @error('lienFacebook')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -178,7 +178,7 @@
             <label for="tags" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Ajouter des tags au post (!! sépare chaque tag par une virgule!!)') }}</label>
 
             <input id="tags" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('tags') bg-red-dark @enderror" name="tags" value=" {{ $post->tags()->pluck('name')->implode(', ')}} " required autocomplete="tags">
+             @error('tags') bg-red-dark @enderror" name="tags" value=" {{ $post->tags()->pluck('name')->implode(', ')}} " autocomplete="tags">
 
             @error('tags')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -206,7 +206,8 @@
 <script>
       tinymce.init({
         selector: 'textarea',
-        plugins : 'advlist link lists',
+        plugins : 'advlist autolink link lists',
+        default_link_target: "_blank",
         height: 400
       });
 </script>
