@@ -14,6 +14,8 @@
 
         <div class="w-full md:w-4/5 mx-auto items-center justify-around text-justify mb-2" >
 
+            <p class="text-xs text-left py-2">Publicado por <span class="font-semibold">{{ $post->auteur }}</span> el {{  $post->created_at->isoFormat('LL')}} </p>
+
             <div class="flex flex-col w-full h-full mx-auto items-center">
                 <iframe class="w-full mx-auto" height="500" src="http://www.youtube.com/embed/{{ $post->lienYoutube}}" allowfullscreen>
                 </iframe>            	
