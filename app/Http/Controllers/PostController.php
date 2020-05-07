@@ -167,7 +167,6 @@ class PostController extends Controller
 
         if($request->hasfile('photoPost'))
         {
-            //$filename1 = $request->image->getClientOriginalName();
             if($post->photoPost){
 
                 Storage::disk('s3')->delete('/img/posts'.$post->photoPost);
