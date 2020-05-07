@@ -31,7 +31,7 @@
                     <span class="px-1 py-1 text-lg font-semibold text-gray-700 mr-2"> <i class="fab fa-facebook"></i></span>
             </a>           
           </div>
-          {{-- @admin --}}
+          @admin
           <div class="flex justify-between px-6 py-4">
             <a class="inline-block text-xs text-julien-red not-italic" href="{{ action('PostController@edit', $post) }}">Editar</a>
             <form method="POST" action="{{ action('PostController@destroy', $post) }}"> 
@@ -40,7 +40,7 @@
             <button class="inline-block text-xs text-julien-red" >Suprimir</button>
             </form>     
           </div>      
-          {{-- @endadmin --}}
+          @endadmin
         </div>
 
         
