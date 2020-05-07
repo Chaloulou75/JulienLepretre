@@ -40,11 +40,14 @@
                     </div> 
                     
                     <div class="flex leading-normal py-4">
+
                         @foreach($post->tags as $tag)
 
-                        <div class=" py-2 px-4 font-semibold text-sm border-2 border-gray-900 rounded-lg mx-2">
+                        <a href="{{ route('post.index', ['tag'=> $tag->name ]) }}">
+                        <div class=" py-2 px-4 font-semibold text-gray-900 hover:text-julien-red text-sm border-2 border-gray-900 rounded-lg mx-2">
                                 {{ $tag->name }}
-                        </div> 
+                        </div></a>
+
                         @endforeach
                     </div> 
                 </div>

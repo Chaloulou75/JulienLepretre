@@ -10,7 +10,7 @@
             <h1>Admin dashboard</h1>
     </div>
 	<ul class="">
-		<li class="py-2 px-4 m-2">- Lien vers post/create : 
+		<li class="py-2 px-4 m-2">- Lien vers lacreation de Post de Blog (post/create) : 
 			<a class="text-sm text-julien-red not-italic" href="{{ action('PostController@create') }}"> Crear un Post de Blog</a></li>
 
 		<li class="py-2 px-4 m-2">- Lien vers programas/create : 

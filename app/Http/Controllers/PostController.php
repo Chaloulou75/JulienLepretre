@@ -20,8 +20,16 @@ class PostController extends Controller
      */
     public function index()
     {
+        if(request('tag'))
+        {
+            $posts= Tag::where('name', request('tag'))->firstOrFail()->posts()->latest()->simplePaginate(6);
+        }
+
+        else
+        {
+          $posts = Post::with('tags')->latest()->simplePaginate(6);  
+        }
         
-        $posts = Post::with('tags')->latest()->simplePaginate(6);
 
         return view('/pages/blog/index', compact('posts')); //
     }

@@ -10,7 +10,7 @@
 
         <div class="w-full mx-auto flex flex-col md:flex-row flex-wrap items-stretch justify-around my-4"> 
 
-        @foreach($posts as $post)
+        @forelse($posts as $post)
 
         <div class="max-w-sm rounded overflow-hidden shadow-lg animated bounceInUp mb-8">
           <img src="{{ url($post->photoPostUrl) }}" class="w-full fill-current mx-auto" alt="image du Post">
@@ -43,8 +43,11 @@
           @endadmin
         </div>
 
+        @empty
+
+        <p> No hay post por el momento.</p>
         
-        @endforeach 
+        @endforelse 
 
         {{ $posts->links() }}
 
