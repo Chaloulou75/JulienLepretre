@@ -45,16 +45,15 @@ Route::resource('/programas/{slug}/description', 'DescriptionController',['only'
 
 //post de blog
 
-Route::resource('blog', 'PostController',['except' => [
+Route::resource('blog', 'PostController', ['except' => [
     'index', 'show', 'edit',
 ]])->middleware('admin');
 
-Route::get('/blog', 'PostController@index')->name('posts.index');
-Route::get('/blog/{slug}', 'PostController@show')->name('posts.show');
-Route::get('/blog/{slug}/edit', 'PostController@edit')->name('posts.edit')->middleware('admin');
+Route::get('/blog', 'PostController@index')->name('post.index');
+Route::get('/blog/{slug}', 'PostController@show')->name('post.show');
+Route::get('/blog/{slug}/edit', 'PostController@edit')->name('post.edit');//->middleware('admin')
 
 //profil sobre mi
-
 Route::get('/perfil', 'PagesController@index')->name('profil');
 
 //contact

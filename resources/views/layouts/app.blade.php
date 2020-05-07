@@ -13,18 +13,24 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <!-- Styles -->
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
-<body>
-    <div id="app" class="bg-white italic text-gray-900">
+<body class="bg-white">
+    <div id="app" class="italic text-gray-900">
 
         <navbar-component></navbar-component>
 
         @include('layouts/message')
         
-        <main {{-- class="py-4" --}}>
+        <main >
             @yield('content')
         </main>
-    </div>
+
+    </div> 
+
+    
+    @yield('scripts')
 </body>
 </html>

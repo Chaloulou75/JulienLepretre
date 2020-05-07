@@ -16,13 +16,17 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('username');
             $table->string('slug')->unique();
+            $table->string('auteur');
+            $table->text('soustitre1');            
+            $table->text('description');
+            $table->text('soustitre2');
             $table->text('content');
             $table->string('photoPost')->nullable();
             $table->string('photoPostUrl')->nullable();
             $table->string('lienYoutube')->nullable();            
-            $table->string('lienTiendup')->nullable();
+            $table->string('lienInstagram')->nullable();
+            $table->string('lienFacebook')->nullable();
             $table->timestamps();
         });
     }

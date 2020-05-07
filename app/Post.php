@@ -2,15 +2,21 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
     use Sluggable;
 
-    protected $fillable = ['title', 'username', 'content', 'photoPost', 'photoPostUrl', 'lienYoutube', 'lienTiendup'
+    protected $fillable = ['title', 'auteur', 'soustitre1', 'description', 'soustitre2', 'content', 'photoPost', 'photoPostUrl', 'lienYoutube', 'lienInstagram', 'lienFacebook'
     ];
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+
+    }
 
     public function sluggable()
     {

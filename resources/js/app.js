@@ -21,11 +21,11 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('navbar-component', require('./components/NavbarComponent.vue').default);
-Vue.component('protusion-component', require('./components/ProtusionComponent.vue').default);
-Vue.component('noproblema-component', require('./components/NoproblemaComponent.vue').default);
-Vue.component('tiempo-component', require('./components/TiempoComponent.vue').default);
-Vue.component('terminado-component', require('./components/TerminadoComponent.vue').default);
-Vue.component('modal-component', require('./components/ModalComponent.vue').default);
+// Vue.component('protusion-component', require('./components/ProtusionComponent.vue').default);
+// Vue.component('noproblema-component', require('./components/NoproblemaComponent.vue').default);
+// Vue.component('tiempo-component', require('./components/TiempoComponent.vue').default);
+// Vue.component('terminado-component', require('./components/TerminadoComponent.vue').default);
+// Vue.component('modal-component', require('./components/ModalComponent.vue').default);
 Vue.component('carousel-component', require('./components/CarouselComponent.vue').default);
 
 /**
@@ -37,4 +37,8 @@ Vue.component('carousel-component', require('./components/CarouselComponent.vue'
 const app = new Vue({
     el: '#app',
 });
+
+
+
+
 

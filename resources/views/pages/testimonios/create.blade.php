@@ -38,7 +38,7 @@
 	        <div class="mb-4">
 	            <label for="msg" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Tu testimonio') }}</label>
 
-	            <textarea id="msg" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('msg') bg-red-dark @enderror" name="msg" value="{{ old('msg') }}" required autocomplete="msg"></textarea>
+	            <textarea id="msg" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('msg') bg-red-dark @enderror" name="msg" value="{{ old('msg') }}" required autocomplete="msg">{{ old('msg') }}</textarea>
 
 	            @error('msg')
 	                <span class=" mt-1 text-sm text-red-500" role="relative px-3 py-3 mb-4 border rounded">

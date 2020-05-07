@@ -3,7 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\Tag;
+use Auth;
 use Illuminate\Http\Request;
+use Purifier;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\UploadedFile;
 
 class PostController extends Controller
 {
@@ -15,9 +20,9 @@ class PostController extends Controller
     public function index()
     {
         
-        // $posts = Post::latest()->get();
+        $posts = Post::with('tags')->latest()->simplePaginate(6);
 
-         return view('/pages/blog/index'); //, compact('posts')
+        return view('/pages/blog/index', compact('posts')); //
     }
 
     /**
@@ -27,7 +32,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('/pages/blog/create');
     }
 
     /**
@@ -37,8 +42,69 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {        
+        $post= new Post();
+
+        $request->validate([
+                'title' => 'required|min:3|max:255',
+                'auteur' =>'required|min:3|max:255',
+                'soustitre1'=> 'required|min:3|max:255',                
+                'description' => 'required|min:10',
+                'soustitre2'=> 'required|min:3|max:255',
+                'content' => 'required|min:10',
+                'photoPost' => 'required|image|mimes:jpeg,png,jpg,gif,svg',                
+                'lienYoutube' => 'url',
+                'lienInstagram' => 'url',
+                'lienFacebook' => 'url',
+                'tags'=>'min:3|max:255',
+            ]);
+
+        if($request->lienYoutube)
+        {
+            $lienYoutube = $request->lienYoutube;
+            $lienYoutubeId = $this->YoutubeID($lienYoutube);
+        }        
+
+        if($request->hasfile('photoPost'))
+        {
+            $path = $request->file('photoPost')->store('img/posts', 's3');
+
+            Storage::disk('s3')->setVisibility($path, 'public');
+
+            $progurl = Storage::disk('s3')->url($path);
+        }
+
+        $data = array(
+            'title'=> $request->title,
+            'auteur'=> $request->auteur,
+            'soustitre1'=> $request->soustitre1,
+            'description' => Purifier::clean($request->description),
+            'soustitre2'=> $request->soustitre2,            
+            'content' => Purifier::clean($request->content),
+            'photoPost' => basename($path),
+            'photoPostUrl' => $progurl,               
+            'lienYoutube' => $lienYoutubeId, 
+            'lienInstagram' => $request->lienInstagram, 
+            'lienFacebook' => $request->lienFacebook,
+        );
+        
+        $post = Post::create($data);
+
+        if($request->tags)
+        {
+            $tags = explode(', ', $request->tags);
+
+            foreach($tags as $key => $tag)
+            {
+                $newTag = Tag::firstOrCreate(['name' => $tag]);
+
+                $post->tags()->attach($newTag);  
+            } 
+        }
+
+            
+
+        return redirect()->back()->with('message.level', 'success')->with('message.content', __('El post esta creado.'));       
     }
 
     /**
@@ -47,9 +113,11 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
+    public function show($slug)
     {
-        //
+        $post = Post::with('tags')->where('slug', $slug)->firstOrFail();
+
+        return view('/pages/blog/show', $post, compact('post'));
     }
 
     /**
@@ -58,9 +126,11 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function edit(Post $post)
+    public function edit($slug)
     {
-        //
+        $post = Post::with('tags')->where('slug' , $slug)->firstOrFail();
+
+        return view('/pages/blog/edit', $post, compact('post'));
     }
 
     /**
@@ -70,9 +140,73 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, $slug)
     {
-        //
+        
+        $post = Post::with('tags')->where('slug', $slug)->firstOrFail();
+        
+        $request->validate([
+                'title' => 'required|min:3|max:255',
+                'auteur' =>'required|min:3|max:255',
+                'soustitre1'=> 'required|min:3|max:255',                
+                'description' => 'required|min:10',
+                'soustitre2'=> 'required|min:3|max:255',
+                'content' => 'required|min:10',
+                'photoPost' => 'required|image|mimes:jpeg,png,jpg,gif,svg',                
+                'lienYoutube' => 'url',
+                'lienInstagram' => 'url',
+                'lienFacebook' => 'url',
+                'tags'=>'min:3|max:255',
+            ]);
+
+        if($request->lienYoutube)
+        {
+            $lienYoutube = $request->lienYoutube;
+            $lienYoutubeId = $this->YoutubeID($lienYoutube);
+        }
+
+        if($request->hasfile('photoPost'))
+        {
+            //$filename1 = $request->image->getClientOriginalName();
+            if($post->photoPost){
+
+                Storage::disk('s3')->delete('/img/posts'.$post->photoPost);
+            }
+            $path = $request->file('photoPost')->store('img/posts', 's3');
+
+            Storage::disk('s3')->setVisibility($path, 'public');
+
+            $progurl = Storage::disk('s3')->url($path);
+        }
+       
+
+        $post->update([
+            'title'=> $request->title,
+            'auteur'=> $request->auteur,
+            'soustitre1'=> $request->soustitre1,
+            'description' => Purifier::clean($request->description),
+            'soustitre2'=> $request->soustitre2,            
+            'content' => Purifier::clean($request->content),
+            'photoPost' => basename($path),
+            'photoPostUrl' => $progurl,               
+            'lienYoutube' => $lienYoutubeId, 
+            'lienInstagram' => $request->lienInstagram, 
+            'lienFacebook' => $request->lienFacebook, 
+        ]);
+
+        if($request->tags)
+        {
+            $tags = explode(', ', $request->tags);
+
+            foreach($tags as $key => $tag)
+            {
+                $newTag = Tag::firstOrCreate(['name' => $tag]);
+
+                $post->tags()->attach($newTag);  
+            } 
+        }
+
+        return redirect()->action('PostController@index')->with('message.level', 'success')->with('message.content', __('El post esta actualizado.'));    
     }
 
     /**
@@ -81,8 +215,29 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy($slug)
     {
-        //
+        $post = Post::with('tags')->where('slug' , $slug)->firstOrFail(); //
+
+        Storage::disk('s3')->delete('img/posts'.$post->photoPost);
+
+        $post->delete();
+
+        return redirect()->action('PostController@index')->with('message.level', 'success')->with('message.content', __('El post esta suprimido.'));
+    }
+
+    protected function YoutubeID($lienYoutube)
+    {
+        if(strlen($lienYoutube) > 11)
+        {
+            if (preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $lienYoutube, $match))
+            {
+                return $match[1];
+            }
+            else{
+                return false;
+            }
+        }
+        return $lienYoutube;
     }
 }

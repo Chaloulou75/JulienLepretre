@@ -133,7 +133,7 @@
         <h2 class="w-full font-black text-3xl text-center uppercase py-8">Testimonios</h2>
     </div>
     
-    <div class="w-full mx-auto flex flex-col md:flex-row flex-wrap items-stretch justify-around text-justify">
+    <div class="w-full mx-auto flex flex-col md:flex-row flex-wrap items-stretch justify-around">
 
     @foreach($testimonios as $testimonio)
 
@@ -142,7 +142,7 @@
       <img src="{{ url($testimonio->avatarurl) }}" class="fill-current object-cover w-40 h-40 rounded-full mx-auto p-2" alt="avatar">
       <div class="{{-- text-julien-gris --}} px-6 py-4">
         <div class="font-bold text-xl text-center mb-2">{{$testimonio->name}}</div>
-        <div class="text-base">
+        <div class="text-base not-italic text-left">
           <p class="whitespace-pre-wrap">{{$testimonio->msg}}</p>
         </div>
       </div>

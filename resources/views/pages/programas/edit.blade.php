@@ -39,7 +39,13 @@
         <div class="mb-4">
             <label for="descriptionCourte" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Description Courte') }}</label>
 
-            <textarea id="descriptionCourte" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('descriptionCourte') bg-red-dark @enderror" name="descriptionCourte" value="{{ $descriptionCourte }}" required autocomplete="descriptionCourte">{{$descriptionCourte}}</textarea>
+            <textarea id="descriptionCourte" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('descriptionCourte') bg-red-dark @enderror" name="descriptionCourte" value="{{ $descriptionCourte }}" required autocomplete="descriptionCourte">
+                @if( old('descriptionCourte')) 
+                    {{old('descriptionCourte') }}
+                @else 
+                    {{ $descriptionCourte }}
+                @endif
+            </textarea>
 
             @error('descriptionCourte')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -52,7 +58,13 @@
         <div class="mb-4">
             <label for="descriptionComplete" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Description Complète') }}</label>
 
-            <textarea id="descriptionComplete" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('descriptionComplete') bg-red-dark @enderror" name="descriptionComplete" value="{{ old('descriptionGlobale') }}" required autocomplete="descriptionComplete">{{$descriptionComplete}}</textarea>
+            <textarea id="descriptionComplete" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('descriptionComplete') bg-red-dark @enderror" name="descriptionComplete" value="{{ old('descriptionGlobale') }}" required autocomplete="descriptionComplete">
+                @if( old('descriptionComplete')) 
+                    {{old('descriptionComplete') }}
+                @else 
+                    {{ $descriptionComplete }}
+                @endif
+            </textarea>
 
             @error('descriptionComplete')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -126,7 +138,7 @@
         </div>
 
         <div class="mb-4">
-            <label for="lienYoutube" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Youtube du programme') }}</label>
+            <label for="lienYoutube" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Youtube du programme (remettre le lien entier)') }}</label>
 
             <input id="lienYoutube" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
              @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="{{ $lienYoutube }}" required autocomplete="lienYoutube">
