@@ -29,9 +29,11 @@ class PostController extends Controller
         {
           $posts = Post::with('tags')->latest()->simplePaginate(6);  
         }
+
+        $tags = Tag::with('posts')->latest()->get();
         
 
-        return view('/pages/blog/index', compact('posts')); //
+        return view('/pages/blog/index', compact('posts', 'tags')); //
     }
 
     /**
