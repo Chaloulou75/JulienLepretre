@@ -15,7 +15,7 @@
         <div class="max-w-sm rounded overflow-hidden shadow-lg animated bounceInUp mb-8">
           <img src="{{ url($post->photoPostUrl) }}" class="w-full fill-current mx-auto" alt="image du Post">
           <div class="px-6 py-4">
-            <div class="font-bold text-2xl uppercase not-italic mx-auto">
+            <div class="font-bold text-2xl not-italic mx-auto">
                 {{ $post->title }}
             </div>
 
