@@ -14,15 +14,15 @@
 
         <div class="w-full md:w-4/5 mx-auto items-center justify-around mb-2" >
 
-            <div class="w-full mx-auto items-center">{{-- embed-responsive aspect-ratio-4/3 --}}                
-                <iframe class="w-full mx-auto {{-- embed-responsive-item --}}" height="500" src="http://www.youtube.com/embed/{{ $post->lienYoutube}}" allowfullscreen> 
+            <div class="w-full mx-auto items-center respContainer">                
+                <iframe src="http://www.youtube.com/embed/{{ $post->lienYoutube}}" allowfullscreen> 
                 </iframe>   
                            	
             </div>
 
-            <div class="w-full md:flex py-2 px-2 text-center not-italic mx-auto">
+            <div class="w-full md:flex py-2 text-center not-italic mx-auto">
                 
-                <div class="md:w-3/4 md:text-left">
+                <div class="md:w-3/4 md:text-left px-2">
                     <h2 class="py-8 uppercase font-semibold text-lg">
                     {{ $post->soustitre1 }}
                     </h2>
@@ -54,7 +54,7 @@
                     </div> 
                 </div>
 
-                <div class="w-full md:w-1/4 max-w-sm">
+                <div class="w-full md:w-1/4 max-w-sm md:border-l-2 md:border-gray-100 md:pl-2">
 
                     <h2 class="py-8 uppercase font-semibold text-lg mx-auto"> ver los programas</h2>
                     <div class="my-2 rounded overflow-hidden mx-auto">
