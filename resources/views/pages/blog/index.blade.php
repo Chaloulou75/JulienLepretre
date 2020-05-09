@@ -45,7 +45,7 @@
 
         @empty
 
-        <p> No hay post por el momento.</p>
+        <p class="font-semibold text-gray-700"> No hay post por el momento.</p>
         
         @endforelse 
 
@@ -53,12 +53,12 @@
 
         {{ $posts->links() }}
 
-        <div class="w-4/5 flex justify-center leading-normal not-italic py-4 mx-auto">
+        <div class="w-full flex items-stretch justify-center leading-normal not-italic py-4 px-2 mx-auto">
           
               @foreach($tags as $tag)
 
               <a href="{{ route('post.index', ['tag'=> $tag->name ]) }}" class="my-2 mr-4">
-              <div class="text-center py-2 px-4 font-semibold text-gray-900 hover:text-julien-red text-sm border-2 border-gray-900 rounded-lg">
+              <div class="self-auto flex-1 text-center py-2 px-4 font-semibold text-gray-900 hover:text-julien-red text-sm border-2 border-gray-900 rounded-lg">
                       {{ $tag->name }}
               </div></a>
 

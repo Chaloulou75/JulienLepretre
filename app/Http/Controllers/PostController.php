@@ -30,9 +30,8 @@ class PostController extends Controller
           $posts = Post::with('tags')->latest()->simplePaginate(6);  
         }
 
-        $tags = Tag::with('posts')->latest()->get();
+        $tags = Tag::has('posts')->get();
         
-
         return view('/pages/blog/index', compact('posts', 'tags')); //
     }
 
@@ -243,6 +242,8 @@ class PostController extends Controller
         $post = Post::with('tags')->where('slug' , $slug)->firstOrFail(); //
 
         Storage::disk('s3')->delete('img/posts'.$post->photoPost);
+
+        $post->tags()->detach();
 
         $post->delete();
 
