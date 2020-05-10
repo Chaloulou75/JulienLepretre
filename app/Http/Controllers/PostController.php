@@ -53,8 +53,6 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {        
-        
-
         $validator = Validator::make($request->all(),[
                 'title' => 'required|min:3|max:255',
                 'auteur' =>'required|min:3|max:255',
@@ -104,7 +102,6 @@ class PostController extends Controller
             'lienFacebook' => $request->lienFacebook,
         );
 
-        $post = new Post();
         $post = Post::create($data);
 
         if($request->tags)

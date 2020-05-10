@@ -6,6 +6,7 @@ use App\Testimonios;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\UploadedFile;
+use Validator;
 
 class TestimoniosController extends Controller
 {
@@ -41,13 +42,19 @@ class TestimoniosController extends Controller
      */
     public function store(Request $request)
     {
-        $testimonio= new Testimonios();
+        //$testimonio= new Testimonios();
 
-        $request->validate([
+        $validator = Validator::make($request->all(),[
                 'name' => 'required|min:3',
                 'msg' => 'required|min:5',
                 'avatar' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             ]);
+
+        if ($validator->fails()) {
+            return redirect('/testimonios/create')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
 
         if($request->hasfile('avatar'))
         {
@@ -104,11 +111,18 @@ class TestimoniosController extends Controller
      */
     public function update(Request $request, Testimonios $testimonio)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(),[
                 'name' => 'min:3',
                 'msg' => 'min:5',
                 'avatar' => 'image|mimes:jpeg,png,jpg,gif,svg',
             ]);
+
+        if ($validator->fails()) {
+            return redirect('/programas/create')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+
         if($request->hasfile('avatar'))
         {
             if($testimonio->avatar)

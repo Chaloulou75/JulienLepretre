@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Description;
 use App\Programme;
 use Illuminate\Http\Request;
+use Validator;
+
 
 class DescriptionController extends Controller
 {
@@ -38,9 +40,16 @@ class DescriptionController extends Controller
     {
         $programme = Programme::where('slug' , $slug)->firstOrFail();
 
-        $request->validate([                
+        $validator = Validator::make($request->all(),[                
             'phrase' => 'required|min:5',
         ]);
+        
+        if ($validator->fails()) {
+            return redirect()
+                        ->back()
+                        ->withErrors($validator)
+                        ->withInput();
+        }
 
         $description = Description::create([
             'programme_id' => $programme->id,

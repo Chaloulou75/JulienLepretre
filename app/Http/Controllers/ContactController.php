@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Mail\ContactMessagesCreated;
 use Illuminate\Http\Request;
+use Validator;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
@@ -19,21 +20,10 @@ class ContactController extends Controller
         return view('pages.contacto');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        // return view('pages.contact');
-    }
-
     public function store(Request $request)
     {
         
-
-        $request->validate([
+        $validator = Validator::make($request->all(),[
             'apellidos'=> 'required|min:3',
             'nombre'=> 'required|min:3',
             'email' =>'required|email',
@@ -45,6 +35,12 @@ class ContactController extends Controller
             'trabajo' =>'required|min:3',
             'deportes'=>'required|min:3',
         ]);
+
+        if ($validator->fails()) {
+            return redirect('/contacto')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
 
         $mailable = new ContactMessagesCreated(
             $request->apellidos,
@@ -67,50 +63,5 @@ class ContactController extends Controller
         Mail::to('julienlepretreosteo@gmail.com')->send($mailable);
 
         return back()->with('message.level', 'success')->with('message.content', __('Su mensaje ha sido enviado correctamente.'));
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
     }
 }

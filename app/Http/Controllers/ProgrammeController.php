@@ -6,6 +6,7 @@ use App\Programme;
 use App\Testimonios;
 use Auth;
 use Illuminate\Http\Request;
+use Validator;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\UploadedFile;
 
@@ -43,9 +44,7 @@ class ProgrammeController extends Controller
      */
     public function store(Request $request)
     {
-        $programme= new Programme();
-
-        $request->validate([
+        $validator = Validator::make($request->all(),[
                 'title' => 'required|min:3',
                 'descriptionCourte' => 'required|min:10',
                 'descriptionComplete' => 'required|min:10',
@@ -57,6 +56,12 @@ class ProgrammeController extends Controller
                 'lienYoutube' => 'url',
                 'lienTiendup' => 'url',
             ]);
+
+        if ($validator->fails()) {
+            return redirect('/programas/create')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
 
         if($request->lienYoutube)
         {
@@ -156,7 +161,7 @@ class ProgrammeController extends Controller
 
         $programme = Programme::where('slug', $slug)->firstOrFail();
 
-        $request->validate([
+        $validator = Validator::make($request->all(),[
                 'title' => 'required|min:3',
                 'descriptionCourte' => 'min:10',
                 'descriptionComplete' => 'min:10',
@@ -168,6 +173,12 @@ class ProgrammeController extends Controller
                 'lienYoutube' => 'url',
                 'lienTiendup' => 'url',
             ]);
+
+        if ($validator->fails()) {
+            return redirect('/programas/create')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
 
         if($request->lienYoutube)
         {

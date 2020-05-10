@@ -8,6 +8,15 @@
         PIDE TU PLAN DE ENTRENAMIENTO EN CASA
     </h1>
 
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 
     <div class="w-full max-w-xs lg:max-w-xl lg:w-4/5 m-auto animated bounceInUp">   
 
@@ -21,7 +30,7 @@
              @error('apellidos') bg-red-dark @enderror" name="apellidos" value="{{ old('apellidos') }}" required autocomplete="apellidos">
 
             @error('apellidos')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -35,7 +44,7 @@
              @error('nombre') bg-red-dark @enderror" name="nombre" value="{{ old('nombre') }}" required autocomplete="nombre">
 
             @error('nombre')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -48,7 +57,7 @@
                 <input id="email" type="email" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('email') bg-red-dark @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" >
 
                 @error('email')
-                    <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror           
@@ -68,7 +77,7 @@
                 <textarea id="msg" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('msg') bg-red-dark @enderror" name="msg" value="{{ old('msg') }}" autocomplete="msg">{{ old('msg') }}</textarea>
 
                 @error('msg')
-                    <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                    <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror           
@@ -80,7 +89,7 @@
             <textarea id="problema" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('problema') bg-red-dark @enderror" name="problema" value="{{ old('problema') }}" autocomplete="problema">{{ old('problema') }}</textarea>
 
             @error('problema')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -93,7 +102,7 @@
             <textarea id="alivia" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('alivia') bg-red-dark @enderror" name="alivia" value="{{ old('alivia') }}" autocomplete="alivia">{{ old('alivia') }}</textarea>
 
             @error('alivia')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -107,7 +116,7 @@
             <textarea id="antecedentes" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('antecedentes') bg-red-dark @enderror" name="antecedentes" value="{{ old('antecedentes') }}" autocomplete="antecedentes">{{ old('antecedentes') }}</textarea>
 
             @error('antecedentes')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -120,7 +129,7 @@
             <textarea id="objetivos" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('objetivos') bg-red-dark @enderror" name="objetivos" value="{{ old('objetivos') }}" autocomplete="objetivos">{{ old('objetivos') }}</textarea>
 
             @error('objetivos')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -134,7 +143,7 @@
              @error('altura') bg-red-dark @enderror" name="altura" value="{{ old('altura') }}" required autocomplete="altura">
 
             @error('altura')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -148,7 +157,7 @@
              @error('peso') bg-red-dark @enderror" name="peso" value="{{ old('peso') }}" required autocomplete="peso">
 
             @error('peso')
-                <span class="mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -167,7 +176,7 @@
              @error('forma') bg-red-dark @enderror" name="forma" value="{{ old('forma') }}" required autocomplete="forma">
 
             @error('forma')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -183,7 +192,7 @@
             <p class="font-semibold mt-1">* para contactarnos en Whatsapp.</p> 
 
             @error('phone')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -196,7 +205,7 @@
             <input id="trabajo" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('trabajo') bg-red-dark @enderror" name="trabajo" value="{{ old('trabajo') }}" autocomplete="trabajo">
 
             @error('trabajo')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -209,7 +218,7 @@
             <input id="deportes" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('deportes') bg-red-dark @enderror" name="deportes" value="{{ old('deportes') }}" autocomplete="deportes">
 
             @error('deportes')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+                <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
@@ -230,42 +239,40 @@
 
 @endsection
 
-{{-- @include('layouts.map') --}}
+<div class="mb-4">
 
-{{-- <div class="mb-4">
+    {{-- <fieldset>
+    <legend class="block text-sm font-bold tracking-wide mb-2">Objetivos (Elegí 2)</legend>
+        <div>
+          <input type="checkbox" id="grasa" name="objetivos[]" value="Quemar grasa">
+          <label for="grasa">Quemar grasa</label>
+        </div>
+        <div>
+          <input type="checkbox" id="resistencia" name="objetivos[]" value="Mejorar mi resistencia">
+          <label for="resistencia">Mejorar mi resistencia</label>
+        </div>
+        <div>
+          <input type="checkbox" id="recuperar" name="objetivos[]" value="Recuperar de una lésion">
+          <label for="recuperar">Recuperar de una lésion</label>
+        </div>
+        <div>
+          <input type="checkbox" id="musculatura" name="objetivos[]" value="Ganar musculatura">
+          <label for="musculatura">Ganar musculatura</label>
+        </div>
+        <div>
+          <input type="checkbox" id="movilidad" name="objetivos[]" value="Mejorar mi movilidad">
+          <label for="movilidad">Mejorar mi movilidad</label>
+        </div>
+        <div>
+          <input type="checkbox" id="other" name="objetivos[]" value="otro">
+          <label for="other">Otro</label>
+        </div>
+    </fieldset>
 
-            <fieldset>
-            <legend class="block text-sm font-bold tracking-wide mb-2">Objetivos (Elegí 2)</legend>
-                <div>
-                  <input type="checkbox" id="grasa" name="objetivos[]" value="Quemar grasa">
-                  <label for="grasa">Quemar grasa</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="resistencia" name="objetivos[]" value="Mejorar mi resistencia">
-                  <label for="resistencia">Mejorar mi resistencia</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="recuperar" name="objetivos[]" value="Recuperar de una lésion">
-                  <label for="recuperar">Recuperar de una lésion</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="musculatura" name="objetivos[]" value="Ganar musculatura">
-                  <label for="musculatura">Ganar musculatura</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="movilidad" name="objetivos[]" value="Mejorar mi movilidad">
-                  <label for="movilidad">Mejorar mi movilidad</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="other" name="objetivos[]" value="otro">
-                  <label for="other">Otro</label>
-                </div>
-            </fieldset>
+    @error('objetivos')
+        <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
 
-            @error('objetivos')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-
-        </div> --}}
+</div> --}}

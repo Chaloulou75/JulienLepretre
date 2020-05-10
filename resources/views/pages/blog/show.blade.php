@@ -41,7 +41,7 @@
 
                     <p class="text-xs py-2">Publicado por <span class="font-semibold">{{ $post->auteur }}</span> el {{  $post->created_at->isoFormat('LL')}} </p>
                     
-                    <div class="flex flex-wrap leading-normal py-4">
+                    <div class="flex flex-wrap items-stretch leading-normal py-4">
 
                         @foreach($post->tags as $tag)
 
