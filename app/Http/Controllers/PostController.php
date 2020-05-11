@@ -215,6 +215,8 @@ class PostController extends Controller
 
         if($request->tags)
         {
+            $post->tags()->detach();
+
             $tags = explode(', ', $request->tags);
 
             foreach($tags as $key => $tag)
@@ -223,6 +225,7 @@ class PostController extends Controller
 
                 $post->tags()->attach($newTag);  
             } 
+
         }
 
         return redirect()->action('PostController@index')->with('message.level', 'success')->with('message.content', __('El post esta actualizado.'));    
