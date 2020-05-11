@@ -52,12 +52,13 @@
 			
 			<div class="items-left text-sm leading-normal not-italic my-4">
 				
-				<p class="md:text-base md:text-left md:mx-16 py-4">Te voy a proponer los mejores consejos relativos a tu problema y armar una rutina personalizada que recibirás en PDF con vidéos para cada ejercicio. </p>	
+				<p class="md:text-base md:text-left md:mx-16 py-4">Te voy a proponer los mejores consejos relativos a tu problema y armar una rutina personalizada que recibirás en PDF con vidéos para cada ejercicio. </p>
 
-				<p class="md:text-base md:text-left md:mx-16 py-2">
-					22 <span class="text-sm font-sm text-gray-600">us$</span> / 1500 <span class="text-sm font-sm text-gray-600">ar$</span> </br>
-				</p>
-				<p class="md:text-sm md:text-left md:mx-16">
+				<h3 class="leading-normal font-bold uppercase text-lg not-italic mb-2 md:mx-16 md:text-left pb-6">
+                        22  <span class="text-sm font-sm text-gray-600">AR$</span> / 1500 <span class="text-sm font-sm text-gray-600">US$</span>
+                </h3> 	
+
+				<p class="md:text-sm md:text-left md:mx-16 pb-8">
 					El pago se realizará por Paypal o Mercado Pago después de la consulta. 
 				</p>				
 				

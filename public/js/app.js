@@ -42582,9 +42582,9 @@ var render = function() {
             {
               staticClass:
                 "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
-              attrs: { href: "/consulta-privadas" }
+              attrs: { href: "/consulta-privada" }
             },
-            [_vm._v("Consulta Privadas")]
+            [_vm._v("Consulta Privada")]
           ),
           _vm._v(" "),
           _c(

@@ -66,7 +66,7 @@
                         <p class="py-2 max-auto uppercase font-semibold text-gray-900 hover:text-julien-red text-sm">cuerpo fuerte</p></a>
                     </div>
                     <div class="my-2 rounded overflow-hidden mx-auto">
-                        <a href="{{route('contact.index')}}"><img src="/img/ordi.jpg" class="w-full fill-current mx-auto rounded-lg" alt="consulta privada">
+                        <a href="{{route('consultaIndex')}}"><img src="/img/ordi.jpg" class="w-full fill-current mx-auto rounded-lg" alt="consulta privada">
                         <p class="py-2 max-auto uppercase font-semibold text-gray-900 hover:text-julien-red text-sm">consulta privada</p></a>
                     </div>                
                 

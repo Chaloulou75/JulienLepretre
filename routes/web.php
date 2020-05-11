@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@welcome')->name('welcome');
 
 Auth::routes();
 
@@ -56,8 +54,8 @@ Route::get('/blog/{slug}/edit', 'PostController@edit')->name('post.edit')->middl
 //profil sobre mi
 Route::get('/perfil', 'PagesController@index')->name('profil');
 
-//profil sobre mi
-Route::get('/consulta-privadas', 'PagesController@consultaIndex')->name('consultaIndex');
+//consulta privada
+Route::get('/consulta-privada', 'PagesController@consultaIndex')->name('consultaIndex');
 
 //contact
 Route::get('/contacto', 'ContactController@index')->name('contact.index');
