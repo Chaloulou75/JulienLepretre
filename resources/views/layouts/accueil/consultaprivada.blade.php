@@ -19,7 +19,7 @@
 			    </div>
 
 			    <div class="text-sm md:text-left pt-2  px-4 pb-4 md:pb-0">
-			        <a href="{{route('contact.index')}}"><button class="py-2 px-4 text-sm bg-julien-gris hover:bg-julien-red text-white font-medium tracking-wide uppercase border-2 border-white rounded-lg italic shadow hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Hace clic aca</button></a>
+			        <a href="{{route('consultaIndex')}}"><button class="py-2 px-4 text-sm bg-julien-gris hover:bg-julien-red text-white font-medium tracking-wide uppercase border-2 border-white rounded-lg italic shadow hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Hace clic aca</button></a>
 			    </div>
 			  </div>
 			</div>

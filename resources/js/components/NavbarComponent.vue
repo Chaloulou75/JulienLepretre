@@ -20,6 +20,7 @@
     </div>
     <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-1 pb-2 sm:flex sm:p-0 uppercase not-italic font-bold">
       <a href="/programas" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1"> Los Programas</a>
+      <a href="/consulta-privadas" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Consulta Privadas</a>
       <a href="/blog" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Blog</a>
       <a href="/testimonios" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Testimonios</a>
       <a href="https://osteopatiafrancesa.com/" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Consultorio</a>

@@ -2,10 +2,10 @@
 
 @section('content')
 
-<div class="w-full bg-julien-gris mb-4 py-4">
+<div class="w-full mb-4 py-4">
 
-    <h1 class="w-full font-black text-2xl md:text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-4 ">
-        PIDE TU PLAN DE ENTRENAMIENTO EN CASA
+    <h1 class="w-full font-black text-2xl md:text-3xl border-b-1 text-center uppercase py-4 ">
+        Pedí una consulta privada
     </h1>
 
     @if ($errors->any())
@@ -18,9 +18,12 @@
         </div>
     @endif
 
-    <div class="w-full max-w-xs lg:max-w-xl lg:w-4/5 m-auto animated bounceInUp">   
+    <div class="w-full mx-auto h-auto flex flex-col-reverse md:flex-row items-start md:mb-8">
+                
+    <div class="w-full lg:w-2/3 max-w-xs lg:max-w-xl text-left mx-auto px-2 animated bounceInUp">
+    {{-- <div class="w-full max-w-xs lg:max-w-xl m-auto animated bounceInUp">  --}}  
 
-    <form class="bg-gray-100 border-2 border-white shadow-md rounded {{-- text-julien-gris --}} uppercase px-8 pt-6 pb-8 mb-4" method="POST" action="{{ route('contact.store') }}">
+    <form class="bg-gray-100 border-2 border-white shadow-md rounded uppercase px-8 pt-6 pb-8 mb-4" method="POST" action="{{ route('contact.store') }}">
         @csrf
 
         <div class="mb-4">
@@ -74,7 +77,7 @@
         <div class="mb-4">
             <label for="msg" class="block text-sm font-bold tracking-wide mb-2">{{ __('Molestias en tu cuerpo:') }}</label>
            
-                <textarea id="msg" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('msg') bg-red-dark @enderror" name="msg" value="{{ old('msg') }}" autocomplete="msg">{{ old('msg') }}</textarea>
+                <textarea id="msg" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-32 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('msg') bg-red-dark @enderror" name="msg" value="{{ old('msg') }}" autocomplete="msg">{{ old('msg') }}</textarea>
 
                 @error('msg')
                     <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -86,7 +89,7 @@
         <div class="mb-4">
             <label for="problema" class="block text-sm font-bold tracking-wide mb-2">{{ __('Cual es tu problema?') }}</label>
 
-            <textarea id="problema" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('problema') bg-red-dark @enderror" name="problema" value="{{ old('problema') }}" autocomplete="problema">{{ old('problema') }}</textarea>
+            <textarea id="problema" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-32 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('problema') bg-red-dark @enderror" name="problema" value="{{ old('problema') }}" autocomplete="problema">{{ old('problema') }}</textarea>
 
             @error('problema')
                 <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -99,7 +102,7 @@
         <div class="mb-4">
             <label for="alivia" class="block text-sm font-bold tracking-wide mb-2">{{ __('Movimiento que alivia:') }}</label>
 
-            <textarea id="alivia" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('alivia') bg-red-dark @enderror" name="alivia" value="{{ old('alivia') }}" autocomplete="alivia">{{ old('alivia') }}</textarea>
+            <textarea id="alivia" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-32 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('alivia') bg-red-dark @enderror" name="alivia" value="{{ old('alivia') }}" autocomplete="alivia">{{ old('alivia') }}</textarea>
 
             @error('alivia')
                 <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -113,7 +116,7 @@
         <div class="mb-4">
             <label for="antecedentes" class="block text-sm font-bold tracking-wide mb-2">{{ __('Antecedentes: (operaciones/ traumatismos/ patología)') }}</label>
 
-            <textarea id="antecedentes" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('antecedentes') bg-red-dark @enderror" name="antecedentes" value="{{ old('antecedentes') }}" autocomplete="antecedentes">{{ old('antecedentes') }}</textarea>
+            <textarea id="antecedentes" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-32 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('antecedentes') bg-red-dark @enderror" name="antecedentes" value="{{ old('antecedentes') }}" autocomplete="antecedentes">{{ old('antecedentes') }}</textarea>
 
             @error('antecedentes')
                 <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -126,7 +129,7 @@
         <div class="mb-4">
             <label for="objetivos" class="block text-sm font-bold tracking-wide mb-2">{{ __('Tu objetivo') }}</label>
 
-            <textarea id="objetivos" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-24 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('objetivos') bg-red-dark @enderror" name="objetivos" value="{{ old('objetivos') }}" autocomplete="objetivos">{{ old('objetivos') }}</textarea>
+            <textarea id="objetivos" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 h-32 lg:h-40 resize leading-loose focus:outline-none focus:shadow-outline @error('objetivos') bg-red-dark @enderror" name="objetivos" value="{{ old('objetivos') }}" autocomplete="objetivos">{{ old('objetivos') }}</textarea>
 
             @error('objetivos')
                 <span class="lowercase mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -233,13 +236,31 @@
             </div>
         </div>
     </form>
+
+    </div>
+    <div class="w-full lg:w-1/3 text-center mx-auto px-2">
+
+        <div class="my-4 md:ml-2 md:text-left">
+            <h2 class="text-base md:text-xl not-italic uppercase leading-relaxed">
+                 Consulta privada por videollamada whatsapp + rutina personalizada
+            </h2>
+        </div>
+
+        <p class="md:text-base md:text-left not-italic md:ml-2 py-2">
+            22 <span class="text-sm font-sm text-gray-600">us$</span> / 1500 <span class="text-sm font-sm text-gray-600">ar$</span> </br>
+        </p>
+        <p class="md:text-left not-italic md:ml-2">
+            El pago se realizará por Paypal o Mercado Pago después de la consulta. 
+        </p>
+        
+    </div>
+
     </div>
 
 </div>
 
 @endsection
 
-<div class="mb-4">
 
     {{-- <fieldset>
     <legend class="block text-sm font-bold tracking-wide mb-2">Objetivos (Elegí 2)</legend>

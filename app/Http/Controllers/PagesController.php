@@ -12,4 +12,9 @@ class PagesController extends Controller
     	return view('/pages/perfil');
     }
 
+    public function consultaIndex()
+    {
+    	return view('/pages/consultaprivadas/index');
+    }
+
 }

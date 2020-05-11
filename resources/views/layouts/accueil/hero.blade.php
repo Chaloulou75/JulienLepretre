@@ -8,7 +8,7 @@
 				</h1>
 			</div>
 
-			<h2 class="items-start text-white text-center text-base leading-normal sm:text-xl md:text-2xl uppercase py-4 sm:px-4 md:px-24"> 
+			<h2 class="items-start text-white text-center leading-normal sm:text-xl md:text-2xl uppercase py-4 sm:px-4 md:px-24"> 
 				Tus programas online</br>
 				Para alivar tus dolores, tu postura y tu rendimiento
 				</>

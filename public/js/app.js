@@ -2028,6 +2028,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -42574,6 +42575,16 @@ var render = function() {
               attrs: { href: "/programas" }
             },
             [_vm._v(" Los Programas")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+              attrs: { href: "/consulta-privadas" }
+            },
+            [_vm._v("Consulta Privadas")]
           ),
           _vm._v(" "),
           _c(
