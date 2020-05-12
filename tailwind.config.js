@@ -1,4 +1,11 @@
 module.exports = {
+  purge: {
+      content: [
+        './resources/**/*.html',
+        './resources/**/*.vue',
+        './resources/views/**/*.blade.php',
+      ],
+  },
   theme: {
     aspectRatio: {
       none: 0,
