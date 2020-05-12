@@ -247,7 +247,7 @@
             </div>
 
             <h3 class="md:text-left leading-normal font-bold uppercase text-lg not-italic md:ml-2 py-2 ">
-                22  <span class="text-sm font-sm text-gray-600">AR$</span> / 1500 <span class="text-sm font-sm text-gray-600">US$</span>
+                22  <span class="text-sm font-sm text-gray-600">US$</span> / 1500 <span class="text-sm font-sm text-gray-600">AR$</span>
             </h3>
             <p class="md:text-left not-italic md:ml-2">
                 El pago se realizará por Paypal o Mercado Pago después de la consulta. 

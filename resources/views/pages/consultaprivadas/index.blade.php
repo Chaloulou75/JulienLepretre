@@ -4,7 +4,7 @@
 
 	@include('pages.consultaprivadas.hero')
 
-    <h2 class="w-full font-black text-2xl text-center py-8 my-4">
+    <h2 class="w-full text-xl md:text-3xl leading-relaxed uppercase text-center py-8 my-4">
             Encontramos soluciones para tus dolores crónicos y tus lesiones
     </h2>
 
