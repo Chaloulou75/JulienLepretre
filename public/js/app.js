@@ -42458,7 +42458,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "flex items-center " }, [
       _c("img", {
         staticClass: "h-16 rounded-full",
-        attrs: { src: "/img/ProfilInsta.jpg", alt: "Julien" }
+        attrs: { src: "/img/home/ProfilInsta.jpg", alt: "Julien" }
       }),
       _vm._v(" "),
       _c(

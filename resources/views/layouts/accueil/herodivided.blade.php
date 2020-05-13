@@ -4,7 +4,7 @@
 	 	<!--Left Col-->
 		<div class="w-full lg:w-1/2">
 			<!--Add your product image here-->
-			 <img src="/img/30diasespaldasana.png" class="fill-current mx-auto" alt="30 dias espalda sana">
+			 <img src="/img/home/30diasespaldasana.png" class="fill-current mx-auto" alt="30 dias espalda sana">
 		</div>
 		
 		<!--Right Col-->
@@ -65,6 +65,6 @@
 		<!--Right Col-->
 		<div class="w-full lg:w-1/2">
 			<!--Add your product image here-->
-			 <img src="/img/CuerpoFuerte.png" class="fill-current mx-auto" alt="cuerpo fuerte">
+			 <img src="/img/home/CuerpoFuerte.png" class="fill-current mx-auto" alt="cuerpo fuerte">
 		</div>		
 	</div>
