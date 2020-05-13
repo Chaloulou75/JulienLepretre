@@ -12,7 +12,9 @@
 
     @include('layouts.accueil.carousel')
 
-    {{-- @include('layouts.accueil.formulario') --}}
+    <div class="w-full md:w-1/2 my-4 mx-auto uppercase">
+       @include('layouts.accueil.formulario') 
+    </div>
 
     <div class="text-julien-gris text-center uppercase text-xs my-2 md:mt-4">
 		<p>

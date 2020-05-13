@@ -3153,6 +3153,8 @@
 }
 @charset "UTF-8";
 
+/* purgecss start ignore */
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -3777,6 +3779,8 @@ video {
     max-width: 1280px;
   }
 }
+
+/* purgecss end ignore */
 
 .space-y-0 > :not(template) ~ :not(template){
   --space-y-reverse: 0;
@@ -39686,6 +39690,8 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+/* purgecss start ignore */
+
 /* Enter and leave animations can use different */
 
 /* durations and timing functions.              */
@@ -39701,10 +39707,6 @@ readers do not read off random characters that represent icons */
 .slide-fade-enter, .slide-fade-leave-to {
   transform: translateX(10px);
   opacity: 0;
-}
-
-.bg-blawhite {
-  background-image: linear-gradient(#45545f, #fff);
 }
 
 .respContainer {
@@ -39723,6 +39725,8 @@ readers do not read off random characters that represent icons */
   height: 100%;
   border: 0;
 }
+
+/* purgecss end ignore */
 
 @media (min-width: 640px){
   .sm\:space-y-0 > :not(template) ~ :not(template){

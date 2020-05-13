@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
     
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('styles')
 
 </head>
 <body class="bg-white">
