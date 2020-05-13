@@ -1,73 +1,51 @@
+<h2 class="text-center">Recibir las últimas noticias y la invitaciones a mis clases</h2>
 
+<form action="https://julienlepretre.us19.list-manage.com/subscribe/post?u=dca3b2c581f84fdd25e228f5f&amp;id=b9f545ae7c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="bg-bandeau-gris border-2 border-white shadow-md rounded uppercase px-4 py-4 mb-4" target="_blank" novalidate>
 
-@section('styles')
-	<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
+    <div class="mb-4">
+        <label for="mce-FNAME" class="block text-sm font-bold tracking-wide mb-2">{{ __('Nombre') }}</label>
 
-@endsection
+        <input id="mce-FNAME" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline" name="FNAME" value="" required autocomplete="nombre">
+        
+    </div>
 
-<div id="mc_embed_signup">
-	<form action="https://julienlepretre.us19.list-manage.com/subscribe/post?u=dca3b2c581f84fdd25e228f5f&amp;id=b9f545ae7c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div class="mb-4">
+        <label for="mce-LNAME" class="block text-sm font-bold tracking-wide mb-2">
+        	{{ __('Apellido') }}
+        </label>
 
-	<div id="mc_embed_signup_scroll">
+        <input id="mce-LNAME" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline" name="LNAME" value="" required autocomplete="apellido">
+        
+    </div>
 
-		<h2>Recibir las últimas noticias y la invitaciones a mis clases</h2>
+    <div class="mb-4">
+        <label for="mce-EMAIL" class="block text-sm font-bold tracking-wide mb-2">{{ __('Dirección de Email') }}</label>
+       
+        <input id="mce-EMAIL" type="email" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline" name="EMAIL" value="" required autocomplete="email">          
+    </div>
 
-		{{-- <div class="indicates-required">
-			<span class="asterisk">*</span> required
-		</div> --}}
-		<div class="mc-field-group">
-			<label for="mce-EMAIL">
-				Dirección de Email  
-				{{-- <span class="asterisk">*</span> --}}
-			</label>
-			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    <div class="mb-4">
+
+		<label for="mce-MMERGE3-month" class="block text-sm font-bold tracking-wide mb-2">Fecha de Nacimiento</label>
+
+		<div> {{-- <span class="border border-gray-600 px-2 py-1"> --}}
+			<input class="shadow appearance-none border rounded px-2 py-1" type="text" pattern="[0-9]*" value="" placeholder="" size="2" maxlength="2" name="MMERGE3[day]" id="mce-MMERGE3-day"> / 
+	        <input class="shadow appearance-none border rounded px-2 py-1" type="text" pattern="[0-9]*" value="" placeholder="" size="2" maxlength="2" name="MMERGE3[month]" id="mce-MMERGE3-month"> / 
+			<input class="shadow appearance-none border rounded px-2 py-1" type="text" pattern="[0-9]*" value="" placeholder="" size="4" maxlength="4" name="MMERGE3[year]" id="mce-MMERGE3-year"></br>
+	        <span class="py-1 text-xs lowercase">( dd / mm / yyyy )</span>
 		</div>
 
-		<div class="mc-field-group">
-			<label for="mce-FNAME">Nombre </label>
-			<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-		</div>
-
-		<div class="mc-field-group">
-			<label for="mce-LNAME">Apellido </label>
-			<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-		</div>
-
-		<div class="mc-field-group {{-- size1of2 --}}">
-
-			<label for="mce-MMERGE3-month">Fecha de Nacimiento  {{-- <span class="asterisk">*</span> --}}
-			</label>
-
-			<div class="datefield">
-				<span class="subfield dayfield"><input class="datepart required" type="text" pattern="[0-9]*" value="" placeholder="" size="2" maxlength="2" name="MMERGE3[day]" id="mce-MMERGE3-day"></span> / 
-		        <span class="subfield monthfield"><input class="datepart required" type="text" pattern="[0-9]*" value="" placeholder="" size="2" maxlength="2" name="MMERGE3[month]" id="mce-MMERGE3-month"></span> / 
-				<span class="subfield yearfield"><input class="datepart required" type="text" pattern="[0-9]*" value="" placeholder="" size="4" maxlength="4" name="MMERGE3[year]" id="mce-MMERGE3-year"></span>
-		        <span class="small-meta nowrap">( dd / mm / yyyy )</span>
-			</div>
-
-		</div>	
-
-		<div id="mce-responses" class="clear">
-			<div class="response" id="mce-error-response" style="display:none"></div>
-			<div class="response" id="mce-success-response" style="display:none"></div>
-		</div>    
-		<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-
-		<div style="position: absolute; left: -5000px;" aria-hidden="true">
-			<input type="text" name="b_dca3b2c581f84fdd25e228f5f_b9f545ae7c" tabindex="-1" value="">
-		</div>
-
-		<div class="clear">
-			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-		</div>
 	</div>
-	</form>
-</div>
 
-<!--End mc_embed_signup-->
+	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	<div style="position: absolute; left: -5000px;" aria-hidden="true">
+		<input type="text" name="b_dca3b2c581f84fdd25e228f5f_b9f545ae7c" tabindex="-1" value="">
+	</div>	
+
+	<div class="mb-4">
+        <div class="block items-center justify-between">
+            <input type="submit" class="bg-julien-gris hover:bg-julien-red text-white font-semibold text-center tracking-widest uppercase border rounded hover:border-julien-red border-white  py-2 px-4 m-2" name="subscribe" value="Subscribe">
+        </div>
+    </div>
+
+</form>
