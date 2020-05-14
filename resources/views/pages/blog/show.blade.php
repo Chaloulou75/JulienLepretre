@@ -15,7 +15,7 @@
         <div class="w-full md:w-4/5 mx-auto items-center justify-around mb-2" >
 
             <div class="w-full mx-auto items-center respContainer">                
-                <iframe src="http://www.youtube.com/embed/{{ $post->lienYoutube}}" allowfullscreen> 
+                <iframe src="http://www.youtube.com/embed/{{ $post->lienYoutube}}" loading="auto" allowfullscreen> 
                 </iframe>   
                            	
             </div>
@@ -58,15 +58,15 @@
 
                     <h2 class="py-8 uppercase font-semibold text-lg mx-auto"> ver los programas</h2>
                     <div class="my-2 rounded overflow-hidden mx-auto">
-                        <a href="{{route('programas.index')}}"><img src="/img/30diasespaldasana.png" class="w-full fill-current mx-auto rounded-lg" alt="30 dias espalda sana">
+                        <a href="{{route('programas.index')}}"><img src="/img/30diasespaldasana.png" loading="auto" class="w-full fill-current mx-auto rounded-lg" alt="30 dias espalda sana">
                         <p class="py-2 max-auto uppercase font-semibold text-gray-900 hover:text-julien-red text-sm">30 días para una espalda sana!</p></a>
                     </div>
                     <div class="my-2 rounded overflow-hidden mx-auto">
-                        <a href="{{route('programas.index')}}"><img src="/img/CuerpoFuerte.png" class="fill-current mx-auto rounded-lg" alt="cuerpo fuerte">
+                        <a href="{{route('programas.index')}}"><img src="/img/CuerpoFuerte.png" loading="auto" class="fill-current mx-auto rounded-lg" alt="cuerpo fuerte">
                         <p class="py-2 max-auto uppercase font-semibold text-gray-900 hover:text-julien-red text-sm">cuerpo fuerte</p></a>
                     </div>
                     <div class="my-2 rounded overflow-hidden mx-auto">
-                        <a href="{{route('consultaIndex')}}"><img src="/img/ordi.jpg" class="w-full fill-current mx-auto rounded-lg" alt="consulta privada">
+                        <a href="{{route('consultaIndex')}}"><img src="/img/ordi.jpg" loading="auto" class="w-full fill-current mx-auto rounded-lg" alt="consulta privada">
                         <p class="py-2 max-auto uppercase font-semibold text-gray-900 hover:text-julien-red text-sm">consulta privada</p></a>
                     </div>                
                 

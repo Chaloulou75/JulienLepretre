@@ -6,7 +6,7 @@
 
 				<div class="w-full md:w-1/2 ">
 
-					<img class="overflow-hidden object-contain h-auto w-full md:mx-0" alt="ordi" src="/img/home/ordi.jpg">
+					<img class="overflow-hidden object-contain h-auto w-full md:mx-0" loading="auto" alt="ordi" src="/img/home/ordi.jpg">
 
 				</div>
 			  			  
@@ -32,19 +32,19 @@
 		<div class="w-full md:w-2/3 flex flex-col md:flex-row items-stretch mx-auto text-white justify-between my-12 mx-2">
 			
 			<div class="w-full md:w-1/3 bg-julien-gris border border-julien-gris rounded-lg text-center font-medium text-xl not-italic py-6 mb-6 md:mr-6">
-				<img class="overflow-hidden object-contain h-24 w-full my-6 mx-auto" alt="formulario" src="/img/home/formulario.png">
+				<img class="overflow-hidden object-contain h-24 w-full my-6 mx-auto" loading="auto" alt="formulario" src="/img/home/formulario.png">
 				<h3 class="text-lg font-semibold text-center tracking-wide px-6 py-6 mx-auto"> Completa el formulario</h3>
 			</div>
 			
 			
 			<div class="w-full md:w-1/3 bg-julien-gris border border-julien-gris rounded-lg text-center font-medium text-xl not-italic py-6 mb-6 md:mr-6">
-				<img class="overflow-hidden object-contain h-24 w-full my-6 mx-auto" alt="whatsapp" src="/img/home/whatsapp.png">
+				<img class="overflow-hidden object-contain h-24 w-full my-6 mx-auto" loading="auto" alt="whatsapp" src="/img/home/whatsapp.png">
 				<h3 class="text-lg font-semibold text-center tracking-wide px-6 py-6 mx-auto"> Vidéo llamada por WhatsApp</h3>	
 			</div>
 			
 			
 			<div class="w-full md:w-1/3 bg-julien-gris border border-julien-gris rounded-lg text-center font-medium text-xl not-italic py-6 mb-6 ">
-				<img class="overflow-hidden object-contain h-24 w-full my-6 mx-auto" alt="movement" src="/img/home/movement.png">
+				<img class="overflow-hidden object-contain h-24 w-full my-6 mx-auto" loading="auto" alt="movement" src="/img/home/movement.png">
 				<h3 class="text-base md:text-lg font-semibold text-center tracking-wide px-6 py-6 mx-auto"> Recibe tu rutina en PDF con videos</h3>
 			</div>
 	

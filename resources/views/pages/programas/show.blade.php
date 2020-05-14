@@ -24,7 +24,7 @@
 
             <!--Left Col youtube-->
             <div class="flex flex-col w-full h-full md:w-1/2 mx-auto items-center">
-                <iframe class="w-full mx-auto" height="345" src="http://www.youtube.com/embed/{{$programme->lienYoutube}}" allowfullscreen>
+                <iframe class="w-full mx-auto" height="345" src="http://www.youtube.com/embed/{{$programme->lienYoutube}}" loading="auto" allowfullscreen>
                 </iframe>            	
             </div>
 
@@ -78,7 +78,7 @@
 
             <div class="w-full lg:w-1/2">
 
-                <img src="{{ url($programme->imageurl)}}" class="fill-current object-cover w-full mx-auto" alt="image">
+                <img src="{{ url($programme->imageurl)}}" loading="auto" class="fill-current object-cover w-full mx-auto" alt="image">
             </div>
         </div>
 
@@ -89,7 +89,7 @@
             <!--Left Col -->
             <div class="flex flex-col w-full lg:w-1/2 justify-center border border-white rounded-lg overflow-hidden mb-4">
 
-				<img src="{{ url($programme->image2url) }}" class="fill-current object-cover w-full mx-auto" alt="image">
+				<img src="{{ url($programme->image2url) }}" loading="auto" class="fill-current object-cover w-full mx-auto" alt="image">
             	                
             </div>
 
@@ -139,7 +139,7 @@
 
     <div class="w-full max-w-sm md:w-1/3 mx-auto my-4 rounded overflow-hidden shadow-lg animated bounceInUp">
       {{-- <img class="w-full" src="/img/titreprog.jpg" alt="programme"> --}}
-      <img src="{{ url($testimonio->avatarurl) }}" class="fill-current object-cover w-40 h-40 rounded-full mx-auto p-2" alt="avatar">
+      <img src="{{ url($testimonio->avatarurl) }}" loading="auto" class="fill-current object-cover w-40 h-40 rounded-full mx-auto p-2" alt="avatar">
       <div class="{{-- text-julien-gris --}} px-6 py-4">
         <div class="font-bold text-xl text-center mb-2">{{$testimonio->name}}</div>
         <div class="text-base not-italic text-left">

@@ -15,7 +15,7 @@
             <!--Left Col-->
             <div class="w-full md:w-1/3 items-center mx-auto ">
                 <!--Add your product image here-->
-                 <img src="{{ url($programme->photoProgUrl) }}" class="fill-current mx-auto" alt="image">
+                 <img src="{{ url($programme->photoProgUrl) }}" loading="auto" class="fill-current mx-auto" alt="image">
             </div>
         
             <!--Right Col-->

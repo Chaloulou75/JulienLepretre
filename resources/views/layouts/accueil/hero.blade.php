@@ -1,5 +1,5 @@
 <!--Hero-->
-	<div class="w-full mx-auto h-full bg-cover bg-center mb-4 py-48 " style="background-image: url(/img/home/backgroundaccueil.png)">
+	<div class="w-full mx-auto h-full bg-cover bg-center mb-4 py-48 " loading="auto" style="background-image: url(/img/home/backgroundaccueil.png)">
 
 		<div class="flex flex-col w-full mx-auto justify-center items-center animated bounceInUp">
 			<div class="mx-auto mb-6 sm:px-4 md:px-40">

@@ -29,7 +29,7 @@
 		<!--Right Col-->
 		<div class="w-full lg:w-1/2">
 			<!--Add your product image here-->
-			 <img src="/img/consultas/etapas.png" class="fill-current mx-auto" alt="etapas">
+			 <img src="/img/consultas/etapas.png" loading="auto" class="fill-current mx-auto" alt="etapas">
 		</div>		
 	</div>
 
@@ -38,7 +38,7 @@
 	 	<!--Left Col-->
 		<div class="w-full lg:w-1/2">
 			<!--Add your product image here-->
-			 <img src="/img/consultas/Consultaprivadaejercicio.jpg" class="fill-current mx-auto" alt="Consulta privada ejercicio">
+			 <img src="/img/consultas/Consultaprivadaejercicio.jpg" loading="auto" class="fill-current mx-auto" alt="Consulta privada ejercicio">
 		</div>
 		
 		<!--Right Col-->
