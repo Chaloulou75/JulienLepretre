@@ -160,13 +160,13 @@ class PostController extends Controller
         $post = Post::with('tags')->where('slug', $slug)->firstOrFail();
         
         $validator = Validator::make($request->all(),[
-                'title' => 'required|min:3|max:255',
-                'auteur' =>'required|min:3|max:255',
-                'soustitre1'=> 'required|min:3|max:255',                
-                'description' => 'required|min:10',
-                'soustitre2'=> 'required|min:3|max:255',
-                'content' => 'required|min:10',
-                'photoPost' => 'required|image|mimes:jpeg,png,jpg,gif,svg',                
+                'title' => 'min:3|max:255',
+                'auteur' =>'min:3|max:255',
+                'soustitre1'=> 'min:3|max:255',                
+                'description' => 'min:10',
+                'soustitre2'=> 'min:3|max:255',
+                'content' => 'min:10',
+                'photoPost' => 'image|mimes:jpeg,png,jpg,gif,svg',                
                 'lienYoutube' => 'url',
                 'lienInstagram' => 'url',
                 'lienFacebook' => 'url',
@@ -183,6 +183,8 @@ class PostController extends Controller
         {
             $lienYoutube = $request->lienYoutube;
             $lienYoutubeId = $this->YoutubeID($lienYoutube);
+
+            $post->update(['lienYoutube' => $lienYoutubeId]);
         }
 
         if($request->hasfile('photoPost'))
@@ -196,6 +198,10 @@ class PostController extends Controller
             Storage::disk('s3')->setVisibility($path, 'public');
 
             $progurl = Storage::disk('s3')->url($path);
+
+            $post->update([ 'photoPost' => basename($path),
+                            'photoPostUrl' => $progurl 
+                          ]);
         }
        
 
@@ -205,10 +211,7 @@ class PostController extends Controller
             'soustitre1'=> $request->soustitre1,
             'description' => Purifier::clean($request->description),
             'soustitre2'=> $request->soustitre2,            
-            'content' => Purifier::clean($request->content),
-            'photoPost' => basename($path),
-            'photoPostUrl' => $progurl,               
-            'lienYoutube' => $lienYoutubeId, 
+            'content' => Purifier::clean($request->content),                           
             'lienInstagram' => $request->lienInstagram, 
             'lienFacebook' => $request->lienFacebook, 
         ]);

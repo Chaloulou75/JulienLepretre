@@ -135,11 +135,9 @@ class TestimoniosController extends Controller
             $url = Storage::disk('s3')->url($path);
 
             $testimonio->update([
-            'name' =>  $request->name,
-            'msg' => $request->msg,
-            'avatar' => basename($path),
-            'avatarurl' => $url, 
-        ]);
+                'avatar' => basename($path),
+                'avatarurl' => $url, 
+            ]);
         }
 
         $testimonio->update([

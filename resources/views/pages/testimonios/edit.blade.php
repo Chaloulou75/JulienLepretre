@@ -57,8 +57,12 @@
 
 	        <div class="mb-4">
 	            <label for="avatar" class="block text-gray-700 text-sm font-bold tracking-wide mb-2">{{ __('Tu avatar o foto') }}</label>
+	            
+				<div class="flex">
+		            <input id="avatar" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('avatar') bg-red-dark @enderror" name="avatar" value="">
 
-	            <input id="avatar" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-loose focus:outline-none focus:shadow-outline @error('avatar') bg-red-dark @enderror" name="avatar" value="">
+		            <img src="{{ url($testimonio->avatarurl) }}" loading="auto" class="h-48 w-48 object-scale-down" alt="image du Post">
+	            </div>
 
 	            @error('avatar')
 	                <span class=" mt-1 text-sm text-red-500" role="relative px-3 py-3 mb-4 border rounded">

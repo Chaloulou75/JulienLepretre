@@ -26,7 +26,7 @@
             <label for="title" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Titre du programme') }}</label>
 
             <input id="title" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('title') bg-red-dark @enderror" name="title" value="{{ $title }}" required autocomplete="title">
+             @error('title') bg-red-dark @enderror" name="title" value="{{ $title }}" autocomplete="title">
 
             @error('title')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -39,7 +39,7 @@
         <div class="mb-4">
             <label for="descriptionCourte" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Description Courte') }}</label>
 
-            <textarea id="descriptionCourte" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('descriptionCourte') bg-red-dark @enderror" name="descriptionCourte" value="{{ $descriptionCourte }}" required autocomplete="descriptionCourte">
+            <textarea id="descriptionCourte" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('descriptionCourte') bg-red-dark @enderror" name="descriptionCourte" value="{{ $descriptionCourte }}" autocomplete="descriptionCourte">
                 @if( old('descriptionCourte')) 
                     {{old('descriptionCourte') }}
                 @else 
@@ -58,7 +58,7 @@
         <div class="mb-4">
             <label for="descriptionComplete" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Description Complète') }}</label>
 
-            <textarea id="descriptionComplete" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('descriptionComplete') bg-red-dark @enderror" name="descriptionComplete" value="{{ old('descriptionGlobale') }}" required autocomplete="descriptionComplete">
+            <textarea id="descriptionComplete" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('descriptionComplete') bg-red-dark @enderror" name="descriptionComplete" value="{{ old('descriptionGlobale') }}" autocomplete="descriptionComplete">
                 @if( old('descriptionComplete')) 
                     {{old('descriptionComplete') }}
                 @else 
@@ -77,7 +77,12 @@
         <div class="mb-4">
             <label for="photoProgramme" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Photo du programme') }}</label>
 
-            <input id="photoProgramme" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('photoProgramme') bg-red-dark @enderror" name="photoProgramme" value="" required autocomplete="photoProgramme">
+            <div class="flex">
+                <input id="photoProgramme" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('photoProgramme') bg-red-dark @enderror" name="photoProgramme" value="" autocomplete="photoProgramme">
+
+                <img src="{{ url($programme->photoProgUrl) }}" loading="auto" class="h-48 w-48 object-scale-down" alt="image du Post">
+            </div>
+            
 
             @error('photoProgramme')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -90,7 +95,11 @@
         <div class="mb-4">
             <label for="image" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Image du programme') }}</label>
 
-            <input id="image" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('image') bg-red-dark @enderror" name="image" value="" required autocomplete="image">
+            <div class="flex">
+                <input id="image" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('image') bg-red-dark @enderror" name="image" value="" autocomplete="image">
+
+                <img src="{{ url($programme->imageurl) }}" loading="auto" class="h-48 w-48 object-scale-down" alt="image du Post">
+            </div>
 
             @error('image')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -103,7 +112,12 @@
         <div class="mb-4">
             <label for="image2" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Deuxième Image du programme') }}</label>
 
-            <input id="image2" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('image2') bg-red-dark @enderror" name="image2" value="" required autocomplete="image2">
+            <div class="flex">
+
+                <input id="image2" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('image2') bg-red-dark @enderror" name="image2" value="" autocomplete="image2">
+
+                <img src="{{ url($programme->image2url) }}" loading="auto" class="h-48 w-48 object-scale-down" alt="image du Post">
+            </div>
 
             @error('image2')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -116,7 +130,7 @@
         <div class="mb-4">
             <label for="prixPesos" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Precio en Pesos Ar $') }}</label>
            
-                <input id="prixPesos" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('prixPesos') bg-red-dark @enderror" name="prixPesos" value="{{ $prixPesos }}" required autocomplete="prixPesos">
+                <input id="prixPesos" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('prixPesos') bg-red-dark @enderror" name="prixPesos" value="{{ $prixPesos }}" autocomplete="prixPesos">
 
                 @error('prixPesos')
                     <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -128,7 +142,7 @@
         <div class="mb-4">
             <label for="prixDollar" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Precio en US Dollar $') }}</label>
            
-                <input id="prixDollar" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('prixDollar') bg-red-dark @enderror" name="prixDollar" value="{{ $prixDollar }}" required autocomplete="prixDollar">
+                <input id="prixDollar" type="number" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('prixDollar') bg-red-dark @enderror" name="prixDollar" value="{{ $prixDollar }}" autocomplete="prixDollar">
 
                 @error('prixDollar')
                     <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -141,7 +155,7 @@
             <label for="lienYoutube" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Youtube du programme (remettre le lien entier)') }}</label>
 
             <input id="lienYoutube" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="{{ $lienYoutube }}" required autocomplete="lienYoutube">
+             @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="{{ $lienYoutube }}" autocomplete="lienYoutube">
 
             @error('lienYoutube')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -155,7 +169,7 @@
             <label for="lienTiendup" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Tiendup du programme') }}</label>
 
             <input id="lienTiendup" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('lienTiendup') bg-red-dark @enderror" name="lienTiendup" value="{{ $lienTiendup }}" required autocomplete="lienTiendup">
+             @error('lienTiendup') bg-red-dark @enderror" name="lienTiendup" value="{{ $lienTiendup }}" autocomplete="lienTiendup">
 
             @error('lienTiendup')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">

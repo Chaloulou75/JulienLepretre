@@ -162,7 +162,7 @@ class ProgrammeController extends Controller
         $programme = Programme::where('slug', $slug)->firstOrFail();
 
         $validator = Validator::make($request->all(),[
-                'title' => 'required|min:3',
+                'title' => 'min:3',
                 'descriptionCourte' => 'min:10',
                 'descriptionComplete' => 'min:10',
                 'photoProgramme' => 'image|mimes:jpeg,png,jpg,gif,svg',
@@ -184,6 +184,8 @@ class ProgrammeController extends Controller
         {
             $lienYoutube = $request->lienYoutube;
             $lienYoutubeId = $this->YoutubeID($lienYoutube);
+
+            $programme->update(['lienYoutube' => $lienYoutubeId]);
         }
 
         if($request->hasfile('photoProgramme'))
@@ -198,6 +200,9 @@ class ProgrammeController extends Controller
             Storage::disk('s3')->setVisibility($pathy, 'public');
 
             $progurl = Storage::disk('s3')->url($pathy);
+
+            $programme->update(['photoProgramme' => basename($pathy),
+                                'photoProgUrl' => $progurl]);
         }
 
         if($request->hasfile('image'))
@@ -212,6 +217,9 @@ class ProgrammeController extends Controller
             Storage::disk('s3')->setVisibility($path, 'public');
 
             $url = Storage::disk('s3')->url($path);
+
+            $programme->update(['image' => basename($path),
+                                'imageurl' => $url]);
         }
 
         if($request->hasfile('image2'))
@@ -225,21 +233,17 @@ class ProgrammeController extends Controller
             Storage::disk('s3')->setVisibility($path2, 'public');
 
             $url2 = Storage::disk('s3')->url($path2);
+
+            $programme->update(['image2' => basename($path2),
+                                'image2url' => $url2]);
         }        
 
         $programme->update([
             'title'=> $request->title,
             'descriptionCourte' => $request->descriptionCourte,
-            'descriptionComplete' => $request->descriptionComplete,
-            'photoProgramme' => basename($pathy),
-            'photoProgUrl' => $progurl, 
-            'image' => basename($path), 
-            'image2' => basename($path2),               
+            'descriptionComplete' => $request->descriptionComplete,               
             'prixPesos' => $request->prixPesos,
             'prixDollar' => $request->prixDollar,
-            'imageurl' => $url, 
-            'image2url' => $url2,
-            'lienYoutube' => $lienYoutubeId, 
             'lienTiendup' => $request->lienTiendup, 
         ]);
 

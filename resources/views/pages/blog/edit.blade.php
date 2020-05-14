@@ -121,7 +121,13 @@
         <div class="mb-4">
             <label for="photoPost" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Photo du post') }}</label>
 
-            <input id="photoPost" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('photoPost') bg-red-dark @enderror" name="photoPost" value="" autocomplete="photoPost">
+            <div class="flex">
+                <input id="photoPost" type="file" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('photoPost') bg-red-dark @enderror" name="photoPost" value="" autocomplete="photoPost">
+
+                <img src="{{ url($post->photoPostUrl) }}" loading="auto" class="h-48 w-48 object-scale-down" alt="image du Post">
+            </div>
+
+            
 
             @error('photoPost')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
