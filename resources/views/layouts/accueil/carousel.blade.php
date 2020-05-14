@@ -1,7 +1,3 @@
-{{-- <h1 class="w-full font-black text-3xl text-white bg-julien-gris border-b-1 text-center uppercase py-8 px-2">
-    Los comentarios Insta
-</h1> --}}
-
 <div class="bg-white py-8"> 
 
     <carousel-component>
@@ -20,5 +16,4 @@
         <img src="/img/insta/doce.jpeg" alt="insta" class="carousel-cell object-contain h-48 w-full md:w-1/4">
                           
     </carousel-component>
-
 </div>

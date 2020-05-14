@@ -27,6 +27,10 @@
 
 /* purgecss start ignore */
 
+html, body {
+  overflow-x: hidden; 
+}
+
 /* Enter and leave animations can use different */
 /* durations and timing functions.    */          
 
