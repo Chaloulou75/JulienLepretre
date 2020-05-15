@@ -70,7 +70,7 @@
             </div>
 
             <div class="w-full md:w-1/2 m-4">
-                <img src="/img/home/osteo.jpg" loading="auto" alt="osteo" class="overflow-hidden object-contain h-auto w-full mx-auto md:mx-0 rounded hover:shadow-lg">
+                <img src="/img/home/osteo.jpg" loading="lazy" alt="osteo" class="overflow-hidden object-contain h-auto w-full mx-auto md:mx-0 rounded hover:shadow-lg">
             </div>
         </div>
 
