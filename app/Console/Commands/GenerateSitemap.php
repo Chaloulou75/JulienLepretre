@@ -39,7 +39,7 @@ class GenerateSitemap extends Command
     public function handle()
     {
         // modify this to your own needs
-        SitemapGenerator::create('https://julienlepretre.com/')
+        SitemapGenerator::create('https://www.julienlepretre.com')
             ->writeToFile(public_path('sitemap.xml'));
     }
 }
