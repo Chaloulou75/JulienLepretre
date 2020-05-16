@@ -18,7 +18,7 @@
 
     <div class="text-julien-gris text-center uppercase text-xs my-2 md:mt-4">
 		<p>
-			&copy;2020 julien lepretre all right reserved, </br> site designed and developped by <span class="text-julien-red"> carlito</span>.
+			&copy; {{ date('Y') }} &middot; julien lepretre all right reserved, </br> site designed and developped by <a href="https://www.linkedin.com/in/charles-jeandey" target="_blank"><span class="text-julien-red">carlito</span></a>.
 		</p>
 
 	</div>
