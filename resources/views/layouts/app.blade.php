@@ -8,13 +8,13 @@
     <meta name="description" content="Julien Leprêtre, Ostéopathe Français à Buenos Aires en Argentine">
     <title>{{ config('app.name', 'Julien Leprêtre') }}</title>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ secure_asset('js/app.js') }}" defer></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <!-- Styles -->
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ secure_asset('favicon.ico') }}">
     
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" href="/css/app.css" rel="stylesheet">
 
 </head>
 <body class="bg-white">
