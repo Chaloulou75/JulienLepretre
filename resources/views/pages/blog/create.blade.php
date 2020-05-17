@@ -185,7 +185,7 @@
 
 @endsection
 
-@section('scripts')
+@push('scripts')
 
 <script src="https://cdn.tiny.cloud/1/5biphfnx23wmkg054imri1ozkt598vs84unrt7qr6xm9472n/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
@@ -197,7 +197,7 @@
         height: 400
       });
 </script>
-@endsection
+@endpush
 
 
 
