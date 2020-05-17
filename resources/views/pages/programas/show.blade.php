@@ -24,7 +24,7 @@
 
             <!--Left Col youtube-->
             <div class="flex flex-col w-full h-full md:w-1/2 mx-auto items-center">
-                <iframe class="w-full mx-auto" height="345" src="http://www.youtube.com/embed/{{$programme->lienYoutube}}" loading="auto" allowfullscreen>
+                <iframe class="w-full mx-auto" height="345" src="https://www.youtube.com/embed/{{$programme->lienYoutube}}" loading="auto" allowfullscreen>
                 </iframe>            	
             </div>
 

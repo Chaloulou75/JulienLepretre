@@ -15,7 +15,7 @@
         <div class="w-full md:w-4/5 mx-auto items-center justify-around mb-2" >
 
             <div class="w-full mx-auto items-center respContainer">                
-                <iframe src="http://www.youtube.com/embed/{{ $post->lienYoutube}}" loading="auto" allowfullscreen> 
+                <iframe src="https://www.youtube.com/embed/{{ $post->lienYoutube}}" loading="auto" allowfullscreen> 
                 </iframe>   
                            	
             </div>
