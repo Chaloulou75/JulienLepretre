@@ -14,7 +14,7 @@
 	<div class="w-full md:w-1/3 text-center font-semibold text-sm">
 
 		<div class="flex-1 pb-4 text-sm">
-			<span class="font-bold text-2xl"><i class="fas fa-users fa-2x text-julien-red mr-2"></i> 84,636 </span> </br>
+			<span class="font-bold text-2xl"><i class="fas fa-users fa-2x text-julien-red mr-2"></i> 84,870 </span> </br>
 			Seguidores en Instagram	
 		</div>
 			
