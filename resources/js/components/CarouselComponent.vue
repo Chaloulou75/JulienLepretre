@@ -30,7 +30,7 @@ import 'flickity/dist/flickity.min.css';
             fade: this.fade,
             draggable: false,
             contain: true,
-            prevNextButtons: true,
+            prevNextButtons: false,
             pageDots: false,
             groupCells: true,
             freeScroll: true
