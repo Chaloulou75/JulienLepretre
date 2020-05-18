@@ -41,6 +41,9 @@
 
                         @endforeach
                     </div> 
+                    <div>
+                        @include('pages/blog/layouts/compartir')
+                    </div>
                 </div>
 
                 <div class="w-full md:w-1/4 max-w-sm md:border-l-2 md:border-gray-100 md:pl-2">
