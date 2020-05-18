@@ -29,6 +29,9 @@
                     </div> 
 
                     <p class="text-xs py-2">Publicado por <span class="font-semibold">{{ $post->auteur }}</span> el {{  $post->created_at->isoFormat('LL')}} </p>
+
+                    {{-- @include('pages.blog.layouts.compartir') --}}
+
                     
                     <div class="flex flex-wrap items-stretch leading-normal py-4">
 
@@ -41,9 +44,7 @@
 
                         @endforeach
                     </div> 
-                    <div>
-                        {{-- @include('pages/blog/layouts/compartir') --}}
-                    </div>
+                    
                 </div>
 
                 <div class="w-full md:w-1/4 max-w-sm md:border-l-2 md:border-gray-100 md:pl-2">

@@ -8,6 +8,12 @@
 
     <meta name="description" content="Consejos y ejercicios para un cuerpo sano - Julien Leprêtre">
 
+    {{-- <meta property="og:url"           content="{{ Request::url() }}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Your Website Title" />
+    <meta property="og:description"   content="Your description" />
+    <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" /> --}}
+
     <title>{{ config('app.name', 'Julien Leprêtre') }}</title>
 
     <!-- Google Tag Manager -->
