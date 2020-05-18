@@ -23,17 +23,6 @@
             <div class="w-full md:flex py-2 text-center not-italic mx-auto">
                 
                 <div class="md:w-3/4 md:text-left px-2">
-                    <h2 class="py-8 uppercase font-semibold text-lg">
-                    {{ $post->soustitre1 }}
-                    </h2>
-
-                    <div class="whitespace-pre-wrap break-words leading-normal py-4">
-                        {!! $post->description !!}
-                    </div>
-
-                    <h2 class="py-4 uppercase font-semibold text-lg">
-                        {{ $post->soustitre2 }}
-                    </h2>
 
                     <div class="whitespace-pre-wrap break-words leading-normal py-4">
                         {!! $post->content !!}

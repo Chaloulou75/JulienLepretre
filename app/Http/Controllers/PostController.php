@@ -56,9 +56,6 @@ class PostController extends Controller
         $validator = Validator::make($request->all(),[
                 'title' => 'required|min:3|max:255',
                 'auteur' =>'required|min:3|max:255',
-                'soustitre1'=> 'required|min:3|max:255',                
-                'description' => 'required|min:10',
-                'soustitre2'=> 'required|min:3|max:255',
                 'content' => 'required|min:10',
                 'photoPost' => 'required|image|mimes:jpeg,png,jpg,gif,svg',                
                 'lienYoutube' => 'url',
@@ -90,10 +87,7 @@ class PostController extends Controller
 
         $data = array(
             'title'=> $request->title,
-            'auteur'=> $request->auteur,
-            'soustitre1'=> $request->soustitre1,
-            'description' => Purifier::clean($request->description),
-            'soustitre2'=> $request->soustitre2,            
+            'auteur'=> $request->auteur,           
             'content' => Purifier::clean($request->content),
             'photoPost' => basename($path),
             'photoPostUrl' => $progurl,               
@@ -162,9 +156,6 @@ class PostController extends Controller
         $validator = Validator::make($request->all(),[
                 'title' => 'min:3|max:255',
                 'auteur' =>'min:3|max:255',
-                'soustitre1'=> 'min:3|max:255',                
-                'description' => 'min:10',
-                'soustitre2'=> 'min:3|max:255',
                 'content' => 'min:10',
                 'photoPost' => 'image|mimes:jpeg,png,jpg,gif,svg',                
                 'lienYoutube' => 'url',
@@ -207,10 +198,7 @@ class PostController extends Controller
 
         $post->update([
             'title'=> $request->title,
-            'auteur'=> $request->auteur,
-            'soustitre1'=> $request->soustitre1,
-            'description' => Purifier::clean($request->description),
-            'soustitre2'=> $request->soustitre2,            
+            'auteur'=> $request->auteur,           
             'content' => Purifier::clean($request->content),                           
             'lienInstagram' => $request->lienInstagram, 
             'lienFacebook' => $request->lienFacebook, 

@@ -52,54 +52,6 @@
         </div>
 
         <div class="mb-4">
-            <label for="soustitre1" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Sous titre 1 du post') }}</label>
-
-            <input id="soustitre1" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('soustitre1') bg-red-dark @enderror" name="soustitre1" value="{{ $soustitre1 }}" autocomplete="soustitre1">
-
-            @error('soustitre1')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-            
-        </div>
-
-        <div class="mb-4">
-
-            <label for="description" class="block text-sm font-semibold tracking-wide mb-2"> {{ __('Description') }}</label>
-
-            <textarea id="description" type="text" class="{{-- shadow appearance-none border rounded w-full h-300 py-2 px-3 leading-loose focus:outline-none focus:shadow-outline --}} @error('description') bg-red-dark @enderror" name="description" value="{{ $description }}" autocomplete="description">
-                @if( old('description')) 
-                    {!! old('description') !!}
-                @else 
-                    {!! $description !!} 
-                @endif
-            </textarea>
-
-            @error('description')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-            
-        </div>
-
-        <div class="mb-4">
-            <label for="soustitre2" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Sous titre 2 du post') }}</label>
-
-            <input id="soustitre2" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('soustitre2') bg-red-dark @enderror" name="soustitre2" value="{{ $soustitre2 }}" autocomplete="sous_titre2">
-
-            @error('soustitre2')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-            
-        </div>
-
-        <div class="mb-4">
             <label for="content" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Contenu') }}</label>
 
             <textarea id="content" type="text" class="{{-- shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline --}} @error('content') bg-red-dark @enderror" name="content" value="{{$content}}" autocomplete="content">
@@ -139,10 +91,10 @@
 
 
         <div class="mb-4">
-            <label for="lienYoutube" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Youtube du post (remettre le lien entier)') }}</label>
+            <label for="lienYoutube" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Youtube du post ') }}</label>
 
             <input id="lienYoutube" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="{{ $lienYoutube }}" autocomplete="lienYoutube">
+             @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="https://www.youtube.com/watch/{{ $lienYoutube }}" autocomplete="lienYoutube">
 
             @error('lienYoutube')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">

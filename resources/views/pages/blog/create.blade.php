@@ -51,47 +51,6 @@
         </div>
 
         <div class="mb-4">
-            <label for="soustitre1" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Sous titre 1 du post') }}</label>
-
-            <input id="soustitre1" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('soustitre1') bg-red-dark @enderror" name="soustitre1" value="{{ old('soustitre1') }}"  autocomplete="sous_titre1">
-
-            @error('soustitre1')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-            
-        </div>
-
-        <div class="mb-4">
-
-            <label for="description" class="block text-sm font-semibold tracking-wide mb-2"> {{ __('Description') }}</label>
-
-            <textarea id="description" type="text"  class="{{--shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:shadow-outline --}} @error('description') bg-red-dark @enderror" name="description" value="{{ old('description') }}" autocomplete="description">{!! old('description') !!}</textarea>
-
-            @error('description')
-                <span class="mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-            
-        </div>
-
-        <div class="mb-4">
-            <label for="soustitre2" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Sous titre 2 du post') }}</label>
-
-            <input id="soustitre2" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline @error('soustitre2') bg-red-dark @enderror" name="soustitre2" value="{{ old('soustitre2') }}" autocomplete="soustitre2">
-
-            @error('soustitre2')
-                <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-            
-        </div>
-
-        <div class="mb-4">
             <label for="content" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Contenu') }}</label>
 
             <textarea id="content" type="text" class=" @error('content') bg-red-dark @enderror" name="content" value="{{ old('content') }}" autocomplete="content">{!! old('content') !!}</textarea>
