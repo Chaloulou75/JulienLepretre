@@ -42,7 +42,7 @@
                         @endforeach
                     </div> 
                     <div>
-                        @include('pages/blog/layouts/compartir')
+                        {{-- @include('pages/blog/layouts/compartir') --}}
                     </div>
                 </div>
 
