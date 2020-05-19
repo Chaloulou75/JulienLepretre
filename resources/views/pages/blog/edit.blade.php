@@ -66,8 +66,7 @@
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
-            @enderror
-            
+            @enderror            
         </div>
 
         <div class="mb-4">
@@ -78,23 +77,18 @@
 
                 <img src="{{ url($post->photoPostUrl) }}" loading="auto" class="h-48 w-48 object-scale-down" alt="image du Post">
             </div>
-
-            
-
             @error('photoPost')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
                     <strong>{{ $message }}</strong>
                 </span>
-            @enderror
-            
+            @enderror            
         </div>        
 
-
         <div class="mb-4">
-            <label for="lienYoutube" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Youtube du post ') }}</label>
+            <label for="lienYoutube" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Youtube du post (Remets le lien de la vidéo en entier)') }}</label>
 
             <input id="lienYoutube" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="https://www.youtube.com/watch/{{ $lienYoutube }}" autocomplete="lienYoutube">
+             @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="{{ $lienYoutube }}" autocomplete="lienYoutube">
 
             @error('lienYoutube')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -133,7 +127,7 @@
         </div>
 
         <div class="mb-4">
-            <label for="tags" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Ajouter des tags au post (!! sépare chaque tag par une virgule!!)') }}</label>
+            <label for="tags" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Ajouter des tags au post (!! sépare chaque tag par une virgule sauf le dernier!!)') }}</label>
 
             <input id="tags" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
              @error('tags') bg-red-dark @enderror" name="tags" value=" {{ $post->tags()->pluck('name')->implode(', ')}} " autocomplete="tags">

@@ -21,8 +21,7 @@ class ContactController extends Controller
     }
 
     public function store(Request $request)
-    {
-        
+    {        
         $validator = Validator::make($request->all(),[
             'apellidos'=> 'required|min:3',
             'nombre'=> 'required|min:3',

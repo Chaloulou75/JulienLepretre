@@ -29,9 +29,6 @@
                     </div> 
 
                     <p class="text-xs py-2">Publicado por <span class="font-semibold">{{ $post->auteur }}</span> el {{  $post->created_at->isoFormat('LL')}} </p>
-
-                    {{-- @include('pages.blog.layouts.compartir') --}}
-
                     
                     <div class="flex flex-wrap items-stretch leading-normal py-4">
 
@@ -65,12 +62,12 @@
                 
                 </div>
                  
-            </div>
-
-            
+            </div>            
         </div>
     </div>
-
-
-
 @endsection
+
+@push('scripts')
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ec3e62879941b71"></script>
+@endpush
