@@ -29,10 +29,9 @@
 		<label for="mce-MMERGE3-month" class="block text-sm font-bold tracking-wide mb-2">Fecha de Nacimiento</label>
 
 		<div> {{-- <span class="border border-gray-600 px-2 py-1"> --}}
-			<input class="shadow appearance-none border rounded px-2 py-1" type="text" pattern="[0-9]*" value="" placeholder="" size="2" maxlength="2" name="MMERGE3[day]" id="mce-MMERGE3-day"> / 
-	        <input class="shadow appearance-none border rounded px-2 py-1" type="text" pattern="[0-9]*" value="" placeholder="" size="2" maxlength="2" name="MMERGE3[month]" id="mce-MMERGE3-month"> / 
-			<input class="shadow appearance-none border rounded px-2 py-1" type="text" pattern="[0-9]*" value="" placeholder="" size="4" maxlength="4" name="MMERGE3[year]" id="mce-MMERGE3-year"></br>
-	        <span class="py-1 text-xs lowercase">( dd / mm / yyyy )</span>
+			<input class="shadow appearance-none border rounded px-2 py-1" type="text" pattern="[0-9]*" value="" placeholder="dd" size="2" maxlength="2" name="MMERGE3[day]" id="mce-MMERGE3-day"> / 
+	        <input class="shadow appearance-none border rounded px-2 py-1" type="text" pattern="[0-9]*" value="" placeholder="mm" size="2" maxlength="2" name="MMERGE3[month]" id="mce-MMERGE3-month"> / 
+			<input class="shadow appearance-none border rounded px-2 py-1" type="text" pattern="[0-9]*" value="" placeholder="yyyy" size="4" maxlength="4" name="MMERGE3[year]" id="mce-MMERGE3-year"></br>
 		</div>
 
 	</div>
