@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Str;
 
 class HttpsProtocol
 {
@@ -15,6 +16,12 @@ class HttpsProtocol
      */
     public function handle($request, Closure $next)
     {
+        if (!$request->secure() && Str::startsWith(config('app.url'), 'https://') ) {
+            
+            return redirect()->secure($request->getRequestUri()); 
+
+        }
+
         return $next($request);
     }
 }
