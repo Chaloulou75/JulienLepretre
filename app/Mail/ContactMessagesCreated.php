@@ -11,7 +11,6 @@ class ContactMessagesCreated extends Mailable
 {
     use Queueable, SerializesModels;
 
-
     public $apellidos;
     public $nombre;
     public $email;
