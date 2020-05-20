@@ -59,7 +59,7 @@ class ContactController extends Controller
             $request->deportes,
         );  
 
-        Mail::to('julienlepretreosteo@gmail.com')->send($mailable);
+        Mail::to('contact@julienlepretre.com')->send($mailable);
 
         return back()->with('message.level', 'success')->with('message.content', __('Su mensaje ha sido enviado correctamente.'));
     }
