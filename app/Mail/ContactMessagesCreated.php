@@ -11,6 +11,8 @@ class ContactMessagesCreated extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $header_url, $header_title;
+
     public $apellidos;
     public $nombre;
     public $email;
@@ -34,6 +36,9 @@ class ContactMessagesCreated extends Mailable
      */
     public function __construct($apellidos, $nombre, $email, $birthdate, $msg, $problema, $alivia, $antecedentes, $objetivos, $altura, $peso, $forma, $phone, $trabajo, $deportes)
     {
+        $this->header_url = 'https://julienlepretre.com';
+        $this->header_title = $apellidos .' '. $nombre;
+
         $this->apellidos= $apellidos;
         $this->nombre= $nombre;
         $this->email= $email;
@@ -58,7 +63,8 @@ class ContactMessagesCreated extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.messages.created')
+        return $this->from('carlita@julienlepretre.com', 'Carlita')
+                    ->markdown('emails.messages.created')
                     ->subject('Demande de consultation privée');
     }
 }
