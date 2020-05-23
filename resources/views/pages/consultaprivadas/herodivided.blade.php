@@ -29,7 +29,7 @@
 		<!--Right Col-->
 		<div class="w-full lg:w-1/2">
 			<!--Add your product image here-->
-			 <img src="/img/consultas/etapas.png" loading="auto" class="fill-current mx-auto" alt="etapas">
+			 <img src="/img/consultas/etapas.jpg" loading="auto" class="fill-current mx-auto" alt="etapas">
 		</div>		
 	</div>
 
