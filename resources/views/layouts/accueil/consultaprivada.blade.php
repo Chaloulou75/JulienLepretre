@@ -6,7 +6,7 @@
 
 				<div class="w-full md:w-1/2 ">
 
-					<img class="overflow-hidden object-contain h-auto w-full md:mx-0" loading="auto" alt="ordi" src="/img/home/ordi.jpg">
+					<img class="overflow-hidden object-contain h-auto w-full md:mx-0" loading="auto" alt="ordi" src="/img/home/ordismall.jpg">
 
 				</div>
 			  			  
