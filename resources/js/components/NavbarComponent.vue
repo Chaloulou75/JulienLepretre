@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between px-4 py-3 sm:p-0"> <!--  -->
       
       <div class="flex items-center "> <!--  -->
-          <img class="h-16 rounded-full" src="/img/home/ProfilInsta.jpg" loading="auto" alt="Julien">
+          <img class="h-16 rounded-full" src="/img/home/compress/ProfilInsta.jpg" loading="auto" alt="Julien">
           <a href="/" class="block animated zoomInLeft slower text-base md:text-lg text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1" >
             Julien Leprêtre
           </a> 

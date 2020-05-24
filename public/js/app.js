@@ -42459,7 +42459,7 @@ var staticRenderFns = [
       _c("img", {
         staticClass: "h-16 rounded-full",
         attrs: {
-          src: "/img/home/ProfilInsta.jpg",
+          src: "/img/home/compress/ProfilInsta.jpg",
           loading: "auto",
           alt: "Julien"
         }
