@@ -149,15 +149,103 @@
 <script src="https://cdn.tiny.cloud/1/5biphfnx23wmkg054imri1ozkt598vs84unrt7qr6xm9472n/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 <script>
-      tinymce.init({
-        selector: 'textarea',
-        plugins : 'advlist autolink link lists',
-        default_link_target: "_blank",
-        height: 400
-      });
+      // tinymce.init({
+      //   selector: 'textarea',
+      //   plugins : 'advlist autolink link lists image charmap print preview autosave quickbars quickimage',
+      //   default_link_target: "_blank",
+      //   height: 400
+      // });
+tinymce.init({
+  selector: 'textarea',
+  plugins: 'advlist autolink link lists charmap print preview autosave quickbars',
+  toolbar: 'undo redo | styleselect | bold italic strikethrough forecolor backcolor| alignleft aligncenter alignright alignjustify | outdent indent | link blockquote | bullist numlist preview',
+  default_link_target: "_blank",
+  menubar: true,
+  height: 'calc(100vh - 2rem)',
+  
+  // Register the cite format
+  formats: {
+    cite: {block: 'cite'}
+  },
+  
+  // Populate the styleselect menu
+  style_formats: [
+    { title: 'Paragraph', format: 'p'},
+    { title: 'Title', format: 'h1'},
+    { title: 'Heading', format: 'h2'},
+    { title: 'Subheading', format: 'h3'},
+    { title: 'Blockquote', format: 'blockquote'},
+    { title: 'Cite', format: 'cite' },
+  ],
+  
+  // This removes the WYSIWYG formatting within the styleselect menu
+  preview_styles: false,  
+    
+  // Setting up the content styles. In this codepen we are using
+  // content_style, therefore we disable the default styling that
+  // comes with the default content_css
+  content_css: false,
+  content_style: `
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap');
+
+blockquote {
+  font-family: 'Andale Mono', 'Courier New', monospace;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  position: relative;
+  border: 3px solid #3d3d3d;
+  padding: 3em 2.5rem;
+  margin: calc(2.5em - 16px) auto 2.5em;
+  text-align: left;
+  max-width: 320px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 13px 13px 0 0 #fff inset, 16px 16px 0 0 #fff200;
+  background-color: #fff200;
+}
+
+blockquote::before {
+  content: '“';
+  font-size: 5em;
+  color: #222;
+  position: absolute;
+  top: -.05em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'georgia';
+  pointer-events: none;
+}
+
+blockquote::after {
+  content: '“';
+  font-size: 5em;
+  color: #222;
+  position: absolute;
+  bottom: -.55em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'georgia';
+  pointer-events: none;
+}
+
+blockquote > * {
+  margin: .75em 0;
+}
+
+blockquote cite {
+  display: block;
+  font-style: normal;
+  font-size: 12px;
+}
+
+  `
+});
 </script>
 
 @endpush
+
 
 
 

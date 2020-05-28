@@ -85,10 +85,10 @@
         </div>        
 
         <div class="mb-4">
-            <label for="lienYoutube" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Youtube du post (Remets le lien de la vidéo en entier)') }}</label>
+            <label for="lienYoutube" class="block text-sm font-semibold tracking-wide mb-2">{{ __('Lien Youtube du post (check si bon lien)') }}</label>
 
             <input id="lienYoutube" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-loose focus:outline-none focus:shadow-outline
-             @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="{{ $lienYoutube }}" autocomplete="lienYoutube">
+             @error('lienYoutube') bg-red-dark @enderror" name="lienYoutube" value="https://www.youtube.com/watch?v={{ $lienYoutube }}" autocomplete="lienYoutube">
 
             @error('lienYoutube')
                 <span class=" mt-1 text-sm text-julien-red" role="relative px-3 py-3 mb-4 border rounded">
@@ -153,15 +153,103 @@
 
 @push('scripts')
 
-<script src="https://cdn.tiny.cloud/1/5biphfnx23wmkg054imri1ozkt598vs84unrt7qr6xm9472n/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/5biphfnx23wmkg054imri1ozkt598vs84unrt7qr6xm9472n/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> 
 
 <script>
-      tinymce.init({
-        selector: 'textarea',
-        plugins : 'advlist autolink link lists',
-        default_link_target: "_blank",
-        height: 400
-      });
+      // tinymce.init({
+      //   selector: 'textarea',
+      //   plugins : 'advlist autolink link lists charmap print preview autosave quickbars',
+      //   default_link_target: "_blank",
+      //   toolbar: 'quickimage',
+      //   height: 400
+      // });
+tinymce.init({
+  selector: 'textarea',
+  plugins: 'advlist autolink link lists charmap print preview autosave quickbars',
+  toolbar: 'undo redo | styleselect | bold italic strikethrough forecolor backcolor| alignleft aligncenter alignright alignjustify | outdent indent | link blockquote | bullist numlist preview',
+  menubar: true,
+  default_link_target: "_blank",
+  height: 'calc(100vh - 2rem)',
+  
+  // Register the cite format
+  formats: {
+    cite: {block: 'cite'}
+  },
+  
+  // Populate the styleselect menu
+  style_formats: [
+    { title: 'Paragraph', format: 'p'},
+    { title: 'Title', format: 'h1'},
+    { title: 'Heading', format: 'h2'},
+    { title: 'Subheading', format: 'h3'},
+    { title: 'Blockquote', format: 'blockquote'},
+    { title: 'Cite', format: 'cite' },
+  ],
+  
+  // This removes the WYSIWYG formatting within the styleselect menu
+  preview_styles: false,  
+    
+  // Setting up the content styles. In this codepen we are using
+  // content_style, therefore we disable the default styling that
+  // comes with the default content_css
+  content_css: false,
+  content_style: `
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap');
+
+blockquote {
+  font-family: 'Andale Mono', 'Courier New', monospace;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  position: relative;
+  border: 3px solid #3d3d3d;
+  padding: 3em 2.5rem;
+  margin: calc(2.5em - 16px) auto 2.5em;
+  text-align: left;
+  max-width: 320px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 13px 13px 0 0 #fff inset, 16px 16px 0 0 #fff200;
+  background-color: #fff200;
+}
+
+blockquote::before {
+  content: '“';
+  font-size: 5em;
+  color: #222;
+  position: absolute;
+  top: -.05em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'georgia';
+  pointer-events: none;
+}
+
+blockquote::after {
+  content: '“';
+  font-size: 5em;
+  color: #222;
+  position: absolute;
+  bottom: -.55em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'georgia';
+  pointer-events: none;
+}
+
+blockquote > * {
+  margin: .75em 0;
+}
+
+blockquote cite {
+  display: block;
+  font-style: normal;
+  font-size: 12px;
+}
+
+  `
+});
 </script>
 
 @endpush

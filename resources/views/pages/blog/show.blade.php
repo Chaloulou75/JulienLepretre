@@ -20,17 +20,17 @@
                            	
             </div>
 
-            <div class="w-full md:flex py-2 text-center not-italic mx-auto">
+            <div class="w-full md:flex py-2{{--  text-center --}} not-italic mx-auto">
                 
-                <div class="md:w-3/4 md:text-left px-2">
+                <div class="md:w-3/4 {{-- md:text-left --}} px-2">
 
-                    <div class="whitespace-pre-wrap break-words leading-normal py-4">
+                    <div class="{{-- whitespace-pre-wrap break-words --}} py-4">
                         {!! $post->content !!}
                     </div> 
 
-                    <p class="text-xs py-2">Publicado por <span class="font-semibold">{{ $post->auteur }}</span> el {{  $post->created_at->isoFormat('LL')}} </p>
+                    <p class="text-xs md:text-left py-2">Publicado por <span class="font-semibold">{{ $post->auteur }}</span> el {{  $post->created_at->isoFormat('LL')}} </p>
                     
-                    <div class="flex flex-wrap items-stretch leading-normal py-4">
+                    <div class="flex flex-wrap items-stretch py-4">
 
                         @foreach($post->tags as $tag)
 

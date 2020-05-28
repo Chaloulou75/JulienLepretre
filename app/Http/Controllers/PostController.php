@@ -88,7 +88,7 @@ class PostController extends Controller
         $data = array(
             'title'=> $request->title,
             'auteur'=> $request->auteur,           
-            'content' => Purifier::clean($request->content),
+            'content' => Purifier::clean($request->content),                 
             'photoPost' => basename($path),
             'photoPostUrl' => $progurl,               
             'lienYoutube' => $lienYoutubeId, 
@@ -199,7 +199,7 @@ class PostController extends Controller
         $post->update([
             'title'=> $request->title,
             'auteur'=> $request->auteur,           
-            'content' => Purifier::clean($request->content),                           
+            'content' => Purifier::clean($request->content),                     
             'lienInstagram' => $request->lienInstagram, 
             'lienFacebook' => $request->lienFacebook, 
         ]);

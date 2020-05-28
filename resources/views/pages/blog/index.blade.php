@@ -5,7 +5,7 @@
     <div>
 
         <h1 class="w-full font-black text-3xl text-center uppercase py-8 ">
-                Blog
+              Blog
         </h1> 
 
         <div class="w-full mx-auto flex flex-col md:flex-row flex-wrap items-stretch justify-around my-4"> 
