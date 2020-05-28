@@ -199,35 +199,11 @@ blockquote {
   padding: 3em 2.5rem;
   margin: calc(2.5em - 16px) auto 2.5em;
   text-align: left;
-  max-width: 320px;
+  max-width: 768px;
   text-align: center;
   box-sizing: border-box;
-  box-shadow: 13px 13px 0 0 #fff inset, 16px 16px 0 0 #fff200;
-  background-color: #fff200;
-}
-
-blockquote::before {
-  content: '“';
-  font-size: 5em;
-  color: #222;
-  position: absolute;
-  top: -.05em;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'georgia';
-  pointer-events: none;
-}
-
-blockquote::after {
-  content: '“';
-  font-size: 5em;
-  color: #222;
-  position: absolute;
-  bottom: -.55em;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'georgia';
-  pointer-events: none;
+  box-shadow: 13px 13px 0 0 #fff inset, 16px 16px 0 0 #eeeeee;
+  background-color: #eeeeee;
 }
 
 blockquote > * {
