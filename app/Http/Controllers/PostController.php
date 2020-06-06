@@ -30,7 +30,7 @@ class PostController extends Controller
           $posts = Post::with('tags')->latest()->simplePaginate(6);  
         }
 
-        $tags = Tag::has('posts')->get();
+        $tags = Tag::has('posts')->latest()->get();
         
         return view('/pages/blog/index', compact('posts', 'tags')); //
     }
