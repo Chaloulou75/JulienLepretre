@@ -19,11 +19,12 @@
       </div>
     </div>
     <nav :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-1 pb-2 sm:flex sm:p-0 uppercase not-italic font-bold">
-      <a href="/programas" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1"> Los Programas</a>
+      <a href="https://julienlepretre.tiendup.com/c" target="_blank" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1"> Los Programas</a>
       <a href="/consulta-privada" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Consulta Privada</a>
+      <a href="/clase" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Clase de movilidad</a>
       <a href="/blog" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Blog</a>
       <a href="/testimonios" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Testimonios</a>
-      <a href="https://osteopatiafrancesa.com/" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Consultorio</a>
+      <a href="https://osteopatiafrancesa.com/" target="_blank" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Consultorio</a>
       <a href="/perfil" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Sobre mi</a>
       
       <!-- <a href="/login" class="no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2">Login</a> -->

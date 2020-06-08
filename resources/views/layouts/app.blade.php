@@ -9,6 +9,7 @@
     <title>{{ config('app.name', 'Julien Leprêtre') }}</title>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <!-- Styles -->
@@ -22,11 +23,11 @@
 
         @include('layouts/message')
         
-        <main >
+        <main>
             @yield('content')
         </main>
 
-    </div>     
+    </div>
     @stack('scripts')
 </body>
 </html>

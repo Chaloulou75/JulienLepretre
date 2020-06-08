@@ -48,11 +48,11 @@
 
                     <h2 class="py-8 uppercase font-semibold text-lg text-center"> ver los programas</h2>
                     <div class="my-2 rounded overflow-hidden mx-auto">
-                        <a href="{{route('programas.index')}}"><img src="/img/home/compress/30diasespaldasana.jpg" loading="auto" class="w-full fill-current mx-auto rounded-lg" alt="30 dias espalda sana">
+                        <a href="https://julienlepretre.tiendup.com/c{{-- {{route('programas.index')}} --}}" target="_blank"><img src="/img/home/compress/30diasespaldasana.jpg" loading="auto" class="w-full fill-current mx-auto rounded-lg" alt="30 dias espalda sana">
                         <p class="py-2 text-center uppercase font-semibold text-gray-900 hover:text-julien-red text-sm">30 días para una espalda sana!</p></a>
                     </div>
                     <div class="my-2 rounded overflow-hidden mx-auto">
-                        <a href="{{route('programas.index')}}"><img src="/img/home/compress/CuerpoFuerte.jpg" loading="auto" class="fill-current mx-auto rounded-lg" alt="cuerpo fuerte">
+                        <a href="https://julienlepretre.tiendup.com/c{{-- {{route('programas.index')}} --}}" target="_blank"><img src="/img/home/compress/CuerpoFuerte.jpg" loading="auto" class="fill-current mx-auto rounded-lg" alt="cuerpo fuerte">
                         <p class="py-2 text-center uppercase font-semibold text-gray-900 hover:text-julien-red text-sm">cuerpo fuerte</p></a>
                     </div>
                     <div class="my-2 rounded overflow-hidden mx-auto">

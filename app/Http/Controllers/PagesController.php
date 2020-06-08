@@ -22,4 +22,9 @@ class PagesController extends Controller
     	return view('/pages/consultaprivadas/index');
     }
 
+    public function clase()
+    {
+        return view('/pages/clase/index');
+    }
+
 }

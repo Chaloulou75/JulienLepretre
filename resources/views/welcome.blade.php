@@ -8,6 +8,8 @@
 
     @include('layouts.accueil.consultaprivada')
 
+    @include('layouts.accueil.clasemovilidad')
+
     @include('layouts.accueil.redes')
 
     @include('layouts.accueil.carousel')
@@ -30,9 +32,7 @@
         <noproblema-component></noproblema-component>
         <tiempo-component></tiempo-component>
         <terminado-component></terminado-component>
-
-         <modal-component></modal-component> 
-         
+        <modal-component></modal-component>          
     </div> --}}
 
 @endsection

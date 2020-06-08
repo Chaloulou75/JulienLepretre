@@ -27,6 +27,7 @@ Vue.component('navbar-component', require('./components/NavbarComponent.vue').de
 // Vue.component('terminado-component', require('./components/TerminadoComponent.vue').default);
 // Vue.component('modal-component', require('./components/ModalComponent.vue').default);
 Vue.component('carousel-component', require('./components/CarouselComponent.vue').default);
+Vue.component('paypal-component', require('./components/PaypalComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -37,8 +38,3 @@ Vue.component('carousel-component', require('./components/CarouselComponent.vue'
 const app = new Vue({
     el: '#app',
 });
-
-
-
-
-

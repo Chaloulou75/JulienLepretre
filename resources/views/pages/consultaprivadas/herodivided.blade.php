@@ -55,7 +55,7 @@
 				<p class="md:text-base md:text-left md:mx-16 py-4">Te voy a proponer los mejores consejos relativos a tu problema y armar una rutina personalizada que recibirás en PDF con vidéos para cada ejercicio. </p>
 
 				<h3 class="leading-normal font-bold uppercase text-lg not-italic mb-2 md:mx-16 md:text-left pb-6">
-                        22  <span class="text-sm font-sm text-gray-600">US$</span> / 1500 <span class="text-sm font-sm text-gray-600">AR$</span>
+                        22  <span class="text-sm font-sm text-gray-600">US$</span> 
                 </h3> 	
 
 				<p class="md:text-sm md:text-left md:mx-16 pb-8">

@@ -28,7 +28,7 @@
 				
 			</div>
 			<div class="mb-4 md:mb-2 md:text-left md:mx-16">
-				<a href="{{route('programas.index')}}"><button class="bg-julien-gris hover:bg-julien-red text-white font-medium tracking-widest uppercase italic border-2 border-white rounded shadow hover:shadow-lg py-2 px-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver mas</button></a>
+				<a href="https://julienlepretre.tiendup.com/curso/30-dias-para-una-espalda-sana{{-- {{route('programas.index')}} --}} "target="_blank"><button class="bg-julien-gris hover:bg-julien-red text-white font-medium tracking-widest uppercase italic border-2 border-white rounded shadow hover:shadow-lg py-2 px-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver mas</button></a>
 			</div>
 			
 		</div>		
@@ -57,7 +57,7 @@
 				
 			</div>
 			<div class="mb-4 md:mb-2 md:text-left md:mx-16">
-				<a href="{{route('programas.index')}}"><button class="bg-julien-gris hover:bg-julien-red text-white font-medium tracking-widest uppercase italic border-2 border-white rounded shadow hover:shadow-lg py-2 px-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver mas</button></a>
+				<a href="https://julienlepretre.tiendup.com/curso/cuerpo-fuerte{{-- {{route('programas.index')}} --}}" target="_blank"><button class="bg-julien-gris hover:bg-julien-red text-white font-medium tracking-widest uppercase italic border-2 border-white rounded shadow hover:shadow-lg py-2 px-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver mas</button></a>
 			</div>
 			
 		</div>

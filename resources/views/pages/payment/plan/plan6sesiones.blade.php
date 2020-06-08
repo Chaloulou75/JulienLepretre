@@ -11,7 +11,7 @@
 </h2> 
 
 <div class="sm:flex justify-between px-8">
-	<div class="w-full max-w-xs lg:max-w-xl lg:w-1/2 mx-auto my-2 p-auto p-8 border-2 rounded border-gray-700">   
+	<div class="w-full max-w-xs lg:max-w-xl lg:w-1/2 mx-auto my-2 p-8 border-2 rounded border-gray-700">   
 
 		<h3 class="text-center text-base uppercase">Argentino? </br> Pagar con Mercado Pago:</h3>
 		<p class="text-center text-sm pt-1">(con Pesos Argentinos)</p>
@@ -20,7 +20,7 @@
 		</div>
 	</div>
 
-	<div class="w-full max-w-xs lg:max-w-xl lg:w-1/2 mx-auto my-2 p-auto p-8 border-2 rounded border-gray-700">   
+	<div class="w-full max-w-xs lg:max-w-xl lg:w-1/2 mx-auto my-2 p-8 border-2 rounded border-gray-700">   
 
 		<h3 class="text-center text-base uppercase">Extranjero? </br> Pagar con Paypal:</h3>
 		<p class="text-center text-sm pt-1">(con Dolares o Euros)</p>
