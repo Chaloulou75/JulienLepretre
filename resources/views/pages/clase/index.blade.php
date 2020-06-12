@@ -32,13 +32,13 @@
         </p>
 
         
-        <h3 class="w-full text-lg md:text-xl text-center leading-relaxed font-bold not-italic uppercase py-4 px-2 my-2"> 1- Inscribirse para poder recibir el link de la clase</h3>
+        <h3 class="w-full text-lg md:text-xl text-center leading-relaxed font-bold not-italic uppercase py-4 px-2 my-2"> <span class="font-black text-2xl">1</span>- Inscribirse para poder recibir el link de la clase</h3>
 
         <div class="w-full md:w-1/2 my-4 mx-auto uppercase">
            @include('layouts.accueil.formulario') 
         </div>
 
-        <h3 class="w-full text-lg md:text-xl text-center leading-relaxed font-bold not-italic uppercase py-2 px-2"> 2- Pagar la clase</h3>
+        <h3 class="w-full text-lg md:text-xl text-center leading-relaxed font-bold not-italic uppercase py-2 px-2"> <span class="font-black text-2xl">2</span>- Pagar la clase</h3>
 
         <div class="flex flex-col md:flex-row my-2 px-4 mx-auto justify-around">
             <div class="text-center py-4">
