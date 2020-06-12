@@ -15,6 +15,7 @@
     @include('layouts.accueil.carousel')
 
     <div class="w-full md:w-1/2 my-4 mx-auto uppercase">
+       <h2 class="text-center">Recibir las últimas noticias y la invitaciones a mis clases</h2> 
        @include('layouts.accueil.formulario') 
     </div>
 

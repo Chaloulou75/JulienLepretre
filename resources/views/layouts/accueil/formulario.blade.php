@@ -1,5 +1,3 @@
-<h2 class="text-center">Recibir las últimas noticias y la invitaciones a mis clases</h2>
-
 <form action="https://julienlepretre.us19.list-manage.com/subscribe/post?u=dca3b2c581f84fdd25e228f5f&amp;id=b9f545ae7c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="bg-bandeau-gris border-2 border-white shadow-md rounded uppercase px-4 py-4 mb-4" target="_blank" novalidate>
 
     <div class="mb-4">

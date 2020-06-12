@@ -30,7 +30,16 @@
             Te mando la invitación a la clase una vez realizado el pago de 2,9 us$</br>
             (Reunión por youtube solo tendrás que hacer clic en el link de la reunion domingo a las 16hs para sumarte) 
         </p>
+
         
+        <h3 class="w-full text-lg md:text-xl text-center leading-relaxed font-bold not-italic uppercase py-4 px-2 my-2"> 1. Inscribirse para poder recibir el link de la clase</h3>
+
+        <div class="w-full md:w-1/2 my-4 mx-auto uppercase">
+           @include('layouts.accueil.formulario') 
+        </div>
+
+        <h3 class="w-full text-lg md:text-xl text-center leading-relaxed font-bold not-italic uppercase py-4 px-2 my-2"> 2. Pagar la clase</h3>
+
         <div class="flex flex-col md:flex-row my-8 px-4 mx-auto justify-around">
             <div class="text-center py-4">
                 <h3 class="text-center text-lg md:text-xl leading-relaxed font-bold not-italic uppercase mb-6">
