@@ -10,7 +10,7 @@
             Cada domingo a las 16hs (hora Argentina) te propongo una clase de 1 hora en vivo por YOUTUBE.
         </h2>
 
-        <div class="flex flex-col md:flex-row my-8 ">
+        <div class="flex flex-col md:flex-row mb-8 mt-12">
             <div class="w-full lg:w-1/3">
                 <!--Add your product image here-->
                  <img src="/img/home/compress/clase.jpg" loading="auto" class="fill-current mx-auto" alt="Ju clase">
@@ -26,8 +26,6 @@
             </div>
         </div>
         
-        
-
         <p class="w-full text-base leading-relaxed text-center not-italic py-4 px-2 my-2">
             Te mando la invitación a la clase una vez realizado el pago de 2,9 us$</br>
             (Reunión por youtube solo tendrás que hacer clic en el link de la reunion domingo a las 16hs para sumarte) 
