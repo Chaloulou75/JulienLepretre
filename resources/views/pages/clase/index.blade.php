@@ -38,9 +38,9 @@
            @include('layouts.accueil.formulario') 
         </div>
 
-        <h3 class="w-full text-lg md:text-xl text-center leading-relaxed font-bold not-italic uppercase py-4 px-2 my-2"> 2- Pagar la clase</h3>
+        <h3 class="w-full text-lg md:text-xl text-center leading-relaxed font-bold not-italic uppercase py-2 px-2"> 2- Pagar la clase</h3>
 
-        <div class="flex flex-col md:flex-row my-8 px-4 mx-auto justify-around">
+        <div class="flex flex-col md:flex-row my-2 px-4 mx-auto justify-around">
             <div class="text-center py-4">
                 <h3 class="text-center text-lg md:text-xl leading-relaxed font-bold not-italic uppercase mb-6">
                     Sos argentino
