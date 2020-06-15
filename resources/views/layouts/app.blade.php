@@ -6,7 +6,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Consejos y ejercicios para un cuerpo sano - Julien Leprêtre">
-    <title>{{ config('app.name', 'Julien Leprêtre') }}</title>
+    <title> @isset($title) {{ $title }} | @endisset {{ config('app.name', 'Julien Leprêtre') }}</title>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     
