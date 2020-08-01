@@ -15,7 +15,7 @@
 			</h2>
 
 			<div class="mb-8">
-				<a href="{{route('programas.index')}}"><button class="w-full py-2 px-4 bg-julien-gris hover:bg-julien-red text-white font-semibold tracking-widest uppercase border-2 border-white hover:border-julien-red rounded shadow hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver los programas</button></a>
+				<a href="https://julienlepretre.tiendup.com/c" target="_blank"><button class="w-full py-2 px-4 bg-julien-gris hover:bg-julien-red text-white font-semibold tracking-widest uppercase border-2 border-white hover:border-julien-red rounded shadow hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Ver los programas</button></a>
 			</div>			
 		</div>		
 	</div>
