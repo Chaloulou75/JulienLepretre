@@ -1942,6 +1942,7 @@ __webpack_require__.r(__webpack_exports__);
       autoPlay: this.autoPlay,
       fade: this.fade,
       draggable: false,
+      lazyLoad: true,
       contain: true,
       prevNextButtons: false,
       pageDots: false,

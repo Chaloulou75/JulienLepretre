@@ -29,6 +29,7 @@ import 'flickity/dist/flickity.min.css';
             autoPlay: this.autoPlay,
             fade: this.fade,
             draggable: false,
+            lazyLoad: true,
             contain: true,
             prevNextButtons: false,
             pageDots: false,
