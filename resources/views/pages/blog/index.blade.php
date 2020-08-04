@@ -12,7 +12,7 @@
 
         @forelse($posts as $post)
 
-          <div class="max-w-sm rounded mx-auto overflow-hidden shadow-lg animated bounceInUp m-4">
+          <div class="w-full max-w-sm md:w-1/3 rounded mx-auto overflow-hidden shadow-lg animated bounceInUp m-4">
             <img src="{{ url($post->photoPostUrl) }}" loading="auto" class="w-full fill-current mx-auto" alt="image du Post">
             <div class="px-6 py-4">
               <div class="font-bold text-2xl not-italic mx-auto">
