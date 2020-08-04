@@ -12,13 +12,12 @@
 
         @forelse($posts as $post)
 
-          <div class="w-full max-w-sm {{-- md:w-1/3 --}} rounded flex flex-col shadow-lg animated bounceInUp mx-2 mb-4">
+          <div class="w-full max-w-sm {{-- md:w-1/3 --}} rounded flex flex-col shadow-lg animated bounceInUp mx-auto mb-4">
             <img src="{{ url($post->photoPostUrl) }}" loading="auto" class="w-full fill-current mx-auto" alt="image du Post">
             <div class="px-6 py-4">
               <div class="font-bold text-2xl not-italic mx-auto">
                   {{ $post->title }}
               </div>
-
             </div>
             <div class="mb-auto">
               <a href="{{ route('post.show', ['slug' => $post->slug]) }}"><button class="text-gray-900 font-bold text-sm tracking-widest uppercase py-2 px-6 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" type="button">Leer más <i class="fas fa-long-arrow-alt-right pl-1"></i></button></a> 
