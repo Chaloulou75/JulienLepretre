@@ -1942,7 +1942,6 @@ __webpack_require__.r(__webpack_exports__);
       autoPlay: this.autoPlay,
       fade: this.fade,
       draggable: false,
-      lazyLoad: true,
       contain: true,
       prevNextButtons: false,
       pageDots: false,
@@ -42518,16 +42517,6 @@ var render = function() {
               attrs: { href: "/consulta-privada" }
             },
             [_vm._v("Consulta Privada")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
-              attrs: { href: "/clase" }
-            },
-            [_vm._v("Clase de movilidad")]
           ),
           _vm._v(" "),
           _c(

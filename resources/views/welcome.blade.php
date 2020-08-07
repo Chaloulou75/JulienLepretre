@@ -8,7 +8,7 @@
 
     @include('layouts.accueil.consultaprivada')
 
-    @include('layouts.accueil.clasemovilidad')
+    {{-- @include('layouts.accueil.clasemovilidad') --}}
 
     @include('layouts.accueil.redes')
 

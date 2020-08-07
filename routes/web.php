@@ -55,7 +55,7 @@ Route::get('/blog/{slug}/edit', 'PostController@edit')->name('post.edit')->middl
 Route::get('/perfil', 'PagesController@index')->name('profil');
 
 //clase de movilidad
-Route::get('/clase', 'PagesController@clase')->name('clase');
+// Route::get('/clase', 'PagesController@clase')->name('clase');
 
 //consulta privada
 Route::get('/consulta-privada', 'PagesController@consultaIndex')->name('consultaIndex');
