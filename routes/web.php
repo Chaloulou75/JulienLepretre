@@ -17,11 +17,12 @@ Route::get('/', 'PagesController@welcome')->name('welcome');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home'
+Route::get('/home', 'HomeController@index')->name(
+    'home'
 );
 
 //testimonios
-Route::resource('testimonios', 'TestimoniosController',['except' => [
+Route::resource('testimonios', 'TestimoniosController', ['except' => [
     'index',
 ]])->middleware('admin');
 
@@ -29,7 +30,7 @@ Route::get('/testimonios', 'TestimoniosController@index')->name('testimonios.ind
 
 //Programme
 
-Route::resource('programas', 'ProgrammeController',['except' => [
+Route::resource('programas', 'ProgrammeController', ['except' => [
     'index', 'show', 'edit',
 ]])->middleware('admin');
 
@@ -37,7 +38,7 @@ Route::get('/programas', 'ProgrammeController@index')->name('programas.index');
 Route::get('/programas/{slug}', 'ProgrammeController@show')->name('programas.show');
 Route::get('/programas/{slug}/edit', 'ProgrammeController@edit')->name('programas.edit')->middleware('admin');
 
-Route::resource('/programas/{slug}/description', 'DescriptionController',['only' => [
+Route::resource('/programas/{slug}/description', 'DescriptionController', ['only' => [
     'store', 'update', 'destroy',
 ]])->middleware('admin');
 
@@ -82,7 +83,5 @@ Route::resource('payment', 'PaymentController');
 //admin
 
 Route::group(['prefix' => 'admin' , 'middleware' => 'admin'], function () {
-
-	    Route::get('/', 'AdminController@index')->name('admin.index');
-	    
-	});
+    Route::get('/', 'AdminController@index')->name('admin.index');
+});

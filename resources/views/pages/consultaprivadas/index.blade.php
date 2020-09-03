@@ -2,18 +2,18 @@
 
 @section('content')
 
-	@include('pages.consultaprivadas.hero')
+@include('pages.consultaprivadas.hero')
 
-    <h2 class="w-full text-xl md:text-3xl leading-relaxed uppercase text-center py-8 my-4">
-            Encontramos soluciones para tus dolores crónicos y tus lesiones
-    </h2>
+<h2 class="w-full py-8 my-4 text-xl leading-relaxed text-center uppercase md:text-3xl">
+    Encontramos soluciones para tus dolores crónicos y tus lesiones
+</h2>
 
-    @include('pages.consultaprivadas.herodivided')
+@include('pages.consultaprivadas.herodivided')
 
-    <h2 class="w-full font-black text-2xl text-center uppercase py-8 my-4">
-                Testimonios
-    </h2>
+<h2 class="w-full py-8 my-4 text-2xl font-black text-center uppercase">
+    Testimonios
+</h2>
 
-    @include('layouts.accueil.carousel')
+@include('layouts.accueil.carousel')
 
 @endsection
