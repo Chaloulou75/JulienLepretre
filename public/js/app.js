@@ -1918,10 +1918,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1962,6 +1958,44 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2041,23 +2075,23 @@ __webpack_require__.r(__webpack_exports__);
       this.loaded = true;
       window.paypal.Buttons({
         style: {
-          shape: 'pill',
-          color: 'blue',
-          layout: 'vertical',
-          label: 'paypal'
+          shape: "pill",
+          color: "blue",
+          layout: "vertical",
+          label: "paypal"
         },
         createOrder: function createOrder(data, actions) {
           return actions.order.create({
             purchase_units: [{
               amount: {
-                value: '2.9'
+                value: "2.9"
               }
             }]
           });
         },
         onApprove: function onApprove(data, actions) {
           return actions.order.capture().then(function (details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            alert("Transaction completed by " + details.payer.name.given_name + "!");
           });
         }
       }).render(this.$refs.paypal);
@@ -42431,7 +42465,7 @@ var render = function() {
     "header",
     {
       staticClass:
-        "bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2 "
+        "bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-2"
     },
     [
       _c(
@@ -42457,7 +42491,7 @@ var render = function() {
                 _c(
                   "svg",
                   {
-                    staticClass: "h-6 w-6 fill-current",
+                    staticClass: "w-6 h-6 fill-current",
                     attrs: { viewBox: "0 0 24 24" }
                   },
                   [
@@ -42492,7 +42526,7 @@ var render = function() {
         "nav",
         {
           staticClass:
-            "px-2 pt-1 pb-2 sm:flex sm:p-0 uppercase not-italic font-bold",
+            "px-2 pt-1 pb-2 not-italic font-bold uppercase sm:flex sm:p-0",
           class: _vm.isOpen ? "block" : "hidden"
         },
         [
@@ -42500,20 +42534,20 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1",
+                "block px-2 py-1 mt-1 no-underline text-julien-gris animated bounceInDown hover:text-julien-red",
               attrs: {
                 href: "https://julienlepretre.tiendup.com/c",
                 target: "_blank"
               }
             },
-            [_vm._v(" Los Programas")]
+            [_vm._v("Los Programas")]
           ),
           _vm._v(" "),
           _c(
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+                "block px-2 py-1 mt-1 no-underline text-julien-gris animated bounceInDown hover:text-julien-red sm:mt-0 sm:ml-2",
               attrs: { href: "/consulta-privada" }
             },
             [_vm._v("Consulta Privada")]
@@ -42523,7 +42557,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+                "block px-2 py-1 mt-1 no-underline text-julien-gris animated bounceInDown hover:text-julien-red sm:mt-0 sm:ml-2",
               attrs: { href: "/blog" }
             },
             [_vm._v("Blog")]
@@ -42533,7 +42567,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+                "block px-2 py-1 mt-1 no-underline text-julien-gris animated bounceInDown hover:text-julien-red sm:mt-0 sm:ml-2",
               attrs: { href: "/testimonios" }
             },
             [_vm._v("Testimonios")]
@@ -42543,7 +42577,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "no-underline text-julien-gris animated bounceInDown hover:text-julien-red mt-1 block px-2 py-1 sm:mt-0 sm:ml-2",
+                "block px-2 py-1 mt-1 no-underline text-julien-gris animated bounceInDown hover:text-julien-red sm:mt-0 sm:ml-2",
               attrs: { href: "/perfil" }
             },
             [_vm._v("Sobre mi")]
@@ -42558,7 +42592,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex items-center " }, [
+    return _c("div", { staticClass: "flex items-center" }, [
       _c("img", {
         staticClass: "h-16 rounded-full",
         attrs: {
@@ -42572,10 +42606,10 @@ var staticRenderFns = [
         "a",
         {
           staticClass:
-            "block animated zoomInLeft slower text-base md:text-lg text-julien-gris hover:text-julien-red font-semibold italic uppercase mx-2 px-2 py-1",
+            "block px-2 py-1 mx-2 text-base italic font-semibold uppercase animated zoomInLeft slower md:text-lg text-julien-gris hover:text-julien-red",
           attrs: { href: "/" }
         },
-        [_vm._v("\n          Julien Leprêtre\n        ")]
+        [_vm._v("Julien Leprêtre")]
       )
     ])
   }
