@@ -10,7 +10,7 @@
     Plan de 12 sesiones
 </h2>
 
-<div class="justify-between px-8 sm:flex">
+{{-- <div class="justify-between px-8 sm:flex">
     <div class="w-full max-w-xs p-8 mx-auto my-2 border-2 border-gray-700 rounded lg:max-w-xl lg:w-1/2 p-auto">
 
         <h3 class="text-base text-center uppercase">Argentino? </br> Pagar con Mercado Pago:</h3>
@@ -36,14 +36,14 @@
             </form>
         </div>
     </div>
-</div>
+</div> --}}
 
 @endsection
 
 
-@push('scripts')
+{{-- @push('scripts')
 <script type="text/javascript">
     (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
 
 </script>
-@endpush
+@endpush --}}
